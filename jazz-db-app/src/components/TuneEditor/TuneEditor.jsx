@@ -163,6 +163,7 @@ export const TuneEditor = () => {
               <YouTubeCurator
                 videoIds={tune.youtube_video_ids || []}
                 tuneName={tune.tune_name}
+                famousRecordings={tune.famous_recordings || []}
                 onChange={(value) => handleFieldChange('youtube_video_ids', value)}
               />
             )}

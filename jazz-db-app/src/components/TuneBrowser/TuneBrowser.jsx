@@ -94,7 +94,7 @@ export const TuneBrowser = () => {
   const handleFileLoad = (data) => {
     const result = loadDatabase(data);
     if (result.success) {
-      alert(`Successfully loaded ${data.length} tunes!`);
+      alert(`Successfully loaded ${result.count || 0} tunes!`);
     } else {
       alert(`Error loading database: ${result.error}`);
     }
@@ -212,6 +212,9 @@ export const TuneBrowser = () => {
             <thead className="bg-gray-50">
               <tr>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  Rank
+                </th>
+                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                   Name
                 </th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -242,6 +245,11 @@ export const TuneBrowser = () => {
                     onClick={() => navigate(`/tune/${tune.id}`)}
                     className="hover:bg-gray-50 cursor-pointer transition-colors"
                   >
+                    <td className="px-6 py-4 whitespace-nowrap">
+                      <div className="text-sm font-medium text-gray-900">
+                        {tune.rank || '—'}
+                      </div>
+                    </td>
                     <td className="px-6 py-4 whitespace-nowrap">
                       <div className="text-sm font-medium text-gray-900">
                         {tune.tune_name || 'Untitled'}

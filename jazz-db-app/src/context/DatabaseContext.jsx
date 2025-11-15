@@ -14,8 +14,12 @@ export const DatabaseProvider = ({ children }) => {
     if (savedDb) {
       try {
         const parsed = JSON.parse(savedDb);
-        setDatabase(parsed);
-        setTunes(parsed);
+        // Handle both formats: array directly or object with metadata/tunes structure
+        const tunesArray = Array.isArray(parsed) ? parsed : (parsed.tunes || []);
+        if (Array.isArray(tunesArray) && tunesArray.length > 0) {
+          setDatabase(tunesArray);
+          setTunes(tunesArray);
+        }
       } catch (error) {
         console.error('Error loading saved database:', error);
       }
@@ -32,10 +36,17 @@ export const DatabaseProvider = ({ children }) => {
   const loadDatabase = (data) => {
     setLoading(true);
     try {
-      setDatabase(data);
-      setTunes(data);
-      localStorage.setItem('jazz-database', JSON.stringify(data));
-      return { success: true };
+      // Handle both formats: array directly or object with metadata/tunes structure
+      const tunesArray = Array.isArray(data) ? data : (data.tunes || []);
+      
+      if (!Array.isArray(tunesArray) || tunesArray.length === 0) {
+        throw new Error('Invalid data format: expected an array of tunes or an object with a "tunes" property');
+      }
+
+      setDatabase(tunesArray);
+      setTunes(tunesArray);
+      localStorage.setItem('jazz-database', JSON.stringify(tunesArray));
+      return { success: true, count: tunesArray.length };
     } catch (error) {
       return { success: false, error: error.message };
     } finally {

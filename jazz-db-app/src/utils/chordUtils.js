@@ -185,6 +185,16 @@ export const generateSectionMarkers = (measureCount, formText) => {
     ];
   }
 
+  // 32-bar AABC (like Autumn Leaves)
+  if (measureCount === 32 && form.includes('aabc')) {
+    return [
+      { label: 'A', start: 1, end: 8 },
+      { label: 'A', start: 9, end: 16 },
+      { label: 'B', start: 17, end: 24 },
+      { label: 'C', start: 25, end: 32 }
+    ];
+  }
+
   // 12-bar Blues
   if (measureCount === 12 && (form.includes('blues') || form.includes('12'))) {
     return [
@@ -199,6 +209,17 @@ export const generateSectionMarkers = (measureCount, formText) => {
     return [
       { label: 'A', start: 1, end: 8 },
       { label: 'B', start: 9, end: 16 }
+    ];
+  }
+
+  // Fallback: 32-bar tunes without specific form pattern
+  // Default to AABA structure as it's most common
+  if (measureCount === 32) {
+    return [
+      { label: 'A', start: 1, end: 8 },
+      { label: 'A', start: 9, end: 16 },
+      { label: 'B', start: 17, end: 24 },
+      { label: 'A', start: 25, end: 32 }
     ];
   }
 

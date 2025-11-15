@@ -5,9 +5,10 @@ import { Modal } from '../shared/Modal';
 import { extractYouTubeId, generatePlaylistUrl } from '../../utils/validation';
 import ReactPlayer from 'react-player';
 
-export const YouTubeCurator = ({ videoIds, tuneName, onChange }) => {
+export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onChange }) => {
   const [urlInput, setUrlInput] = useState('');
   const [previewVideo, setPreviewVideo] = useState(null);
+  const [searchQuery, setSearchQuery] = useState('');
 
   const handleAddVideo = () => {
     const videoId = extractYouTubeId(urlInput);
@@ -70,8 +71,79 @@ export const YouTubeCurator = ({ videoIds, tuneName, onChange }) => {
     window.open(playlistUrl, '_blank');
   };
 
+  // Generate YouTube search URL
+  const generateSearchUrl = (query) => {
+    const searchTerm = encodeURIComponent(query);
+    return `https://www.youtube.com/results?search_query=${searchTerm}`;
+  };
+
+  // Generate search query from famous recording
+  const generateRecordingSearchQuery = (recording) => {
+    // Format: "Tune Name" + "Artist - Year"
+    // Example: "Autumn Leaves" "Chet Baker - 1954"
+    return `"${tuneName}" "${recording}"`;
+  };
+
+  const handleSearchRecording = (recording) => {
+    const query = generateRecordingSearchQuery(recording);
+    window.open(generateSearchUrl(query), '_blank');
+  };
+
+  const handleSearchCustom = () => {
+    if (!searchQuery.trim()) return;
+    const query = `"${tuneName}" ${searchQuery}`;
+    window.open(generateSearchUrl(query), '_blank');
+  };
+
   return (
     <div className="space-y-6">
+      {/* Search section */}
+      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg border border-blue-200">
+        <h3 className="text-sm font-medium text-gray-700 mb-3">🔍 Search YouTube</h3>
+        
+        {/* Famous recordings quick search */}
+        {famousRecordings.length > 0 && (
+          <div className="mb-4">
+            <div className="text-xs font-medium text-gray-600 mb-2">Search Famous Recordings:</div>
+            <div className="flex flex-wrap gap-2">
+              {famousRecordings.map((recording, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => handleSearchRecording(recording)}
+                  className="px-3 py-1.5 text-xs bg-white border border-blue-300 rounded-lg hover:bg-blue-50 hover:border-blue-400 transition-colors text-gray-700 font-medium"
+                >
+                  🔗 {recording}
+                </button>
+              ))}
+            </div>
+            <div className="mt-2 text-xs text-gray-500">
+              Click any recording above to search YouTube for "{tuneName}" + that recording
+            </div>
+          </div>
+        )}
+
+        {/* Custom search */}
+        <div>
+          <div className="text-xs font-medium text-gray-600 mb-2">Custom Search:</div>
+          <div className="flex gap-2">
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onKeyPress={(e) => e.key === 'Enter' && handleSearchCustom()}
+              className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-jazz-blue text-sm"
+              placeholder={`Search for "${tuneName}" + artist, year, or keywords...`}
+            />
+            <Button variant="secondary" size="sm" onClick={handleSearchCustom}>
+              Search YouTube
+            </Button>
+          </div>
+          <div className="mt-2 text-xs text-gray-500">
+            Searches will open in a new tab. Copy video URLs from results and paste below.
+          </div>
+        </div>
+      </div>
+
       {/* Add video section */}
       <div className="bg-gray-50 p-4 rounded-lg">
         <h3 className="text-sm font-medium text-gray-700 mb-3">Add Video</h3>
