@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+/* Custom chord chart styling */
+.chord-measure {
+  @apply border border-gray-300 p-2 text-center font-mono;
+}
+
+.chord-chart {
+  @apply grid gap-0;
+}
+
+/* Status indicators */
+.status-complete {
+  @apply text-green-600;
+}
+
+.status-partial {
+  @apply text-amber-600;
+}
+
+.status-incomplete {
+  @apply text-red-600;
+}
