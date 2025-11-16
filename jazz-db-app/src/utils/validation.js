@@ -2,24 +2,70 @@
 export const getTuneCompletionStatus = (tune) => {
   let score = 0;
   let maxScore = 8;
+  const missingItems = [];
 
   // Required fields
-  if (tune.tune_name?.trim()) score += 1;
-  if (tune.composer?.trim()) score += 1;
-  if (tune.chords?.trim()) score += 1;
-  if (tune.year) score += 1;
+  if (tune.tune_name?.trim()) {
+    score += 1;
+  } else {
+    missingItems.push('Tune Name');
+  }
+
+  if (tune.composer?.trim()) {
+    score += 1;
+  } else {
+    missingItems.push('Composer');
+  }
+
+  if (tune.chords?.trim()) {
+    score += 1;
+  } else {
+    missingItems.push('Chord Progression');
+  }
+
+  if (tune.year) {
+    score += 1;
+  } else {
+    missingItems.push('Year');
+  }
 
   // Optional but important fields
-  if (tune.standard_key?.trim()) score += 1;
-  if (tune.tempo_range?.trim()) score += 1;
-  if (tune.section_markers?.length > 0) score += 1;
-  if (tune.youtube_video_ids?.length >= 5) score += 1;
+  if (tune.standard_key?.trim()) {
+    score += 1;
+  } else {
+    missingItems.push('Standard Key');
+  }
+
+  if (tune.section_markers?.length > 0) {
+    score += 1;
+  } else {
+    missingItems.push('Section Markers');
+  }
+
+  if (tune.youtube_video_ids?.length >= 5) {
+    score += 1;
+  } else {
+    missingItems.push('YouTube Videos (need 5+)');
+  }
+
+  // Backing tracks
+  if (tune.youtube_backing_track_ids?.length > 0) {
+    score += 1;
+  } else {
+    missingItems.push('Backing Tracks');
+  }
 
   const percentage = (score / maxScore) * 100;
 
-  if (percentage === 100) return { status: 'complete', score, maxScore, icon: '✅' };
-  if (percentage >= 50) return { status: 'partial', score, maxScore, icon: '⚠️' };
-  return { status: 'incomplete', score, maxScore, icon: '❌' };
+  const result = {
+    status: percentage === 100 ? 'complete' : percentage >= 50 ? 'partial' : 'incomplete',
+    score,
+    maxScore,
+    icon: percentage === 100 ? '✅' : percentage >= 50 ? '⚠️' : '❌',
+    missingItems,
+  };
+
+  return result;
 };
 
 // Get database-wide statistics
@@ -40,7 +86,6 @@ export const getDatabaseStats = (tunes) => {
     basicInfo: countField(tunes, t => t.tune_name && t.composer && t.year),
     chordProgression: countField(tunes, t => t.chords),
     standardKey: countField(tunes, t => t.standard_key),
-    tempoRange: countField(tunes, t => t.tempo_range),
     sectionMarkers: countField(tunes, t => t.section_markers?.length > 0),
     youtubeVideos: countField(tunes, t => t.youtube_video_ids?.length > 0),
     historyAndFacts: countField(tunes, t => t.history_and_facts),
@@ -111,10 +156,6 @@ export const validateTune = (tune) => {
     warnings.push('Standard key is not set');
   }
 
-  if (!tune.tempo_range?.trim()) {
-    warnings.push('Tempo range is not set');
-  }
-
   if (!tune.section_markers || tune.section_markers.length === 0) {
     warnings.push('Section markers are not defined');
   }
@@ -123,6 +164,10 @@ export const validateTune = (tune) => {
     warnings.push('No YouTube videos added');
   } else if (tune.youtube_video_ids.length < 5) {
     warnings.push(`Only ${tune.youtube_video_ids.length} YouTube videos (target: 5-10)`);
+  }
+
+  if (!tune.youtube_backing_track_ids || tune.youtube_backing_track_ids.length === 0) {
+    warnings.push('No backing tracks added');
   }
 
   return {

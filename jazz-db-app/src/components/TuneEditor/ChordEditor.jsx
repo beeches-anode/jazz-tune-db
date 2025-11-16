@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { validateChordProgression, countMeasures } from '../../utils/chordUtils';
 
-export const ChordEditor = ({ chords, onChange }) => {
+export const ChordEditor = ({ chords, chordProgressionNotes, onChordsChange, onNotesChange }) => {
   const validation = useMemo(() => validateChordProgression(chords), [chords]);
   const measureCount = useMemo(() => countMeasures(chords), [chords]);
 
@@ -19,7 +19,7 @@ export const ChordEditor = ({ chords, onChange }) => {
 
         <textarea
           value={chords}
-          onChange={(e) => onChange(e.target.value)}
+          onChange={(e) => onChordsChange(e.target.value)}
           rows={20}
           className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-jazz-blue font-mono text-sm"
           placeholder="| Cmaj7 | Dm7 | Em7 | Fmaj7 |"
@@ -42,6 +42,23 @@ export const ChordEditor = ({ chords, onChange }) => {
             <div className="text-sm text-green-800">✓ Chord progression looks good!</div>
           </div>
         )}
+      </div>
+
+      {/* Chord Progression Notes */}
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-2">
+          Chord Progression Notes
+        </label>
+        <textarea
+          value={chordProgressionNotes || ''}
+          onChange={(e) => onNotesChange(e.target.value)}
+          rows={6}
+          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-jazz-blue text-sm"
+          placeholder="Add notes about the chord progression, harmonic analysis, substitutions, or other relevant information..."
+        />
+        <div className="mt-1 text-xs text-gray-500">
+          Optional notes about the chord progression (harmonic analysis, substitutions, voicings, etc.)
+        </div>
       </div>
 
       {/* Helper text */}

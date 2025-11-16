@@ -6,6 +6,9 @@ import { BasicInfoForm } from './BasicInfoForm';
 import { ChordEditor } from './ChordEditor';
 import { SectionMarkerBuilder } from './SectionMarkerBuilder';
 import { YouTubeCurator } from '../YouTubeCurator/YouTubeCurator';
+import { YouTubeBackingCurator } from '../YouTubeBackingCurator/YouTubeBackingCurator';
+import { SpotifyCurator } from '../SpotifyCurator/SpotifyCurator';
+import { Validation } from './Validation';
 import { PreviewPanel } from './PreviewPanel';
 
 export const TuneEditor = () => {
@@ -133,7 +136,37 @@ export const TuneEditor = () => {
                   : 'border-transparent text-gray-600 hover:text-gray-900'
               }`}
             >
-              YouTube
+              YouTube Tunes
+            </button>
+            <button
+              onClick={() => setActiveSection('youtube-backing')}
+              className={`px-4 py-2 font-medium border-b-2 transition-colors ${
+                activeSection === 'youtube-backing'
+                  ? 'border-jazz-blue text-jazz-blue'
+                  : 'border-transparent text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              YouTube Backing
+            </button>
+            <button
+              onClick={() => setActiveSection('spotify')}
+              className={`px-4 py-2 font-medium border-b-2 transition-colors ${
+                activeSection === 'spotify'
+                  ? 'border-jazz-blue text-jazz-blue'
+                  : 'border-transparent text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              Spotify
+            </button>
+            <button
+              onClick={() => setActiveSection('validation')}
+              className={`px-4 py-2 font-medium border-b-2 transition-colors ${
+                activeSection === 'validation'
+                  ? 'border-jazz-blue text-jazz-blue'
+                  : 'border-transparent text-gray-600 hover:text-gray-900'
+              }`}
+            >
+              Validation
             </button>
           </div>
 
@@ -146,7 +179,9 @@ export const TuneEditor = () => {
             {activeSection === 'chords' && (
               <ChordEditor
                 chords={tune.chords || ''}
-                onChange={(value) => handleFieldChange('chords', value)}
+                chordProgressionNotes={tune.chord_progression_notes || ''}
+                onChordsChange={(value) => handleFieldChange('chords', value)}
+                onNotesChange={(value) => handleFieldChange('chord_progression_notes', value)}
               />
             )}
 
@@ -165,6 +200,30 @@ export const TuneEditor = () => {
                 tuneName={tune.tune_name}
                 famousRecordings={tune.famous_recordings || []}
                 onChange={(value) => handleFieldChange('youtube_video_ids', value)}
+              />
+            )}
+
+            {activeSection === 'youtube-backing' && (
+              <YouTubeBackingCurator
+                videoIds={tune.youtube_backing_track_ids || []}
+                tuneName={tune.tune_name}
+                onChange={(value) => handleFieldChange('youtube_backing_track_ids', value)}
+              />
+            )}
+
+            {activeSection === 'spotify' && (
+              <SpotifyCurator
+                playlistId={tune.spotify_playlist_id || null}
+                tuneName={tune.tune_name}
+                onChange={(value) => handleFieldChange('spotify_playlist_id', value)}
+              />
+            )}
+
+            {activeSection === 'validation' && (
+              <Validation
+                tune={tune}
+                validated={tune.validated || false}
+                onChange={(value) => handleFieldChange('validated', value)}
               />
             )}
           </div>

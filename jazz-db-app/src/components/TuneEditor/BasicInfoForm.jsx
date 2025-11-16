@@ -110,20 +110,6 @@ export const BasicInfoForm = ({ tune, onChange }) => {
         />
       </div>
 
-      {/* Tempo Range */}
-      <div>
-        <label className="block text-sm font-medium text-gray-700 mb-1">
-          Tempo Range
-        </label>
-        <input
-          type="text"
-          value={tune.tempo_range || ''}
-          onChange={(e) => onChange('tempo_range', e.target.value)}
-          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-jazz-blue"
-          placeholder="120-160 BPM"
-        />
-      </div>
-
       {/* Time Signature */}
       <div>
         <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -152,6 +138,69 @@ export const BasicInfoForm = ({ tune, onChange }) => {
           className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-jazz-blue font-mono text-sm"
           placeholder="Enter the history and interesting facts about this tune..."
         />
+      </div>
+
+      {/* Famous Recordings */}
+      <div>
+        <label className="block text-sm font-medium text-gray-700 mb-1">
+          Famous Recordings
+        </label>
+        <div className="space-y-2">
+          {(tune.famous_recordings || []).map((recording, index) => {
+            const recordingText = typeof recording === 'string' 
+              ? recording 
+              : `${recording.artist || ''}${recording.year ? ` - ${recording.year}` : ''}${recording.album ? ` (${recording.album})` : ''}`.trim();
+            
+            return (
+              <div key={index} className="flex gap-2">
+                <input
+                  type="text"
+                  value={recordingText}
+                  onChange={(e) => {
+                    const updated = [...(tune.famous_recordings || [])];
+                    updated[index] = e.target.value;
+                    onChange('famous_recordings', updated);
+                  }}
+                  onBlur={(e) => {
+                    // Filter out empty strings when field loses focus
+                    const updated = [...(tune.famous_recordings || [])];
+                    updated[index] = e.target.value.trim();
+                    onChange('famous_recordings', updated.filter(r => r && r.trim()));
+                  }}
+                  className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-jazz-blue text-sm"
+                  placeholder="e.g., Chet Baker - 1954"
+                />
+                <button
+                  type="button"
+                  onClick={() => {
+                    const updated = [...(tune.famous_recordings || [])];
+                    updated.splice(index, 1);
+                    onChange('famous_recordings', updated.length > 0 ? updated : []);
+                  }}
+                  className="px-3 py-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+                  title="Remove recording"
+                >
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            );
+          })}
+          <button
+            type="button"
+            onClick={() => {
+              const updated = [...(tune.famous_recordings || []), ''];
+              onChange('famous_recordings', updated);
+            }}
+            className="w-full px-3 py-2 border-2 border-dashed border-gray-300 rounded-lg text-gray-600 hover:border-jazz-blue hover:text-jazz-blue transition-colors text-sm font-medium"
+          >
+            + Add Recording
+          </button>
+        </div>
+        <div className="mt-2 text-xs text-gray-500">
+          Format: Artist - Year (Album) or just Artist - Year. Example: "Chet Baker - 1954" or "Ella Fitzgerald - 1960 (Ella Sings Gershwin)"
+        </div>
       </div>
 
       {/* Curator Notes */}

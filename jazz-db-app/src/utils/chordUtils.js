@@ -87,11 +87,24 @@ export const getSemitoneDistance = (fromKey, toKey) => {
     'A': 9, 'A major': 9,
     'Bb': 10, 'Bb major': 10, 'A#': 10, 'A# major': 10,
     'B': 11, 'B major': 11,
-    // Bb and Eb instruments
-    'Bb instrument': -2,
-    'Eb instrument': 3,
   };
 
+  // Handle transposing instruments - these are RELATIVE offsets, not absolute keys
+  if (toKey === 'Bb instrument') {
+    // Bb instruments always read a whole step (2 semitones) higher than concert
+    // So we always ADD 2 semitones regardless of the concert key
+    const from = keyMap[fromKey] ?? 0;
+    return 2; // Always +2 semitones
+  }
+
+  if (toKey === 'Eb instrument') {
+    // Eb instruments always read a minor third (3 semitones) lower than concert
+    // So we always SUBTRACT 3 semitones (or add 9, same thing) regardless of the concert key
+    const from = keyMap[fromKey] ?? 0;
+    return -3; // Always -3 semitones
+  }
+
+  // For regular key-to-key transposition
   const from = keyMap[fromKey] ?? 0;
   const to = keyMap[toKey] ?? 0;
 

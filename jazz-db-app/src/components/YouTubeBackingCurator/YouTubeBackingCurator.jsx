@@ -6,7 +6,7 @@ import { extractYouTubeId, generatePlaylistUrl } from '../../utils/validation';
 import { getVideoDetails, getMultipleVideoDetails, searchVideos, isApiConfigured } from '../../utils/youtubeApi';
 import ReactPlayer from 'react-player';
 
-export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onChange }) => {
+export const YouTubeBackingCurator = ({ videoIds, tuneName, onChange }) => {
   const [urlInput, setUrlInput] = useState('');
   const [previewVideo, setPreviewVideo] = useState(null);
   const [searchQuery, setSearchQuery] = useState('');
@@ -14,7 +14,7 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
   const [isSearching, setIsSearching] = useState(false);
   const [loadingVideos, setLoadingVideos] = useState(new Set());
   const [verifyingVideos, setVerifyingVideos] = useState(false);
-  const [verificationStatus, setVerificationStatus] = useState({}); // Map of videoId -> { valid: boolean, error?: string }
+  const [verificationStatus, setVerificationStatus] = useState({});
   const [apiConfigured, setApiConfigured] = useState(false);
 
   useEffect(() => {
@@ -26,7 +26,6 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
     const fetchTitles = async () => {
       if (!apiConfigured) return;
 
-      // Find videos without titles
       const videosNeedingTitles = videoIds
         .map((video, index) => {
           const videoId = typeof video === 'string' ? video : video.id;
@@ -43,7 +42,6 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
         const videoIdsToFetch = videosNeedingTitles.map(v => v.videoId);
         const details = await getMultipleVideoDetails(videoIdsToFetch);
 
-        // Update videos with fetched titles
         const updated = [...videoIds];
         const validIds = new Set(details.map(d => d.id));
         
@@ -59,12 +57,11 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
               ...existingVideo,
               title: detail.title,
               channelTitle: detail.channelTitle,
-              verified: true, // Mark as verified when successfully fetched
+              verified: true,
             };
           }
         });
 
-        // Mark videos not found in API response as invalid
         videosNeedingTitles.forEach(({ index, videoId }) => {
           if (!validIds.has(videoId)) {
             const existingVideo = typeof updated[index] === 'string' 
@@ -73,7 +70,7 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
             
             updated[index] = {
               ...existingVideo,
-              verified: false, // Mark as invalid if not found
+              verified: false,
             };
           }
         });
@@ -88,7 +85,7 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
 
     fetchTitles();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [videoIds.length, apiConfigured]); // Only run when count changes or API status changes
+  }, [videoIds.length, apiConfigured]);
 
   const handleAddVideo = async () => {
     const videoId = extractYouTubeId(urlInput);
@@ -98,7 +95,6 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
       return;
     }
 
-    // Check if already exists
     const exists = videoIds.some(v => (typeof v === 'string' ? v : v.id) === videoId);
     if (exists) {
       alert('This video is already in the playlist');
@@ -113,7 +109,6 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
       added_date: new Date().toISOString().split('T')[0],
     };
 
-    // Try to fetch title immediately if API is configured
     if (apiConfigured) {
       setLoadingVideos(new Set([videoId]));
       try {
@@ -121,13 +116,13 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
         if (details) {
           newVideo.title = details.title;
           newVideo.channelTitle = details.channelTitle;
-          newVideo.verified = true; // Mark as verified if API successfully fetched details
+          newVideo.verified = true;
         } else {
-          newVideo.verified = false; // Mark as invalid if API couldn't find it
+          newVideo.verified = false;
         }
       } catch (error) {
         console.error('Error fetching video details:', error);
-        newVideo.verified = false; // Mark as invalid on error
+        newVideo.verified = false;
       } finally {
         setLoadingVideos(new Set());
       }
@@ -138,7 +133,7 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
   };
 
   const handleRemoveVideo = (index) => {
-    if (window.confirm('Remove this video from the playlist?')) {
+    if (window.confirm('Remove this backing track from the playlist?')) {
       const updated = videoIds.filter((_, i) => i !== index);
       onChange(updated);
     }
@@ -171,30 +166,33 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
     window.open(playlistUrl, '_blank');
   };
 
-  // Remove dates from famous recording strings
-  const cleanRecordingName = (recording) => {
-    // Remove patterns like " - 1954", " (1954)", etc.
-    return recording.replace(/\s*[-–]\s*\d{4}.*$/, '').replace(/\s*\(\d{4}\).*$/, '').trim();
+  // Generate search query for backing tracks
+  const generateBackingTrackSearchQuery = (additionalTerms = '') => {
+    const baseQuery = `"${tuneName}" backing track`;
+    return additionalTerms ? `${baseQuery} ${additionalTerms}` : baseQuery;
   };
 
-  // Generate search query from famous recording (without dates)
-  const generateRecordingSearchQuery = (recording) => {
-    const cleanedRecording = cleanRecordingName(recording);
-    return `"${tuneName}" "${cleanedRecording}"`;
-  };
+  // Quick search buttons for common backing track searches
+  const quickSearches = [
+    { label: 'Backing Track', query: '' },
+    { label: 'Play Along', query: 'play along' },
+    { label: 'Karaoke', query: 'karaoke' },
+    { label: 'Slow', query: 'slow' },
+    { label: 'Fast', query: 'fast' },
+    { label: 'Swing', query: 'swing' },
+  ];
 
-  // API-based search for famous recordings
-  const handleSearchRecordingApi = async (recording) => {
+  // API-based quick search
+  const handleQuickSearch = async (querySuffix) => {
     if (!apiConfigured) {
-      // Fallback to opening YouTube in browser
-      const query = generateRecordingSearchQuery(recording);
+      const query = generateBackingTrackSearchQuery(querySuffix);
       window.open(`https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`, '_blank');
       return;
     }
 
     setIsSearching(true);
     try {
-      const query = generateRecordingSearchQuery(recording);
+      const query = generateBackingTrackSearchQuery(querySuffix);
       const results = await searchVideos(query, 20);
       setSearchResults(results);
       setSearchQuery(query);
@@ -211,15 +209,14 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
     if (!searchQuery.trim()) return;
 
     if (!apiConfigured) {
-      // Fallback to opening YouTube in browser
-      const query = `"${tuneName}" ${searchQuery}`;
+      const query = generateBackingTrackSearchQuery(searchQuery);
       window.open(`https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`, '_blank');
       return;
     }
 
     setIsSearching(true);
     try {
-      const query = `"${tuneName}" ${searchQuery}`;
+      const query = generateBackingTrackSearchQuery(searchQuery);
       const results = await searchVideos(query, 20);
       setSearchResults(results);
     } catch (error) {
@@ -234,7 +231,6 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
   const handleAddFromSearch = async (video) => {
     const videoId = video.id;
 
-    // Check if already exists
     const exists = videoIds.some(v => (typeof v === 'string' ? v : v.id) === videoId);
     if (exists) {
       alert('This video is already in the playlist');
@@ -246,12 +242,11 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
       title: video.title,
       artist: '',
       channelTitle: video.channelTitle,
-      verified: true, // Videos from API search are automatically verified
+      verified: true,
       added_date: new Date().toISOString().split('T')[0],
     };
 
     onChange([...videoIds, newVideo]);
-    // Don't clear search results - user can add multiple videos
   };
 
   // Verify all video links using YouTube API
@@ -272,15 +267,12 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
     try {
       const videoIdsToVerify = videoIds.map(v => typeof v === 'string' ? v : v.id);
       
-      // Verify in batches of 50 (YouTube API limit)
       for (let i = 0; i < videoIdsToVerify.length; i += 50) {
         const batch = videoIdsToVerify.slice(i, i + 50);
         const details = await getMultipleVideoDetails(batch);
         
-        // Create a set of valid IDs from the API response
         const validIds = new Set(details.map(d => d.id));
         
-        // Mark each video as valid or invalid
         batch.forEach(videoId => {
           if (validIds.has(videoId)) {
             statusMap[videoId] = { valid: true };
@@ -292,7 +284,6 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
 
       setVerificationStatus(statusMap);
 
-      // Update video objects with verification status
       const updated = videoIds.map(video => {
         const videoId = typeof video === 'string' ? video : video.id;
         const status = statusMap[videoId];
@@ -312,7 +303,6 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
 
       onChange(updated);
 
-      // Show summary
       const validCount = Object.values(statusMap).filter(s => s.valid).length;
       const invalidCount = Object.values(statusMap).filter(s => !s.valid).length;
       
@@ -346,32 +336,30 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
       )}
 
       {/* Search section */}
-      <div className="bg-gradient-to-r from-blue-50 to-indigo-50 p-4 rounded-lg border border-blue-200">
-        <h3 className="text-sm font-medium text-gray-700 mb-3">🔍 Search YouTube</h3>
+      <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-4 rounded-lg border border-green-200">
+        <h3 className="text-sm font-medium text-gray-700 mb-3">🔍 Search Backing Tracks</h3>
         
-        {/* Famous recordings quick search */}
-        {famousRecordings.length > 0 && (
-          <div className="mb-4">
-            <div className="text-xs font-medium text-gray-600 mb-2">Search Famous Recordings:</div>
-            <div className="flex flex-wrap gap-2">
-              {famousRecordings.map((recording, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => handleSearchRecordingApi(recording)}
-                  disabled={isSearching}
-                  className="px-3 py-1.5 text-xs bg-white border border-blue-300 rounded-lg hover:bg-blue-50 hover:border-blue-400 transition-colors text-gray-700 font-medium disabled:opacity-50 disabled:cursor-not-allowed"
-                >
-                  {apiConfigured ? '🔍' : '🔗'} {cleanRecordingName(recording)}
-                </button>
-              ))}
-            </div>
-            <div className="mt-2 text-xs text-gray-500">
-              {apiConfigured 
-                ? `Click any recording above to search YouTube API for "${tuneName}" + that recording (dates removed)`
-                : `Click any recording above to search YouTube for "${tuneName}" + that recording`}
-            </div>
+        {/* Quick search buttons */}
+        <div className="mb-4">
+          <div className="text-xs font-medium text-gray-600 mb-2">Quick Search:</div>
+          <div className="flex flex-wrap gap-2">
+            {quickSearches.map((search, idx) => (
+              <button
+                key={idx}
+                onClick={() => handleQuickSearch(search.query)}
+                disabled={isSearching}
+                className="px-3 py-1.5 text-xs bg-white border border-green-300 rounded-lg hover:bg-green-50 hover:border-green-400 transition-colors text-gray-700 font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {apiConfigured ? '🔍' : '🔗'} {search.label}
+              </button>
+            ))}
           </div>
-        )}
+          <div className="mt-2 text-xs text-gray-500">
+            {apiConfigured 
+              ? `Click any button above to search YouTube API for "${tuneName}" backing tracks`
+              : `Click any button above to search YouTube for "${tuneName}" backing tracks`}
+          </div>
+        </div>
 
         {/* Custom search */}
         <div>
@@ -384,7 +372,7 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
               onKeyPress={(e) => e.key === 'Enter' && !isSearching && handleSearchCustomApi()}
               disabled={isSearching}
               className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-jazz-blue text-sm disabled:opacity-50"
-              placeholder={`Search for "${tuneName}" + artist, year, or keywords...`}
+              placeholder={`Search for "${tuneName}" backing track + keywords...`}
             />
             <Button 
               variant="secondary" 
@@ -424,7 +412,7 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
               return (
                 <div
                   key={video.id}
-                  className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg border border-gray-200 hover:border-blue-300 transition-colors"
+                  className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg border border-gray-200 hover:border-green-300 transition-colors"
                 >
                   {video.thumbnail && (
                     <img
@@ -469,7 +457,7 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
 
       {/* Add video section */}
       <div className="bg-gray-50 p-4 rounded-lg">
-        <h3 className="text-sm font-medium text-gray-700 mb-3">Add Video</h3>
+        <h3 className="text-sm font-medium text-gray-700 mb-3">Add Backing Track</h3>
         <div className="flex gap-2">
           <input
             type="text"
@@ -493,7 +481,7 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
       <div>
         <div className="flex items-center justify-between mb-3">
           <h3 className="text-sm font-medium text-gray-700">
-            Current Playlist ({videoIds.length} videos)
+            Current Playlist ({videoIds.length} backing tracks)
           </h3>
           {videoIds.length > 0 && (
             <div className="flex gap-2">
@@ -517,20 +505,9 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
           )}
         </div>
 
-        {/* Target guidance */}
-        <div className="mb-4 p-3 bg-blue-50 border border-blue-200 rounded-lg text-sm">
-          <div className="font-medium text-blue-900 mb-1">Target: 5-10 videos</div>
-          <div className="text-blue-800">
-            Current: {videoIds.length} |{' '}
-            <span className={videoIds.length >= 5 && videoIds.length <= 10 ? 'text-green-600 font-medium' : ''}>
-              {videoIds.length < 5 ? `Need ${5 - videoIds.length} more` : videoIds.length <= 10 ? '✅ Ready' : 'Consider removing some'}
-            </span>
-          </div>
-        </div>
-
         {videoIds.length === 0 ? (
           <div className="text-center py-8 text-gray-500 text-sm bg-gray-50 rounded-lg">
-            No videos added yet. Paste a YouTube URL above or search for famous recordings to get started.
+            No backing tracks added yet. Paste a YouTube URL above or search for backing tracks to get started.
           </div>
         ) : (
           <DragDropContext onDragEnd={handleDragEnd}>
@@ -566,7 +543,6 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
                             }`}
                           >
                             <div className="flex items-start gap-3">
-                              {/* Drag handle */}
                               <div
                                 {...provided.dragHandleProps}
                                 className="mt-1 cursor-move text-gray-400 hover:text-gray-600"
@@ -576,12 +552,10 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
                                 </svg>
                               </div>
 
-                              {/* Position number */}
                               <div className="font-bold text-gray-400 text-sm mt-1">
                                 {index + 1}.
                               </div>
 
-                              {/* Video info */}
                               <div className="flex-1 min-w-0">
                                 <div className="flex gap-2 mb-2">
                                   <input
@@ -589,7 +563,7 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
                                     value={videoData.title || ''}
                                     onChange={(e) => handleUpdateVideo(index, 'title', e.target.value)}
                                     className="flex-1 px-2 py-1 text-sm border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-jazz-blue"
-                                    placeholder={isLoading ? 'Loading title...' : 'Video title (e.g., Chet Baker - 1954)'}
+                                    placeholder={isLoading ? 'Loading title...' : 'Backing track title'}
                                     disabled={isLoading}
                                   />
                                   <input
@@ -597,7 +571,7 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
                                     value={videoData.artist || ''}
                                     onChange={(e) => handleUpdateVideo(index, 'artist', e.target.value)}
                                     className="w-32 px-2 py-1 text-sm border border-gray-300 rounded focus:outline-none focus:ring-1 focus:ring-jazz-blue"
-                                    placeholder="Artist"
+                                    placeholder="Channel/Artist"
                                   />
                                 </div>
                                 <div className="text-xs text-gray-500 font-mono">
@@ -616,7 +590,6 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
                                 </div>
                               </div>
 
-                              {/* Actions */}
                               <div className="flex gap-1">
                                 <button
                                   onClick={() => setPreviewVideo(videoId)}
@@ -652,17 +625,6 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
         )}
       </div>
 
-      {/* Curation guidelines */}
-      <div className="bg-blue-50 p-4 rounded-lg text-sm">
-        <div className="font-medium text-blue-900 mb-2">Curation Guidelines:</div>
-        <ul className="text-blue-800 space-y-1 list-disc list-inside">
-          <li>Target: 5-10 essential recordings</li>
-          <li>Prefer official uploads and high audio quality</li>
-          <li>Diversify: different eras, vocalists vs instrumentalists</li>
-          <li>First video is the "primary" recommendation</li>
-        </ul>
-      </div>
-
       {/* Preview modal */}
       <Modal
         isOpen={previewVideo !== null}
@@ -684,3 +646,4 @@ export const YouTubeCurator = ({ videoIds, tuneName, famousRecordings = [], onCh
     </div>
   );
 };
+

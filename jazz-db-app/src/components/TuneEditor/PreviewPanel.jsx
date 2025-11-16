@@ -144,11 +144,6 @@ export const PreviewPanel = ({ tune }) => {
               <span className="font-medium">Key:</span> {tune.standard_key}
             </div>
           )}
-          {tune.tempo_range && (
-            <div>
-              <span className="font-medium">Tempo:</span> {tune.tempo_range}
-            </div>
-          )}
         </div>
       </div>
 
@@ -164,6 +159,14 @@ export const PreviewPanel = ({ tune }) => {
             )}
           </h3>
           {renderChordChart()}
+          {tune.chord_progression_notes && (
+            <div className="mt-4 pt-4 border-t border-gray-200">
+              <h4 className="text-sm font-semibold text-gray-700 mb-2">Chord Progression Notes</h4>
+              <div className="text-sm text-gray-700 whitespace-pre-wrap">
+                {tune.chord_progression_notes}
+              </div>
+            </div>
+          )}
         </div>
       )}
 
@@ -190,6 +193,57 @@ export const PreviewPanel = ({ tune }) => {
           <div className="text-sm text-gray-600">
             {tune.youtube_video_ids.length} video{tune.youtube_video_ids.length !== 1 ? 's' : ''} curated
           </div>
+        </div>
+      )}
+
+      {/* YouTube Backing Tracks */}
+      {tune.youtube_backing_track_ids && tune.youtube_backing_track_ids.length > 0 && (
+        <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">
+            YouTube Backing Tracks ({tune.youtube_backing_track_ids.length})
+          </h3>
+          <div className="space-y-2">
+            {tune.youtube_backing_track_ids.map((video, idx) => {
+              const videoId = typeof video === 'string' ? video : video.id;
+              const videoData = typeof video === 'string' ? { id: video } : video;
+              return (
+                <div key={videoId} className="text-sm text-gray-700">
+                  {videoData.title || `Backing Track ${idx + 1}`}
+                  {videoData.channelTitle && (
+                    <span className="text-gray-500 ml-2">• {videoData.channelTitle}</span>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* Spotify Playlist */}
+      {tune.spotify_playlist_id && (
+        <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Spotify Playlist</h3>
+          <div className="mb-4">
+            <iframe
+              style={{ borderRadius: '12px' }}
+              src={`https://open.spotify.com/embed/playlist/${tune.spotify_playlist_id}?utm_source=generator`}
+              width="100%"
+              height="352"
+              frameBorder="0"
+              allowFullScreen
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              title={`Spotify playlist for ${tune.tune_name}`}
+            />
+          </div>
+          <a
+            href={`https://open.spotify.com/playlist/${tune.spotify_playlist_id}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-green-600 hover:text-green-700 underline"
+          >
+            Open in Spotify →
+          </a>
         </div>
       )}
 

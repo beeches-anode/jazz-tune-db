@@ -159,14 +159,6 @@ export const Dashboard = () => {
             <Button
               variant="secondary"
               onClick={() => {
-                navigate('/?filter=no-tempo');
-              }}
-            >
-              Find: Missing Tempo ({totalTunes - fieldStats.tempoRange.count})
-            </Button>
-            <Button
-              variant="secondary"
-              onClick={() => {
                 navigate('/?filter=no-key');
               }}
             >
@@ -204,17 +196,6 @@ export const Dashboard = () => {
                 highest priority task.
               </div>
             </div>
-
-            {fieldStats.tempoRange.percentage < 50 && (
-              <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg">
-                <div className="font-medium text-amber-900 mb-1">
-                  ⚠️ Tempo ranges needed
-                </div>
-                <div className="text-sm text-amber-800">
-                  {totalTunes - fieldStats.tempoRange.count} tunes are missing tempo range information.
-                </div>
-              </div>
-            )}
 
             {fieldStats.sectionMarkers.percentage < 50 && (
               <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg">
