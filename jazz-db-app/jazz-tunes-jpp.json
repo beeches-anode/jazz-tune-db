@@ -1258,88 +1258,136 @@
       "Gene Krupa and His Orchestra - 1945",
       "Zoot Sims - Prestige recordings - 1949-1950"
     ],
-    "youtubeRecordings": [
+    "youtube_video_ids": [
       {
+        "id": "f60JYoHdfVM",
         "title": "LESTER LEAPS IN Count Basie Kansas City 7 FEATURING LESTER YOUNG",
-        "url": "https://www.youtube.com/watch?v=f60JYoHdfVM",
-        "description": "Original 1939 recording - the definitive version"
+        "artist": "",
+        "channelTitle": "jon ancker",
+        "verified": true,
+        "added_date": "2025-12-05"
       },
       {
-        "title": "Lester Leaps In (Count Basie - Topic)",
-        "url": "https://www.youtube.com/watch?v=FmbHVdmFJjE",
-        "description": "Official 1939 recording from The Essential Count Basie"
+        "id": "FmbHVdmFJjE",
+        "title": "Lester Leaps In",
+        "artist": "",
+        "channelTitle": "Count Basie - Topic",
+        "verified": true,
+        "added_date": "2025-12-05"
       },
       {
+        "id": "mP2_f73edb0",
         "title": "Lester Leaps In (Live at Philharmonic Hall, Los Angeles, 1944)",
-        "url": "https://www.youtube.com/watch?v=mP2_f73edb0",
-        "description": "1944 JATP with Lester Young and Nat King Cole"
+        "artist": "",
+        "channelTitle": "Nat King Cole - Topic",
+        "verified": true,
+        "added_date": "2025-12-05"
       },
       {
-        "title": "1949 JATP - Buddy Rich, Roy Eldridge, Charlie Parker, Lester Young",
-        "url": "https://www.youtube.com/watch?v=pT40dHhQNsE",
-        "description": "1949 Carnegie Hall all-star JATP performance"
+        "id": "pT40dHhQNsE",
+        "title": "\"Lester Leaps In\" 1949 JATP Buddy Rich, Roy Eldridge, Charlie Parker, Lester Young",
+        "artist": "",
+        "channelTitle": "thecrippledrummer",
+        "verified": true,
+        "added_date": "2025-12-05"
       },
       {
-        "title": "Lester Leaps In - Oscar Peterson",
-        "url": "https://www.youtube.com/watch?v=G6NYgJ1uSeI",
-        "description": "Oscar Peterson's 1955 interpretation from Plays Count Basie"
+        "id": "G6NYgJ1uSeI",
+        "title": "Lester Leaps In",
+        "artist": "",
+        "channelTitle": "Oscar Peterson - Topic",
+        "verified": true,
+        "added_date": "2025-12-05"
       },
       {
-        "title": "Lester Leaps In (Live 1957/Newport)",
-        "url": "https://www.youtube.com/watch?v=VKO_FUKbaDw",
-        "description": "Count Basie Orchestra live at Newport Jazz Festival 1957"
+        "id": "VKO_FUKbaDw",
+        "title": "Lester Leaps In (Live (1957/Newport))",
+        "artist": "",
+        "channelTitle": "Count Basie - Topic",
+        "verified": true,
+        "added_date": "2025-12-05"
       },
       {
-        "title": "Lester Leaps In - Lester Young 1956",
-        "url": "https://www.youtube.com/watch?v=pgbCjn5hsuY",
-        "description": "Lester Young live in Washington D.C. 1956"
+        "id": "pgbCjn5hsuY",
+        "title": "Lester Leaps In",
+        "artist": "",
+        "channelTitle": "Lester Young - Topic",
+        "verified": true,
+        "added_date": "2025-12-05"
       },
       {
-        "title": "Lester Leaps In (Live At Carnegie Hall, 1949)",
-        "url": "https://www.youtube.com/watch?v=xXHJSlr1iEY",
-        "description": "Charlie Parker's bebop interpretation at JATP 1949"
+        "id": "xXHJSlr1iEY",
+        "title": "Lester Leaps In (Live At Carnegie Hall, New York / 1949)",
+        "artist": "",
+        "channelTitle": "Charlie Parker - Topic",
+        "verified": true,
+        "added_date": "2025-12-05"
       }
     ],
-    "backingTracks": [
+    "youtube_backing_track_ids": [
       {
-        "title": "BACKING TRACK - LESTER LEAPS IN (Bb) 210 BPM SWING",
-        "url": "https://www.youtube.com/watch?v=5Wix0o2S4PQ",
-        "description": "Fast tempo - 210 BPM"
+        "id": "5Wix0o2S4PQ",
+        "title": "BACKING TRACK - LESTER LEAPS IN (Lester Young) (Bb) 210 BPM SWING",
+        "artist": "",
+        "channelTitle": "Luc Maes",
+        "verified": true,
+        "added_date": "2025-12-05"
       },
       {
-        "title": "Lester Leaps In Backing track + music sheet",
-        "url": "https://www.youtube.com/watch?v=4sdJ3QBul2E",
-        "description": "Medium tempo with sheet music"
+        "id": "4sdJ3QBul2E",
+        "title": "Lester Leaps In (L.Young) Backing track + music sheet",
+        "artist": "",
+        "channelTitle": "Werner Schmedding",
+        "verified": true,
+        "added_date": "2025-12-05"
       },
       {
+        "id": "4k-hLj8zR0o",
         "title": "Lester Leaps In (Playalong Version)",
-        "url": "https://www.youtube.com/watch?v=4k-hLj8zR0o",
-        "description": "Medium tempo - Real Book Standards"
+        "artist": "",
+        "channelTitle": "MIDIFine Systems - Topic",
+        "verified": true,
+        "added_date": "2025-12-05"
       },
       {
-        "title": "Lester Leaps In for C instruments",
-        "url": "https://www.youtube.com/watch?v=6DpjOxEy9R8",
-        "description": "Medium tempo for C instruments"
+        "id": "6DpjOxEy9R8",
+        "title": "Lester leaps in (Lester Young)",
+        "artist": "",
+        "channelTitle": "Javier Bofarull",
+        "verified": true,
+        "added_date": "2025-12-05"
       },
       {
-        "title": "Lester Leaps In for Bb instruments",
-        "url": "https://www.youtube.com/watch?v=1rpDdMIhUi0",
-        "description": "Medium tempo for Bb instruments (tenor, trumpet)"
+        "id": "1rpDdMIhUi0",
+        "title": "Lester leaps in (Lester Young) for Bb instruments",
+        "artist": "",
+        "channelTitle": "Javier Bofarull",
+        "verified": true,
+        "added_date": "2025-12-05"
       },
       {
-        "title": "Lester Leaps In Backing track Bb",
-        "url": "https://www.youtube.com/watch?v=4UgdSjLdiWU",
-        "description": "Medium tempo Bb with sheet music"
+        "id": "4UgdSjLdiWU",
+        "title": "Lester Leaps In (L.Young) Backing track Bb",
+        "artist": "",
+        "channelTitle": "Werner Schmedding",
+        "verified": true,
+        "added_date": "2025-12-05"
       },
       {
-        "title": "Lester Leaps In - Jazz Drum Play Along",
-        "url": "https://www.youtube.com/watch?v=2LzBT9mbotw",
-        "description": "Drum play-along (drums removed)"
+        "id": "2LzBT9mbotw",
+        "title": "Lester Leaps in",
+        "artist": "",
+        "channelTitle": "Mengotto Play Alongs - Topic",
+        "verified": true,
+        "added_date": "2025-12-05"
       },
       {
-        "title": "Bb Rhythm Changes 140 bpm",
-        "url": "https://www.youtube.com/watch?v=VWp-RdOOwl4",
-        "description": "Medium tempo - 140 BPM rhythm changes"
+        "id": "VWp-RdOOwl4",
+        "title": "Bb Rhythm Changes | 140 bpm | Jazz Swing | Play-Along Backing Track",
+        "artist": "",
+        "channelTitle": "Edwin's Jazz Jam",
+        "verified": true,
+        "added_date": "2025-12-05"
       }
     ],
     "rank": 9,
