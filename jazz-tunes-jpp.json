@@ -5268,9 +5268,11 @@
       "standard_key": "C major (concert)",
       "history_and_facts": "Composed by tenor saxophonist Benny Golson and first recorded by the Art Farmer-Benny Golson Jazztet on Meet the Jazztet (Argo, 1960), Killer Joe quickly became one of Golson's signature tunes. Its relaxed medium-swing pulse, memorable two-note hook, and riff-based writing made it a favorite on bandstands and in jazz education.\nQuincy Jones' 1969 big-band version on Walking in Space helped propel the tune into wider popular awareness, with a slick groove and catchy production that brought it beyond the jazz world. The piece has also been adapted with lyrics in vocalese settings-most notably by The Manhattan Transfer on their 1985 album Vocalese-further cementing its status in the repertoire.\nAlthough harmonically simple and largely centered on the tonic, Killer Joe is frequently used to teach articulation, dynamics, and ensemble riff phrasing. Many charts include a vamp intro and a shout-chorus style tag inspired by big-band performances.",
       "famous_recordings": [
-        "Art Farmer & Benny Golson Jazztet - 1960",
-        "Quincy Jones - 1969",
-        "The Manhattan Transfer - 1985"
+        "Art Farmer & Benny Golson Jazztet - Meet the Jazztet (Argo) - 1960",
+        "Quincy Jones - Walking in Space (A&M/CTI) - 1969",
+        "Benny Golson - Killer Joe (Columbia) - 1977",
+        "The Manhattan Transfer - Vocalese (Atlantic) - 1985",
+        "Quincy Jones - Q's Jook Joint (Qwest) - 1995"
       ],
       "rank": 257,
       "chords": "| C9 | Bb9#11 | C9 | Bb9#11 |\n| C9 | Bb9#11 | Bb9#11 | Bb9#11 |\n| Bb9#11 | Bb9#11 | Bb9#11 | A7b9 |\n| Ebm7 | Ab7 | A7 | Ab7 |\n| Em7 | A7 | C9 | Bb9#11 |\n| C9 | Bb9#11 | — |",
@@ -6363,6 +6365,72 @@
       ],
       "rank": 6,
       "chords": "| F7 | Bb7 | F7 | Cm7 F7 |\n| Bb7 | Bdim7 | F7 | Am7 D7 |\n| Gm7 | C7 | F7 D7 | Gm7 C7 |",
+      "youtube_video_ids": [
+        {
+          "id": "YuVWNv2kEkE",
+          "title": "Now's The Time / Charlie Parker The Savoy Recordings",
+          "artist": "",
+          "channelTitle": "MINICQQPER",
+          "verified": true,
+          "added_date": "2025-12-05"
+        },
+        {
+          "id": "-vnLJ0BOYIA",
+          "title": "Now's The Time (Original)",
+          "artist": "",
+          "channelTitle": "Charlie Parker - Topic",
+          "verified": true,
+          "added_date": "2025-12-05"
+        },
+        {
+          "id": "RP29Qn00_Nw",
+          "title": "Now's The Time",
+          "artist": "",
+          "channelTitle": "Charlie Parker - Topic",
+          "verified": true,
+          "added_date": "2025-12-05"
+        },
+        {
+          "id": "hZ7HYueee6g",
+          "title": "Now's The Time (Live At The Hi-Hat, Boston, U.S.A./1953)",
+          "artist": "",
+          "channelTitle": "Charlie Parker - Topic",
+          "verified": true,
+          "added_date": "2025-12-05"
+        },
+        {
+          "id": "ryNtmkfeJk4",
+          "title": "Charlie Parker - Now's The Time",
+          "artist": "",
+          "channelTitle": "Joeio95",
+          "verified": true,
+          "added_date": "2025-12-05"
+        },
+        {
+          "id": "fu_j4ZOeKUM",
+          "title": "Now's the Time",
+          "artist": "",
+          "channelTitle": "Sonny Rollins - Topic",
+          "verified": true,
+          "added_date": "2025-12-05"
+        },
+        {
+          "id": "LiuqMw80tbo",
+          "title": "Sonny Rollins \"Now's The Time\" Co 1964",
+          "artist": "",
+          "channelTitle": "Stefano Castellani",
+          "verified": true,
+          "added_date": "2025-12-05"
+        },
+        {
+          "id": "lFnQ_sNCT7E",
+          "title": "Now's the Time",
+          "artist": "",
+          "channelTitle": "Miles Davis - Topic",
+          "verified": true,
+          "added_date": "2025-12-05"
+        }
+      ],
       "id": "mewjccgwdv30frn82j7"
     },
     {
