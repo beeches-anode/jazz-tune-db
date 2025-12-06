@@ -635,14 +635,51 @@
     "history_and_facts": "Composed in 1953 by Duke Ellington with crucial collaboration from Billy Strayhorn, Satin Doll quickly became a signature Ellington theme and a frequent concert closer. Johnny Mercer added the widely sung lyrics several years later, helping the piece cross over from an instrumental band feature to a vocal standard.\nThe tune is prized by musicians for its elegant, back-cycling dominant movement in the bridge and the idiomatic Ellington/Strayhorn ii-V writing in the A sections. On bandstands, players often use tritone substitutions through the bridge and tag the final A with a short I-VI-II-V turnaround.\nSatin Doll's first recordings by the Ellington Orchestra set the template; later vocal and trio versions-particularly those by Ella Fitzgerald and Oscar Peterson-cemented its status as a must-know standard for jam sessions and big band books alike.",
     "famous_recordings": [
       "Duke Ellington and His Orchestra - 1953",
-      "Ella Fitzgerald - 1958",
-      "Oscar Peterson Trio - 1959"
+      "Ella Fitzgerald - Duke Ellington Song Book - 1957",
+      "Johnny Hodges and His Orchestra - Blues A-Plenty - 1958",
+      "Wes Montgomery Trio - A Dynamic New Sound - 1959",
+      "Oscar Peterson Trio - Night Train - 1962"
     ],
     "rank": 18,
     "chords": "| Dm7 G7 | Dm7 G7 | Em7 A7 | Em7 A7 |\n| Am7 D7 | Abm7 Db7 | Cmaj7 F7 | Em7 A7 |\n| Dm7 G7 | Dm7 G7 | Em7 A7 | Em7 A7 |\n| Am7 D7 | Abm7 Db7 | Cmaj7 | Cmaj7 |\n| Gm7 C7 | Gm7 C7 | Fmaj7 | Fmaj7 |\n| Am7 D7 | Am7 D7 | G7 | G7 |\n| Dm7 G7 | Dm7 G7 | Em7 A7 | Em7 A7 |\n| Am7 D7 | Abm7 Db7 | Cmaj7 F7 | Em7 A7 |",
     "id": "mewjccgwcbx3yf424ei",
     "is_approved": false,
-    "key": ""
+    "key": "",
+    "youtube_video_ids": [
+      {
+        "id": "CI2ieY4qqYQ",
+        "title": "Ella Fitzgerald - Satin Doll (with Duke Ellington Orchestra)",
+        "artist": "Ella Fitzgerald",
+        "channelTitle": "DavisMarkEsq",
+        "verified": true,
+        "added_date": "2025-12-06"
+      }
+    ],
+    "backing_tracks": [
+      {
+        "id": "pntkeVUY0iU",
+        "title": "Satin Doll - Play Along - Backing Track",
+        "channelTitle": "Davide Severino",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "L575P2DUw9k",
+        "title": "Satin Doll - Ballad (60 bpm) No Piano backing track for comping practice",
+        "channelTitle": "Primeau Guitar Studio",
+        "tempo_style": "Ballad 60 bpm",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "m8ZSxuhQxEo",
+        "title": "Satin Doll - Slow Swing Jazz Backing Track",
+        "channelTitle": "PRACTICE JAZZ",
+        "tempo_style": "Slow Swing 100 bpm",
+        "verified": true,
+        "added_date": "2025-12-06"
+      }
+    ]
   },
   {
     "tune_name": "Autumn Leaves",
@@ -1171,14 +1208,92 @@
     "standard_key": "D minor",
     "history_and_facts": "Published in 1931 with music by Victor Young, Wayne King, and Egbert Van Alstyne and lyrics by Haven Gillespie, Beautiful Love quickly became a popular song of the day, helped by a hit recording from Wayne King and his Orchestra. It subsequently entered the jazz repertoire and is included in major Real Book editions and standard tune lists.\nThe song is frequently performed in a minor key (most commonly D minor) and lends itself to both medium swing and ballad/waltz interpretations. Bill Evans' 1961 trio version on Explorations is especially influential among modern jazz players.\nBeautiful Love also gained wider recognition through its early-1930s film use (notably in The Mummy, 1932), further cementing its status as a standard called on bandstands and in educational settings.",
     "famous_recordings": [
-      "Wayne King and His Orchestra - 1931",
-      "Bill Evans Trio - 1961"
+      "Wayne King and His Orchestra - Original recording - 1931",
+      "Bill Evans Trio - Explorations (Riverside) - 1961",
+      "Ahmad Jamal - Naked City Theme (Argo) - 1964",
+      "Michel Petrucciani featuring Jim Hall - Power of Three (Blue Note) - 1986 (Live at Montreux)",
+      "Hank Jones Trio with Dave Holland and Billy Higgins - The Oracle (EmArcy) - 1989",
+      "Joe Pass - Virtuoso Live! (Pablo) - 1991",
+      "Kenny Barron Trio with George Mraz and Ben Riley - Minor Blues (Venus) - 2009",
+      "Kenny Barron - Beautiful Love Solo Piano (Eighty Eight) - 2012"
     ],
     "rank": 14,
     "chords": "| Em7b5 | A7b9 | Dm | Dm |\n| Gm7 | C7 | Fmaj7 | Em7b5 A7b9 |\n| Dm | Gm7 | Bb7 | A7b9 |\n| Dm | G7#11 | Em7b5 | A7b9 |\n| Em7b5 | A7b9 | Dm | Dm |\n| Gm7 | C7 | Fmaj7 | Em7b5 A7b9 |\n| Dm | Gm7 | Bb7 | A7b9 |\n| Dm B7 | Bb7#11 A7b9 | Dm | Dm |",
+    "youtube_video_ids": [
+      {
+        "id": "bD3zPOYCOws",
+        "title": "Beautiful Love - Bill Evans Piano Solo Transcription",
+        "channelTitle": "Jazz Transcriptions",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "N5FqsRHsRmo",
+        "title": "Beautiful Love - Adam Rogers, John Patitucci, Clarence Penn",
+        "channelTitle": "Jazz Performance",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "xN0DBl4QgTI",
+        "title": "Beautiful Love - Herbie Mann (Alto Flute, 1957)",
+        "channelTitle": "Jazz Archives",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "BXkP1Ks-UCk",
+        "title": "Beautiful Love - Lage Lund (Guitar Challenge)",
+        "channelTitle": "Jazz Guitar",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "BXqK66nSntM",
+        "title": "Beautiful Love - Mike Moreno (Guitar Challenge)",
+        "channelTitle": "Jazz Guitar",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "IEMDKNo98ro",
+        "title": "Beautiful Love - Solo Transcription Study",
+        "channelTitle": "Jazz Video Lessons",
+        "verified": true,
+        "added_date": "2025-12-06"
+      }
+    ],
+    "backing_tracks": [
+      {
+        "id": "DOWAaukVfTg",
+        "title": "Beautiful Love - Backing Track (Jazz/Swing feel)",
+        "channelTitle": "Jazz Backing Tracks",
+        "tempo": "Medium Swing",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "IRbm6uOprQ0",
+        "title": "Beautiful Love - Bass Line Backing Track Play Along",
+        "channelTitle": "Jazz Practice",
+        "tempo": "Medium",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "VJxCN4tW7cU",
+        "title": "Beautiful Love - Backing Track BPM 100",
+        "channelTitle": "Jazz Backing Tracks",
+        "tempo": "100 BPM",
+        "verified": true,
+        "added_date": "2025-12-06"
+      }
+    ],
     "id": "mewjccgwj2z71mmkuz",
     "is_approved": false,
-    "key": ""
+    "key": "",
+    "last_updated": "2025-12-06T00:00:00.000Z",
+    "validated": false
   },
   {
     "tune_name": "The Girl from Ipanema (Garota de Ipanema)",
@@ -1703,14 +1818,106 @@
     "history_and_facts": "So What is one of the most famous modal jazz compositions, written by Miles Davis and featured on his landmark 1959 album Kind of Blue. The tune is based on the Dorian mode and features a distinctive bass line that has become one of the most recognizable in jazz. The composition marked a significant departure from bebop's complex chord progressions, instead focusing on modal improvisation over simple harmonic structures.",
     "famous_recordings": [
       "Miles Davis - Kind of Blue (1959)",
-      "John Coltrane - Live at the Village Vanguard (1961)",
-      "Herbie Hancock - Maiden Voyage (1965)"
+      "Miles Davis Quintet - My Funny Valentine: Miles Davis in Concert (1964)",
+      "Miles Davis Quintet - Miles Davis at Carnegie Hall (1961)"
     ],
     "rank": 13,
     "chords": "| Dm11 | Dm11 | Dm11 | Dm11 |\n| Dm11 | Dm11 | Dm11 | Dm11 |\n| Dm11 | Dm11 | Dm11 | Dm11 |\n| Dm11 | Dm11 | Dm11 | Dm11 |\n| Ebm11 | Ebm11 | Ebm11 | Ebm11 |\n| Ebm11 | Ebm11 | Ebm11 | Ebm11 |\n| Dm11 | Dm11 | Dm11 | Dm11 |\n| Dm11 | Dm11 | Dm11 | Dm11 |",
     "id": "mewjccgwo03sddxkigf",
     "is_approved": false,
-    "key": ""
+    "key": "",
+    "youtube_video_ids": [
+      {
+        "id": "zqNTltOGh5c",
+        "title": "Miles Davis - So What (Official Video)",
+        "artist": "Miles Davis",
+        "channelTitle": "MilesDavisVEVO",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "ylXk1LBvIqU",
+        "title": "Miles Davis - So What (Official Audio)",
+        "artist": "Miles Davis",
+        "channelTitle": "MilesDavisVEVO",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "cWGvsyeayFk",
+        "title": "So What (Live at Carnegie Hall 1961)",
+        "artist": "Miles Davis",
+        "channelTitle": "Miles Davis - Topic",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "mwHwlgBFVmM",
+        "title": "So What [2022 Remaster] (Live at Philharmonic Hall, February 1964)",
+        "artist": "Miles Davis",
+        "channelTitle": "Miles Davis - Topic",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "8VE_dP90V84",
+        "title": "Miles Davis with John Coltrane - March 21, 1960 Olympia Theatre, Paris",
+        "artist": "Miles Davis with John Coltrane",
+        "channelTitle": "Milestones: A Miles Davis Archive",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "DEC8nqT6Rrk",
+        "title": "So What by Miles Davis",
+        "artist": "Miles Davis",
+        "channelTitle": "Amir3793",
+        "verified": true,
+        "added_date": "2025-12-06"
+      }
+    ],
+    "youtube_backing_track_ids": [
+      {
+        "id": "32i2f36tvnw",
+        "title": "So What - Miles Davis - Backing Track / Play Along",
+        "channelTitle": "",
+        "tempo": "",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "Pt0rcLctrbI",
+        "title": "SO WHAT MILES DAVIS PLAY ALONG",
+        "channelTitle": "",
+        "tempo": "",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "6LC19I11vLg",
+        "title": "So What (with theme) Bass Line Play Along Backing Track",
+        "channelTitle": "",
+        "tempo": "",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "mxfnennYk_8",
+        "title": "So What (140 bpm) : Jazz Backing track",
+        "channelTitle": "",
+        "tempo": "140 BPM",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "kC5ebboNEIU",
+        "title": "Miles Davis - So What fast version Play Along Backing Track",
+        "channelTitle": "",
+        "tempo": "180 BPM",
+        "verified": true,
+        "added_date": "2025-12-06"
+      }
+    ]
   },
   {
     "tune_name": "Take the 'A' Train",
@@ -1982,16 +2189,41 @@
     "standard_key": "Eb major (instrumental call key); also C major (common vocal), F major",
     "history_and_facts": "Composed by Jimmy Van Heusen with lyrics by Johnny Burke, the song was published in 1943 and introduced on screen by Dorothy Lamour in the 1944 Paramount film And the Angels Sing. Early hit recordings by Bing Crosby and Jo Stafford quickly established it in the American popular repertoire.\nBy the mid-1950s it became a core jazz standard, with Chet Baker's 1954 vocal version and the Miles Davis Quintet's 1956 reading (Relaxin' sessions) shaping its modern-jazz profile. The tune's lyric warns against guarding too closely against love, while the music's elegant circle-of-fifths motion and singable melody make it a favorite for both ballad and medium-swing treatments.\nOn bandstands it's most often called in Eb for instrumentals, while vocalists frequently choose C or neighboring keys. The bridge's chain of II-V's invites colorful substitutions, making it a common vehicle for teaching harmonic flow and voice-leading in standards.",
     "famous_recordings": [
-      "Bing Crosby - 1944",
-      "Chet Baker - 1954",
-      "Miles Davis - 1956",
-      "Jo Stafford - 1944"
+      "Miles Davis Quintet - Relaxin' with the Miles Davis Quintet - 1956",
+      "Chet Baker - (Chet Baker Sings) It Could Happen to You - 1958",
+      "Sonny Rollins - The Sound of Sonny - 1957 (unaccompanied)",
+      "Nat King Cole - Penthouse Serenade - 1952",
+      "J.J. Johnson - Jay Jay Johnson with Clifford Brown - 1953",
+      "Bing Crosby - And the Angels Sing (film) - 1944",
+      "Jo Stafford (with Paul Weston Orchestra) - 1944"
     ],
     "rank": 19,
     "chords": "| Ebmaj7 | Edim7 | Fm7 | F#dim7 |\n| Ebmaj7 | Abmaj7 | Gm7b5 | C7b9 |\n| Fm7 | Bb7 | Ebmaj7 | Dm7b5 G7b9 |\n| Cm7 | F7 | Fm7 | Bb7 |\n| Ebmaj7 | Edim7 | Fm7 | F#dim7 |\n| Ebmaj7 | Abmaj7 | Gm7b5 | C7b9 |\n| Fm7 | Bb7 | Ebmaj7 Ab7 | Gm7b5 C7b9 |\n| Fm7 | Bb7 | Ebmaj7 Cm7 | Fm7 Bb7 |",
     "id": "mewjccgwvo1g3m4q7e",
-    "is_approved": false,
-    "key": ""
+    "is_approved": true,
+    "key": "",
+    "youtube_video_ids": [
+      {"id": "xqwZJwakaIk", "title": "Chet Baker - It Could Happen To You (Official Audio)", "artist": "Chet Baker", "channelTitle": "Chet Baker", "verified": true, "added_date": "2025-12-06"},
+      {"id": "pvqyK2j_6b4", "title": "The Miles Davis Quintet - It Could Happen To You from Relaxin'", "artist": "Miles Davis Quintet", "channelTitle": "Miles Davis", "verified": true, "added_date": "2025-12-06"},
+      {"id": "AcpXvjNNEgo", "title": "Bing Crosby - It Could Happen To You", "artist": "Bing Crosby", "channelTitle": "MegaJacKapp", "verified": true, "added_date": "2025-12-06"},
+      {"id": "vRbvxf1q5JA", "title": "1944 HITS ARCHIVE: It Could Happen To You - Jo Stafford", "artist": "Jo Stafford", "channelTitle": "The78Prof", "verified": true, "added_date": "2025-12-06"},
+      {"id": "6hJ28z3z7KY", "title": "Monica Zetterlund (w/Bill Evans) -- It Could Happen To You (1964)", "artist": "Monica Zetterlund & Bill Evans", "channelTitle": "JazzyRNA", "verified": true, "added_date": "2025-12-06"},
+      {"id": "17jnjT7U2Ik", "title": "It Could Happen To You", "artist": "Diana Krall", "channelTitle": "Diana Krall - Topic", "verified": true, "added_date": "2025-12-06"},
+      {"id": "H150vT7zHpQ", "title": "It Could Happen To You", "artist": "Keith Jarrett Trio", "channelTitle": "Keith Jarrett - Topic", "verified": true, "added_date": "2025-12-06"}
+    ],
+    "youtube_backing_track_ids": [
+      {"id": "G-fartkiz5g", "title": "It Could Happen To You | 100 bpm | Jazz Ballad", "channelTitle": "Edwin's Jazz Jam", "tempo": "100 BPM (Ballad)", "key": "Eb", "verified": true, "added_date": "2025-12-06"},
+      {"id": "tURC61sthc8", "title": "It Could Happen To You (Eb) - Medium Slow Swing", "channelTitle": "JGC Play-Alongs", "tempo": "110 BPM", "key": "Eb", "verified": true, "added_date": "2025-12-06"},
+      {"id": "jhbB0k_Xk5U", "title": "It Could Happen To You - Real Jazz Backing Track", "channelTitle": "Real Jazz Backing Tracks", "tempo": "110 BPM", "key": "Eb", "verified": true, "added_date": "2025-12-06"},
+      {"id": "2gat18YTlMs", "title": "It Could Happen To You Eb med Bass Line PLAY ALONG", "channelTitle": "MrSunnybass", "tempo": "120 BPM", "key": "Eb", "verified": true, "added_date": "2025-12-06"},
+      {"id": "Ga6ns65cXXg", "title": "It Could Happen To You Eb 100bpm Jazz", "channelTitle": "Jazzpal", "tempo": "100 BPM", "key": "Eb", "verified": true, "added_date": "2025-12-06"},
+      {"id": "o1xiQKw9ilg", "title": "It Could Happen To You | 140 bpm | Jazz Swing", "channelTitle": "Edwin's Jazz Jam", "tempo": "140 BPM", "key": "Eb", "verified": true, "added_date": "2025-12-06"},
+      {"id": "jdEGVdgpSik", "title": "It Could Happen To You (Jazz/Swing feel) 170 bpm", "channelTitle": "Guitare Improvisation", "tempo": "170 BPM", "key": "Eb", "verified": true, "added_date": "2025-12-06"},
+      {"id": "lAEwXxSHah0", "title": "It Could Happen To You (Eb) - MILES DAVIS ARRANGEMENT", "channelTitle": "JGC Play-Alongs", "tempo": "195 BPM", "key": "Eb", "verified": true, "added_date": "2025-12-06"},
+      {"id": "HIw3v63oLe0", "title": "It Could Happen To You (Eb) - Gypsy Fast", "channelTitle": "JGC Play-Alongs", "tempo": "195 BPM", "key": "Eb", "verified": true, "added_date": "2025-12-06"},
+      {"id": "bQKUHNrIpOg", "title": "It Could Happen To You - Organ and Drums", "channelTitle": "Phil Wilkinson Music", "tempo": "Medium", "key": "Eb", "verified": true, "added_date": "2025-12-06"}
+    ],
+    "last_updated": "2025-12-06"
   },
   {
     "tune_name": "Mack the Knife",
@@ -2088,16 +2320,159 @@
     "standard_key": "Bb major; also C major and Eb major (often for vocalists)",
     "history_and_facts": "Composed by Victor Young as a haunting instrumental theme for the 1944 Paramount film The Uninvited, the piece acquired Ned Washington's lyrics in 1946 and quickly entered the pop and jazz repertoire. Early postwar recordings helped popularize it, and its cinematic origin explains the tune's striking, non‑tonic opening and dramatic harmonic motion.\nIn jazz, Stella by Starlight became a proving ground for advanced harmony: the melody rides over a web of ii-V progressions and deceptive cadences that obscure the home key until the final cadence. It is a staple in Real Book editions and on bandstands, often called in Bb for instrumentalists, though the original film score centered in a minor key and vocalists choose comfortable transpositions.\nDefining jazz interpretations span decades, notably Miles Davis's classic studio cut with his sextet in 1958 and his ballad reading from the 1964 Lincoln Center concert. The tune's rich changes have made it a perennial for re-harmonization and pedagogy.",
     "famous_recordings": [
-      "Frank Sinatra - 1947",
-      "Miles Davis - 1958",
-      "Miles Davis - 1964",
-      "Keith Jarrett Trio - 1985"
+      "Miles Davis - My Funny Valentine (1964) - Live at Lincoln Center with Second Great Quintet",
+      "Stan Getz - Stan Getz and J.J. Johnson at the Opera House (1957)",
+      "Bill Evans - Waltz for Debby (1961) - Live at Village Vanguard",
+      "Dexter Gordon - Gettin' Around (1965) - Blue Note",
+      "Sonny Rollins - Alfie (1966)",
+      "Keith Jarrett - Standards, Vol. 1 (1983)"
+    ],
+    "youtube_video_ids": [
+      {
+        "id": "YI7qPHJ6tjA",
+        "title": "Stella by Starlight (Live at Philharmonic Hall, New York, NY - February 1964)",
+        "artist": "Miles Davis",
+        "channelTitle": "Miles Davis - Topic",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "XGx1HvLV_NQ",
+        "title": "Miles Davis - Stella by Starlight (Audio) (Official Audio)",
+        "artist": "Miles Davis",
+        "channelTitle": "MilesDavisVEVO",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "XOnzTatJN3w",
+        "title": "Stella By Starlight (Live At The Village Vanguard, 1967)",
+        "artist": "Bill Evans",
+        "channelTitle": "Bill Evans - Topic",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "IbzxJuvbH08",
+        "title": "Stella by Starlight - Bill Evans Trio (Oslo, 1966)",
+        "artist": "Bill Evans",
+        "channelTitle": "Friskounet",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "xmpLQxpodAE",
+        "title": "Miles Davis in Concert - Stella by Starlight (1964)",
+        "artist": "Miles Davis",
+        "channelTitle": "monomotapa15",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "Q_QT3ljH0n8",
+        "title": "Stella by Starlight",
+        "artist": "Bill Evans",
+        "channelTitle": "Bill Evans - Topic",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "sXdO_ts2UdA",
+        "title": "Stella By Starlight (Solo Sessions)",
+        "artist": "Bill Evans",
+        "channelTitle": "Bill Evans - Topic",
+        "verified": true,
+        "added_date": "2025-12-06"
+      }
+    ],
+    "youtube_backing_track_ids": [
+      {
+        "id": "8BGO1UZWayY",
+        "title": "Stella By Starlight (Bb) - Slow Swing || BACKING TRACK",
+        "artist": "",
+        "channelTitle": "JGC Play-Alongs",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "yxmU4ZedqJw",
+        "title": "Stella By Starlight Backing Track (BPM 90)",
+        "artist": "",
+        "channelTitle": "BaBoSound",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "ZBFA35b3F3U",
+        "title": "Stella By Starlight (Bb) MinusOne BackingTrack",
+        "artist": "",
+        "channelTitle": "Jazz &",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "Qogc62X1PKc",
+        "title": "Stella By Starlight - Real Jazz Backing Track - Play Along",
+        "artist": "",
+        "channelTitle": "Real Jazz Backing Tracks",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "WAbMcq7bmA8",
+        "title": "Stella by Starlight : Backing track",
+        "artist": "",
+        "channelTitle": "Guitare Improvisation",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "OCBhoYjO7to",
+        "title": "Stella By Starlight | 160 bpm | Jazz Swing | Play-Along Backing Track",
+        "artist": "",
+        "channelTitle": "Edwin's Jazz Jam",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "_NbzSR6__9g",
+        "title": "Stella By Starlight med up Bass Line Play Along Backing Track",
+        "artist": "",
+        "channelTitle": "MrSunnybass",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "UpGuBhKpG6U",
+        "title": "Stella By Starlight | 180 bpm | Jazz Swing | Play-Along Backing Track",
+        "artist": "",
+        "channelTitle": "Edwin's Jazz Jam",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "aHTFDvGtyrg",
+        "title": "Stella By Starlight (Bb) - Up Tempo Swing || BACKING TRACK",
+        "artist": "",
+        "channelTitle": "JGC Play-Alongs",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "Nc1GRJu_Uxs",
+        "title": "Stella By Starlight | 200 bpm | Jazz Swing | Play-Along Backing Track",
+        "artist": "",
+        "channelTitle": "Edwin's Jazz Jam",
+        "verified": true,
+        "added_date": "2025-12-06"
+      }
     ],
     "rank": 17,
     "chords": "| Em7b5 | A7b9 | Cm7 | F7 |\n| Fm7 | Bb7 | Ebmaj7 | Ab7 |\n| Bbmaj7 | Em7b5 A7b9 | Dm7 | Bbm7 Eb7 |\n| Fmaj7 | Em7b5 | Ebmaj7#11 | D7b9 |\n| G7#5 | G7#5 | Cm7 | Cm7 |\n| Ab7#11 | Ab7#11 | Bbmaj7 | Bbmaj7 |\n| Em7b5 | A7b9 | Dm7b5 | G7b9 |\n| Cm7b5 | F7b9 | Bbmaj7 | Bbmaj7 |",
     "id": "mewjccgwxfi7i9stjb",
     "is_approved": false,
-    "key": ""
+    "key": "",
+    "last_updated": "2025-12-06T00:00:00.000Z"
   },
   {
     "tune_name": "Billie's Bounce",
@@ -2107,12 +2482,93 @@
     "form": "12-bar blues in concert F. No sectional key changes. Common bebop variants include a quick change to Bb7 by bar 2, a passing diminished in bar 6 (e.g., Bdim/Bbdim), and an I-VI-ii-V turnaround in bars 9-12 (F7-D7-G7-C7). Many lead sheets also show ii-V movement approaching IV and a ii-V back to I in bar 8.",
     "standard_key": "F",
     "history_and_facts": "Charlie Parker's Billie's Bounce is a cornerstone bebop blues first recorded at the landmark Savoy session of November 1945, the same period that yielded Ko-Ko and Now's the Time. The tune helped codify the bebop approach to a 12-bar F blues, pairing Parker's angular melodic line with more sophisticated harmonic motion than a traditional blues.\nOver time it became a jam-session staple and a teaching vehicle for bebop phrasing over blues changes. Lead sheets and recordings commonly incorporate bebop turnarounds and passing diminished chords, but the piece remains fundamentally a straightforward F blues at medium-to-up tempos.",
-    "famous_recordings": ["Charlie Parker - 1945", "Sonny Stitt - 1959"],
+    "famous_recordings": [
+      "Charlie Parker's Reboppers - The Complete Savoy Sessions (1945) - Original recording with Miles Davis (tp), Dizzy Gillespie (p), Curley Russell (b), Max Roach (d)",
+      "Sonny Stitt - Sonny Stitt Sits In with the Oscar Peterson Trio (1959)",
+      "Red Garland - Dig It! (Prestige, 1957)",
+      "Phil Woods - Just Friends (Philology, 1994)"
+    ],
     "rank": 16,
     "chords": "| F7 | Bb7 | F7 | Cm7 F7 |\n| Bb7 | Bdim7 | F7 | Am7 D7 |\n| Gm7 | C7 | F7 D7 | Gm7 C7 |",
     "id": "mewjccgwxjf9av70h98",
-    "is_approved": false,
-    "key": ""
+    "is_approved": true,
+    "key": "F",
+    "youtube_video_ids": [
+      {
+        "id": "S4mRaEzwTYo",
+        "title": "Billie's Bounce / Charlie Parker The Savoy Recordings",
+        "artist": "Charlie Parker",
+        "channelTitle": "MINICQQPER",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "gVVffSREjd4",
+        "title": "Billie's Bounce",
+        "artist": "Charlie Parker",
+        "channelTitle": "Charlie Parker - Topic",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "3Zfk4nll7vw",
+        "title": "Billie's Bounce",
+        "artist": "Red Garland",
+        "channelTitle": "Red Garland - Topic",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "BBCO3wqHuGU",
+        "title": "Billie's Bounce",
+        "artist": "Phil Woods",
+        "channelTitle": "Phil Woods - Topic",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "HVYsh-zfdwE",
+        "title": "Dizzy Gillespie - Billie's Bounce",
+        "artist": "Dizzy Gillespie",
+        "channelTitle": "rujazz",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "maLk0voL4f8",
+        "title": "Charlie Parker (1945) FIRST RECORDING [BILLIE'S BOUNCE]",
+        "artist": "Charlie Parker",
+        "channelTitle": "JGC History",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "-smjyYUTR-k",
+        "title": "Billie's Bounce (feat. John Coltrane) (Remastered)",
+        "artist": "Red Garland feat. John Coltrane",
+        "channelTitle": "Red Garland - Topic",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "e0zLqiZvWkU",
+        "title": "Billie's Bounce (Live)",
+        "artist": "Stan Getz",
+        "channelTitle": "Stan Getz - Topic",
+        "verified": true,
+        "added_date": "2025-12-06"
+      }
+    ],
+    "youtube_backing_track_ids": [
+      {
+        "id": "4wKICMNfzUc",
+        "title": "Now's the time / Billie's Bounce (slow) play along - backing track",
+        "artist": "",
+        "channelTitle": "Davide Severino",
+        "verified": true,
+        "added_date": "2025-12-06"
+      }
+    ]
   },
   {
     "tune_name": "Blue Monk",
@@ -11337,5 +11793,53 @@
     "id": "mewjccgxzwr576z4yb",
     "is_approved": false,
     "key": ""
+  },
+  {
+    "tune_name": "Straight No Chaser",
+    "composer": "Thelonious Monk",
+    "year": 1951,
+    "style": "bebop blues",
+    "form": "12-bar blues. Standard jazz blues progression with Monk's characteristic chromatic melodic approach. The angular melody loops back on itself in Monk's distinctive style.",
+    "standard_key": "F major (standard key)",
+    "history_and_facts": "Composed by Thelonious Monk and first recorded on July 23, 1951, for Blue Note Records as part of his 'Genius of Modern Music' sessions. The tune features Monk's distinctive melodic approach to the blues form, with a wobbly, angular melody that loops back on itself.\n\nThe composition became one of Monk's most widely recorded works and a jam session staple. Miles Davis's 1958 recording on 'Milestones' further popularized the tune and featured John Coltrane, Cannonball Adderley, Red Garland, Paul Chambers, and Philly Joe Jones.\n\nMonk titled his 1967 Columbia album after the composition, and a 1988 documentary about Monk's life directed by Charlotte Zwerin also took its name from this iconic tune. The documentary was executive produced by Clint Eastwood and was selected for preservation in the National Film Registry in 2017.",
+    "famous_recordings": [
+      "Thelonious Monk Quintet - 1951 (Genius of Modern Music: Volume 2)",
+      "Miles Davis Sextet - 1958 (Milestones)",
+      "Wes Montgomery - 1960 (The Incredible Jazz Guitar of Wes Montgomery)",
+      "Joe Henderson with Wynton Kelly Trio - 1966 (Straight, No Chaser)",
+      "Thelonious Monk Quartet - 1967 (Straight, No Chaser)"
+    ],
+    "rank": 50,
+    "chords": "| F7 | Bb7 | F7 | F7 |\n| Bb7 | Bb7 | F7 | F7 |\n| Gm7 | C7 | F7 | C7 |",
+    "id": "straightnochaser2024",
+    "is_approved": false,
+    "key": "",
+    "section_markers": [
+      {
+        "label": "A",
+        "start": 1,
+        "end": 12
+      }
+    ],
+    "youtube_video_ids": [
+      {
+        "id": "0q9WU7uiX9k",
+        "title": "Straight No Chaser",
+        "artist": "Joe Henderson",
+        "channelTitle": "Joe Henderson - Topic",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "sYHWbA_9jzw",
+        "title": "Joe Henderson with Wynton Kelly Trio - Straight, No Chaser",
+        "artist": "Joe Henderson",
+        "channelTitle": "Xavi Castillo",
+        "verified": true,
+        "added_date": "2025-12-06"
+      }
+    ],
+    "youtube_backing_track_ids": [],
+    "last_updated": "2025-12-06T00:00:00.000Z"
   }
 ]
