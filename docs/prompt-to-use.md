@@ -4,16 +4,16 @@ Optimized Parallel Prompt
 
 ### Step 1: Identify Target Tunes
 
-Read `jazz-tune-manager/jazz-db-app/jazz-tunes-jpp.json` and find **20 tunes** that meet BOTH criteria:
+Read `jazz-tune-manager/jazz-db-app/jazz-tunes-jpp.json` and find **40 tunes** that meet BOTH criteria:
 
-- `rank` < 50
+- `rank` < 60
 - `validated` = false (or missing)
 
-Sort by `rank` ascending and select the top 5 (lowest rank = highest priority).
+Sort by `rank` ascending and select the top 10 (lowest rank = highest priority).
 
-### Step 2: Process BOTH Tunes in Parallel
+### Step 2: Process All Selected Tunes in Parallel
 
-Launch **two parallel Task agents** (one per tune), each executing this workflow:
+Launch **parallel Task agents** (one per tune) for all 10 selected tunes. Each agent executes this workflow:
 
 #### Per-Tune Workflow:
 
@@ -53,7 +53,7 @@ Launch **two parallel Task agents** (one per tune), each executing this workflow
 
 ### Step 3: Consolidate & Update JSON
 
-Once both parallel agents complete:
+Once all parallel agents complete:
 
 1. Read current `jazz-tunes-jpp.json`
 2. Update each tune entry with:
