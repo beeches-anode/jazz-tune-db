@@ -2,6 +2,35 @@
 const NOTES = ['C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B'];
 const NOTES_SHARP = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
 
+// Jazz chord symbol conversions (text to Unicode symbols)
+// △ = major (U+25B3), ø = half-diminished (U+00F8), ° = diminished (U+00B0)
+const CHORD_SYMBOL_REPLACEMENTS = [
+  // Half-diminished (m7b5) → ø7 - must come before minor replacements
+  { pattern: /m7b5/g, replacement: 'ø7' },
+  { pattern: /m7♭5/g, replacement: 'ø7' },
+  // Diminished - dim7 before dim to avoid partial replacement
+  { pattern: /dim7/g, replacement: '°7' },
+  { pattern: /dim/g, replacement: '°' },
+  // Major 7th variants → triangle
+  { pattern: /maj7/gi, replacement: '△7' },
+  { pattern: /maj9/gi, replacement: '△9' },
+  { pattern: /maj13/gi, replacement: '△13' },
+  { pattern: /maj6/gi, replacement: '△6' },
+  { pattern: /M7/g, replacement: '△7' },
+  { pattern: /M9/g, replacement: '△9' },
+];
+
+// Convert chord text to display symbols
+export const chordToSymbols = (chordText) => {
+  if (!chordText) return chordText;
+
+  let result = chordText;
+  for (const { pattern, replacement } of CHORD_SYMBOL_REPLACEMENTS) {
+    result = result.replace(pattern, replacement);
+  }
+  return result;
+};
+
 // Parse a chord symbol into root and quality
 export const parseChord = (chordSymbol) => {
   if (!chordSymbol || chordSymbol.trim() === '') return null;

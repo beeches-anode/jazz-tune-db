@@ -1,5 +1,5 @@
 import { useState, useMemo } from 'react';
-import { transposeProgression } from '../../utils/chordUtils';
+import { transposeProgression, chordToSymbols } from '../../utils/chordUtils';
 
 export const PreviewPanel = ({ tune }) => {
   const [transposeKey, setTransposeKey] = useState('concert');
@@ -64,7 +64,7 @@ export const PreviewPanel = ({ tune }) => {
                       <div className="font-mono text-sm text-center">
                         {chords.map((chord, chordIdx) => (
                           <span key={chordIdx} className="inline-block mx-1">
-                            {chord}
+                            {chordToSymbols(chord)}
                           </span>
                         ))}
                         {chords.length === 0 && (
