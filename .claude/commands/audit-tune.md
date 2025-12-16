@@ -17,22 +17,25 @@ PHASE 1: Retrieve & analyze current entry
     ↓
 PHASE 2: Identify required agents
     ↓
-PHASE 3: Execute agents
-    ├─ Parallel: jazz-recording-identifier, jazz-tune-form-analyzer,
-    │            backing-track-identifier, web search (factual)
+PHASE 3a: Execute agents (parallel)
+    ├─ jazz-recording-identifier (famous recordings)
+    ├─ jazz-tune-form-analyzer (form, section markers)
+    └─ Web search (factual verification)
     ↓
-    ├─ Sequential: youtube-recording-identifier (needs famous recordings)
+PHASE 3b: Coordinator YouTube searches (MCP direct)
+    ├─ Search for backing tracks via MCP YouTube API
+    └─ Search for famous recording videos via MCP YouTube API
     ↓
-    └─ Final: auditor (Opus - thorough verification)
+PHASE 4: Auditor (Opus - thorough verification)
     ↓
-PHASE 4: Consolidate results
+PHASE 5: Consolidate results
     ↓
-PHASE 5: Present audit report & await approval
+PHASE 6: Present audit report & await approval
 ```
 
 ## Phase 1: Retrieve & Analyze Current Entry
 
-1. **Find the tune** in `/Users/trentjordan/code_projects/jazz-tune-manager/jazz-tune-manager/jazz-db-app/jazz-tunes-jpp.json`
+1. **Find the tune** in `/Users/trentjordan/code_projects/jazz-tune-manager/jazz-db-app/jazz-tunes-jpp.json`
    - Search for exact match first (case-insensitive)
    - If not found, search for partial matches
    - **If no match found: ASK the user** - list similar tune names and ask which one they meant
@@ -69,14 +72,15 @@ Based on field completeness, determine which agents to run:
 
 **Mode: Verification + Gap-filling** (always verify existing data AND fill gaps)
 
-| Agent | Runs In | Purpose |
-|-------|---------|---------|
-| `jazz-recording-identifier` | Parallel | Verify existing famous recordings AND identify missing ones |
-| `jazz-tune-form-analyzer` | Parallel | Verify form, section markers, chord progression notes |
-| `backing-track-identifier` | Parallel | Verify existing backing tracks AND find new ones |
-| Web search (factual verification) | Parallel | Verify composer, year, history facts |
-| `youtube-recording-identifier` | Sequential | Verify existing YouTube videos AND find new ones (needs famous recordings from above) |
-| `auditor` | Final | Thorough verification of ALL data before commit (Opus model) |
+| Agent/Task | Runs In | Purpose |
+|------------|---------|---------|
+| `jazz-recording-identifier` | Phase 3a (Parallel) | Verify existing famous recordings AND identify missing ones |
+| `jazz-tune-form-analyzer` | Phase 3a (Parallel) | Verify form, section markers, chord progression notes |
+| Web search (factual verification) | Phase 3a (Parallel) | Verify composer, year, history facts |
+| Coordinator MCP YouTube searches | Phase 3b | Find backing tracks and recording videos directly via MCP API |
+| `auditor` | Phase 4 | Thorough verification of ALL data before commit (Opus model) |
+
+**Note:** YouTube searches are performed directly by the coordinator using MCP tools because sub-agents cannot reliably access MCP server connections.
 
 ### Factual Verification (Always Run)
 
@@ -86,27 +90,89 @@ Use web search to verify:
 - Year of composition/publication
 - Key historical facts
 
-## Phase 3: Execute Agents
+## Phase 3a: Execute Agents (Parallel)
 
-### Execution Order
+Run these simultaneously using multiple Task tool calls in a single message:
 
-**Parallel Group 1** (run simultaneously using multiple Task tool calls in a single message):
 - `jazz-recording-identifier` - Read agent file at `.claude/agents/jazz-recording-identifier.md`, then follow its instructions
-- `backing-track-identifier` - Read agent file at `.claude/agents/backing-track-identifier.md`, then follow its instructions
 - `jazz-tune-form-analyzer` - Read agent file at `.claude/agents/jazz-tune-form-analyzer.md`, then follow its instructions
 - Web search for factual verification (composer, year, history)
 
-**Sequential** (after Group 1 completes):
-- `youtube-recording-identifier` - Read agent file at `.claude/agents/youtube-recording-identifier.md`, then follow its instructions
-  - This agent needs the famous recordings from jazz-recording-identifier to prioritize searches
+### Agent Invocation Format
 
-**Final Audit** (after all data gathering completes):
+When invoking agents, use the Task tool with:
+```
+subagent_type: "jazz-recording-identifier" (or "jazz-tune-form-analyzer")
+prompt: "[Instructions for the tune]
+Current entry data: [relevant fields from the entry]"
+```
+
+Provide each agent with:
+- The tune name
+- Current entry data (relevant fields)
+- Specific task instructions
+
+## Phase 3b: Coordinator YouTube Searches (MCP Direct)
+
+After Phase 3a agents complete, the coordinator performs YouTube searches directly using MCP tools.
+This is more reliable than sub-agents because MCP server connections are not inherited by sub-agents.
+
+### Backing Track Search
+
+Use MCP YouTube API to find 5-10 backing tracks:
+
+```
+mcp__youtube__videos_searchVideos(query="[Tune Name] backing track jazz", maxResults=15)
+mcp__youtube__videos_searchVideos(query="[Tune Name] play along", maxResults=10)
+```
+
+**Selection criteria:**
+- Prioritize known backing track channels (Guitare Improvisation, PRACTICE JAZZ, Jazzing, Backingtracks JAZZ, etc.)
+- Include tempo variety (slow ballad, medium swing, uptempo)
+- Verify video titles indicate backing/play-along track (not full performances)
+- Filter out unrelated results (check title contains tune name)
+
+### Famous Recording Video Search
+
+Use MCP YouTube API to find videos for each famous recording identified by jazz-recording-identifier:
+
+```
+# For each famous recording (artist, year):
+mcp__youtube__videos_searchVideos(query="[Tune Name] [Artist Name]", maxResults=5)
+```
+
+**Selection criteria:**
+- Prioritize "[Artist] - Topic" channels (official YouTube auto-generated)
+- Look for official artist channels
+- Prefer complete recordings over clips
+- Target 6-8 total videos with artist variety (avoid multiple videos of same artist)
+
+### Format YouTube Results
+
+Format all YouTube results into the database schema:
+```json
+{
+  "id": "VIDEO_ID_ONLY",
+  "title": "Exact Title from API",
+  "artist": "",
+  "channelTitle": "Channel Name from API",
+  "verified": true,
+  "added_date": "YYYY-MM-DD"
+}
+```
+
+**Important:** Extract video ID from the API response (11 characters, e.g., "4azzupZwiy4"), NOT full URLs.
+
+## Phase 4: Auditor (Final Verification)
+
+After all data gathering completes, invoke the auditor:
+
 - `auditor` - Read agent file at `.claude/agents/auditor.md`, then follow its instructions
   - **Model**: Opus (most capable) - this is the only audit checkpoint, must be thorough
-  - **Input**: ALL data collected from previous agents
+  - **Input**: ALL data collected from previous phases
   - **Verification scope**:
     - Cross-reference all facts against jazz history knowledge
-    - Verify YouTube video IDs are valid and accessible
+    - Verify YouTube video IDs are valid format (11 characters)
     - Check for duplicates and inconsistencies
     - Validate JSON schema compliance
     - Assign confidence levels (HIGH/MEDIUM/LOW) to each data point
@@ -116,23 +182,9 @@ Use web search to verify:
     - NEEDS REVIEW - human review required
     - REJECTED - do not commit, significant issues found
 
-### Agent Invocation Format
+## Phase 5: Consolidate Results
 
-When invoking agents, use the Task tool with:
-```
-subagent_type: "general-purpose"
-prompt: "Read the agent file at [path], then follow its instructions for the tune '[tune_name]'.
-Current entry data: [relevant fields from the entry]"
-```
-
-Provide each agent with:
-- The tune name
-- Current entry data (relevant fields)
-- Any context needed (e.g., famous recordings for YouTube search)
-
-## Phase 4: Consolidate Results
-
-After all agents complete, compile a unified update:
+After all phases complete, compile a unified update:
 
 ### Update JSON Structure
 
@@ -161,7 +213,7 @@ After all agents complete, compile a unified update:
 }
 ```
 
-## Phase 5: Present Audit Report
+## Phase 6: Present Audit Report
 
 ### Report Format
 
@@ -243,9 +295,11 @@ You can also:
    - Use `id` for video ID only, not full URLs
 4. **Date format** - Use ISO 8601 for `last_updated`: "YYYY-MM-DDTHH:mm:ss.sssZ"
 5. **Verification** - Set `verified: true` only for confirmed data
-6. **Agent file paths** - All agents are in `.claude/agents/` directory:
-   - `jazz-recording-identifier.md`
-   - `youtube-recording-identifier.md`
-   - `backing-track-identifier.md`
-   - `jazz-tune-form-analyzer.md`
-   - `auditor.md` (final quality gate - Opus model)
+6. **Agent file paths** - Agents in `.claude/agents/` directory:
+   - `jazz-recording-identifier.md` - Famous recordings research
+   - `jazz-tune-form-analyzer.md` - Form and harmonic analysis
+   - `auditor.md` - Final quality gate (Opus model)
+
+   **Note:** YouTube searches (backing tracks and recording videos) are performed directly
+   by the coordinator using MCP tools, not by sub-agents. This is because sub-agents cannot
+   reliably access MCP server connections.

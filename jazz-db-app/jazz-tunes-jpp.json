@@ -447,78 +447,175 @@
   },
   {
     "tune_name": "Alone Together",
-    "composer": "Arthur Schwartz (lyrics: Howard Dietz)",
-    "year": "1932",
+    "composer": "Arthur Schwartz",
+    "lyricist": "Howard Dietz",
+    "year": 1932,
     "style": "ballad",
-    "form": "AABA, 32 bars (8-bar sections). Typically set in a minor key for the A sections; the bridge modulates through a chain of key centers via sequential ii-V movement before returning to the tonic minor. Many authoritative lead sheets and recordings resolve the final A with a Picardy-third (major) cadence; chord substitutions are common but retain the overall AABA design.",
+    "form": "AABC, 44 bars (14-14-8-8). Extended form with unusual 14-bar A sections instead of the typical 8. A sections feature minor key harmony; B section (bridge) modulates through sequential ii-V movement; C section returns to tonic. Tag ending commonly used. Many recordings resolve with a Picardy-third (major) cadence.",
     "standard_key": "D minor (concert) is most common on bandstands; also called in C minor; vocal charts frequently in G minor.",
+    "section_markers": [
+      {"label": "A", "start": 1, "end": 14},
+      {"label": "A", "start": 15, "end": 28},
+      {"label": "B", "start": 29, "end": 36},
+      {"label": "C", "start": 37, "end": 44}
+    ],
+    "chord_progression_notes": "Extended AABC form with 14-bar A sections (44 bars total). A sections feature the characteristic Em7b5-A7b9 turnaround in D minor and Am7b5-D7b9 (ii-V to iv). Bridge modulates through sequential ii-V movement (Bm7-E7, Gm7-C7) leading to Fmaj7. Common substitutions: tritone subs on dominant chords (Eb7 for A7b9), Dm(maj7) for Dm6. Many versions end with a Picardy third resolution to Dmaj7. Tag endings are common in performance.",
     "history_and_facts": "Written by Arthur Schwartz with lyrics by Howard Dietz for the 1932 Broadway revue Flying Colors, Alone Together quickly attracted bandleaders; Leo Reisman had an early hit that same year. Its dark, minor-key character and elegant lyric made it a natural for both dance bands and jazz improvisers.\nArtie Shaw's 1939 recording is widely cited for cementing the tune's standard status, and modern jazz players embraced it for its rich harmonic motion, especially the sequential ii-V movement in the bridge. In the hard‑bop era, influential versions by Chet Baker (on the 1959 album Chet) and Kenny Dorham (Quiet Kenny, 1959) helped fix the tune in the small‑group repertoire.\nInstrumentalists most often call it in D minor, and many arrangements end with a Picardy‑third resolution to the parallel major-an expressive touch that highlights the tune's bittersweet mood.",
     "famous_recordings": [
-      "Chet Baker with Bill Evans - 1958 (The Complete Legendary Sessions)",
       "Clifford Brown & Max Roach - 1954 (Clifford Brown & Max Roach)",
-      "Artie Shaw and His Orchestra - 1939 (First Jazz Recording)",
+      "Chet Baker & Bill Evans - 1958 (Chet)",
       "Art Pepper - 1957 (Art Pepper Meets the Rhythm Section)",
-      "Ella Fitzgerald - 1961 (Ella Swings Brightly with Nelson)"
+      "Bill Evans & Jim Hall - 1963 (Alone Together)",
+      "Sonny Rollins - 1957 (Way Out West)",
+      "Ella Fitzgerald - 1961 (Ella Swings Brightly with Nelson)",
+      "Artie Shaw and His Orchestra - 1939 (Symphony of Swing)"
     ],
     "rank": 24,
     "chords": "| Dm6 | Em7b5 A7b9 | Dm6 | Em7b5 A7b9 |\n| Dm6 | Am7b5 D7b9 | Gm7 | Gm7 |\n| Bm7 E7 | Gm7 C7 | Fmaj7 | Em7b5 A7b9 |\n| Dmaj7 | Dmaj7 | Dmaj7 | Am7b5 |\n| D7b9 | Gm6 | Gm6 | Gm7b5 |\n| C7b9 | Fmaj7 | Em7b5 A7b9 | Dm6 |\n| Em7b5 A7b9 | Dm6 | Em7b5 A7b9 | Dm6 Bm7b5 |\n| Bb7 A7b9 | Dm6 | Em7b5 A7b9 |",
     "id": "mewjccgw9imw6m6c9l",
-    "is_approved": false,
+    "is_approved": true,
     "key": "",
     "youtube_video_ids": [
       {
-        "id": "3WsZbe3nTqs",
-        "title": "Alone Together",
-        "channelTitle": "Chet Baker - Topic",
+        "id": "3GHDan9lGBQ",
+        "title": "Clifford Brown Rare Footage with Max Roach 1955 - Alone Together - Jazz Legends",
+        "artist": "",
+        "channelTitle": "Arnojazz",
         "verified": true,
-        "added_date": "2025-12-14"
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "DMRvf6Mh710",
+        "title": "Sonny Rollins - Alone Together (Official Visualizer)",
+        "artist": "",
+        "channelTitle": "Sonny Rollins",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "YhiTcdTEGi0",
+        "title": "Alone Together",
+        "artist": "",
+        "channelTitle": "Ella Fitzgerald - Topic",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "2zOILAKrG3o",
+        "title": "Artie Shaw - Alone Together",
+        "artist": "",
+        "channelTitle": "Halleys4th",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "BN6ZS2EJctQ",
+        "title": "Alone Together",
+        "artist": "",
+        "channelTitle": "Bill Evans - Topic",
+        "verified": true,
+        "added_date": "2025-12-16"
       },
       {
         "id": "w4kG5Nb8pQo",
         "title": "Chet Baker & Bill Evans - Alone together",
+        "artist": "",
         "channelTitle": "The Pleasure of Jazz",
         "verified": true,
-        "added_date": "2025-12-14"
+        "added_date": "2025-12-16"
       },
       {
-        "id": "0E1ATLYlevQ",
-        "title": "Alone Together",
-        "channelTitle": "Chet Baker - Topic",
+        "id": "woauSFvxbYY",
+        "title": "Alone Together / Laura / Wild Is the Wind (Live) (Medley)",
+        "artist": "",
+        "channelTitle": "Ahmad Jamal - Topic",
         "verified": true,
-        "added_date": "2025-12-14"
-      },
-      {
-        "id": "9n0uJVYEBEU",
-        "title": "Alone Together",
-        "channelTitle": "Chet Baker - Topic",
-        "verified": true,
-        "added_date": "2025-12-14"
+        "added_date": "2025-12-16"
       }
     ],
     "youtube_backing_track_ids": [
       {
         "id": "gjkq2YHirZ0",
         "title": "Alone Together - Real Jazz Backing Track - Play Along",
+        "artist": "",
         "channelTitle": "Real Jazz Backing Tracks",
         "verified": true,
-        "added_date": "2025-12-14"
+        "added_date": "2025-12-16"
       },
       {
         "id": "5ElSHZQUvzY",
         "title": "Alone Together - Jazz Organ and Drums - Backing Track",
+        "artist": "",
         "channelTitle": "Phil Wilkinson Music",
         "verified": true,
-        "added_date": "2025-12-14"
+        "added_date": "2025-12-16"
       },
       {
         "id": "18hwcPg7r2A",
         "title": "Alone Together (130 BPM) - Backing Track",
+        "artist": "",
         "channelTitle": "Improv' Your Music",
         "verified": true,
-        "added_date": "2025-12-14"
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "KXlCtZ8t1X4",
+        "title": "Alone Together - Backing Track",
+        "artist": "",
+        "channelTitle": "PRACTICE JAZZ",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "jMo-lht0XwM",
+        "title": "[JAZZ STANDARD] Alone Together (Dm, M, 154bpm, Swing) I Jazz Backing Track",
+        "artist": "",
+        "channelTitle": "JAMMATES",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "e1ORHDiiM7Y",
+        "title": "Alone Together (Dmi) - Medium Up Swing || BACKING TRACK",
+        "artist": "",
+        "channelTitle": "JGC Play-Alongs",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "C01ytge5_mU",
+        "title": "Alone Together (Dmi) [No Piano] - Up Tempo Swing || BACKING TRACK",
+        "artist": "",
+        "channelTitle": "JGC Play-Alongs",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "BPSCif-AT2U",
+        "title": "Alone Together 200 bpm D Minor Backing Track for Saxophone & Trumpet",
+        "artist": "",
+        "channelTitle": "Jazz Jam Factory - Topic",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "ZRVxXOOfI50",
+        "title": "Alone Together (Ballad Version) - Backing Track",
+        "artist": "",
+        "channelTitle": "Visual Real Book",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "W9xJcVqI9k0",
+        "title": "Jazz standard \"Alone Together\" D- 100bmp Jazz - Medium Swing minus one",
+        "artist": "",
+        "channelTitle": "Jazzpal",
+        "verified": true,
+        "added_date": "2025-12-16"
       }
     ],
-    "last_updated": "2025-12-14T13:28:23.290121",
+    "last_updated": "2025-12-16T00:00:00.000Z",
     "validated": true
   },
   {
@@ -7773,53 +7870,90 @@
     "style": "ballad",
     "form": "32-bar AABA (8-8-8-8). A sections in Db major; bridge commonly modulates up a semitone to D major before returning to Db via cycle-of-fifths motion. Lead sheets vary in A-section measures 5-8 (common tritone substitutions/altered dominants), but the overall AABA design is consistent.",
     "standard_key": "Db major; also commonly called in C major (vocal)",
-    "history_and_facts": "Composed in 1930 by Johnny Green with lyrics by Edward Heyman, Robert Sour, and Frank Eyton, Body and Soul was introduced on Broadway in the revue Three's a Crowd (sung by Libby Holman) and quickly became a popular hit on both sides of the Atlantic. Early 1930 recordings by dance and pop orchestras proliferated, and Louis Armstrong's 1930 version helped usher the tune into the jazz repertoire.\n\nColeman Hawkins's 1939 tenor-saxophone recording is one of the most influential ballad performances in jazz history. With only a fleeting statement of the melody, Hawkins constructs a groundbreaking, harmonically rich improvisation that cemented the tune as a jazz standard and set a template for modern ballad playing. The song's 32-bar AABA form-A sections in Db with a striking half-step modulation to D major in the bridge-invites extensive reharmonization, making it a favorite vehicle for improvisers and vocalists alike.",
+    "history_and_facts": "Written in summer 1929 by Johnny Green at the request of British actress Gertrude Lawrence, who needed new material including a torch song. Lyrics were penned by Edward Heyman and Robert Sour, with Frank Eyton contributing additional verses for European performances. First recorded February 7, 1930 by Jack Hylton and His Orchestra. The song had already been recorded 22 times and was a hit in England before its Broadway premiere on October 15, 1930, in the revue \"Three's a Crowd,\" where Libby Holman introduced it to American audiences. Louis Armstrong made the first jazz recording in October 1930. Coleman Hawkins' landmark October 11, 1939 recording—where he largely improvised over the chord changes rather than stating the melody—revolutionized jazz saxophone and was entered into the Library of Congress National Recording Registry in 2004. The tune has been covered more than 1,700 times and remains one of the most recorded standards in jazz history. Johnny Green was inducted into the Songwriters Hall of Fame in 1972.",
     "famous_recordings": [
-      "Coleman Hawkins - 1939 (Single - RCA Bluebird)",
-      "Billie Holiday - 1940 (Vocalion single)",
-      "Sarah Vaughan - 1954 (with George Treadwell Orchestra)",
+      "Coleman Hawkins - 1939 (Single, Bluebird)",
       "John Coltrane - 1960 (Coltrane's Sound)",
-      "Dexter Gordon - 1967 (Live at Montmartre)"
+      "Dexter Gordon - 1965 (Gettin' Around)",
+      "Sarah Vaughan - 1954 (Sarah Vaughan, EmArcy)",
+      "Bill Evans Trio - 1959 (Portrait in Jazz)",
+      "Billie Holiday - 1940 (Vocalion single)"
     ],
     "rank": 29,
     "chords": "| Ebm7 Bb7b13 | Ebm7 Ab7 | Dbmaj7 Gb7 | Fm7 Edim7 |\n| Ebm7 Ebm7/ Db | Cm7b5 F7b9 | Bbm7 Ebm7 Ab7 | Db6 Gb7 Fh Bb7 |\n| Ebm7 Bb7b13 | Ebm7 Ab7 | Dbmaj7 Gb7 | Fm7 Edim7 |\n| Ebm7 Ebm7/ Db | Cm7b5 F7b9 | Bbm7 Ebm7 Ab7 | Db6 Em7 A7 |\n| Dmaj7 Em7 | Dmaj7/ F# Gm7 C7 | F#m7 Bm7 Em7 A7 | Dmaj7 |\n| Dm7 G7 | Em7 Ebdim7 | Dm7 G7 | C7 B7 Bb7 |\n| Ebm7 Bb7b13 | Ebm7 Ab7 | Dbmaj7 Gb7 | Fm7 Edim7 |\n| Ebm7 Ebm7/ Db | Cm7b5 F7b9 | Bbm7 Ebm7 Ab7 | Db6 Gb7 Fh Bb7 |",
+    "section_markers": [
+      {"label": "A", "start": 1, "end": 8},
+      {"label": "A", "start": 9, "end": 16},
+      {"label": "B", "start": 17, "end": 24},
+      {"label": "A", "start": 25, "end": 32}
+    ],
+    "chord_progression_notes": "Classic 32-bar AABA ballad with sophisticated harmonic movement. A sections in Db major feature chromatic ii-V-I progressions and passing diminished chords (Edim7 in bar 4). The bridge (bars 17-24) contains one of jazz's most famous modulations: up a semitone to D major (bars 17-20), then to C major (bars 21-24), before returning to Db via chromatic descent (C7-B7-Bb7). Turnarounds vary between A sections—first and third A end Db6-Gb7-Fh-Bb7, while second A ends Em7-A7 to set up the D major modulation. Common substitutions include Coltrane changes over the bridge, tritone subs in bar 1 (Bb7b13), and reharmonizations of bars 5-8. The Gb7 in bar 3 is often voiced as Gb7#11. Advanced players frequently employ descending ii-V sequences through the bridge.",
     "id": "mewjccgxfma1rhdv4gc",
-    "is_approved": false,
+    "is_approved": true,
     "key": "",
     "youtube_video_ids": [
       {
         "id": "LuNrVHCBSjE",
         "title": "Body and Soul",
+        "artist": "",
         "channelTitle": "Coleman Hawkins - Topic",
-        "verified": true,
-        "added_date": "2025-12-14"
-      },
-      {
-        "id": "zUFg6HvljDE",
-        "title": "Coleman Hawkins-Body and Soul",
-        "channelTitle": "Lennart Länk",
         "verified": true,
         "added_date": "2025-12-14"
       },
       {
         "id": "Pkvju_DlP8A",
         "title": "Coleman Hawkins - Body and Soul",
+        "artist": "",
         "channelTitle": "Classic Mood Experience",
         "verified": true,
         "added_date": "2025-12-14"
       },
       {
-        "id": "1jPS2cELrlw",
-        "title": "Body & Soul",
-        "channelTitle": "Coleman Hawkins - Topic",
+        "id": "4azzupZwiy4",
+        "title": "Body and Soul",
+        "artist": "",
+        "channelTitle": "John Coltrane - Topic",
         "verified": true,
-        "added_date": "2025-12-14"
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "Tuo1aju4JnY",
+        "title": "Sarah Vaughan with Clifford Brown - Body And Soul (EmArcy Records 1954)",
+        "artist": "",
+        "channelTitle": "RoundMidnightTV",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "-20Js5MsCss",
+        "title": "Body & Soul",
+        "artist": "",
+        "channelTitle": "Bill Evans - Topic",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "Ucq0Xr5g8R4",
+        "title": "Dexter Gordon - Body and Soul (4K 60 FPS Colorized & Restored Audio)",
+        "artist": "",
+        "channelTitle": "Kirill Poudavoff Music",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "SsT3F51bMQM",
+        "title": "Billie Holiday - Body And Soul (1940)",
+        "artist": "",
+        "channelTitle": "Okmusix",
+        "verified": true,
+        "added_date": "2025-12-16"
       }
     ],
     "youtube_backing_track_ids": [
       {
         "id": "9uBq7jUT5Xs",
         "title": "Body and Soul : Backing Track",
+        "artist": "",
         "channelTitle": "Guitare Improvisation",
         "verified": true,
         "added_date": "2025-12-14"
@@ -7827,6 +7961,7 @@
       {
         "id": "56jVM7hELP4",
         "title": "Jazz Backing Track - Body and Soul",
+        "artist": "",
         "channelTitle": "Eagleheart Jazz Channel",
         "verified": true,
         "added_date": "2025-12-14"
@@ -7834,12 +7969,53 @@
       {
         "id": "zstP30EII9Q",
         "title": "Body and Soul I Jazz Doblestandard Play-Alongs",
+        "artist": "",
         "channelTitle": "Jazz Doblestandard",
         "verified": true,
         "added_date": "2025-12-14"
+      },
+      {
+        "id": "LacBruNbrfc",
+        "title": "BODY AND SOUL chord progression - Jazz Backing Track Play Along",
+        "artist": "",
+        "channelTitle": "Backingtracks JAZZ",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "Kr2mZ7bMy2I",
+        "title": "Body and Soul - Organ and Drums Backing Track",
+        "artist": "",
+        "channelTitle": "Phil Wilkinson Music",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "oqXOoctzZDY",
+        "title": "Body And Soul - Real Jazz Backing Track - Play Along",
+        "artist": "",
+        "channelTitle": "Real Jazz Backing Tracks",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "OO1P2fb30Lc",
+        "title": "Body And Soul - Backing Track [50 Jazz Standard Every Jazz Musicians need to know]",
+        "artist": "",
+        "channelTitle": "PRACTICE JAZZ",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "hz-dmNM-IiA",
+        "title": "New Jazz Backing Track BODY AND SOUL Db Band Live Play Along Jazzing",
+        "artist": "",
+        "channelTitle": "Jazzing",
+        "verified": true,
+        "added_date": "2025-12-16"
       }
     ],
-    "last_updated": "2025-12-14T13:28:23.290186",
+    "last_updated": "2025-12-16T00:00:00.000Z",
     "validated": true
   },
   {
@@ -11348,20 +11524,29 @@
     "composer": "Antônio Carlos Jobim (lyrics: Antônio Carlos Jobim)",
     "year": "1967",
     "style": "bossa nova",
-    "form": "AABA, 32 bars (8-8-8-8). Common lead sheets keep the A sections in the home major while the bridge moves through a series of secondary dominants/temporary tonicizations before returning; reharmonizations (including tritone-sub Vs) are frequently used.",
+    "form": "AABA, 32 bars (8-8-8-8). Modified song form with two distinct A sections (bars 1-8, 17-24) framing a modulatory section (bars 9-16) and contrasting bridge (bars 25-32). The second 8-bar section functions as an extended transition that tonicizes D major (III) before returning home. Common lead sheets keep the A sections in the home major while the bridge moves through secondary dominants/temporary tonicizations; reharmonizations (including tritone-sub Vs) are frequently used. Note: Some charts include a 2-bar Bbm7-Eb7 vamp ending not present in original Jobim recordings.",
     "standard_key": "Bb major; also A major (vocal)",
-    "history_and_facts": "Composed by Antônio Carlos Jobim and first issued on his A&M album Wave (1967), Triste quickly entered the jazz and bossa nova repertoire. Jobim also provided the original Portuguese lyric (opening with the line “Triste é viver na solidão”).\nFrank Sinatra's studio version, arranged by Eumir Deodato and released on Sinatra & Company (1971), helped popularize the tune in the U.S. among jazz and pop vocalists. Ella Fitzgerald later included it on her tribute album Ella Abraça Jobim (1981), further cementing its status as a standard. On bandstands it is typically called as a medium bossa in Bb, though vocalists often favor A to suit range.",
+    "history_and_facts": "Composed by Antônio Carlos Jobim and first issued on his A&M album Wave (1967), Triste quickly entered the jazz and bossa nova repertoire. Jobim also provided the original Portuguese lyric (opening with the line \"Triste é viver na solidão\").\nFrank Sinatra's studio version, arranged by Eumir Deodato and released on Sinatra & Company (1971), helped popularize the tune in the U.S. among jazz and pop vocalists. Ella Fitzgerald later included it on her tribute album Ella Abraça Jobim (1981), further cementing its status as a standard. On bandstands it is typically called as a medium bossa in Bb, though vocalists often favor A to suit range.",
     "famous_recordings": [
       "Antônio Carlos Jobim - 1967 (Wave)",
       "Elis Regina & Tom Jobim - 1974 (Elis & Tom)",
+      "Bill Evans - 1971 (The Bill Evans Album)",
       "Frank Sinatra & Antônio Carlos Jobim - 1971 (Sinatra & Company)",
       "Oscar Peterson Trio - 1970 (Tristeza on Piano)",
       "Sarah Vaughan - 1978 (O Som Brasileiro de Sarah Vaughan)"
     ],
     "rank": 25,
-    "chords": "| Amaj7 | Amaj7 | Fmaj7#11 | Fmaj7#11 |\n| Amaj7 | Amaj7 | C#m7 | F#7b9 |\n| Bm7 | G#m7b5 C#7b9 | F#m7 | G#7#9 |\n| C#maj7 | D#m7 G#7 | C#maj7 F#7 | Bm7 E7 |\n| Amaj7 | Amaj7 | Am7 | D7 |\n| Amaj7 | Amaj7 | Em7 | A7 |\n| Dmaj7 | G7 | C#m7 F#7 | B7 |\n| Bm7 | E7 | Am7 D7 | Am7 D7 |\n| Am7 D7 | Am7 D7 |",
+    "chords": "| Bbmaj7 | Bbmaj7 | Gbmaj7#11 | Gbmaj7#11 |\n| Bbmaj7 | Bbmaj7 | Dm7 | G7b9 |\n| Cm7 | Am7b5 D7b9 | Gm7 | A7#9 |\n| Dmaj7 | Em7 A7 | Dmaj7 G7 | Cm7 F7 |\n| Bbmaj7 | Bbmaj7 | Bbm7 | Eb7 |\n| Bbmaj7 | Bbmaj7 | Fm7 | Bb7 |\n| Ebmaj7 | Ab7 | Dm7 G7 | C7 |\n| Cm7 | F7 | Bbm7 Eb7 | Bbm7 Eb7 |\n| Bbm7 Eb7 | Bbm7 Eb7 |",
+    "section_markers": [
+      {"label": "A", "start": 1, "end": 8},
+      {"label": "A", "start": 9, "end": 16},
+      {"label": "B", "start": 17, "end": 24},
+      {"label": "A", "start": 25, "end": 32},
+      {"label": "Vamp", "start": 33, "end": 34}
+    ],
+    "chord_progression_notes": "Bars 3-4: Characteristic bII Lydian chord (Gbmaj7#11) is hallmark Jobim sound. Bar 15: Dmaj7 creates three bars in D major (bars 13-15) with turnaround. Bars 27-28: Original uses Cdim7 passing chord, not C7 as in some Real Books. Bar 19: Bbm7 is borrowed from parallel minor (modal interchange). Bars 33-34: Optional vamp ending (Bbm7-Eb7) found in some charts but NOT in original recordings. Common substitutions: G7b9→Db7alt, A7#9→Eb7#11, extensive tritone subs on dominants.",
     "id": "mewjccgxt2skrg0ynum",
-    "is_approved": false,
+    "is_approved": true,
     "key": "",
     "youtube_video_ids": [
       {
@@ -11416,7 +11601,7 @@
         "added_date": "2025-12-14"
       }
     ],
-    "last_updated": "2025-12-14T13:28:23.290215",
+    "last_updated": "2025-12-16T00:00:00.000Z",
     "validated": true
   },
   {

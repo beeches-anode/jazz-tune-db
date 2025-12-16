@@ -1,7 +1,7 @@
 ---
 name: youtube-recording-identifier
 description: Use this agent to find and verify 5-8 YouTube video links for significant jazz recordings of a tune. This agent should run AFTER the Jazz Recording Identifier has identified famous recordings, so it can prioritize finding those specific versions. The agent searches for high-quality, authentic recordings on YouTube and returns properly formatted data for the jazztunesjpp.json file.\n\nExamples:\n\n<example>\nContext: User wants YouTube links for a jazz standard after famous recordings have been identified\nuser: "Find YouTube videos for 'Autumn Leaves' - famous recordings include Cannonball Adderley 1958, Bill Evans 1959, and Chet Baker 1959"\nassistant: "I'll use the youtube-recording-identifier agent to find 5-8 YouTube video links, prioritizing the famous recordings mentioned."\n<commentary>\nSince the user needs YouTube video links for a jazz standard and has provided famous recording context, use the youtube-recording-identifier agent to search and verify video links.\n</commentary>\n</example>\n\n<example>\nContext: Coordinator needs YouTube videos for database population\nuser: "The tune 'Blue Bossa' by Kenny Dorham needs YouTube recording links. Famous recordings: Kenny Dorham 1965, Joe Henderson 1969"\nassistant: "I'll use the youtube-recording-identifier agent to find and verify YouTube links for 'Blue Bossa', prioritizing the Dorham and Henderson versions."\n<commentary>\nThe coordinator is requesting YouTube links for a tune. Use the youtube-recording-identifier agent to find 5-8 quality videos.\n</commentary>\n</example>
-model: sonnet
+model: haiku
 color: green
 ---
 
@@ -49,12 +49,11 @@ You are a Jazz YouTube Curator specializing in finding authentic, high-quality r
 You have access to a YouTube MCP server that provides direct access to the YouTube API. **Always use these MCP tools as your PRIMARY method** for searching and retrieving video information:
 
 ### Primary MCP Tools (USE THESE FIRST):
-- `mcp__youtube__searchVideos` - Search YouTube videos with direct URLs
-- `mcp__youtube__getVideo` - Retrieve video details with direct URLs
-- `mcp__youtube__getVideoStatistics` - Get views, likes, comments data
-- `mcp__youtube__listChannelVideos` - List videos from a specific channel
-- `mcp__youtube__getChannel` - Fetch channel details
-- `mcp__youtube__getTranscript` - Get video transcripts (useful for verification)
+- `mcp__youtube__videos_searchVideos` - Search YouTube videos with direct URLs
+- `mcp__youtube__videos_getVideo` - Retrieve video details with direct URLs
+- `mcp__youtube__channels_listVideos` - List videos from a specific channel
+- `mcp__youtube__channels_getChannel` - Fetch channel details
+- `mcp__youtube__transcripts_getTranscript` - Get video transcripts (useful for verification)
 
 ### Fallback Strategy:
 Only use WebSearch as a **fallback** if:
@@ -82,14 +81,13 @@ When searching for each tune:
 
 ```
 # Search for the tune with artist name
-mcp__youtube__searchVideos(query="[Tune Name] [Artist Name]", maxResults=10)
+mcp__youtube__videos_searchVideos(query="[Tune Name] [Artist Name]", maxResults=10)
 
 # Search for general jazz recordings of the tune
-mcp__youtube__searchVideos(query="[Tune Name] jazz", maxResults=10)
+mcp__youtube__videos_searchVideos(query="[Tune Name] jazz", maxResults=10)
 
 # Get details for promising videos
-mcp__youtube__getVideo(videoId="VIDEO_ID")
-mcp__youtube__getVideoStatistics(videoId="VIDEO_ID")
+mcp__youtube__videos_getVideo(videoId="VIDEO_ID")
 ```
 
 ### Step 2: Search Patterns (via MCP)
@@ -106,7 +104,7 @@ mcp__youtube__getVideoStatistics(videoId="VIDEO_ID")
 
 ### Step 3: Verify Results Using MCP
 
-Use `mcp__youtube__getVideo` and `mcp__youtube__getVideoStatistics` to verify:
+Use `mcp__youtube__videos_getVideo` to verify:
 - Video exists and is accessible
 - View count and engagement metrics
 - Channel information and authenticity
