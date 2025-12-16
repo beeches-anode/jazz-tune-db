@@ -1375,6 +1375,13 @@
     ],
     "rank": 14,
     "chords": "| Em7b5 | A7b9 | Dm | Dm |\n| Gm7 | C7 | Fmaj7 | Em7b5 A7b9 |\n| Dm | Gm7 | Bb7 | A7b9 |\n| Dm | G7#11 | Em7b5 | A7b9 |\n| Em7b5 | A7b9 | Dm | Dm |\n| Gm7 | C7 | Fmaj7 | Em7b5 A7b9 |\n| Dm | Gm7 | Bb7 | A7b9 |\n| Dm B7 | Bb7#11 A7b9 | Dm | Dm |",
+    "section_markers": [
+      {"label": "A", "start": 1, "end": 8},
+      {"label": "A", "start": 9, "end": 16},
+      {"label": "B", "start": 17, "end": 24},
+      {"label": "A", "start": 25, "end": 32}
+    ],
+    "chord_progression_notes": "D minor blues-influenced standard with sophisticated minor ii-V-i progressions. Each A section opens with Em7b5-A7b9 (ii-V in Dm), moves through Gm7-C7 to Fmaj7 (ii-V-I in relative major F), then returns to D minor. Middle portion features Dm-Gm7-Bb7-A7b9 (i-iv-bVI7-V7), where Bb7 functions as a tritone substitution for E7 (V/V). Final A section contains chromatic turnaround: Dm-B7-Bb7#11-A7b9, creating stepwise descending bass motion (D-B-Bb-A) back to tonic. Can be performed in 3/4 waltz or 4/4 swing.",
     "youtube_video_ids": [
       {
         "id": "bD3zPOYCOws",
@@ -1576,7 +1583,14 @@
     "is_approved": false,
     "key": "",
     "last_updated": "2025-12-14T09:36:31.957491",
-    "validated": true
+    "validated": true,
+    "section_markers": [
+      {"label": "A", "start": 1, "end": 8},
+      {"label": "A", "start": 9, "end": 16},
+      {"label": "B", "start": 17, "end": 32},
+      {"label": "A", "start": 33, "end": 40}
+    ],
+    "chord_progression_notes": "A sections use a progression similar to 'Take the A Train' with tritone subs (Gb7 instead of C7). The 16-bar bridge is unique—twice the typical length—modulating through three key centers using backdoor dominants (bVII7 chords): Db area (F#maj7→B7), E area (F#m7→D7), F area (Gm7→Eb7), then a standard iii-VI-ii-V turnaround (Am7-D7-Gm7-C7) to return home. Jobim's harmonic ambiguity—never landing on expected tonic chords in the bridge—is a hallmark of this tune."
   },
   {
     "tune_name": "There Is No Greater Love",
@@ -2495,9 +2509,89 @@
         "channelTitle": "Phil Wilkinson Music",
         "verified": true,
         "added_date": "2025-12-14"
+      },
+      {
+        "id": "G-fartkiz5g",
+        "title": "It Could Happen To You | 100 bpm | Jazz Ballad | Play-Along Backing Track",
+        "artist": "",
+        "channelTitle": "Edwin's Jazz Jam",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "tURC61sthc8",
+        "title": "It Could Happen To You (Eb) - Medium Slow Swing || BACKING TRACK",
+        "artist": "",
+        "channelTitle": "JGC Play-Alongs",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "jhbB0k_Xk5U",
+        "title": "It Could Happen To You - Real Jazz Backing Track - Play Along",
+        "artist": "",
+        "channelTitle": "Real Jazz Backing Tracks",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "2gat18YTlMs",
+        "title": "It Could Happen To You Eb med Bass Line PLAY ALONG Backing Track",
+        "artist": "",
+        "channelTitle": "MrSunnybass",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "o1xiQKw9ilg",
+        "title": "It Could Happen To You | 140 bpm | Jazz Swing | Play-Along Backing Track",
+        "artist": "",
+        "channelTitle": "Edwin's Jazz Jam",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "KtzKD4QiYAg",
+        "title": "It Could Happen To You (Eb) - Bossa Nova Medium || BACKING TRACK",
+        "artist": "",
+        "channelTitle": "JGC Play-Alongs",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "5ov9YJeycPk",
+        "title": "It Could Happen To You | 180 bpm | Jazz Swing | Play-Along Backing Track",
+        "artist": "",
+        "channelTitle": "Edwin's Jazz Jam",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "lAEwXxSHah0",
+        "title": "It Could Happen To You (Eb) - MILES DAVIS ARRANGEMENT || BACKING TRACK",
+        "artist": "",
+        "channelTitle": "JGC Play-Alongs",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "HIw3v63oLe0",
+        "title": "It Could Happen To You (Eb) - Gypsy Fast || BACKING TRACK",
+        "artist": "",
+        "channelTitle": "JGC Play-Alongs",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "QesyZ7pNL4U",
+        "title": "It Could Happen To You (Eb) [No Piano] - Up Tempo Swing TRADE 4's || BACKING TRACK",
+        "artist": "",
+        "channelTitle": "JGC Play-Alongs",
+        "verified": true,
+        "added_date": "2025-12-16"
       }
     ],
-    "last_updated": "2025-12-14T13:28:23.290139",
+    "last_updated": "2025-12-16T00:00:00.000000",
     "validated": true
   },
   {
@@ -2673,7 +2767,7 @@
     "composer": "Victor Young (lyrics: Ned Washington)",
     "year": "1944",
     "style": "ballad",
-    "form": "32-bar AABA (8 bars per section). Commonly notated in Bb major. A sections begin away from the tonic with chains of ii-V progressions and deceptive resolutions; the bridge continues sequential ii-V movement through remote key centers before returning to Bb on the final A. Authoritative lead sheets differ on bars 7-8 of the A sections and certain bridge dominants (frequent tritone substitutions and alternate cadences).",
+    "form": "ABCD (8-8-8-8). Through-composed 32-bar form with four distinct 8-bar sections. A section (bars 1-8) opens with unresolved minor ii-V progressions away from the tonic; B section (bars 9-16) continues sequential ii-V movement through multiple key centers, finally stating the tonic Bbmaj7 in bar 9; C section (bars 17-24) features extended dominant and minor harmonies; D section (bars 25-32) begins with the same Em7b5-A7b9 opening as the A section but diverges harmonically with backcycling ii-V progressions resolving to the tonic. Note: Some sources label this ABCA' due to the shared opening gesture in sections A and D, but harmonically only 2 of 8 bars are identical, making ABCD more accurate. Notable for delayed tonic arrival, unresolved ii-V chains, and sophisticated voice leading.",
     "standard_key": "Bb major; also C major and Eb major (often for vocalists)",
     "history_and_facts": "Composed by Victor Young as a haunting instrumental theme for the 1944 Paramount film The Uninvited, the piece acquired Ned Washington's lyrics in 1946 and quickly entered the pop and jazz repertoire. Early postwar recordings helped popularize it, and its cinematic origin explains the tune's striking, non‑tonic opening and dramatic harmonic motion.\nIn jazz, Stella by Starlight became a proving ground for advanced harmony: the melody rides over a web of ii-V progressions and deceptive cadences that obscure the home key until the final cadence. It is a staple in Real Book editions and on bandstands, often called in Bb for instrumentalists, though the original film score centered in a minor key and vocalists choose comfortable transpositions.\nDefining jazz interpretations span decades, notably Miles Davis's classic studio cut with his sextet in 1958 and his ballad reading from the 1964 Lincoln Center concert. The tune's rich changes have made it a perennial for re-harmonization and pedagogy.",
     "famous_recordings": [
@@ -2747,9 +2841,16 @@
     "chords": "| Em7b5 | A7b9 | Cm7 | F7 |\n| Fm7 | Bb7 | Ebmaj7 | Ab7 |\n| Bbmaj7 | Em7b5 A7b9 | Dm7 | Bbm7 Eb7 |\n| Fmaj7 | Em7b5 | Ebmaj7#11 | D7b9 |\n| G7#5 | G7#5 | Cm7 | Cm7 |\n| Ab7#11 | Ab7#11 | Bbmaj7 | Bbmaj7 |\n| Em7b5 | A7b9 | Dm7b5 | G7b9 |\n| Cm7b5 | F7b9 | Bbmaj7 | Bbmaj7 |",
     "id": "mewjccgwxfi7i9stjb",
     "is_approved": false,
-    "key": "",
+    "key": "Bb",
     "last_updated": "2025-12-14T09:36:31.957507",
-    "validated": true
+    "validated": true,
+    "section_markers": [
+      {"label": "A", "start": 1, "end": 8},
+      {"label": "B", "start": 9, "end": 16},
+      {"label": "C", "start": 17, "end": 24},
+      {"label": "D", "start": 25, "end": 32}
+    ],
+    "chord_progression_notes": "Stella by Starlight is renowned for its harmonic sophistication and through-composed structure. Key features: (1) Delayed tonic - Bbmaj7 doesn't appear until bar 9; (2) Unresolved ii-V progressions - Em7b5-A7b9 opening never resolves to Dm in the A section, creating harmonic ambiguity; (3) Sequential descending motion - ii-V chains move down by whole steps (Em7b5-A7 to Dm7 to Cm7, etc.); (4) Multiple implied key centers - D minor, F major, Eb major, C minor all suggested without clear tonicization; (5) Extensive use of altered dominants (b9, #5, #11) and half-diminished chords; (6) 'Backcycling' in final D section with chromatic descending ii-V progressions (Em7b5-A7b9, Dm7b5-G7b9, Cm7b5-F7b9) leading to final tonic resolution. Common substitutions include tritone subs on bridge dominants and variations in bars 7-8 and 10. The Real Book version (reflected in this database) represents modern jazz interpretation; earlier lead sheets may differ slightly in specific chord voicings and extensions."
   },
   {
     "tune_name": "Billie's Bounce",
@@ -2768,6 +2869,7 @@
     ],
     "rank": 16,
     "chords": "| F7 | Bb7 | F7 | Cm7 F7 |\n| Bb7 | Bdim7 | F7 | Am7 D7 |\n| Gm7 | C7 | F7 D7 | Gm7 C7 |",
+    "section_markers": [{"label": "A", "start": 1, "end": 12}],
     "id": "mewjccgwxjf9av70h98",
     "is_approved": true,
     "key": "F",
