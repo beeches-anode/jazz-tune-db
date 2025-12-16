@@ -838,24 +838,27 @@
   },
   {
     "tune_name": "Satin Doll",
-    "composer": "Duke Ellington, Billy Strayhorn (lyrics: Johnny Mercer)",
-    "year": "1953",
+    "composer": "Duke Ellington, Billy Strayhorn",
+    "lyricist": "Johnny Mercer",
+    "year": 1953,
     "style": "swing",
     "form": "AABA, 32 bars. Each A section is 8 bars in C major built from repeated ii-V progressions (Dm7-G7) with secondary dominants and chromatic approach chords; the 8-bar bridge is a circle-of-fifths chain of dominant 7ths (commonly E7-A7-D7-G7-C7-F7-Bb7-Eb7) that back-cycles to the final A. Common variations include tritone substitutions in the bridge and a 2-4 bar I-VI7-II7-V7 turnaround/tag at the end.",
     "standard_key": "C major (concert); also Bb major (vocal)",
-    "history_and_facts": "Composed in 1953 by Duke Ellington with crucial collaboration from Billy Strayhorn, Satin Doll quickly became a signature Ellington theme and a frequent concert closer. Johnny Mercer added the widely sung lyrics several years later, helping the piece cross over from an instrumental band feature to a vocal standard.\nThe tune is prized by musicians for its elegant, back-cycling dominant movement in the bridge and the idiomatic Ellington/Strayhorn ii-V writing in the A sections. On bandstands, players often use tritone substitutions through the bridge and tag the final A with a short I-VI-II-V turnaround.\nSatin Doll's first recordings by the Ellington Orchestra set the template; later vocal and trio versions-particularly those by Ella Fitzgerald and Oscar Peterson-cemented its status as a must-know standard for jam sessions and big band books alike.",
-    "famous_recordings": [
-      "Duke Ellington and His Orchestra - 1953",
-      "Ella Fitzgerald - Duke Ellington Song Book - 1957",
-      "Johnny Hodges and His Orchestra - Blues A-Plenty - 1958",
-      "Wes Montgomery Trio - A Dynamic New Sound - 1959",
-      "Oscar Peterson Trio - Night Train - 1962"
-    ],
-    "rank": 18,
     "chords": "| Dm7 G7 | Dm7 G7 | Em7 A7 | Em7 A7 |\n| Am7 D7 | Abm7 Db7 | Cmaj7 F7 | Em7 A7 |\n| Dm7 G7 | Dm7 G7 | Em7 A7 | Em7 A7 |\n| Am7 D7 | Abm7 Db7 | Cmaj7 | Cmaj7 |\n| Gm7 C7 | Gm7 C7 | Fmaj7 | Fmaj7 |\n| Am7 D7 | Am7 D7 | G7 | G7 |\n| Dm7 G7 | Dm7 G7 | Em7 A7 | Em7 A7 |\n| Am7 D7 | Abm7 Db7 | Cmaj7 F7 | Em7 A7 |",
-    "id": "mewjccgwcbx3yf424ei",
-    "is_approved": false,
-    "key": "",
+    "section_markers": [
+      {"label": "A", "start": 1, "end": 8},
+      {"label": "A", "start": 9, "end": 16},
+      {"label": "B", "start": 17, "end": 24},
+      {"label": "A", "start": 25, "end": 32}
+    ],
+    "chord_progression_notes": "Classic Ellington/Strayhorn composition built on ii-V sequences. A sections feature the signature Abm7-Db7 tritone substitution in bar 6 (and bars 14, 30), replacing diatonic Am7-D7. During solos, doubled chords (Dm7 G7 in one bar) are typically played as one chord per bar. Bridge (bars 17-24) moves to F major via Gm7-C7, then Am7-D7-G7 creating V/V back to C. Common variations: tritone subs on bridge dominants (Gb7 for C7, Eb7 for G7), altered dominants (G7alt in bar 24), and chromatic approach chords (B7-Bbmaj7 between bars 7-8). Turnaround tag (Cmaj7-A7-Dm7-G7) often added for repeating sections.",
+    "history_and_facts": "Composed in 1953 when Duke Ellington signed with Capitol Records; first recorded April 6, 1953. Ellington wrote the main melodic themes, then asked Billy Strayhorn to harmonize and orchestrate. Strayhorn wrote an original lyric as a tribute to his mother (whom he called 'Satin Doll'), but this lyric was never performed and is now lost. Johnny Mercer was commissioned to write new lyrics around 1959 (copyright registered 1960). The song charted in 1953 and remained popular throughout the 1950s. 'Satin Doll' became such a signature tune that it was typically the closing number at Ellington concerts. The identity of the 'Satin Doll' remains disputed: some say Strayhorn's mother, others claim Duke's wife Edna, while Duke's son Mercer believed it was written for Duke's longtime partner Bea 'Evie' Ellis.",
+    "famous_recordings": [
+      "Duke Ellington and His Orchestra - Capitol Records - 1953",
+      "Ella Fitzgerald - Ella Fitzgerald Sings the Duke Ellington Song Book - 1957",
+      "Johnny Hodges and His Orchestra - Blues A-Plenty - 1958",
+      "Wes Montgomery Trio - A Dynamic New Sound - 1959"
+    ],
     "youtube_video_ids": [
       {
         "id": "CI2ieY4qqYQ",
@@ -868,7 +871,7 @@
       {
         "id": "wTFPV1pk654",
         "title": "Duke Ellington - Satin Doll (1962) [official video]",
-        "artist": "",
+        "artist": "Duke Ellington",
         "channelTitle": "StoryvilleRecords",
         "verified": true,
         "added_date": "2025-12-14"
@@ -876,7 +879,7 @@
       {
         "id": "Gj42JotNUko",
         "title": "Duke Ellington - Satin Doll 1953",
-        "artist": "",
+        "artist": "Duke Ellington",
         "channelTitle": "JazzBreakTV",
         "verified": true,
         "added_date": "2025-12-14"
@@ -884,7 +887,7 @@
       {
         "id": "6I77X2joc3s",
         "title": "Oscar Peterson Trio: Satin Doll (1988)",
-        "artist": "",
+        "artist": "Oscar Peterson",
         "channelTitle": "Oscar Peterson (The Estate of Oscar Peterson)",
         "verified": true,
         "added_date": "2025-12-14"
@@ -892,13 +895,37 @@
       {
         "id": "AFDCk57icnc",
         "title": "Satin Doll - Ella Fitzgerald & Count Basie (1963)",
-        "artist": "",
+        "artist": "Ella Fitzgerald",
         "channelTitle": "Ella Fitzgerald - Topic",
         "verified": true,
         "added_date": "2025-12-14"
+      },
+      {
+        "id": "8dS2Dod7CIY",
+        "title": "Satin Doll - Johnny Hodges (Blues-A-Plenty 1958)",
+        "artist": "Johnny Hodges",
+        "channelTitle": "Johnny Hodges - Topic",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "vtksZaZac44",
+        "title": "Wes Montgomery Trio - Satin Doll (Official Audio)",
+        "artist": "Wes Montgomery",
+        "channelTitle": "Wes Montgomery",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "wQ-n7jhs_K8",
+        "title": "Satin Doll - Duke Ellington (Jazz Party 1959)",
+        "artist": "Duke Ellington",
+        "channelTitle": "Duke Ellington - Topic",
+        "verified": true,
+        "added_date": "2025-12-16"
       }
     ],
-    "backing_tracks": [
+    "youtube_backing_track_ids": [
       {
         "id": "pntkeVUY0iU",
         "title": "Satin Doll - Play Along - Backing Track",
@@ -908,7 +935,7 @@
       },
       {
         "id": "L575P2DUw9k",
-        "title": "Satin Doll - Ballad (60 bpm) No Piano backing track for comping practice",
+        "title": "Satin Doll - Ballad (60 bpm) No Piano backing track",
         "channelTitle": "Primeau Guitar Studio",
         "tempo_style": "Ballad 60 bpm",
         "verified": true,
@@ -921,10 +948,59 @@
         "tempo_style": "Slow Swing 100 bpm",
         "verified": true,
         "added_date": "2025-12-06"
+      },
+      {
+        "id": "j1XQUE6GVpY",
+        "title": "Satin Doll (Duke Ellington) : Backing Track",
+        "channelTitle": "Guitare Improvisation",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "dkQplSF562Y",
+        "title": "SATIN DOLL chord progression - Jazz Backing Track Play Along",
+        "channelTitle": "Backingtracks JAZZ",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "BuHk-odt1cI",
+        "title": "Satin Doll - Jazz Standard Backing Track",
+        "channelTitle": "PRACTICE JAZZ",
+        "tempo_style": "Multi-format",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "Q2LmdJf77HM",
+        "title": "Satin Doll (110 BPM, medium slow swing) Backing Track",
+        "channelTitle": "Andi Sagmeister",
+        "tempo_style": "Medium Swing 110 bpm",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "0M_zFdUVOi8",
+        "title": "New Jazz Backing Track SATIN DOLL (C)",
+        "channelTitle": "Jazzing",
+        "verified": true,
+        "added_date": "2025-12-16"
+      },
+      {
+        "id": "vEG0Xgw1ZDQ",
+        "title": "Satin Doll (bassless backing track)",
+        "channelTitle": "Bassless Backing Tracks",
+        "tempo_style": "Bassless",
+        "verified": true,
+        "added_date": "2025-12-16"
       }
     ],
-    "last_updated": "2025-12-14",
-    "validated": true
+    "id": "mewjccgwcbx3yf424ei",
+    "is_approved": true,
+    "key": "",
+    "rank": 18,
+    "validated": true,
+    "last_updated": "2025-12-16T00:00:00.000Z"
   },
   {
     "tune_name": "Autumn Leaves",
