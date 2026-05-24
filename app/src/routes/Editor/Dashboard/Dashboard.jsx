@@ -29,7 +29,7 @@ export const Dashboard = () => {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-2xl font-bold text-gray-900 mb-4">No database loaded</h1>
-          <Button onClick={() => navigate('/')}>Go to Browser</Button>
+          <Button onClick={() => navigate('/edit')}>Go to Browser</Button>
         </div>
       </div>
     );
@@ -44,7 +44,7 @@ export const Dashboard = () => {
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <h1 className="text-2xl font-bold text-jazz-blue">Data Validation Dashboard</h1>
-            <Button variant="ghost" onClick={() => navigate('/')}>
+            <Button variant="ghost" onClick={() => navigate('/edit')}>
               ← Back to Browser
             </Button>
           </div>
@@ -150,7 +150,7 @@ export const Dashboard = () => {
             <Button
               variant="secondary"
               onClick={() => {
-                navigate('/?filter=no-youtube');
+                navigate('/edit?filter=no-youtube');
                 // This would need to be implemented in TuneBrowser
               }}
             >
@@ -159,7 +159,7 @@ export const Dashboard = () => {
             <Button
               variant="secondary"
               onClick={() => {
-                navigate('/?filter=no-key');
+                navigate('/edit?filter=no-key');
               }}
             >
               Find: Missing Standard Key ({totalTunes - fieldStats.standardKey.count})
@@ -167,7 +167,7 @@ export const Dashboard = () => {
             <Button
               variant="secondary"
               onClick={() => {
-                navigate('/?filter=no-sections');
+                navigate('/edit?filter=no-sections');
               }}
             >
               Find: No Section Markers ({totalTunes - fieldStats.sectionMarkers.count})
@@ -175,7 +175,7 @@ export const Dashboard = () => {
             <Button
               variant="secondary"
               onClick={() => {
-                navigate('/?filter=incomplete');
+                navigate('/edit?filter=incomplete');
               }}
             >
               Find: Incomplete Tunes ({completionStats.incomplete + completionStats.partial})

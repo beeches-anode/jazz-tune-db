@@ -192,7 +192,7 @@ export const TuneBrowser = () => {
           <div className="flex items-center justify-between mb-4">
             <h1 className="text-2xl font-bold text-jazz-blue">Jazz DB Manager</h1>
             <div className="flex gap-2">
-              <Button variant="ghost" onClick={() => navigate('/dashboard')}>
+              <Button variant="ghost" onClick={() => navigate('/edit/dashboard')}>
                 Dashboard
               </Button>
               <FileUpload onFileLoad={handleFileLoad} />
@@ -391,7 +391,7 @@ export const TuneBrowser = () => {
                   return (
                     <tr
                       key={tune.id}
-                      onClick={() => navigate(`/tune/${tune.id}`)}
+                      onClick={() => navigate(`/edit/tune/${tune.id}`)}
                       className="hover:bg-gray-50 cursor-pointer transition-colors"
                     >
                       <td className="px-6 py-4 whitespace-nowrap overflow-hidden text-ellipsis" style={{ width: columnWidths.rank }}>

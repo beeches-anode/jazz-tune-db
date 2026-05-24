@@ -26,7 +26,7 @@ export const TuneEditor = () => {
       setTune({ ...loadedTune });
     } else {
       alert('Tune not found');
-      navigate('/');
+      navigate('/edit');
     }
   }, [tuneId, getTune, navigate]);
 
@@ -44,10 +44,10 @@ export const TuneEditor = () => {
   const handleCancel = () => {
     if (hasChanges) {
       if (window.confirm('You have unsaved changes. Are you sure you want to leave?')) {
-        navigate('/');
+        navigate('/edit');
       }
     } else {
-      navigate('/');
+      navigate('/edit');
     }
   };
 
