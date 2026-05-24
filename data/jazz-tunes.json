@@ -438,10 +438,26 @@
     "last_updated": "2025-12-14T08:57:36.025529",
     "validated": true,
     "section_markers": [
-      {"label": "A", "start": 1, "end": 8},
-      {"label": "B", "start": 9, "end": 16},
-      {"label": "C", "start": 17, "end": 24},
-      {"label": "D", "start": 25, "end": 36}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 8
+      },
+      {
+        "label": "B",
+        "start": 9,
+        "end": 16
+      },
+      {
+        "label": "C",
+        "start": 17,
+        "end": 24
+      },
+      {
+        "label": "D",
+        "start": 25,
+        "end": 36
+      }
     ],
     "chord_progression_notes": "Key centers: Ab→C (A), Eb→G (B), G→E (C/bridge), back to Ab (D). The B section transposes A down a perfect 4th. Bar 24's C7b13 functions as V7/vi returning home. Bar 32 uses Bdim7 as a passing diminished (iii°7). Final 4-bar tag (33-36) is a ii-V-I turnaround with the last bar setting up the next chorus. Common subs: tritone sub Db7 for G7 (bar 6); #IVdim7 passing chord in bar 32; altered dominants throughout. Charlie Parker's 'Bird of Paradise' is a famous contrafact on these changes."
   },
@@ -454,10 +470,26 @@
     "form": "AABC, 44 bars (14-14-8-8). Extended form with unusual 14-bar A sections instead of the typical 8. A sections feature minor key harmony; B section (bridge) modulates through sequential ii-V movement; C section returns to tonic. Tag ending commonly used. Many recordings resolve with a Picardy-third (major) cadence.",
     "standard_key": "D minor (concert) is most common on bandstands; also called in C minor; vocal charts frequently in G minor.",
     "section_markers": [
-      {"label": "A", "start": 1, "end": 14},
-      {"label": "A", "start": 15, "end": 28},
-      {"label": "B", "start": 29, "end": 36},
-      {"label": "C", "start": 37, "end": 44}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 14
+      },
+      {
+        "label": "A",
+        "start": 15,
+        "end": 28
+      },
+      {
+        "label": "B",
+        "start": 29,
+        "end": 36
+      },
+      {
+        "label": "C",
+        "start": 37,
+        "end": 44
+      }
     ],
     "chord_progression_notes": "Extended AABC form with 14-bar A sections (44 bars total). A sections feature the characteristic Em7b5-A7b9 turnaround in D minor and Am7b5-D7b9 (ii-V to iv). Bridge modulates through sequential ii-V movement (Bm7-E7, Gm7-C7) leading to Fmaj7. Common substitutions: tritone subs on dominant chords (Eb7 for A7b9), Dm(maj7) for Dm6. Many versions end with a Picardy third resolution to Dmaj7. Tag endings are common in performance.",
     "history_and_facts": "Written by Arthur Schwartz with lyrics by Howard Dietz for the 1932 Broadway revue Flying Colors, Alone Together quickly attracted bandleaders; Leo Reisman had an early hit that same year. Its dark, minor-key character and elegant lyric made it a natural for both dance bands and jazz improvisers.\nArtie Shaw's 1939 recording is widely cited for cementing the tune's standard status, and modern jazz players embraced it for its rich harmonic motion, especially the sequential ii-V movement in the bridge. In the hard‑bop era, influential versions by Chet Baker (on the 1959 album Chet) and Kenny Dorham (Quiet Kenny, 1959) helped fix the tune in the small‑group repertoire.\nInstrumentalists most often call it in D minor, and many arrangements end with a Picardy‑third resolution to the parallel major-an expressive touch that highlights the tune's bittersweet mood.",
@@ -743,10 +775,26 @@
     "rank": 10,
     "chords": "| Bb7 | Eb7 | Ab6 | Ab6 |\n| Ebm7 | Ab7 | Dbmaj7 | Dbmaj7 |\n| Db6 | Gb7 | Ab6 | F7 |\n| Bb7 | Bb7 | Eb7 | Eb7 |\n| Bb7 | Eb7 | Ab6 | Ab6 |\n| Ebm7 | Ab7 | Dbmaj7 | Dbmaj7 |\n| Db7 | Ddim7 | Ab6/ Eb | F7 |\n| Bb7 | Eb7 | Ab6 | F7 |",
     "section_markers": [
-      {"label": "A", "start": 1, "end": 8},
-      {"label": "B", "start": 9, "end": 16},
-      {"label": "A", "start": 17, "end": 24},
-      {"label": "C", "start": 25, "end": 32}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 8
+      },
+      {
+        "label": "B",
+        "start": 9,
+        "end": 16
+      },
+      {
+        "label": "A",
+        "start": 17,
+        "end": 24
+      },
+      {
+        "label": "C",
+        "start": 25,
+        "end": 32
+      }
     ],
     "chord_progression_notes": "Contrafact on 'Rose Room' (Art Hickman, 1917). A sections feature II7-V7-I (Bb7-Eb7-Ab) followed by ii-V-I to IV (Ebm7-Ab7-Db). B section tonicizes IV (Db6-Gb7) before returning to I. C section uses cycle-of-fifths dominants. Common variations: tritone subs on the II7-V7 (E7-A7), backdoor ii-V approaches (Bbm7-Eb7 as iv-bVII7), passing diminished chord (Ddim7) in bar 26. The F7 turnaround at bar 8/16/32 sets up the II7 (Bb7).",
     "id": "mewjccgwby7g1l57zrk",
@@ -846,10 +894,26 @@
     "standard_key": "C major (concert); also Bb major (vocal)",
     "chords": "| Dm7 G7 | Dm7 G7 | Em7 A7 | Em7 A7 |\n| Am7 D7 | Abm7 Db7 | Cmaj7 F7 | Em7 A7 |\n| Dm7 G7 | Dm7 G7 | Em7 A7 | Em7 A7 |\n| Am7 D7 | Abm7 Db7 | Cmaj7 | Cmaj7 |\n| Gm7 C7 | Gm7 C7 | Fmaj7 | Fmaj7 |\n| Am7 D7 | Am7 D7 | G7 | G7 |\n| Dm7 G7 | Dm7 G7 | Em7 A7 | Em7 A7 |\n| Am7 D7 | Abm7 Db7 | Cmaj7 F7 | Em7 A7 |",
     "section_markers": [
-      {"label": "A", "start": 1, "end": 8},
-      {"label": "A", "start": 9, "end": 16},
-      {"label": "B", "start": 17, "end": 24},
-      {"label": "A", "start": 25, "end": 32}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 8
+      },
+      {
+        "label": "A",
+        "start": 9,
+        "end": 16
+      },
+      {
+        "label": "B",
+        "start": 17,
+        "end": 24
+      },
+      {
+        "label": "A",
+        "start": 25,
+        "end": 32
+      }
     ],
     "chord_progression_notes": "Classic Ellington/Strayhorn composition built on ii-V sequences. A sections feature the signature Abm7-Db7 tritone substitution in bar 6 (and bars 14, 30), replacing diatonic Am7-D7. During solos, doubled chords (Dm7 G7 in one bar) are typically played as one chord per bar. Bridge (bars 17-24) moves to F major via Gm7-C7, then Am7-D7-G7 creating V/V back to C. Common variations: tritone subs on bridge dominants (Gb7 for C7, Eb7 for G7), altered dominants (G7alt in bar 24), and chromatic approach chords (B7-Bbmaj7 between bars 7-8). Turnaround tag (Cmaj7-A7-Dm7-G7) often added for repeating sections.",
     "history_and_facts": "Composed in 1953 when Duke Ellington signed with Capitol Records; first recorded April 6, 1953. Ellington wrote the main melodic themes, then asked Billy Strayhorn to harmonize and orchestrate. Strayhorn wrote an original lyric as a tribute to his mother (whom he called 'Satin Doll'), but this lyric was never performed and is now lost. Johnny Mercer was commissioned to write new lyrics around 1959 (copyright registered 1960). The song charted in 1953 and remained popular throughout the 1950s. 'Satin Doll' became such a signature tune that it was typically the closing number at Ellington concerts. The identity of the 'Satin Doll' remains disputed: some say Strayhorn's mother, others claim Duke's wife Edna, while Duke's son Mercer believed it was written for Duke's longtime partner Bea 'Evie' Ellis.",
@@ -1043,7 +1107,7 @@
         "end": 32
       }
     ],
-    "lyricist": "Jacques Prévert; English: Johnny Mercer",
+    "lyricist": "Jacques Prévert; English: Johnny Mercer .",
     "youtube_video_ids": [
       {
         "id": "CpB7-8SGlJ0",
@@ -1174,7 +1238,7 @@
         "added_date": "2025-11-15"
       }
     ],
-    "last_updated": "2025-11-16T05:24:13.085Z",
+    "last_updated": "2026-05-24T14:45:56.901Z",
     "spotify_playlist_id": "3aE0TgQfRocyHL8jdkfUco",
     "validated": true,
     "youtube_backing_track_ids": [
@@ -1375,7 +1439,11 @@
     "last_updated": "2025-12-16T00:00:00.000Z",
     "validated": true,
     "section_markers": [
-      {"label": "A", "start": 1, "end": 12}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 12
+      }
     ],
     "chord_progression_notes": "Now's the Time follows a bebop-style 12-bar blues progression in F with several characteristic alterations from traditional blues: 1) Quick IV change in bar 2 (Bb7), creating earlier harmonic motion typical of bebop blues; 2) Passing diminished chord (Bdim7) in bar 6, functioning as a chromatic voice-leading device between IV7 and I7; 3) Secondary dominant approach in bar 8 (Am7-D7 functioning as iii-7 VI7), targeting Gm7 in bar 9; 4) Extended four-bar turnaround (bars 9-12) using ii-V-I-VI-ii-V progression instead of simple V-IV-I blues cadence. The progression maintains dominant 7th quality on the tonic (F7) throughout, preserving blues tonality while incorporating bebop harmonic sophistication."
   },
@@ -1395,7 +1463,11 @@
     "rank": 12,
     "chords": "| Bb7 | Eb7 | Bb7 | Bb7 |\n| Eb7 | Eb7 | Bb7 | Bb7 |\n| Cm7 | F7 | Bb7 | F7 |",
     "section_markers": [
-      {"label": "A", "start": 1, "end": 12}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 12
+      }
     ],
     "chord_progression_notes": "Jazz blues in Bb with quick IV (Eb7) in bar 2. Standard ii-V (Cm7-F7) turnaround in bars 9-10. Common variations: Bird blues changes, I-VI-ii-V turnaround (Bb7-G7-Cm7-F7), or tritone sub approaches. Riff-based head; many bands tag the head riff on the out-chorus.",
     "youtube_video_ids": [
@@ -1549,10 +1621,26 @@
     "rank": 14,
     "chords": "| Em7b5 | A7b9 | Dm | Dm |\n| Gm7 | C7 | Fmaj7 | Em7b5 A7b9 |\n| Dm | Gm7 | Bb7 | A7b9 |\n| Dm | G7#11 | Em7b5 | A7b9 |\n| Em7b5 | A7b9 | Dm | Dm |\n| Gm7 | C7 | Fmaj7 | Em7b5 A7b9 |\n| Dm | Gm7 | Bb7 | A7b9 |\n| Dm B7 | Bb7#11 A7b9 | Dm | Dm |",
     "section_markers": [
-      {"label": "A", "start": 1, "end": 8},
-      {"label": "A", "start": 9, "end": 16},
-      {"label": "B", "start": 17, "end": 24},
-      {"label": "A", "start": 25, "end": 32}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 8
+      },
+      {
+        "label": "A",
+        "start": 9,
+        "end": 16
+      },
+      {
+        "label": "B",
+        "start": 17,
+        "end": 24
+      },
+      {
+        "label": "A",
+        "start": 25,
+        "end": 32
+      }
     ],
     "chord_progression_notes": "D minor blues-influenced standard with sophisticated minor ii-V-i progressions. Each A section opens with Em7b5-A7b9 (ii-V in Dm), moves through Gm7-C7 to Fmaj7 (ii-V-I in relative major F), then returns to D minor. Middle portion features Dm-Gm7-Bb7-A7b9 (i-iv-bVI7-V7), where Bb7 functions as a tritone substitution for E7 (V/V). Final A section contains chromatic turnaround: Dm-B7-Bb7#11-A7b9, creating stepwise descending bass motion (D-B-Bb-A) back to tonic. Can be performed in 3/4 waltz or 4/4 swing.",
     "youtube_video_ids": [
@@ -1758,10 +1846,26 @@
     "last_updated": "2025-12-14T09:36:31.957491",
     "validated": true,
     "section_markers": [
-      {"label": "A", "start": 1, "end": 8},
-      {"label": "A", "start": 9, "end": 16},
-      {"label": "B", "start": 17, "end": 32},
-      {"label": "A", "start": 33, "end": 40}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 8
+      },
+      {
+        "label": "A",
+        "start": 9,
+        "end": 16
+      },
+      {
+        "label": "B",
+        "start": 17,
+        "end": 32
+      },
+      {
+        "label": "A",
+        "start": 33,
+        "end": 40
+      }
     ],
     "chord_progression_notes": "A sections use a progression similar to 'Take the A Train' with tritone subs (Gb7 instead of C7). The 16-bar bridge is unique—twice the typical length—modulating through three key centers using backdoor dominants (bVII7 chords): Db area (F#maj7→B7), E area (F#m7→D7), F area (Gm7→Eb7), then a standard iii-VI-ii-V turnaround (Am7-D7-Gm7-C7) to return home. Jobim's harmonic ambiguity—never landing on expected tonic chords in the bridge—is a hallmark of this tune."
   },
@@ -2009,10 +2113,26 @@
     "last_updated": "2025-12-16T00:00:00.000Z",
     "validated": true,
     "section_markers": [
-      {"label": "A", "start": 1, "end": 8},
-      {"label": "A", "start": 9, "end": 16},
-      {"label": "B", "start": 17, "end": 24},
-      {"label": "A", "start": 25, "end": 32}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 8
+      },
+      {
+        "label": "A",
+        "start": 9,
+        "end": 16
+      },
+      {
+        "label": "B",
+        "start": 17,
+        "end": 24
+      },
+      {
+        "label": "A",
+        "start": 25,
+        "end": 32
+      }
     ],
     "chord_progression_notes": "Simple diatonic progression centered on F major with ii-V-I motion. Bars 1-8 (A): Fmaj7 tonic with Gm7-C7 motion and Am7b5-D7b9 tonicizing ii. Bars 9-16 (A): Gm tonicization via D7, resolves to F6. Bars 17-24 (B): Chromatic descending dominants F7-E7-Eb7-D7b9, then Db7 (tritone sub for G7) to C7. Bars 25-32 (A): Returns to opening material with turnaround tag. Common subs: extended Fmaj7 voicings in A sections, D7alt for D7b9, additional chromaticism in bridge. Miles Davis 1956 version is definitive for harmonic interpretation."
   },
@@ -2173,10 +2293,26 @@
     "last_updated": "2025-12-05T00:00:00.000Z",
     "validated": true,
     "section_markers": [
-      {"label": "A", "start": 1, "end": 8},
-      {"label": "A", "start": 9, "end": 16},
-      {"label": "B", "start": 17, "end": 24},
-      {"label": "A", "start": 25, "end": 32}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 8
+      },
+      {
+        "label": "A",
+        "start": 9,
+        "end": 16
+      },
+      {
+        "label": "B",
+        "start": 17,
+        "end": 24
+      },
+      {
+        "label": "A",
+        "start": 25,
+        "end": 32
+      }
     ],
     "chord_progression_notes": "Rhythm changes contrafact. A sections use standard Bb I-vi-ii-V with turnaround (bars 5-8 feature Bb7-Eb-Edim passing chord motion). Bridge has no melody—pure dominant cycle (D7-G7-C7-F7) for blowing. Melodic phrase resolves on bar 7 rather than bar 8. Common bebop subs: tritone on bridge dominants, Bird changes on A sections. Original 1939 Kansas City Seven version features 4-bar piano intro."
   },
@@ -2291,10 +2427,26 @@
     "style": "Modal jazz",
     "form": "AABA, 32 bars (8-8-8-8). Modal jazz composition with A sections in D Dorian (Dm11) and B section (bridge) in Eb Dorian (Ebm11). The form exemplifies modal jazz's static harmony approach, with each 8-bar section maintaining a single modal center. Common performance practice includes an open D pedal vamp introduction.",
     "section_markers": [
-      {"label": "A", "start": 1, "end": 8},
-      {"label": "A", "start": 9, "end": 16},
-      {"label": "B", "start": 17, "end": 24},
-      {"label": "A", "start": 25, "end": 32}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 8
+      },
+      {
+        "label": "A",
+        "start": 9,
+        "end": 16
+      },
+      {
+        "label": "B",
+        "start": 17,
+        "end": 24
+      },
+      {
+        "label": "A",
+        "start": 25,
+        "end": 32
+      }
     ],
     "chord_progression_notes": "Modal jazz masterpiece with only two chords. The iconic 'So What chord' voiced by Bill Evans uses quartal harmony (stacked fourths): Root-4th-b7-b3-5th. No functional harmony or ii-V-I progressions; instead, static modal centers allow melodic/scalar improvisation. The bridge modulates via parallel half-step motion (chromatic mediant relationship). The call-and-response between bass (ascending melodic phrase) and piano/horns (quartal voicings) defines the head. This harmonic approach became foundational for modal jazz, influencing compositions including John Coltrane's 'Impressions' which uses the identical form.",
     "standard_key": "D minor (D Dorian mode; bridge in Eb Dorian)",
@@ -2396,10 +2548,26 @@
     "key": "",
     "lyricist": "Joya Sherrill",
     "section_markers": [
-      {"label": "A", "start": 1, "end": 8},
-      {"label": "A", "start": 9, "end": 16},
-      {"label": "B", "start": 17, "end": 24},
-      {"label": "A", "start": 25, "end": 32}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 8
+      },
+      {
+        "label": "A",
+        "start": 9,
+        "end": 16
+      },
+      {
+        "label": "B",
+        "start": 17,
+        "end": 24
+      },
+      {
+        "label": "A",
+        "start": 25,
+        "end": 32
+      }
     ],
     "chord_progression_notes": "The A sections feature the characteristic D7#11 (whole-tone flavor from the b5/Ab), a signature Strayhorn sound. Bridge stays on Fmaj7 (IV) for 4 bars before D7 (V/V) leads to Dm7-G7 turnaround. Common to add 4-bar intro/vamp and Ellington-style coda. Some charts use D9 instead of D7#11.",
     "youtube_video_ids": [
@@ -2625,10 +2793,26 @@
     "style": "swing ballad",
     "form": "32-bar ABAC (melodically distinct; harmonically bars 1-8 = bars 17-24). A sections feature chromatic bass motion via diminished chords in Eb major; B section includes ii-V to relative minor and stepwise modulation; C section resolves with turnaround variations.",
     "section_markers": [
-      {"label": "A", "start": 1, "end": 8},
-      {"label": "B", "start": 9, "end": 16},
-      {"label": "A", "start": 17, "end": 24},
-      {"label": "C", "start": 25, "end": 32}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 8
+      },
+      {
+        "label": "B",
+        "start": 9,
+        "end": 16
+      },
+      {
+        "label": "A",
+        "start": 17,
+        "end": 24
+      },
+      {
+        "label": "C",
+        "start": 25,
+        "end": 32
+      }
     ],
     "standard_key": "Eb major (instrumental call key); also C major (common vocal), F major",
     "history_and_facts": "Composed by Jimmy Van Heusen with lyrics by Johnny Burke, the song was published in 1943 and introduced on screen by Dorothy Lamour in the 1944 Paramount film And the Angels Sing. Early hit recordings by Bing Crosby and Jo Stafford quickly established it in the American popular repertoire.\nBy the mid-1950s it became a core jazz standard, with Chet Baker's 1954 vocal version and the Miles Davis Quintet's 1956 reading (Relaxin' sessions) shaping its modern-jazz profile. The tune's lyric warns against guarding too closely against love, while the music's elegant circle-of-fifths motion and singable melody make it a favorite for both ballad and medium-swing treatments.\nOn bandstands it's most often called in Eb for instrumentals, while vocalists frequently choose C or neighboring keys. The bridge's chain of II-V's invites colorful substitutions, making it a common vehicle for teaching harmonic flow and voice-leading in standards.",
@@ -3065,10 +3249,26 @@
     "last_updated": "2025-12-14T09:36:31.957507",
     "validated": true,
     "section_markers": [
-      {"label": "A", "start": 1, "end": 8},
-      {"label": "B", "start": 9, "end": 16},
-      {"label": "C", "start": 17, "end": 24},
-      {"label": "D", "start": 25, "end": 32}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 8
+      },
+      {
+        "label": "B",
+        "start": 9,
+        "end": 16
+      },
+      {
+        "label": "C",
+        "start": 17,
+        "end": 24
+      },
+      {
+        "label": "D",
+        "start": 25,
+        "end": 32
+      }
     ],
     "chord_progression_notes": "Stella by Starlight is renowned for its harmonic sophistication and through-composed structure. Key features: (1) Delayed tonic - Bbmaj7 doesn't appear until bar 9; (2) Unresolved ii-V progressions - Em7b5-A7b9 opening never resolves to Dm in the A section, creating harmonic ambiguity; (3) Sequential descending motion - ii-V chains move down by whole steps (Em7b5-A7 to Dm7 to Cm7, etc.); (4) Multiple implied key centers - D minor, F major, Eb major, C minor all suggested without clear tonicization; (5) Extensive use of altered dominants (b9, #5, #11) and half-diminished chords; (6) 'Backcycling' in final D section with chromatic descending ii-V progressions (Em7b5-A7b9, Dm7b5-G7b9, Cm7b5-F7b9) leading to final tonic resolution. Common substitutions include tritone subs on bridge dominants and variations in bars 7-8 and 10. The Real Book version (reflected in this database) represents modern jazz interpretation; earlier lead sheets may differ slightly in specific chord voicings and extensions."
   },
@@ -3089,7 +3289,13 @@
     ],
     "rank": 16,
     "chords": "| F7 | Bb7 | F7 | Cm7 F7 |\n| Bb7 | Bdim7 | F7 | Am7 D7 |\n| Gm7 | C7 | F7 D7 | Gm7 C7 |",
-    "section_markers": [{"label": "A", "start": 1, "end": 12}],
+    "section_markers": [
+      {
+        "label": "A",
+        "start": 1,
+        "end": 12
+      }
+    ],
     "id": "mewjccgwxjf9av70h98",
     "is_approved": true,
     "key": "F",
@@ -8005,10 +8211,26 @@
     "rank": 29,
     "chords": "| Ebm7 Bb7b13 | Ebm7 Ab7 | Dbmaj7 Gb7 | Fm7 Edim7 |\n| Ebm7 Ebm7/ Db | Cm7b5 F7b9 | Bbm7 Ebm7 Ab7 | Db6 Gb7 Fh Bb7 |\n| Ebm7 Bb7b13 | Ebm7 Ab7 | Dbmaj7 Gb7 | Fm7 Edim7 |\n| Ebm7 Ebm7/ Db | Cm7b5 F7b9 | Bbm7 Ebm7 Ab7 | Db6 Em7 A7 |\n| Dmaj7 Em7 | Dmaj7/ F# Gm7 C7 | F#m7 Bm7 Em7 A7 | Dmaj7 |\n| Dm7 G7 | Em7 Ebdim7 | Dm7 G7 | C7 B7 Bb7 |\n| Ebm7 Bb7b13 | Ebm7 Ab7 | Dbmaj7 Gb7 | Fm7 Edim7 |\n| Ebm7 Ebm7/ Db | Cm7b5 F7b9 | Bbm7 Ebm7 Ab7 | Db6 Gb7 Fh Bb7 |",
     "section_markers": [
-      {"label": "A", "start": 1, "end": 8},
-      {"label": "A", "start": 9, "end": 16},
-      {"label": "B", "start": 17, "end": 24},
-      {"label": "A", "start": 25, "end": 32}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 8
+      },
+      {
+        "label": "A",
+        "start": 9,
+        "end": 16
+      },
+      {
+        "label": "B",
+        "start": 17,
+        "end": 24
+      },
+      {
+        "label": "A",
+        "start": 25,
+        "end": 32
+      }
     ],
     "chord_progression_notes": "Classic 32-bar AABA ballad with sophisticated harmonic movement. A sections in Db major feature chromatic ii-V-I progressions and passing diminished chords (Edim7 in bar 4). The bridge (bars 17-24) contains one of jazz's most famous modulations: up a semitone to D major (bars 17-20), then to C major (bars 21-24), before returning to Db via chromatic descent (C7-B7-Bb7). Turnarounds vary between A sections—first and third A end Db6-Gb7-Fh-Bb7, while second A ends Em7-A7 to set up the D major modulation. Common substitutions include Coltrane changes over the bridge, tritone subs in bar 1 (Bb7b13), and reharmonizations of bars 5-8. The Gb7 in bar 3 is often voiced as Gb7#11. Advanced players frequently employ descending ii-V sequences through the bridge.",
     "id": "mewjccgxfma1rhdv4gc",
@@ -11661,11 +11883,31 @@
     "rank": 25,
     "chords": "| Bbmaj7 | Bbmaj7 | Gbmaj7#11 | Gbmaj7#11 |\n| Bbmaj7 | Bbmaj7 | Dm7 | G7b9 |\n| Cm7 | Am7b5 D7b9 | Gm7 | A7#9 |\n| Dmaj7 | Em7 A7 | Dmaj7 G7 | Cm7 F7 |\n| Bbmaj7 | Bbmaj7 | Bbm7 | Eb7 |\n| Bbmaj7 | Bbmaj7 | Fm7 | Bb7 |\n| Ebmaj7 | Ab7 | Dm7 G7 | C7 |\n| Cm7 | F7 | Bbm7 Eb7 | Bbm7 Eb7 |\n| Bbm7 Eb7 | Bbm7 Eb7 |",
     "section_markers": [
-      {"label": "A", "start": 1, "end": 8},
-      {"label": "A", "start": 9, "end": 16},
-      {"label": "B", "start": 17, "end": 24},
-      {"label": "A", "start": 25, "end": 32},
-      {"label": "Vamp", "start": 33, "end": 34}
+      {
+        "label": "A",
+        "start": 1,
+        "end": 8
+      },
+      {
+        "label": "A",
+        "start": 9,
+        "end": 16
+      },
+      {
+        "label": "B",
+        "start": 17,
+        "end": 24
+      },
+      {
+        "label": "A",
+        "start": 25,
+        "end": 32
+      },
+      {
+        "label": "Vamp",
+        "start": 33,
+        "end": 34
+      }
     ],
     "chord_progression_notes": "Bars 3-4: Characteristic bII Lydian chord (Gbmaj7#11) is hallmark Jobim sound. Bar 15: Dmaj7 creates three bars in D major (bars 13-15) with turnaround. Bars 27-28: Original uses Cdim7 passing chord, not C7 as in some Real Books. Bar 19: Bbm7 is borrowed from parallel minor (modal interchange). Bars 33-34: Optional vamp ending (Bbm7-Eb7) found in some charts but NOT in original recordings. Common substitutions: G7b9→Db7alt, A7#9→Eb7#11, extensive tritone subs on dominants.",
     "id": "mewjccgxt2skrg0ynum",
