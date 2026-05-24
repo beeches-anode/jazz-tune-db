@@ -14,7 +14,7 @@ import { PreviewPanel } from './PreviewPanel';
 export const TuneEditor = () => {
   const { tuneId } = useParams();
   const navigate = useNavigate();
-  const { getTune, updateTune } = useDatabase();
+  const { getTune, updateTune, saveTuneNow } = useDatabase();
 
   const [tune, setTune] = useState(null);
   const [hasChanges, setHasChanges] = useState(false);
@@ -35,10 +35,18 @@ export const TuneEditor = () => {
     setHasChanges(true);
   };
 
-  const handleSave = () => {
-    updateTune(tuneId, tune);
-    setHasChanges(false);
-    alert('Tune saved successfully!');
+  const handleSave = async () => {
+    // Strip id from the payload — DatabaseContext also strips it, but
+    // pass only editable fields to be explicit and reduce log noise.
+    const { id: _id, ...editable } = tune;
+    updateTune(tuneId, editable);
+    const result = await saveTuneNow(tuneId);
+    if (result.ok) {
+      setHasChanges(false);
+      alert('Tune saved.');
+    } else {
+      alert(`Save failed: ${result.error?.message ?? 'unknown error'}`);
+    }
   };
 
   const handleCancel = () => {

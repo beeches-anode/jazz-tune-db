@@ -40,13 +40,16 @@ export const DatabaseProvider = ({ children }) => {
 
   // Flush pending field changes for a tune to the server. On failure,
   // re-queue the failed fields so a subsequent edit picks them up.
+  // Returns { ok, result } on success, { ok: false, error } on failure,
+  // or { ok: true, skipped: true } if nothing was queued.
   const flushSave = useCallback(async (tuneId) => {
     const pending = pendingSaves.current.get(tuneId);
-    if (!pending) return;
+    if (!pending) return { ok: true, skipped: true };
     pendingSaves.current.delete(tuneId);
     try {
-      await save(tuneId, pending.fields, shaRef.current);
+      const result = await save(tuneId, pending.fields, shaRef.current);
       setSaveError(null);
+      return { ok: true, result };
     } catch (err) {
       // Re-queue: merge our failed fields under any newer pending fields
       // (newer wins on conflict) so the next edit retries them together.
@@ -56,8 +59,17 @@ export const DatabaseProvider = ({ children }) => {
         timer: newer?.timer || null,
       });
       setSaveError(err);
+      return { ok: false, error: err };
     }
   }, [save]);
+
+  // Flush a pending save immediately (cancels its debounce timer).
+  // Used by the laptop editor's explicit Save button.
+  const saveTuneNow = useCallback(async (tuneId) => {
+    const pending = pendingSaves.current.get(tuneId);
+    if (pending?.timer) clearTimeout(pending.timer);
+    return await flushSave(tuneId);
+  }, [flushSave]);
 
   // Clear any outstanding timers on unmount so they don't fire after the
   // provider is gone.
@@ -103,11 +115,16 @@ export const DatabaseProvider = ({ children }) => {
     setTunes(updatedTunes);
     setDatabase(updatedTunes);
 
+    // Strip immutable + server-stamped fields before queueing for save.
+    // `id` is immutable (server returns 400 if present), and the server
+    // stamps `last_updated` itself.
+    const { id: _id, last_updated: _lu, ...saveFields } = updates;
+
     // Queue a debounced server save. Merge into any existing pending entry
     // (newer fields win) and reset the timer so we save 2s after the LAST edit.
     const existing = pendingSaves.current.get(tuneId);
     if (existing?.timer) clearTimeout(existing.timer);
-    const mergedFields = { ...(existing?.fields || {}), ...updates };
+    const mergedFields = { ...(existing?.fields || {}), ...saveFields };
     const timer = setTimeout(() => flushSave(tuneId), SAVE_DEBOUNCE_MS);
     pendingSaves.current.set(tuneId, { fields: mergedFields, timer });
   };
@@ -146,6 +163,7 @@ export const DatabaseProvider = ({ children }) => {
     refetch,
     loadDatabase,
     updateTune,
+    saveTuneNow,
     getTune,
     exportDatabase,
     undo,

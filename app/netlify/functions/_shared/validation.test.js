@@ -30,4 +30,10 @@ describe('validateTuneUpdate', () => {
     const result = validateTuneUpdate({ is_archived: true });
     expect(result.valid).toBe(true);
   });
+
+  it('accepts validated as boolean', () => {
+    const result = validateTuneUpdate({ validated: true });
+    expect(result.valid).toBe(true);
+    expect(result.sanitized).toHaveProperty('validated', true);
+  });
 });

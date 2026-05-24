@@ -1,19 +1,22 @@
 export const ALLOWED_FIELDS = new Set([
   'tune_name', 'composer', 'lyricist', 'year', 'style', 'rank',
-  'standard_key', 'form', 'history_and_facts', 'famous_recordings',
+  'standard_key', 'key', 'form', 'history_and_facts', 'famous_recordings',
   'chords', 'section_markers', 'youtube_video_ids',
   'youtube_backing_track_ids', 'spotify_playlist_id',
-  'chord_progression_notes', 'is_approved', 'is_archived', 'last_updated',
+  'chord_progression_notes', 'curator_notes', 'validated',
+  'is_approved', 'is_archived', 'last_updated',
 ]);
 
 const TYPES = {
   tune_name: 'string', composer: 'string', lyricist: 'string',
   year: 'integer', style: 'string', rank: 'integer',
-  standard_key: 'string', form: 'string', history_and_facts: 'string',
+  standard_key: 'string', key: 'string', form: 'string',
+  history_and_facts: 'string',
   famous_recordings: 'array', chords: 'string',
   section_markers: 'array', youtube_video_ids: 'array',
   youtube_backing_track_ids: 'array', spotify_playlist_id: 'string',
-  chord_progression_notes: 'string',
+  chord_progression_notes: 'string', curator_notes: 'string',
+  validated: 'boolean',
   is_approved: 'boolean', is_archived: 'boolean', last_updated: 'string',
 };
 
