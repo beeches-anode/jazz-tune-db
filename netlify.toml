@@ -4,6 +4,12 @@
   publish = "dist"
   functions = "netlify/functions"
 
+  # VITE_* env vars are embedded in the client bundle by design.
+  # The YouTube Data API key is restricted via Google Cloud referrer rules,
+  # not by hiding, so it's safe to ship in the bundle.
+  [build.environment]
+    SECRETS_SCAN_OMIT_KEYS = "VITE_YOUTUBE_API_KEY"
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
