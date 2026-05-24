@@ -1,17 +1,15 @@
 import { Routes, Route } from 'react-router-dom';
 import { ReaderHome } from './routes/ReaderHome';
 import { EditorLaptop } from './routes/EditorLaptop';
+import { EditorMobile } from './routes/EditorMobile';
 import { AuthGate } from './components/AuthGate';
-// Phase 8 will add EditorMobile + viewport-aware routing:
-// import { EditorMobile } from './routes/EditorMobile';
-// import { useViewport } from './hooks/useViewport';
+import { useViewport } from './hooks/useViewport';
 
 function EditorRoute() {
-  // Phase 8 will branch on useViewport() to render EditorMobile on small screens.
-  // For now we always render EditorLaptop.
+  const { isMobile } = useViewport();
   return (
     <AuthGate>
-      <EditorLaptop />
+      {isMobile ? <EditorMobile /> : <EditorLaptop />}
     </AuthGate>
   );
 }
