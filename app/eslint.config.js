@@ -38,4 +38,11 @@ export default defineConfig([
       'no-unused-vars': ['warn', { varsIgnorePattern: '^[A-Z_]' }],
     },
   },
+  {
+    // Netlify Functions run in Node, not the browser.
+    files: ['netlify/functions/**/*.{js,jsx}'],
+    languageOptions: {
+      globals: globals.node,
+    },
+  },
 ])
