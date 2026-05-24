@@ -2623,15 +2623,22 @@
     "composer": "Jimmy Van Heusen (lyrics: Johnny Burke)",
     "year": "1943",
     "style": "swing ballad",
-    "form": "32-bar AABA: 8-bar A sections featuring circle-of-fifths motion (commonly in Eb major); 8-bar bridge built on sequential II-V progressions moving by step before resolving back to tonic. No permanent modulation; frequent use of tritone substitutions and back-cycling II-V's in authoritative lead sheets.",
+    "form": "32-bar ABAC (melodically distinct; harmonically bars 1-8 = bars 17-24). A sections feature chromatic bass motion via diminished chords in Eb major; B section includes ii-V to relative minor and stepwise modulation; C section resolves with turnaround variations.",
+    "section_markers": [
+      {"label": "A", "start": 1, "end": 8},
+      {"label": "B", "start": 9, "end": 16},
+      {"label": "A", "start": 17, "end": 24},
+      {"label": "C", "start": 25, "end": 32}
+    ],
     "standard_key": "Eb major (instrumental call key); also C major (common vocal), F major",
     "history_and_facts": "Composed by Jimmy Van Heusen with lyrics by Johnny Burke, the song was published in 1943 and introduced on screen by Dorothy Lamour in the 1944 Paramount film And the Angels Sing. Early hit recordings by Bing Crosby and Jo Stafford quickly established it in the American popular repertoire.\nBy the mid-1950s it became a core jazz standard, with Chet Baker's 1954 vocal version and the Miles Davis Quintet's 1956 reading (Relaxin' sessions) shaping its modern-jazz profile. The tune's lyric warns against guarding too closely against love, while the music's elegant circle-of-fifths motion and singable melody make it a favorite for both ballad and medium-swing treatments.\nOn bandstands it's most often called in Eb for instrumentals, while vocalists frequently choose C or neighboring keys. The bridge's chain of II-V's invites colorful substitutions, making it a common vehicle for teaching harmonic flow and voice-leading in standards.",
     "famous_recordings": [
-      "Chet Baker - 1958 (Chet Baker Sings: It Could Happen to You)",
       "Miles Davis Quintet - 1956 (Relaxin' with the Miles Davis Quintet)",
+      "Chet Baker - 1958 (Chet Baker Sings: It Could Happen to You)",
       "Sonny Rollins - 1957 (The Sound of Sonny)",
-      "Chet Baker & Bill Evans - 1959 (Chet)",
-      "Jo Stafford - 1944 (Original Hit Recording)"
+      "Bill Evans Trio - 1960 (Portrait in Jazz)",
+      "Jo Stafford with Paul Weston - 1944 (Single)",
+      "Keith Jarrett Trio - 1996 (Tokyo '96)"
     ],
     "rank": 19,
     "chords": "| Ebmaj7 | Edim7 | Fm7 | F#dim7 |\n| Ebmaj7 | Abmaj7 | Gm7b5 | C7b9 |\n| Fm7 | Bb7 | Ebmaj7 | Dm7b5 G7b9 |\n| Cm7 | F7 | Fm7 | Bb7 |\n| Ebmaj7 | Edim7 | Fm7 | F#dim7 |\n| Ebmaj7 | Abmaj7 | Gm7b5 | C7b9 |\n| Fm7 | Bb7 | Ebmaj7 Ab7 | Gm7b5 C7b9 |\n| Fm7 | Bb7 | Ebmaj7 Cm7 | Fm7 Bb7 |",
@@ -2659,6 +2666,46 @@
         "channelTitle": "Chet Baker - Topic",
         "verified": true,
         "added_date": "2025-12-14"
+      },
+      {
+        "id": "pvqyK2j_6b4",
+        "title": "The Miles Davis Quintet - It Could Happen To You from Relaxin' With The Miles Davis Quintet",
+        "artist": "",
+        "channelTitle": "Miles Davis",
+        "verified": true,
+        "added_date": "2025-12-17"
+      },
+      {
+        "id": "V1pFZUBBu_w",
+        "title": "It Could Happen To You (Album Version)",
+        "artist": "",
+        "channelTitle": "Sonny Rollins - Topic",
+        "verified": true,
+        "added_date": "2025-12-17"
+      },
+      {
+        "id": "e59J7MbG6UU",
+        "title": "It Could Happen to You",
+        "artist": "",
+        "channelTitle": "Bill Evans - Topic",
+        "verified": true,
+        "added_date": "2025-12-17"
+      },
+      {
+        "id": "H150vT7zHpQ",
+        "title": "It Could Happen To You",
+        "artist": "",
+        "channelTitle": "Keith Jarrett - Topic",
+        "verified": true,
+        "added_date": "2025-12-17"
+      },
+      {
+        "id": "TV2KoswJLYA",
+        "title": "Keith Jarrett Trio - It Could Happen To You (Live Tokyo '96)",
+        "artist": "",
+        "channelTitle": "pianistaccanito",
+        "verified": true,
+        "added_date": "2025-12-17"
       }
     ],
     "youtube_backing_track_ids": [
@@ -2764,7 +2811,7 @@
         "added_date": "2025-12-16"
       }
     ],
-    "last_updated": "2025-12-16T00:00:00.000000",
+    "last_updated": "2025-12-17T00:00:00.000000",
     "validated": true
   },
   {
