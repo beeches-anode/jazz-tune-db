@@ -1034,7 +1034,7 @@ Renders a grid of measure cells, with section labels above their start measures.
   describe('ChordChart', () => {
     it('renders each measure as a cell', () => {
       render(<ChordChart chords="| Cmaj7 | Dm7 | G7 | Cmaj7 |" transposeKey="Concert" sectionMarkers={[]} />);
-      expect(screen.getByText('Cmaj7')).toBeInTheDocument();
+      expect(screen.getAllByText('Cmaj7')).toHaveLength(2);
       expect(screen.getByText('Dm7')).toBeInTheDocument();
       expect(screen.getAllByText(/maj7/)).toHaveLength(2);
     });
@@ -1042,7 +1042,7 @@ Renders a grid of measure cells, with section labels above their start measures.
     it('renders section labels above start measures', () => {
       render(
         <ChordChart
-          chords="| Cmaj7 | Dm7 | G7 | Cmaj7 |\n| Em7 | A7 | Dm7 | G7 |"
+          chords={"| Cmaj7 | Dm7 | G7 | Cmaj7 |\n| Em7 | A7 | Dm7 | G7 |"}
           transposeKey="Concert"
           sectionMarkers={[
             { label: 'A', start: 1, end: 4 },
@@ -1501,8 +1501,7 @@ Four components, but they form one logical unit (the 3-tab tune detail). Buildin
   export function ListenTab({ tune }) {
     const hasRecordings = tune.famous_recordings?.length > 0;
     const hasSpotify = tune.spotify_playlist_id;
-    const hasVideos = tune.youtube_video_ids?.length > 0;
-    const hasBacking = tune.youtube_backing_track_ids?.length > 0;
+    // YouTubePlaylistButton self-guards on empty/missing video arrays, no extra vars needed.
 
     return (
       <div className="px-3 sm:px-5 py-4 space-y-5">
