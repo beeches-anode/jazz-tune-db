@@ -1,5 +1,5 @@
 const STYLES = [
-  'swing', 'bebop', 'ballad', 'bossa nova', 'blues', 'latin', 'modal', 'fusion', 'waltz', 'other'
+  'swing', 'bebop', 'ballad', 'bossa nova', 'calypso', 'blues', 'latin', 'modal', 'fusion', 'waltz', 'other'
 ];
 
 const TIME_SIGNATURES = ['4/4', '3/4', '5/4', '6/8', '7/4', '12/8'];
