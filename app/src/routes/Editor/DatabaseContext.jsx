@@ -1,61 +1,49 @@
 import { createContext, useContext, useState, useEffect } from 'react';
+import { useTunes } from '../../hooks/useTunes';
 
 const DatabaseContext = createContext();
 
 export const DatabaseProvider = ({ children }) => {
+  // Read path: pull the canonical tune list from GitHub via useTunes().
+  // We need archived tunes too (so the editor can un-archive), so use allTunes.
+  const { allTunes, sha, loading: fetching, error, refetch } = useTunes();
+
   const [database, setDatabase] = useState(null);
   const [tunes, setTunes] = useState([]);
-  const [loading, setLoading] = useState(false);
   const [undoStack, setUndoStack] = useState([]);
 
-  // Load database from localStorage on mount
+  // Mirror fetched tunes into local editor state so the rest of the API
+  // (updateTune, getTune, undo, ...) keeps working in-memory as before.
   useEffect(() => {
-    const savedDb = localStorage.getItem('jazz-database');
-    if (savedDb) {
-      try {
-        const parsed = JSON.parse(savedDb);
-        // Handle both formats: array directly or object with metadata/tunes structure
-        const tunesArray = Array.isArray(parsed) ? parsed : (parsed.tunes || []);
-        if (Array.isArray(tunesArray) && tunesArray.length > 0) {
-          setDatabase(tunesArray);
-          setTunes(tunesArray);
-        }
-      } catch (error) {
-        console.error('Error loading saved database:', error);
-      }
+    if (allTunes && allTunes.length > 0) {
+      setDatabase(allTunes);
+      setTunes(allTunes);
     }
-  }, []);
+  }, [allTunes]);
 
-  // Auto-save to localStorage
-  useEffect(() => {
-    if (database) {
-      localStorage.setItem('jazz-database', JSON.stringify(database));
-    }
-  }, [database]);
-
+  // File-based "import JSON" flow. Informational-only until restored or
+  // removed in a later phase — updates local state but does NOT persist
+  // to localStorage or the server.
   const loadDatabase = (data) => {
-    setLoading(true);
     try {
       // Handle both formats: array directly or object with metadata/tunes structure
       const tunesArray = Array.isArray(data) ? data : (data.tunes || []);
-      
+
       if (!Array.isArray(tunesArray) || tunesArray.length === 0) {
         throw new Error('Invalid data format: expected an array of tunes or an object with a "tunes" property');
       }
 
       setDatabase(tunesArray);
       setTunes(tunesArray);
-      localStorage.setItem('jazz-database', JSON.stringify(tunesArray));
       return { success: true, count: tunesArray.length };
-    } catch (error) {
-      return { success: false, error: error.message };
-    } finally {
-      setLoading(false);
+    } catch (err) {
+      return { success: false, error: err.message };
     }
   };
 
+  // In-memory only. Task 26 will add the debounced server save here.
   const updateTune = (tuneId, updates) => {
-    // Save current state to undo stack
+    // Save current state to undo stack (cap at 10 entries)
     setUndoStack(prev => [...prev.slice(-9), tunes]);
 
     const updatedTunes = tunes.map(tune =>
@@ -96,7 +84,10 @@ export const DatabaseProvider = ({ children }) => {
   const value = {
     database,
     tunes,
-    loading,
+    loading: fetching,
+    sha,
+    error,
+    refetch,
     loadDatabase,
     updateTune,
     getTune,
