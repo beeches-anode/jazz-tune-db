@@ -1,7 +1,11 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
 import { useTunes } from '../../hooks/useTunes';
+import { useSaveTune } from '../../hooks/useSaveTune';
 
 const DatabaseContext = createContext();
+
+// Debounce window for server saves: 2s after the last edit on a given tune.
+const SAVE_DEBOUNCE_MS = 2000;
 
 export const DatabaseProvider = ({ children }) => {
   // Read path: pull the canonical tune list from GitHub via useTunes().
@@ -11,6 +15,19 @@ export const DatabaseProvider = ({ children }) => {
   const [database, setDatabase] = useState(null);
   const [tunes, setTunes] = useState([]);
   const [undoStack, setUndoStack] = useState([]);
+  const [saveError, setSaveError] = useState(null);
+
+  const { save, saving } = useSaveTune();
+
+  // Map<tune_id, { fields, timer }> — pending field changes awaiting flush.
+  const pendingSaves = useRef(new Map());
+
+  // Keep a ref to the latest sha so flushSave (kept stable) can read it
+  // without re-creating timers on every fetch refresh.
+  const shaRef = useRef(sha);
+  useEffect(() => {
+    shaRef.current = sha;
+  }, [sha]);
 
   // Mirror fetched tunes into local editor state so the rest of the API
   // (updateTune, getTune, undo, ...) keeps working in-memory as before.
@@ -20,6 +37,38 @@ export const DatabaseProvider = ({ children }) => {
       setTunes(allTunes);
     }
   }, [allTunes]);
+
+  // Flush pending field changes for a tune to the server. On failure,
+  // re-queue the failed fields so a subsequent edit picks them up.
+  const flushSave = useCallback(async (tuneId) => {
+    const pending = pendingSaves.current.get(tuneId);
+    if (!pending) return;
+    pendingSaves.current.delete(tuneId);
+    try {
+      await save(tuneId, pending.fields, shaRef.current);
+      setSaveError(null);
+    } catch (err) {
+      // Re-queue: merge our failed fields under any newer pending fields
+      // (newer wins on conflict) so the next edit retries them together.
+      const newer = pendingSaves.current.get(tuneId);
+      pendingSaves.current.set(tuneId, {
+        fields: { ...pending.fields, ...(newer?.fields || {}) },
+        timer: newer?.timer || null,
+      });
+      setSaveError(err);
+    }
+  }, [save]);
+
+  // Clear any outstanding timers on unmount so they don't fire after the
+  // provider is gone.
+  useEffect(() => {
+    const pending = pendingSaves.current;
+    return () => {
+      for (const entry of pending.values()) {
+        if (entry.timer) clearTimeout(entry.timer);
+      }
+    };
+  }, []);
 
   // File-based "import JSON" flow. Informational-only until restored or
   // removed in a later phase — updates local state but does NOT persist
@@ -41,7 +90,6 @@ export const DatabaseProvider = ({ children }) => {
     }
   };
 
-  // In-memory only. Task 26 will add the debounced server save here.
   const updateTune = (tuneId, updates) => {
     // Save current state to undo stack (cap at 10 entries)
     setUndoStack(prev => [...prev.slice(-9), tunes]);
@@ -54,6 +102,14 @@ export const DatabaseProvider = ({ children }) => {
 
     setTunes(updatedTunes);
     setDatabase(updatedTunes);
+
+    // Queue a debounced server save. Merge into any existing pending entry
+    // (newer fields win) and reset the timer so we save 2s after the LAST edit.
+    const existing = pendingSaves.current.get(tuneId);
+    if (existing?.timer) clearTimeout(existing.timer);
+    const mergedFields = { ...(existing?.fields || {}), ...updates };
+    const timer = setTimeout(() => flushSave(tuneId), SAVE_DEBOUNCE_MS);
+    pendingSaves.current.set(tuneId, { fields: mergedFields, timer });
   };
 
   const getTune = (tuneId) => {
@@ -94,6 +150,8 @@ export const DatabaseProvider = ({ children }) => {
     exportDatabase,
     undo,
     canUndo: undoStack.length > 0,
+    saving,
+    saveError,
   };
 
   return (
