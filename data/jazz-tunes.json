@@ -13107,7 +13107,7 @@
     "composer": "Irving Berlin (lyrics: Irving Berlin)",
     "year": "1932",
     "style": "Ballad",
-    "form": "ABAC (32-bar)",
+    "form": "AABA, 32 bars. Standard ballad form with sophisticated harmonic movement through various key centers.",
     "standard_key": "Eb major",
     "history_and_facts": "Irving Berlin wrote both music and lyrics in 1932; the song is often listed with its parenthetical subtitle, \"How High Is the Sky.\" It became a major hit in its release year through Bing Crosby, helping establish it in the American popular song canon.\nThe lyric is notable for being built almost entirely from rhetorical questions, and the tune quickly entered the jazz repertoire as a favored ballad by singers and instrumentalists alike.",
     "famous_recordings": [
@@ -13121,7 +13121,59 @@
     "chords": "| Cm7 | Dm7b5 G7b9 | Cm7 | Am7b5 D7b9 |\n| Gm7 | Am7b5 D7b9 | Gm7 Gb7 | Fm7 Bb7 |\n| Eb7 | Eb7 | Ab7 | Ab7 |\n| B7 | B7 | Bb7 | Dm7b5 G7b9 |\n| Cm7 | Dm7b5 G7b9 | Cm7 | Am7b5 D7b9 |\n| Gm7 | Am7b5 D7b9 | Gm7 Gb7 | Fm7 Bb7 |\n| Ebmaj7 | Gm7b5 C7b9 | Fm7 | Abm7 Db7 |\n| Ebmaj7 G7 | Cm7 F7 | Fm7 Bb7 | Eb6 G7b9 |",
     "id": "mewjccgxx9or9c4uc9b",
     "is_approved": false,
-    "key": ""
+    "key": "",
+    "youtube_video_ids": [
+      {
+        "id": "s93qkTmnXRM",
+        "title": "How Deep Is the Ocean",
+        "artist": "",
+        "channelTitle": "Coleman Hawkins - Topic",
+        "verified": true,
+        "added_date": "2025-12-14"
+      },
+      {
+        "id": "0vEum7syn00",
+        "title": "Billie Holiday - How Deep Is The Ocean? (How High Is The Sky) Clef Records 1954",
+        "artist": "",
+        "channelTitle": "RoundMidnightTV",
+        "verified": true,
+        "added_date": "2025-12-14"
+      },
+      {
+        "id": "a8x_a3OmFFM",
+        "title": "How Deep Is the Ocean",
+        "artist": "",
+        "channelTitle": "Chet Baker - Topic",
+        "verified": true,
+        "added_date": "2025-12-14"
+      },
+      {
+        "id": "giYQPJ-2-o8",
+        "title": "How Deep Is The Ocean (How High Is The Sky)",
+        "artist": "",
+        "channelTitle": "Ella Fitzgerald - Topic",
+        "verified": true,
+        "added_date": "2025-12-14"
+      },
+      {
+        "id": "bj4U5TVV1v0",
+        "title": "How Deep Is The Ocean (How High Is The Sky)",
+        "artist": "",
+        "channelTitle": "Ben Webster - Topic",
+        "verified": true,
+        "added_date": "2025-12-14"
+      },
+      {
+        "id": "xHL7rx5-XNY",
+        "title": "How Deep Is the Ocean?",
+        "artist": "",
+        "channelTitle": "Artie Shaw - Topic",
+        "verified": true,
+        "added_date": "2025-12-14"
+      }
+    ],
+    "last_updated": "2025-12-14T00:00:00.000Z",
+    "youtube_backing_track_ids": []
   },
   {
     "tune_name": "Taking a Chance on Love",
@@ -13889,73 +13941,5 @@
     ],
     "youtube_backing_track_ids": [],
     "last_updated": "2025-12-06T00:00:00.000Z"
-  },
-  {
-    "tune_name": "How Deep is the Ocean",
-    "composer": "Irving Berlin",
-    "year": 1932,
-    "style": "ballad",
-    "form": "AABA, 32 bars. Standard ballad form with sophisticated harmonic movement through various key centers.",
-    "standard_key": "C major",
-    "famous_recordings": [
-      "Coleman Hawkins - 1943",
-      "Billie Holiday - 1954",
-      "Ella Fitzgerald - 1958 (Irving Berlin Songbook)",
-      "Chet Baker - 1985 (Diane)",
-      "Ben Webster with Oscar Peterson - 1959",
-      "Artie Shaw - 1938"
-    ],
-    "youtube_video_ids": [
-      {
-        "id": "s93qkTmnXRM",
-        "title": "How Deep Is the Ocean",
-        "artist": "",
-        "channelTitle": "Coleman Hawkins - Topic",
-        "verified": true,
-        "added_date": "2025-12-14"
-      },
-      {
-        "id": "0vEum7syn00",
-        "title": "Billie Holiday - How Deep Is The Ocean? (How High Is The Sky) Clef Records 1954",
-        "artist": "",
-        "channelTitle": "RoundMidnightTV",
-        "verified": true,
-        "added_date": "2025-12-14"
-      },
-      {
-        "id": "a8x_a3OmFFM",
-        "title": "How Deep Is the Ocean",
-        "artist": "",
-        "channelTitle": "Chet Baker - Topic",
-        "verified": true,
-        "added_date": "2025-12-14"
-      },
-      {
-        "id": "giYQPJ-2-o8",
-        "title": "How Deep Is The Ocean (How High Is The Sky)",
-        "artist": "",
-        "channelTitle": "Ella Fitzgerald - Topic",
-        "verified": true,
-        "added_date": "2025-12-14"
-      },
-      {
-        "id": "bj4U5TVV1v0",
-        "title": "How Deep Is The Ocean (How High Is The Sky)",
-        "artist": "",
-        "channelTitle": "Ben Webster - Topic",
-        "verified": true,
-        "added_date": "2025-12-14"
-      },
-      {
-        "id": "xHL7rx5-XNY",
-        "title": "How Deep Is the Ocean?",
-        "artist": "",
-        "channelTitle": "Artie Shaw - Topic",
-        "verified": true,
-        "added_date": "2025-12-14"
-      }
-    ],
-    "youtube_backing_track_ids": [],
-    "last_updated": "2025-12-14T00:00:00.000Z"
   }
 ]
