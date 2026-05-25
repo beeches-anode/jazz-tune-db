@@ -12806,15 +12806,40 @@
     "composer": "Sonny Rollins",
     "year": "1956",
     "style": "calypso",
-    "form": "16-bar AABA (4-4-4-4). A sections largely tonic-based with brief V/ii-V motion; B section commonly moves IV-iv-I-VI-II-V-I. Many lead sheets add a V7 turnaround in bar 16 for tags/solos.",
-    "standard_key": "C major (most common); also F major (less common)",
-    "history_and_facts": "Sonny Rollins introduced St. Thomas on his landmark 1956 album Saxophone Colossus, and it quickly became one of his signature pieces. Although Rollins is credited as the composer, he has often acknowledged that the melody is based on a traditional Caribbean tune he heard in childhood from his mother, who was from the U.S. Virgin Islands-hence the title.\n\nThe piece helped popularize a calypso feel in modern jazz, with drummers adopting a characteristic two-bar calypso groove under the buoyant 16-bar melody. Jazz educators frequently cite it as the canonical calypso-jazz standard, and the tune remains a staple on bandstands and in improvisation curricula.",
+    "form": "AABA, 16 bars (4+4+4+4). A sections (bars 1-8, repeated): tonic-based with calypso-idiomatic bVII7 passing chord and a iii-VI7-ii-V-I cadence. B section (bars 9-12): iiø7-V7b9-ii-V (Em7b5-A7b9-Dm7-G7), a compressed ii-V of ii pulling back to ii-V of I — no IV/iv chord. Final A (bars 13-16): a harmonically varied cadence with chromatic bass (C-E-F-F#) through IV and #ivdim7 to V-I.",
+    "standard_key": "C major",
+    "history_and_facts": "Sonny Rollins introduced St. Thomas on his landmark 1956 album Saxophone Colossus, and it quickly became one of his signature pieces. Although Rollins is credited as the composer, he has often acknowledged that the melody is based on a traditional Caribbean tune he heard in childhood from his mother, who was from St. Thomas in the U.S. Virgin Islands — hence the title.\n\nThe piece helped popularize a calypso feel in modern jazz, with drummers adopting a characteristic two-bar calypso groove under the buoyant 16-bar melody. Jazz educators frequently cite it as the canonical calypso-jazz standard, and the tune remains a staple on bandstands and in improvisation curricula.",
     "famous_recordings": [
-      "Sonny Rollins - 1956",
-      "Sonny Rollins - 1957"
+      "Sonny Rollins - 1956 (Saxophone Colossus)",
+      "Sonny Rollins - 1957 (A Night at the Village Vanguard)"
     ],
     "rank": 34,
     "chords": "| Cmaj7 F7 | Em7 A7 | Dm7 G7 | C6 |\n| Cmaj7 F7 | Em7 A7 | Dm7 G7 | C6 |\n| Em7b5 | A7b9 | Dm7 | G7 |\n| Cmaj7 C7/ E | Fmaj7 F#dim7 | G7 | C6 |",
+    "section_markers": [
+      {
+        "label": "A",
+        "start": 1,
+        "end": 4
+      },
+      {
+        "label": "A",
+        "start": 5,
+        "end": 8
+      },
+      {
+        "label": "B",
+        "start": 9,
+        "end": 12
+      },
+      {
+        "label": "A",
+        "start": 13,
+        "end": 16
+      }
+    ],
+    "chord_progression_notes": "Time signature: 4/4 (calypso feel, often felt in two). The chart above is the harmonically elaborated 'jazz' version common in modern lead sheets. A simpler authentic-calypso version reduces the harmony to near-bare I-IV-V-I (e.g., C | F | G7 | C); Rollins himself used progressively stripped-down changes in later live performances. The bVII7 (F7) in bar 1 is a calypso-idiomatic upper-neighbor passing chord, not a true dominant of Bb. Many lead sheets add a V7 (G7) turnaround in bar 16 for tags and solo cycles.",
+    "validated": true,
+    "last_updated": "2026-05-25",
     "id": "mewjccgxw0mf7xzeb1k",
     "is_approved": false,
     "key": ""
