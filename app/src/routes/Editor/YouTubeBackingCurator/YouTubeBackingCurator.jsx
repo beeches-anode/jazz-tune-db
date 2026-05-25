@@ -635,7 +635,7 @@ export const YouTubeBackingCurator = ({ videoIds, tuneName, onChange }) => {
         {previewVideo && (
           <div className="aspect-video">
             <ReactPlayer
-              url={`https://www.youtube.com/watch?v=${previewVideo}`}
+              src={`https://www.youtube.com/watch?v=${previewVideo}`}
               width="100%"
               height="100%"
               controls
