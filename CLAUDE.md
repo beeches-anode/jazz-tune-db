@@ -7,7 +7,7 @@ Personal web app for browsing and editing 525+ jazz tunes. Hosted on Netlify, da
 1. **Canonical data file:** `data/jazz-tunes.json`. Never duplicate it elsewhere in the repo.
 2. **Always `git pull --rebase` before editing the JSON** — the web app may have committed since your last pull.
 3. **One tune per edit operation** when possible — easier to write meaningful commit messages and review history.
-4. **Schema lock:** see `app/src/utils/schema.js` for the canonical tune shape. Don't add fields without updating the schema.
+4. **Schema lock:** the canonical tune shape is defined by `ALLOWED_FIELDS` and `TYPES` in `app/netlify/functions/_shared/validation.js`. Server-side saves strip any field not in `ALLOWED_FIELDS`, so don't add fields anywhere without updating that file (and ideally a test in `validation.test.js`).
 5. **Soft delete only** — set `is_archived: true`. Never remove tunes from the array.
 6. **No secrets in repo** — `.env` is gitignored; Netlify env vars hold production secrets.
 
