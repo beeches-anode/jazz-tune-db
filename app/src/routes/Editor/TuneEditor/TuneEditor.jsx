@@ -10,7 +10,7 @@ import { YouTubeBackingCurator } from '../YouTubeBackingCurator/YouTubeBackingCu
 import { SpotifyCurator } from '../SpotifyCurator/SpotifyCurator';
 import { Validation } from './Validation';
 import { PreviewPanel } from './PreviewPanel';
-import { validateTune } from '../utils/validation';
+import { validateTuneUpdate } from '../../../../netlify/functions/_shared/validation.js';
 
 export const TuneEditor = () => {
   const { tuneId } = useParams();
@@ -37,15 +37,20 @@ export const TuneEditor = () => {
   };
 
   const handleSave = async () => {
-    const validation = validateTune(tune);
+    // Strip id from the payload — DatabaseContext also strips it, but
+    // pass only editable fields to be explicit and reduce log noise.
+    const { id: _id, ...editable } = tune;
+
+    // Gate on exactly what the server would reject (bad standard_key
+    // format, malformed alternate_keys, wrong types) — not on
+    // client-only completeness rules like "year is required", which
+    // would make a freshly-created tune unsaveable.
+    const validation = validateTuneUpdate(editable);
     if (!validation.valid) {
       alert('Cannot save:\n' + validation.errors.join('\n'));
       return;
     }
 
-    // Strip id from the payload — DatabaseContext also strips it, but
-    // pass only editable fields to be explicit and reduce log noise.
-    const { id: _id, ...editable } = tune;
     updateTune(tuneId, editable);
     const result = await saveTuneNow(tuneId);
     if (result.ok) {
