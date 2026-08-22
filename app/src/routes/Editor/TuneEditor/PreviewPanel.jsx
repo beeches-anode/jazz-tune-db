@@ -6,19 +6,16 @@ export const PreviewPanel = ({ tune }) => {
 
   const displayedChords = useMemo(() => {
     if (!tune.chords) return '';
-
-    const fromKey = tune.standard_key || 'C major';
-
     switch (transposeKey) {
       case 'Bb':
-        return transposeProgression(tune.chords, fromKey, 'Bb instrument');
+        return transposeProgression(tune.chords, null, 'Bb instrument');
       case 'Eb':
-        return transposeProgression(tune.chords, fromKey, 'Eb instrument');
+        return transposeProgression(tune.chords, null, 'Eb instrument');
       case 'concert':
       default:
         return tune.chords;
     }
-  }, [tune.chords, tune.standard_key, transposeKey]);
+  }, [tune.chords, transposeKey]);
 
   const renderChordChart = () => {
     if (!displayedChords) return null;
@@ -145,6 +142,12 @@ export const PreviewPanel = ({ tune }) => {
             </div>
           )}
         </div>
+        {tune.alternate_keys?.length > 0 && (
+          <div>
+            <span className="font-medium">Also called in:</span>{' '}
+            {tune.alternate_keys.map((a) => `${a.key} (${a.context})`).join('; ')}
+          </div>
+        )}
       </div>
 
       {/* Chord chart */}
