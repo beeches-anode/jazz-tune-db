@@ -3,9 +3,10 @@ import { DatabaseProvider, useDatabase } from './Editor/DatabaseContext';
 import { TuneList } from '../components/TuneList';
 import { PasteYouTubeModal } from '../components/PasteYouTubeModal';
 import { AlternateKeysEditor } from './Editor/TuneEditor/AlternateKeysEditor';
+import { KEY_REGEX } from '../../netlify/functions/_shared/validation.js';
 
 function MobileEditorInner() {
-  const { tunes, updateTune } = useDatabase();
+  const { tunes, updateTune, saveError } = useDatabase();
   const [selectedId, setSelectedId] = useState(null);
   const [showYouTubeModal, setShowYouTubeModal] = useState(false);
 
@@ -23,6 +24,12 @@ function MobileEditorInner() {
         <span className="text-xs text-zinc-500 w-10">{/* save indicator goes here */}</span>
       </div>
 
+      {saveError && (
+        <div className="mx-4 mt-3 px-3 py-2 bg-red-50 border border-red-200 rounded text-sm text-red-700">
+          Save failed: {saveError.message ?? 'unknown error'}. Your last change was not saved.
+        </div>
+      )}
+
       <div className="p-4 space-y-5">
         <Section title="Basics">
           <FormField label="Tune Name" value={tune.tune_name} onChange={v => updateTune(tune.id, { tune_name: v })} />
@@ -30,11 +37,23 @@ function MobileEditorInner() {
           <FormField label="Lyricist" value={tune.lyricist ?? ''} onChange={v => updateTune(tune.id, { lyricist: v })} />
           <FormField label="Year" type="number" value={tune.year ?? ''} onChange={v => updateTune(tune.id, { year: parseInt(v, 10) || null })} />
           <FormField label="Style" value={tune.style ?? ''} onChange={v => updateTune(tune.id, { style: v })} />
-          <FormField label="Standard Key" value={tune.standard_key ?? ''} onChange={v => updateTune(tune.id, { standard_key: v })} />
+          <FormField
+            label="Standard Key"
+            value={tune.standard_key ?? ''}
+            onChange={v => updateTune(tune.id, { standard_key: v })}
+            error={
+              tune.standard_key && !KEY_REGEX.test(tune.standard_key)
+                ? 'Format: root + quality, e.g. "C major", "F blues", "D dorian" — saves will be rejected otherwise'
+                : null
+            }
+          />
           <AlternateKeysEditor
             tuneId={tune.id}
             value={tune.alternate_keys}
-            onChange={(rows) => updateTune(tune.id, { alternate_keys: rows })}
+            onChange={(rows) => {
+              if (JSON.stringify(rows) === JSON.stringify(tune.alternate_keys ?? [])) return;
+              updateTune(tune.id, { alternate_keys: rows });
+            }}
           />
           <FormField label="Rank" type="number" value={tune.rank ?? ''} onChange={v => updateTune(tune.id, { rank: parseInt(v, 10) || null })} />
           <FormToggle label="Approved" value={tune.is_approved} onChange={v => updateTune(tune.id, { is_approved: v })} />
@@ -107,7 +126,8 @@ function Section({ title, children }) {
   );
 }
 
-function FormField({ label, value, onChange, type = 'text', multiline = false }) {
+function FormField({ label, value, onChange, type = 'text', multiline = false, error = null }) {
+  const borderClass = error ? 'border-red-400' : 'border-zinc-300';
   return (
     <label className="block">
       <span className="text-sm text-zinc-700">{label}</span>
@@ -116,16 +136,17 @@ function FormField({ label, value, onChange, type = 'text', multiline = false })
           value={value}
           onChange={e => onChange(e.target.value)}
           rows={6}
-          className="mt-1 block w-full px-3 py-2 border border-zinc-300 rounded font-mono text-sm"
+          className={`mt-1 block w-full px-3 py-2 border rounded font-mono text-sm ${borderClass}`}
         />
       ) : (
         <input
           type={type}
           value={value}
           onChange={e => onChange(e.target.value)}
-          className="mt-1 block w-full px-3 py-2 border border-zinc-300 rounded"
+          className={`mt-1 block w-full px-3 py-2 border rounded ${borderClass}`}
         />
       )}
+      {error && <p className="mt-1 text-xs text-red-500">{error}</p>}
     </label>
   );
 }
