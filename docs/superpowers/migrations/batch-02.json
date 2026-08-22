@@ -1,0 +1,77 @@
+[
+  {
+    "id": "mewjccgwx1a75wpyjs",
+    "tune_name": "Mack the Knife",
+    "standard_key": "Standard / common keys: Bb major (very common in jazz fake books and for vocalists); C major (also widely used, especially in some vocal/published editions and on some bandstands)."
+  },
+  {
+    "id": "mewjccgwxfi7i9stjb",
+    "tune_name": "Stella by Starlight",
+    "standard_key": "Bb major; also C major and Eb major (often for vocalists)"
+  },
+  {
+    "id": "mewjccgwxjf9av70h98",
+    "tune_name": "Billie's Bounce",
+    "standard_key": "F"
+  },
+  {
+    "id": "mewjccgwy4ly9gvpoyi",
+    "tune_name": "Blue Monk",
+    "standard_key": "Bb"
+  },
+  {
+    "id": "mewjccgx0evkte4pdmkv",
+    "tune_name": "Stompin' at the Savoy",
+    "standard_key": "Db major (concert); also commonly called in Ab major"
+  },
+  {
+    "id": "mewjccgx0jqajpyf65do",
+    "tune_name": "What Is This Thing Called Love?",
+    "standard_key": "C minor (instrumental); E minor (common vocal)"
+  },
+  {
+    "id": "mewjccgx0lbyxmvvnhv9",
+    "tune_name": "Cheryl",
+    "standard_key": "C"
+  },
+  {
+    "id": "mewjccgx0rg96bxfro4",
+    "tune_name": "Speak Low",
+    "standard_key": "F minor (instrumental); G minor (common vocal); E minor (also encountered)"
+  },
+  {
+    "id": "mewjccgx0wboodz4evqj",
+    "tune_name": "Laura",
+    "standard_key": "C major (instrumental call key); Ab or Bb major common for vocalists"
+  },
+  {
+    "id": "mewjccgx0yvqtwm3pkk",
+    "tune_name": "Every Time We Say Goodbye",
+    "standard_key": "Ab major (most common instrumental call key) Ella's recording is in Bb"
+  },
+  {
+    "id": "mewjccgx1ggb7dr8ypc",
+    "tune_name": "Yesterdays",
+    "standard_key": "D minor; also C minor"
+  },
+  {
+    "id": "mewjccgx1iqf9sukcjv",
+    "tune_name": "Walkin'",
+    "standard_key": "F (concert), sometimes called in F minor (blues inflection)"
+  },
+  {
+    "id": "mewjccgx1kbh7tiwitf",
+    "tune_name": "Nancy (with the Laughing Face)",
+    "standard_key": "F major (also commonly in Eb major for vocal settings)"
+  },
+  {
+    "id": "mewjccgx1skbjfa3uwj",
+    "tune_name": "Blues in the Closet",
+    "standard_key": "C, Ab"
+  },
+  {
+    "id": "mewjccgx26cyjbz87pq",
+    "tune_name": "Donna Lee",
+    "standard_key": "Ab major (concert)"
+  }
+]

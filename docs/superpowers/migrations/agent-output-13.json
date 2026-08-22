@@ -1,0 +1,129 @@
+[
+  {
+    "id": "mewjccgxqok1t5mresa",
+    "standard_key": "C# minor",
+    "alternate_keys": [
+      {"key": "C minor", "context": "commonly called"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxqovtp7bm12",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Bb major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxqyvys67adgi",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "vocal"},
+      {"key": "F major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxr7lcjdg34if",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "C major", "context": "commonly called"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxrchpa592u8",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "F major", "context": "vocal"},
+      {"key": "C major", "context": "pop cover key, e.g., 1960s arrangements"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxrdautbi6dml",
+    "standard_key": "Eb major",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxrwdb1lkcgm9",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "common vocal"},
+      {"key": "G major", "context": "less common"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxrz2y6jqurw",
+    "standard_key": "F blues",
+    "alternate_keys": [
+      {"key": "Bb blues", "context": "also common"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxs1pnopx3sbb",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      {"key": "C major", "context": "common for vocal arrangements"},
+      {"key": "F major", "context": "common for vocal arrangements"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxs43l4v5sjf9",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "F major", "context": "commonly called"},
+      {"key": "Bb major", "context": "vocalists often"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxse36kesjw8s",
+    "standard_key": "Db major",
+    "alternate_keys": [
+      {"key": "C major", "context": "also seen"},
+      {"key": "Ab major", "context": "also seen"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxskseyexm40r",
+    "standard_key": "F minor",
+    "alternate_keys": [
+      {"key": "G minor", "context": "also called"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxstjvlcjy1sn",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "also"},
+      {"key": "Db major", "context": "vocal versions often"},
+      {"key": "C major", "context": "vocal versions often"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxt2skrg0ynum",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      {"key": "A major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxt88fwg3fjf",
+    "standard_key": "F minor",
+    "alternate_keys": [
+      {"key": "C minor", "context": "common vocal key"},
+      {"key": "Eb minor", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  }
+]

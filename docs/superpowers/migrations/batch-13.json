@@ -1,0 +1,77 @@
+[
+  {
+    "id": "mewjccgxqok1t5mresa",
+    "tune_name": "Equinox",
+    "standard_key": "C# minor (Db minor); also commonly called in C minor"
+  },
+  {
+    "id": "mewjccgxqovtp7bm12",
+    "tune_name": "April in Paris",
+    "standard_key": "F major (instrumental); Bb major (vocal)"
+  },
+  {
+    "id": "mewjccgxqyvys67adgi",
+    "tune_name": "Where or When",
+    "standard_key": "C major; Eb major (vocal); F major (vocal)"
+  },
+  {
+    "id": "mewjccgxr7lcjdg34if",
+    "tune_name": "When I Fall in Love",
+    "standard_key": "Eb major; also commonly C major"
+  },
+  {
+    "id": "mewjccgxrchpa592u8",
+    "tune_name": "The More I See You",
+    "standard_key": "E-flat major (common instrumental call key); also F major (vocal); C major (pop cover key, e.g., 1960s arrangements)"
+  },
+  {
+    "id": "mewjccgxrdautbi6dml",
+    "tune_name": "Sandu",
+    "standard_key": "E-flat major (concert)"
+  },
+  {
+    "id": "mewjccgxrwdb1lkcgm9",
+    "tune_name": "My Heart Stood Still",
+    "standard_key": "F major; E-flat major (common vocal); G major (less common)"
+  },
+  {
+    "id": "mewjccgxrz2y6jqurw",
+    "tune_name": "Bessie's Blues",
+    "standard_key": "F (concert); also common: Bb"
+  },
+  {
+    "id": "mewjccgxs1pnopx3sbb",
+    "tune_name": "I'm Beginning to See the Light",
+    "standard_key": "Bb major (instrumental call); C major and F major also common for vocal arrangements"
+  },
+  {
+    "id": "mewjccgxs43l4v5sjf9",
+    "tune_name": "Dancing in the Dark",
+    "standard_key": "Eb major; also commonly called in F major (vocalists often in Bb major)"
+  },
+  {
+    "id": "mewjccgxse36kesjw8s",
+    "tune_name": "Mood Indigo",
+    "standard_key": "Db major (concert); also seen in C major and Ab major"
+  },
+  {
+    "id": "mewjccgxskseyexm40r",
+    "tune_name": "Minority",
+    "standard_key": "F minor (also called in G minor)"
+  },
+  {
+    "id": "mewjccgxstjvlcjy1sn",
+    "tune_name": "I Surrender, Dear",
+    "standard_key": "Bb major (common instrumental call key); also Eb major; vocal versions often in Db or C"
+  },
+  {
+    "id": "mewjccgxt2skrg0ynum",
+    "tune_name": "Triste",
+    "standard_key": "Bb major; also A major (vocal)"
+  },
+  {
+    "id": "mewjccgxt88fwg3fjf",
+    "tune_name": "Lullaby of Birdland",
+    "standard_key": "F minor (instrumental call key); C minor, Eb minor (common vocal keys)"
+  }
+]

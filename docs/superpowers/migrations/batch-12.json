@@ -1,0 +1,77 @@
+[
+  {
+    "id": "mewjccgxnlusj88sz6c",
+    "tune_name": "Bemsha Swing",
+    "standard_key": "D (concert)"
+  },
+  {
+    "id": "mewjccgxntdwwd732m",
+    "tune_name": "Ugetsu (Fantasy in D)",
+    "standard_key": "D minor (concert)"
+  },
+  {
+    "id": "mewjccgxo0bod99ogv",
+    "tune_name": "But Not for Me",
+    "standard_key": "Eb major (instrumental call key); C major (common vocal/male); Ab major (common vocal/female)"
+  },
+  {
+    "id": "mewjccgxo1rdxj053jq",
+    "tune_name": "Cry Me a River",
+    "standard_key": "E minor (most common call key); also D minor; B minor (frequent vocal key)"
+  },
+  {
+    "id": "mewjccgxo7m5f6p8qah",
+    "tune_name": "Ruby, My Dear",
+    "standard_key": "E-flat minor (concert)"
+  },
+  {
+    "id": "mewjccgxo8alqxbyvtb",
+    "tune_name": "The Lady Is a Tramp",
+    "standard_key": "C major (instrumental call key); also common: Bb major and Db major for vocalists"
+  },
+  {
+    "id": "mewjccgxohodoebgsz",
+    "tune_name": "Day Dream",
+    "standard_key": "C major; also common in Bb major (vocal)"
+  },
+  {
+    "id": "mewjccgxom1kaat5h2o",
+    "tune_name": "I Loves You, Porgy",
+    "standard_key": "Eb major (instrumental call key); Db major (common vocal key)"
+  },
+  {
+    "id": "mewjccgxormako32mb8",
+    "tune_name": "You Don't Know What Love Is",
+    "standard_key": "D minor; F minor; C minor (vocal)"
+  },
+  {
+    "id": "mewjccgxox51oso985c",
+    "tune_name": "Like Someone in Love",
+    "standard_key": "Eb major (most common); also C major"
+  },
+  {
+    "id": "mewjccgxp3p9ezmtci",
+    "tune_name": "All of Me",
+    "standard_key": "C major (most common instrumental call key); also Bb and F major (frequent vocal keys)"
+  },
+  {
+    "id": "mewjccgxp93m8n8ivk",
+    "tune_name": "Dat Dere",
+    "standard_key": "F minor (instrumental); also E-flat minor (vocal)"
+  },
+  {
+    "id": "mewjccgxpf9n0uz4qm",
+    "tune_name": "Just in Time",
+    "standard_key": "F major (instrumental call); Bb major, C major (vocal)"
+  },
+  {
+    "id": "mewjccgxpzefgwxa3m8",
+    "tune_name": "I've Grown Accustomed to Her Face",
+    "standard_key": "F major (common call key); also C major"
+  },
+  {
+    "id": "mewjccgxqcdt5u72m8c",
+    "tune_name": "Caravan",
+    "standard_key": "F minor (concert); also D minor"
+  }
+]

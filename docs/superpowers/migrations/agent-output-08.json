@@ -1,0 +1,122 @@
+[
+  {
+    "id": "mewjccgxdihojueyjki",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      { "key": "C major", "context": "vocal key" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxdlvcc3ff3wt",
+    "standard_key": "C major",
+    "alternate_keys": [
+      { "key": "Bb major", "context": "commonly used key" },
+      { "key": "Eb major", "context": "common for vocalists" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxdmm6i9gwli",
+    "standard_key": "C major",
+    "alternate_keys": [
+      { "key": "Eb major", "context": "common vocal key" },
+      { "key": "F major", "context": "common vocal key" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxdmywhjjbg4h",
+    "standard_key": "C minor",
+    "alternate_keys": [
+      { "key": "Bb minor", "context": "common vocal key" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxdnpbhqfxe1w",
+    "standard_key": "F major",
+    "alternate_keys": [
+      { "key": "C major", "context": "seen in small-group fake books" },
+      { "key": "Eb major", "context": "used for vocal/lyric versions" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxdo002f8yrwj",
+    "standard_key": "G major",
+    "alternate_keys": [
+      { "key": "C major", "context": "common vocal key" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxdscqpdvdqn",
+    "standard_key": "F major",
+    "alternate_keys": [
+      { "key": "Eb major", "context": "vocal key" },
+      { "key": "Bb major", "context": "also common" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxdyqthju92s6",
+    "standard_key": "G major",
+    "alternate_keys": [
+      { "key": "Eb major", "context": "common vocal key" },
+      { "key": "F major", "context": "common vocal key" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxe49v7qiv03w",
+    "standard_key": "C major",
+    "alternate_keys": [
+      { "key": "Db major", "context": "vocal key" },
+      { "key": "Bb major", "context": "vocal key" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxehtj1mezqo5",
+    "standard_key": "F major",
+    "alternate_keys": [
+      { "key": "Eb major", "context": "vocal settings vary by singer" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxelx745n06va",
+    "standard_key": "G blues",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxexywhjdnkd",
+    "standard_key": "C major",
+    "alternate_keys": [
+      { "key": "Eb major", "context": "also commonly used" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxeyc95p0a1u",
+    "standard_key": "F blues",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxfjsvbvlilca",
+    "standard_key": "C blues",
+    "alternate_keys": [],
+    "curator_notes_append": "Classified as a blues based on the tune's known 12-bar blues form; low confidence since the source narrative gave no explicit form indication."
+  },
+  {
+    "id": "mewjccgxfma1rhdv4gc",
+    "standard_key": "Db major",
+    "alternate_keys": [
+      { "key": "C major", "context": "vocal key" }
+    ],
+    "curator_notes_append": null
+  }
+]

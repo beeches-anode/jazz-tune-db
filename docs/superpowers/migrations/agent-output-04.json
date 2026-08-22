@@ -1,0 +1,120 @@
+[
+  {
+    "id": "mewjccgx37s7xnxtnto",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "also common key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx3a0p3910vw2",
+    "standard_key": "Eb major",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx3aewwxavkuy",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Db major", "context": "big-band/Tommy Dorsey tradition"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx3k7i45si0h9",
+    "standard_key": "Bb blues",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx3nl2y3fi0wc",
+    "standard_key": "G major",
+    "alternate_keys": [
+      {"key": "F major", "context": "also common key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx3ydjueioq9g",
+    "standard_key": "F major",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx4h68gr9c17t",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      {"key": "Ab major", "context": "vocal versions"},
+      {"key": "C major", "context": "vocal versions"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx4hywj91x014",
+    "standard_key": "D major",
+    "alternate_keys": [
+      {"key": "C major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx54gpylry6sb",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx5bfqzxed2fe",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "G major", "context": "common for vocalists"},
+      {"key": "F major", "context": "common for vocalists"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx5hu7tf81mp3",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "frequent vocal keys"},
+      {"key": "C major", "context": "frequent vocal keys"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx5kw4tud9dwo",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "F major", "context": "common for vocalists"},
+      {"key": "Bb major", "context": "common for vocalists"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx5odcbzs6fhe",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "instrumental"},
+      {"key": "Bb major", "context": "vocal versions"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx5uzjkk6ldw7",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "E major", "context": "original João Gilberto recording"},
+      {"key": "Eb major", "context": "frequent alternate for bands/vocalists"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx658i0px8whr",
+    "standard_key": "E major",
+    "alternate_keys": [],
+    "curator_notes_append": "Key inferred from a bare root with no quality or context given; confidence is low, verify against a lead sheet or recording."
+  }
+]

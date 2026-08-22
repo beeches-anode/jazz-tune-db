@@ -1,0 +1,77 @@
+[
+  {
+    "id": "mewjccgxb9m2tx5fybt",
+    "tune_name": "I Fall in Love Too Easily",
+    "standard_key": "E\u266d major (most common instrumental call key)"
+  },
+  {
+    "id": "mewjccgxbcuk1nxhkkl",
+    "tune_name": "Manteca",
+    "standard_key": "Bb"
+  },
+  {
+    "id": "mewjccgxbdvn38zv2g",
+    "tune_name": "B\u00e9same Mucho",
+    "standard_key": "D minor (instrumental call); also E minor and G minor"
+  },
+  {
+    "id": "mewjccgxbel8f3ao9db",
+    "tune_name": "Day by Day",
+    "standard_key": "F major; also common in Eb major (vocal)"
+  },
+  {
+    "id": "mewjccgxbfhs2xpiul",
+    "tune_name": "Don't Explain",
+    "standard_key": "D minor; also commonly in C minor (vocal)"
+  },
+  {
+    "id": "mewjccgxbfu7tt7qx2l",
+    "tune_name": "Don't Fence Me In",
+    "standard_key": "F Major"
+  },
+  {
+    "id": "mewjccgxbm0hnoslbhg",
+    "tune_name": "I Should Care",
+    "standard_key": "C (common instrumental call key); Eb (common vocal key)"
+  },
+  {
+    "id": "mewjccgxboz53aq5lxu",
+    "tune_name": "Blue Seven",
+    "standard_key": "C"
+  },
+  {
+    "id": "mewjccgxbozsww2u88e",
+    "tune_name": "You Took Advantage of Me",
+    "standard_key": "F major (common instrumental call); also Eb major"
+  },
+  {
+    "id": "mewjccgxbw2ctzlfl5",
+    "tune_name": "A Night in Tunisia",
+    "standard_key": "D minor (concert); also common: C minor (instrumental/voice), Eb minor (vocal)"
+  },
+  {
+    "id": "mewjccgxc5bvd1ubm38",
+    "tune_name": "Love Walked In",
+    "standard_key": "Eb major (common instrumental call key); also C major and Db major (frequent vocal keys)"
+  },
+  {
+    "id": "mewjccgxcnff8ysr9vp",
+    "tune_name": "Killer Joe",
+    "standard_key": "C major (concert)"
+  },
+  {
+    "id": "mewjccgxcsattds3nl6",
+    "tune_name": "Let's Fall in Love",
+    "standard_key": "C major; also Bb major and Ab major are common (instrumental call key most often C)"
+  },
+  {
+    "id": "mewjccgxctr1p24uaui",
+    "tune_name": "Sonnymoon for Two",
+    "standard_key": "B-flat"
+  },
+  {
+    "id": "mewjccgxdfyqznv0rbc",
+    "tune_name": "You Stepped Out of a Dream",
+    "standard_key": "C major (instrumental call key); also Bb major (common vocal key)"
+  }
+]

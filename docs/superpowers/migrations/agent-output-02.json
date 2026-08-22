@@ -1,0 +1,117 @@
+[
+  {
+    "id": "mewjccgwx1a75wpyjs",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Bb major", "context": "common in jazz fake books and for vocalists"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgwxfi7i9stjb",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      {"key": "C major", "context": "often for vocalists"},
+      {"key": "Eb major", "context": "often for vocalists"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgwxjf9av70h98",
+    "standard_key": "F blues",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgwy4ly9gvpoyi",
+    "standard_key": "Bb blues",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx0evkte4pdmkv",
+    "standard_key": "Db major",
+    "alternate_keys": [
+      {"key": "Ab major", "context": "commonly called"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx0jqajpyf65do",
+    "standard_key": "C minor",
+    "alternate_keys": [
+      {"key": "E minor", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx0lbyxmvvnhv9",
+    "standard_key": "C blues",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx0rg96bxfro4",
+    "standard_key": "F minor",
+    "alternate_keys": [
+      {"key": "G minor", "context": "common vocal key"},
+      {"key": "E minor", "context": "also encountered"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx0wboodz4evqj",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Ab major", "context": "common for vocalists"},
+      {"key": "Bb major", "context": "common for vocalists"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx0yvqtwm3pkk",
+    "standard_key": "Ab major",
+    "alternate_keys": [
+      {"key": "Bb major", "context": "Ella's recording"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx1ggb7dr8ypc",
+    "standard_key": "D minor",
+    "alternate_keys": [
+      {"key": "C minor", "context": "also used"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx1iqf9sukcjv",
+    "standard_key": "F blues",
+    "alternate_keys": [
+      {"key": "F minor", "context": "blues inflection"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx1kbh7tiwitf",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "vocal settings"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx1skbjfa3uwj",
+    "standard_key": "C blues",
+    "alternate_keys": [
+      {"key": "Ab blues", "context": "also commonly called"}
+    ],
+    "curator_notes_append": "Source lists both C and Ab without indicating a primary; C used per common Real Book convention (low confidence)."
+  },
+  {
+    "id": "mewjccgx26cyjbz87pq",
+    "standard_key": "Ab major",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  }
+]

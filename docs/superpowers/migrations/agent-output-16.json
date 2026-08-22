@@ -1,0 +1,66 @@
+[
+  {
+    "id": "mewjccgxyvapam1xw",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "D major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxywvsywo7qr",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "F major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxz18oi55vw8f",
+    "standard_key": "A minor",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxzaj50c7cmd",
+    "standard_key": "",
+    "alternate_keys": [
+      {"key": "G major", "context": "no distinguishing context given"},
+      {"key": "F major", "context": "no distinguishing context given"},
+      {"key": "Bb major", "context": "no distinguishing context given"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxziknanggr1q",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      {"key": "F major", "context": "vocal"},
+      {"key": "C major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxzt4xxs5f0nh",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Bb major", "context": "vocal"},
+      {"key": "F major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxzwr576z4yb",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "straightnochaser2024",
+    "standard_key": "F major",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  }
+]

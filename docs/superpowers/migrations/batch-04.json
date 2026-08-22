@@ -1,0 +1,77 @@
+[
+  {
+    "id": "mewjccgx37s7xnxtnto",
+    "tune_name": "On Green Dolphin Street",
+    "standard_key": "C major (also Eb major)"
+  },
+  {
+    "id": "mewjccgx3a0p3910vw2",
+    "tune_name": "Bebop",
+    "standard_key": "Eb"
+  },
+  {
+    "id": "mewjccgx3aewwxavkuy",
+    "tune_name": "I'm Getting Sentimental Over You",
+    "standard_key": "C major; Db major also common (big-band/Tommy Dorsey tradition)"
+  },
+  {
+    "id": "mewjccgx3k7i45si0h9",
+    "tune_name": "Freddie Freeloader",
+    "standard_key": "Bb"
+  },
+  {
+    "id": "mewjccgx3nl2y3fi0wc",
+    "tune_name": "Just Friends",
+    "standard_key": "G major; also F major"
+  },
+  {
+    "id": "mewjccgx3ydjueioq9g",
+    "tune_name": "If I Were a Bell",
+    "standard_key": "F major (concert)"
+  },
+  {
+    "id": "mewjccgx4h68gr9c17t",
+    "tune_name": "A Fine Romance",
+    "standard_key": "Bb major (common instrumental call key);; vocal versions often in Ab or C"
+  },
+  {
+    "id": "mewjccgx4hywj91x014",
+    "tune_name": "Wave",
+    "standard_key": "D major (instrumental call key); C major (common vocal key)"
+  },
+  {
+    "id": "mewjccgx54gpylry6sb",
+    "tune_name": "Pennies from Heaven",
+    "standard_key": "C major (instrumental call); also Eb major (common vocal key)"
+  },
+  {
+    "id": "mewjccgx5bfqzxed2fe",
+    "tune_name": "Blue Skies",
+    "standard_key": "C major (instrumental call key); also G major and F major common for vocalists"
+  },
+  {
+    "id": "mewjccgx5hu7tf81mp3",
+    "tune_name": "Blame It on My Youth",
+    "standard_key": "F major (common instrumental call key); also Eb major and C major (frequent vocal keys)"
+  },
+  {
+    "id": "mewjccgx5kw4tud9dwo",
+    "tune_name": "On the Sunny Side of the Street",
+    "standard_key": "C major (instrumental call); also F major and Bb major common for vocalists"
+  },
+  {
+    "id": "mewjccgx5odcbzs6fhe",
+    "tune_name": "On the Street Where You Live",
+    "standard_key": "F major; also Eb major (instrumental). Vocal versions commonly in Bb major."
+  },
+  {
+    "id": "mewjccgx5uzjkk6ldw7",
+    "tune_name": "Desafinado",
+    "standard_key": "F major (most common instrumental call); also E major (original Jo\u00e3o Gilberto recording); Eb major (frequent alternate for bands/vocalists)"
+  },
+  {
+    "id": "mewjccgx658i0px8whr",
+    "tune_name": "Hullo Bolinas",
+    "standard_key": "E"
+  }
+]

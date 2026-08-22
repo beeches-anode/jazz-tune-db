@@ -1,0 +1,77 @@
+[
+  {
+    "id": "mewjccgx26v9y98kl9y",
+    "tune_name": "It's You or No One",
+    "standard_key": "Eb major (instrumental call key); also C or Db major for vocalists"
+  },
+  {
+    "id": "mewjccgx27oc6id89xki",
+    "tune_name": "Come Rain or Come Shine",
+    "standard_key": "F major (instrumental call key); also Bb major (vocal) and Eb major"
+  },
+  {
+    "id": "mewjccgx2b0ygs8wqjw",
+    "tune_name": "Corcovado (Quiet Nights of Quiet Stars)",
+    "standard_key": "F major (instrumental call key); C major and Eb major (common vocal keys)"
+  },
+  {
+    "id": "mewjccgx2cyikca0ebu",
+    "tune_name": "You'd Be So Nice to Come Home To",
+    "standard_key": "D minor (instrumental call key); C minor (common vocal key)"
+  },
+  {
+    "id": "mewjccgx2kabgx0neip",
+    "tune_name": "A Beautiful Friendship",
+    "standard_key": "F (instrumental call key); Eb (common vocal key)"
+  },
+  {
+    "id": "mewjccgx2m3w9iaex21",
+    "tune_name": "Dig",
+    "standard_key": "F major (concert); also Ab major (less common)"
+  },
+  {
+    "id": "mewjccgx2msdopy90kw",
+    "tune_name": "Lush Life",
+    "standard_key": "Db major (concert); also commonly in C major and Eb major for vocalists"
+  },
+  {
+    "id": "mewjccgx2peoyxqcmwv",
+    "tune_name": "Limehouse Blues",
+    "standard_key": "G minor (concert); also common: A minor"
+  },
+  {
+    "id": "mewjccgx2pnkwzuj08w",
+    "tune_name": "Cool Blues",
+    "standard_key": "F"
+  },
+  {
+    "id": "mewjccgx2wuhzebj4sf",
+    "tune_name": "Rosetta",
+    "standard_key": "Ab major; also C major (common in Gypsy-jazz settings)"
+  },
+  {
+    "id": "mewjccgx2ydtprbnjau",
+    "tune_name": "Once I Loved (Amor em Paz)",
+    "standard_key": "F major (instrumental call key); also Eb major (common vocal key)"
+  },
+  {
+    "id": "mewjccgx2yyameicep",
+    "tune_name": "Up Jumped Spring",
+    "standard_key": "F major (instrumental call); Eb major (common vocal key)"
+  },
+  {
+    "id": "mewjccgx32m2752g4ya",
+    "tune_name": "Freight Trane",
+    "standard_key": "While Ab Major is the standard, a notable variant exists in A Major, famously used by guitarist Pat Martino on his influential 1972 album, Live!. This key is sometimes preferred by guitarists."
+  },
+  {
+    "id": "mewjccgx33qma45q8y",
+    "tune_name": "In a Sentimental Mood",
+    "standard_key": "D minor (also commonly C minor)"
+  },
+  {
+    "id": "mewjccgx37p561g2qgu",
+    "tune_name": "I'm Glad There Is You (In This World of Ordinary People)",
+    "standard_key": "Bb major; also common: Eb major (vocal)"
+  }
+]

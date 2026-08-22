@@ -1,0 +1,77 @@
+[
+  {
+    "id": "mewjccgx66w73k8cc5s",
+    "tune_name": "Moonglow",
+    "standard_key": "G major (instrumental call key); also F major and Ab major (common vocal keys)"
+  },
+  {
+    "id": "mewjccgx6hyxz0wf8pp",
+    "tune_name": "Don't Blame Me",
+    "standard_key": "Bb major (most common instrumental call key); also C major; Eb major (vocal)"
+  },
+  {
+    "id": "mewjccgx6lc8b9qfjpj",
+    "tune_name": "Just One of Those Things",
+    "standard_key": "C major (instrumental call key); F major (alternate instrumental); D major (common vocal key)"
+  },
+  {
+    "id": "mewjccgx6v4bquzmxbe",
+    "tune_name": "Sophisticated Lady",
+    "standard_key": "Db major; also C major"
+  },
+  {
+    "id": "mewjccgx776dflfnejq",
+    "tune_name": "Milestones",
+    "standard_key": "G Dorian (concert)"
+  },
+  {
+    "id": "mewjccgx7aa0me30t0h",
+    "tune_name": "Perdido",
+    "standard_key": "Bb major (most common instrumental call); Ab major (often in Ellington big-band charts)"
+  },
+  {
+    "id": "mewjccgx7bxue9gdwb5",
+    "tune_name": "Tenderly",
+    "standard_key": "Eb major (concert); also C major and F major are common vocal keys"
+  },
+  {
+    "id": "mewjccgx7g05dxxybs",
+    "tune_name": "Stormy Weather",
+    "standard_key": "G minor (common instrumental call); F minor or Ab minor (frequent vocal keys)"
+  },
+  {
+    "id": "mewjccgx7g1031u7187",
+    "tune_name": "A Child Is Born",
+    "standard_key": "Bb major (concert); also Db major (common vocal/piano key)"
+  },
+  {
+    "id": "mewjccgx7ivphqp5njf",
+    "tune_name": "I Remember Clifford",
+    "standard_key": "E-flat major (concert)"
+  },
+  {
+    "id": "mewjccgx8017mapmp3j",
+    "tune_name": "I've Never Been in Love Before",
+    "standard_key": "Bb major; also F major (vocal)"
+  },
+  {
+    "id": "mewjccgx8b8zxhdljwk",
+    "tune_name": "Black Orpheus (Manh\u00e3 de Carnaval)",
+    "standard_key": "A minor (instrumental); D minor and C minor also common (vocal)"
+  },
+  {
+    "id": "mewjccgx8bppbwub81j",
+    "tune_name": "It's the Talk of the Town",
+    "standard_key": "F major; also E-flat major (commonly used by vocalists)"
+  },
+  {
+    "id": "mewjccgx8dwyqyx47si",
+    "tune_name": "Lady Be Good",
+    "standard_key": "G major (instrumental); also F major; Ab major (vocal)"
+  },
+  {
+    "id": "mewjccgx8tp8jhe25o2",
+    "tune_name": "Invitation",
+    "standard_key": "D minor; C minor"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "mewjccgw3jk1e1z2ioa",
+    "standard_key": "F blues",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgw7j5pis4p1xu",
+    "standard_key": "Ab major",
+    "alternate_keys": [
+      {"key": "C major", "context": "commonly performed by vocalists"},
+      {"key": "F major", "context": "commonly performed by vocalists"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgw9imw6m6c9l",
+    "standard_key": "D minor",
+    "alternate_keys": [
+      {"key": "C minor", "context": "also called"},
+      {"key": "G minor", "context": "vocal charts"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgwbksv0vre6ko",
+    "standard_key": "D dorian",
+    "alternate_keys": [
+      {"key": "Eb dorian", "context": "bridge"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgwcbx3yf424ei",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Bb major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgwcdq47ggp7fv",
+    "standard_key": "G minor",
+    "alternate_keys": [
+      {"key": "E minor", "context": "widely published in lead sheets/Real Book"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgwdv30frn82j7",
+    "standard_key": "F blues",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgwgr6k03cesn",
+    "standard_key": "Bb blues",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgwj5ss110v8zc",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Db major", "context": "Getz/Gilberto recording"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgwkzwwfceiahf",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      {"key": "C major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgwllqnf83ztne",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "G major", "context": "commonly used by vocalists"},
+      {"key": "Bb major", "context": "commonly used by vocalists"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgwngrca9tyhx",
+    "standard_key": "A minor",
+    "alternate_keys": [
+      {"key": "D minor", "context": "vocal"},
+      {"key": "E minor", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgwo03sddxkigf",
+    "standard_key": "D dorian",
+    "alternate_keys": [
+      {"key": "Eb dorian", "context": "bridge"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgwp108it5e2u",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Ab major", "context": "vocalist"},
+      {"key": "Bb major", "context": "vocalist"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgwvo1g3m4q7e",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "C major", "context": "common vocal"},
+      {"key": "F major", "context": "common vocal"}
+    ],
+    "curator_notes_append": null
+  }
+]

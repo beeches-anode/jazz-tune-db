@@ -1,0 +1,114 @@
+[
+  {
+    "id": "mewjccgxkji9uhp2f6r",
+    "standard_key": "F major",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxkp04hyxljg",
+    "standard_key": "F blues",
+    "alternate_keys": [],
+    "curator_notes_append": "Standard key given only as a bare root ('F') with no qualifier, matching the same unqualified format used for Bag's Groove (a confirmed 12-bar blues) in this batch, so it was interpreted as an F blues head rather than F major. Low confidence: could not independently verify this tune's form or composer."
+  },
+  {
+    "id": "mewjccgxl57lzsl7aop",
+    "standard_key": "Ab major",
+    "alternate_keys": [
+      {"key": "F major", "context": "trad bands and some vocalists"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxl6i7grwiwu",
+    "standard_key": "G major",
+    "alternate_keys": [
+      {"key": "F major", "context": "also common key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxladiqabr67j",
+    "standard_key": "Bb major",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxldul59o6f5",
+    "standard_key": "F blues",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxlkvmfiuph19",
+    "standard_key": "D major",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxlpq8pjcvf4",
+    "standard_key": "Db major",
+    "alternate_keys": [
+      {"key": "C major", "context": "instrumental"},
+      {"key": "F major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxlujmgxf5mf",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "F major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxlx9p6aiymu",
+    "standard_key": "G minor",
+    "alternate_keys": [
+      {"key": "F minor", "context": "vocal"},
+      {"key": "Eb minor", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxm2xm16suxu",
+    "standard_key": "E minor",
+    "alternate_keys": [
+      {"key": "F minor", "context": "also used"},
+      {"key": "D minor", "context": "also used"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxm4qoixs7uuf",
+    "standard_key": "F minor",
+    "alternate_keys": [
+      {"key": "E minor", "context": "Herbie Mann recording"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxmhfbg4sq02d",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "C major", "context": "vocal settings"},
+      {"key": "F major", "context": "vocal settings"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxmt4o4u5ls1e",
+    "standard_key": "F blues",
+    "alternate_keys": [],
+    "curator_notes_append": "Standard key given only as a bare root ('F') with no qualifier, matching the same unqualified format used for Bag's Groove (a confirmed 12-bar blues) in this batch, so it was interpreted as an F blues head rather than F major. Low confidence: could not independently verify this tune's form or composer."
+  },
+  {
+    "id": "mewjccgxnbds94ulwh",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Bb major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "mewjccgxdihojueyjki",
+    "tune_name": "I'll Close My Eyes",
+    "standard_key": "Eb major; C major (vocal)"
+  },
+  {
+    "id": "mewjccgxdlvcc3ff3wt",
+    "tune_name": "My Romance",
+    "standard_key": "C major; Bb major; Eb major (common for vocalists)"
+  },
+  {
+    "id": "mewjccgxdmm6i9gwli",
+    "tune_name": "Night and Day",
+    "standard_key": "C major (instrumental call key); also Eb major or F major (common vocal keys)"
+  },
+  {
+    "id": "mewjccgxdmywhjjbg4h",
+    "tune_name": "My Funny Valentine",
+    "standard_key": "C minor; B-flat minor (common vocal key)"
+  },
+  {
+    "id": "mewjccgxdnpbhqfxe1w",
+    "tune_name": "Li'l Darlin'",
+    "standard_key": "F major (concert) most common for instrumental/bandstand calls; C major also seen in small-group fake books; Eb major often used for vocal/lyric versions"
+  },
+  {
+    "id": "mewjccgxdo002f8yrwj",
+    "tune_name": "It's Only a Paper Moon",
+    "standard_key": "G major; also C major (common vocal key)"
+  },
+  {
+    "id": "mewjccgxdscqpdvdqn",
+    "tune_name": "Cheek to Cheek",
+    "standard_key": "F major; also common in Eb major (vocal) and Bb major"
+  },
+  {
+    "id": "mewjccgxdyqthju92s6",
+    "tune_name": "I Got It Bad (and That Ain't Good)",
+    "standard_key": "G major (instrumental call key); also Eb major and F major (common vocal keys)"
+  },
+  {
+    "id": "mewjccgxe49v7qiv03w",
+    "tune_name": "Stardust",
+    "standard_key": "C major (common instrumental call key); also: Db major (vocal), Bb major (vocal)"
+  },
+  {
+    "id": "mewjccgxehtj1mezqo5",
+    "tune_name": "Nice Work If You Can Get It",
+    "standard_key": "F major (instrumental call), Eb major (also common; vocal settings vary by singer)"
+  },
+  {
+    "id": "mewjccgxelx745n06va",
+    "tune_name": "All Blues",
+    "standard_key": "G"
+  },
+  {
+    "id": "mewjccgxexywhjdnkd",
+    "tune_name": "Afternoon in Paris",
+    "standard_key": "C major; also E-flat major"
+  },
+  {
+    "id": "mewjccgxeyc95p0a1u",
+    "tune_name": "Blues Walk",
+    "standard_key": "F"
+  },
+  {
+    "id": "mewjccgxfjsvbvlilca",
+    "tune_name": "Nostalgia in Times Square",
+    "standard_key": "C"
+  },
+  {
+    "id": "mewjccgxfma1rhdv4gc",
+    "tune_name": "Body and Soul",
+    "standard_key": "Db major; also commonly called in C major (vocal)"
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "mewjccgw3jk1e1z2ioa",
+    "tune_name": "Straight, No Chaser",
+    "standard_key": "F"
+  },
+  {
+    "id": "mewjccgw7j5pis4p1xu",
+    "tune_name": "All the Things You Are",
+    "standard_key": "Ab major (concert); also commonly performed by vocalists in C or F"
+  },
+  {
+    "id": "mewjccgw9imw6m6c9l",
+    "tune_name": "Alone Together",
+    "standard_key": "D minor (concert) is most common on bandstands; also called in C minor; vocal charts frequently in G minor."
+  },
+  {
+    "id": "mewjccgwbksv0vre6ko",
+    "tune_name": "Impressions",
+    "standard_key": "D minor (D Dorian; bridge in Eb Dorian)"
+  },
+  {
+    "id": "mewjccgwcbx3yf424ei",
+    "tune_name": "Satin Doll",
+    "standard_key": "C major (concert); also Bb major (vocal)"
+  },
+  {
+    "id": "mewjccgwcdq47ggp7fv",
+    "tune_name": "Autumn Leaves",
+    "standard_key": "G minor (most common instrumental call), E minor (widely published in lead sheets/Real Book)"
+  },
+  {
+    "id": "mewjccgwdv30frn82j7",
+    "tune_name": "Now's the Time",
+    "standard_key": "F"
+  },
+  {
+    "id": "mewjccgwgr6k03cesn",
+    "tune_name": "Tenor Madness",
+    "standard_key": "Bb (concert)"
+  },
+  {
+    "id": "mewjccgwj5ss110v8zc",
+    "tune_name": "The Girl from Ipanema (Garota de Ipanema)",
+    "standard_key": "F major (instrumental call key); Db major (vocal-Getz/Gilberto version)"
+  },
+  {
+    "id": "mewjccgwkzwwfceiahf",
+    "tune_name": "There Is No Greater Love",
+    "standard_key": "Bb major; also C major (vocal)"
+  },
+  {
+    "id": "mewjccgwllqnf83ztne",
+    "tune_name": "Bye Bye Blackbird",
+    "standard_key": "F major (instrumental call key); also commonly G or Bb major for vocalists"
+  },
+  {
+    "id": "mewjccgwngrca9tyhx",
+    "tune_name": "Summertime",
+    "standard_key": "A minor (instrumental); D minor, E minor (vocal)"
+  },
+  {
+    "id": "mewjccgwo03sddxkigf",
+    "tune_name": "So What",
+    "standard_key": "D minor (D Dorian mode; bridge in Eb Dorian)"
+  },
+  {
+    "id": "mewjccgwp108it5e2u",
+    "tune_name": "Take the 'A' Train",
+    "standard_key": "C major (instrumental call key); also Ab and Bb major commonly used for vocalists"
+  },
+  {
+    "id": "mewjccgwvo1g3m4q7e",
+    "tune_name": "It Could Happen to You",
+    "standard_key": "Eb major (instrumental call key); also C major (common vocal), F major"
+  }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "id": "mewjccgx8wf85x1qr77",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Ab major", "context": "original/published key, common in gypsy/manouche circles"},
+      {"key": "G major", "context": "manouche/guitar circles"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx8whjh67253t",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "C major", "context": "common male vocal alternate"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx8zm9cd5axtp",
+    "standard_key": "G major",
+    "alternate_keys": [
+      {"key": "F major", "context": "also commonly called"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx98uyt91t3qw",
+    "standard_key": "F major",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx9ezltvlrhbt",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "F major", "context": "some lead sheets/vocal charts"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx9watv67n50r",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "Db major", "context": "common vocal, Frank Sinatra"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxa10w51t45i",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "C major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxa6jexzmjq44",
+    "standard_key": "D minor",
+    "alternate_keys": [
+      {"key": "C minor", "context": "some bandstand/fake-book versions"}
+    ],
+    "curator_notes_append": "Vocal keys vary by range."
+  },
+  {
+    "id": "mewjccgxa6lt560liy",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "also common"}
+    ],
+    "curator_notes_append": "Low confidence: bare root key given as \"F\"; despite the title, the tune's form is not a strict 12-bar blues, so major was assumed rather than blues."
+  },
+  {
+    "id": "mewjccgxabjj5peilr4",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "frequent vocal key"},
+      {"key": "G major", "context": "also encountered"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxahoho1xz5s7",
+    "standard_key": "G major",
+    "alternate_keys": [
+      {"key": "F major", "context": "also common"},
+      {"key": "Eb major", "context": "often for vocalists"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxaip0w52toi4",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "C major", "context": "common vocal key"},
+      {"key": "Bb major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxarkujb7sgy",
+    "standard_key": "C minor",
+    "alternate_keys": [
+      {"key": "Eb minor", "context": "alternate key"}
+    ],
+    "curator_notes_append": "Low confidence: narrative lists both keys with no marker for primary and no stated reason for the E-flat minor alternate; order as given was used to infer C minor as primary."
+  },
+  {
+    "id": "mewjccgxawsfsmhuc0g",
+    "standard_key": "F blues",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxb72y77njddl",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "Db major", "context": "frequent vocal key"},
+      {"key": "C major", "context": "frequent vocal key"}
+    ],
+    "curator_notes_append": null
+  }
+]

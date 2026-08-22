@@ -1,0 +1,114 @@
+[
+  {
+    "id": "mewjccgxb9m2tx5fybt",
+    "standard_key": "Eb major",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxbcuk1nxhkkl",
+    "standard_key": "Bb minor",
+    "alternate_keys": [],
+    "curator_notes_append": "Source gave only a bare root 'Bb' with no major/minor indication; inferred minor based on the tune's Afro-Cuban vamp character, but confidence is low."
+  },
+  {
+    "id": "mewjccgxbdvn38zv2g",
+    "standard_key": "D minor",
+    "alternate_keys": [
+      {"key": "E minor", "context": "also common"},
+      {"key": "G minor", "context": "also common"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxbel8f3ao9db",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxbfhs2xpiul",
+    "standard_key": "D minor",
+    "alternate_keys": [
+      {"key": "C minor", "context": "vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxbfu7tt7qx2l",
+    "standard_key": "F major",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxbm0hnoslbhg",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxboz53aq5lxu",
+    "standard_key": "C blues",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxbozsww2u88e",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "also common"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxbw2ctzlfl5",
+    "standard_key": "D minor",
+    "alternate_keys": [
+      {"key": "C minor", "context": "instrumental/voice"},
+      {"key": "Eb minor", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxc5bvd1ubm38",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "C major", "context": "frequent vocal key"},
+      {"key": "Db major", "context": "frequent vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxcnff8ysr9vp",
+    "standard_key": "C major",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxcsattds3nl6",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Bb major", "context": "also common"},
+      {"key": "Ab major", "context": "also common"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxctr1p24uaui",
+    "standard_key": "Bb blues",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxdfyqznv0rbc",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Bb major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  }
+]

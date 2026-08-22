@@ -1,0 +1,4099 @@
+[
+  {
+    "id": "mewjccgw3jk1e1z2ioa",
+    "tune_name": "Straight, No Chaser",
+    "before": {
+      "standard_key": "F"
+    },
+    "after": {
+      "standard_key": "F blues",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgw7j5pis4p1xu",
+    "tune_name": "All the Things You Are",
+    "before": {
+      "standard_key": "Ab major (concert); also commonly performed by vocalists in C or F"
+    },
+    "after": {
+      "standard_key": "Ab major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "commonly performed by vocalists"
+        },
+        {
+          "key": "F major",
+          "context": "commonly performed by vocalists"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgw9imw6m6c9l",
+    "tune_name": "Alone Together",
+    "before": {
+      "standard_key": "D minor (concert) is most common on bandstands; also called in C minor; vocal charts frequently in G minor."
+    },
+    "after": {
+      "standard_key": "D minor",
+      "alternate_keys": [
+        {
+          "key": "C minor",
+          "context": "also called"
+        },
+        {
+          "key": "G minor",
+          "context": "vocal charts"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwbksv0vre6ko",
+    "tune_name": "Impressions",
+    "before": {
+      "standard_key": "D minor (D Dorian; bridge in Eb Dorian)"
+    },
+    "after": {
+      "standard_key": "D dorian",
+      "alternate_keys": [
+        {
+          "key": "Eb dorian",
+          "context": "bridge"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwcbx3yf424ei",
+    "tune_name": "Satin Doll",
+    "before": {
+      "standard_key": "C major (concert); also Bb major (vocal)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwcdq47ggp7fv",
+    "tune_name": "Autumn Leaves",
+    "before": {
+      "standard_key": "G minor (most common instrumental call), E minor (widely published in lead sheets/Real Book)"
+    },
+    "after": {
+      "standard_key": "G minor",
+      "alternate_keys": [
+        {
+          "key": "E minor",
+          "context": "widely published in lead sheets/Real Book"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwdv30frn82j7",
+    "tune_name": "Now's the Time",
+    "before": {
+      "standard_key": "F"
+    },
+    "after": {
+      "standard_key": "F blues",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwgr6k03cesn",
+    "tune_name": "Tenor Madness",
+    "before": {
+      "standard_key": "Bb (concert)"
+    },
+    "after": {
+      "standard_key": "Bb blues",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwj5ss110v8zc",
+    "tune_name": "The Girl from Ipanema (Garota de Ipanema)",
+    "before": {
+      "standard_key": "F major (instrumental call key); Db major (vocal-Getz/Gilberto version)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Db major",
+          "context": "Getz/Gilberto recording"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwkzwwfceiahf",
+    "tune_name": "There Is No Greater Love",
+    "before": {
+      "standard_key": "Bb major; also C major (vocal)"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwllqnf83ztne",
+    "tune_name": "Bye Bye Blackbird",
+    "before": {
+      "standard_key": "F major (instrumental call key); also commonly G or Bb major for vocalists"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "G major",
+          "context": "commonly used by vocalists"
+        },
+        {
+          "key": "Bb major",
+          "context": "commonly used by vocalists"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwngrca9tyhx",
+    "tune_name": "Summertime",
+    "before": {
+      "standard_key": "A minor (instrumental); D minor, E minor (vocal)"
+    },
+    "after": {
+      "standard_key": "A minor",
+      "alternate_keys": [
+        {
+          "key": "D minor",
+          "context": "vocal"
+        },
+        {
+          "key": "E minor",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwo03sddxkigf",
+    "tune_name": "So What",
+    "before": {
+      "standard_key": "D minor (D Dorian mode; bridge in Eb Dorian)"
+    },
+    "after": {
+      "standard_key": "D dorian",
+      "alternate_keys": [
+        {
+          "key": "Eb dorian",
+          "context": "bridge"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwp108it5e2u",
+    "tune_name": "Take the 'A' Train",
+    "before": {
+      "standard_key": "C major (instrumental call key); also Ab and Bb major commonly used for vocalists"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Ab major",
+          "context": "vocalist"
+        },
+        {
+          "key": "Bb major",
+          "context": "vocalist"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwvo1g3m4q7e",
+    "tune_name": "It Could Happen to You",
+    "before": {
+      "standard_key": "Eb major (instrumental call key); also C major (common vocal), F major"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "common vocal"
+        },
+        {
+          "key": "F major",
+          "context": "common vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwx1a75wpyjs",
+    "tune_name": "Mack the Knife",
+    "before": {
+      "standard_key": "Standard / common keys: Bb major (very common in jazz fake books and for vocalists); C major (also widely used, especially in some vocal/published editions and on some bandstands)."
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "common in jazz fake books and for vocalists"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwxfi7i9stjb",
+    "tune_name": "Stella by Starlight",
+    "before": {
+      "standard_key": "Bb major; also C major and Eb major (often for vocalists)"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "often for vocalists"
+        },
+        {
+          "key": "Eb major",
+          "context": "often for vocalists"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwxjf9av70h98",
+    "tune_name": "Billie's Bounce",
+    "before": {
+      "standard_key": "F"
+    },
+    "after": {
+      "standard_key": "F blues",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgwy4ly9gvpoyi",
+    "tune_name": "Blue Monk",
+    "before": {
+      "standard_key": "Bb"
+    },
+    "after": {
+      "standard_key": "Bb blues",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx0evkte4pdmkv",
+    "tune_name": "Stompin' at the Savoy",
+    "before": {
+      "standard_key": "Db major (concert); also commonly called in Ab major"
+    },
+    "after": {
+      "standard_key": "Db major",
+      "alternate_keys": [
+        {
+          "key": "Ab major",
+          "context": "commonly called"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx0jqajpyf65do",
+    "tune_name": "What Is This Thing Called Love?",
+    "before": {
+      "standard_key": "C minor (instrumental); E minor (common vocal)"
+    },
+    "after": {
+      "standard_key": "C minor",
+      "alternate_keys": [
+        {
+          "key": "E minor",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx0lbyxmvvnhv9",
+    "tune_name": "Cheryl",
+    "before": {
+      "standard_key": "C"
+    },
+    "after": {
+      "standard_key": "C blues",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx0rg96bxfro4",
+    "tune_name": "Speak Low",
+    "before": {
+      "standard_key": "F minor (instrumental); G minor (common vocal); E minor (also encountered)"
+    },
+    "after": {
+      "standard_key": "F minor",
+      "alternate_keys": [
+        {
+          "key": "G minor",
+          "context": "common vocal key"
+        },
+        {
+          "key": "E minor",
+          "context": "also encountered"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx0wboodz4evqj",
+    "tune_name": "Laura",
+    "before": {
+      "standard_key": "C major (instrumental call key); Ab or Bb major common for vocalists"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Ab major",
+          "context": "common for vocalists"
+        },
+        {
+          "key": "Bb major",
+          "context": "common for vocalists"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx0yvqtwm3pkk",
+    "tune_name": "Every Time We Say Goodbye",
+    "before": {
+      "standard_key": "Ab major (most common instrumental call key) Ella's recording is in Bb"
+    },
+    "after": {
+      "standard_key": "Ab major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "Ella's recording"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx1ggb7dr8ypc",
+    "tune_name": "Yesterdays",
+    "before": {
+      "standard_key": "D minor; also C minor"
+    },
+    "after": {
+      "standard_key": "D minor",
+      "alternate_keys": [
+        {
+          "key": "C minor",
+          "context": "also used"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx1iqf9sukcjv",
+    "tune_name": "Walkin'",
+    "before": {
+      "standard_key": "F (concert), sometimes called in F minor (blues inflection)"
+    },
+    "after": {
+      "standard_key": "F blues",
+      "alternate_keys": [
+        {
+          "key": "F minor",
+          "context": "blues inflection"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx1kbh7tiwitf",
+    "tune_name": "Nancy (with the Laughing Face)",
+    "before": {
+      "standard_key": "F major (also commonly in Eb major for vocal settings)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "vocal settings"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx1skbjfa3uwj",
+    "tune_name": "Blues in the Closet",
+    "before": {
+      "standard_key": "C, Ab"
+    },
+    "after": {
+      "standard_key": "C blues",
+      "alternate_keys": [
+        {
+          "key": "Ab blues",
+          "context": "also commonly called"
+        }
+      ],
+      "curator_notes_append": "Source lists both C and Ab without indicating a primary; C used per common Real Book convention (low confidence)."
+    }
+  },
+  {
+    "id": "mewjccgx26cyjbz87pq",
+    "tune_name": "Donna Lee",
+    "before": {
+      "standard_key": "Ab major (concert)"
+    },
+    "after": {
+      "standard_key": "Ab major",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx26v9y98kl9y",
+    "tune_name": "It's You or No One",
+    "before": {
+      "standard_key": "Eb major (instrumental call key); also C or Db major for vocalists"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "for vocalists"
+        },
+        {
+          "key": "Db major",
+          "context": "for vocalists"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx27oc6id89xki",
+    "tune_name": "Come Rain or Come Shine",
+    "before": {
+      "standard_key": "F major (instrumental call key); also Bb major (vocal) and Eb major"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "vocal key"
+        },
+        {
+          "key": "Eb major",
+          "context": "alternate key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx2b0ygs8wqjw",
+    "tune_name": "Corcovado (Quiet Nights of Quiet Stars)",
+    "before": {
+      "standard_key": "F major (instrumental call key); C major and Eb major (common vocal keys)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "common vocal key"
+        },
+        {
+          "key": "Eb major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx2cyikca0ebu",
+    "tune_name": "You'd Be So Nice to Come Home To",
+    "before": {
+      "standard_key": "D minor (instrumental call key); C minor (common vocal key)"
+    },
+    "after": {
+      "standard_key": "D minor",
+      "alternate_keys": [
+        {
+          "key": "C minor",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx2kabgx0neip",
+    "tune_name": "A Beautiful Friendship",
+    "before": {
+      "standard_key": "F (instrumental call key); Eb (common vocal key)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx2m3w9iaex21",
+    "tune_name": "Dig",
+    "before": {
+      "standard_key": "F major (concert); also Ab major (less common)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Ab major",
+          "context": "less common"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx2msdopy90kw",
+    "tune_name": "Lush Life",
+    "before": {
+      "standard_key": "Db major (concert); also commonly in C major and Eb major for vocalists"
+    },
+    "after": {
+      "standard_key": "Db major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "common vocal key"
+        },
+        {
+          "key": "Eb major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx2peoyxqcmwv",
+    "tune_name": "Limehouse Blues",
+    "before": {
+      "standard_key": "G minor (concert); also common: A minor"
+    },
+    "after": {
+      "standard_key": "G minor",
+      "alternate_keys": [
+        {
+          "key": "A minor",
+          "context": "common"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx2pnkwzuj08w",
+    "tune_name": "Cool Blues",
+    "before": {
+      "standard_key": "F"
+    },
+    "after": {
+      "standard_key": "F blues",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx2wuhzebj4sf",
+    "tune_name": "Rosetta",
+    "before": {
+      "standard_key": "Ab major; also C major (common in Gypsy-jazz settings)"
+    },
+    "after": {
+      "standard_key": "Ab major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "common in Gypsy-jazz settings"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx2ydtprbnjau",
+    "tune_name": "Once I Loved (Amor em Paz)",
+    "before": {
+      "standard_key": "F major (instrumental call key); also Eb major (common vocal key)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx2yyameicep",
+    "tune_name": "Up Jumped Spring",
+    "before": {
+      "standard_key": "F major (instrumental call); Eb major (common vocal key)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx32m2752g4ya",
+    "tune_name": "Freight Trane",
+    "before": {
+      "standard_key": "While Ab Major is the standard, a notable variant exists in A Major, famously used by guitarist Pat Martino on his influential 1972 album, Live!. This key is sometimes preferred by guitarists."
+    },
+    "after": {
+      "standard_key": "Ab major",
+      "alternate_keys": [
+        {
+          "key": "A major",
+          "context": "Pat Martino's Live! (1972)"
+        }
+      ],
+      "curator_notes_append": "The A major variant was famously used by guitarist Pat Martino on his 1972 album Live!, and this key is sometimes preferred by guitarists."
+    }
+  },
+  {
+    "id": "mewjccgx33qma45q8y",
+    "tune_name": "In a Sentimental Mood",
+    "before": {
+      "standard_key": "D minor (also commonly C minor)"
+    },
+    "after": {
+      "standard_key": "D minor",
+      "alternate_keys": [
+        {
+          "key": "C minor",
+          "context": "common"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx37p561g2qgu",
+    "tune_name": "I'm Glad There Is You (In This World of Ordinary People)",
+    "before": {
+      "standard_key": "Bb major; also common: Eb major (vocal)"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx37s7xnxtnto",
+    "tune_name": "On Green Dolphin Street",
+    "before": {
+      "standard_key": "C major (also Eb major)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "also common key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx3a0p3910vw2",
+    "tune_name": "Bebop",
+    "before": {
+      "standard_key": "Eb"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx3aewwxavkuy",
+    "tune_name": "I'm Getting Sentimental Over You",
+    "before": {
+      "standard_key": "C major; Db major also common (big-band/Tommy Dorsey tradition)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Db major",
+          "context": "big-band/Tommy Dorsey tradition"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx3k7i45si0h9",
+    "tune_name": "Freddie Freeloader",
+    "before": {
+      "standard_key": "Bb"
+    },
+    "after": {
+      "standard_key": "Bb blues",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx3nl2y3fi0wc",
+    "tune_name": "Just Friends",
+    "before": {
+      "standard_key": "G major; also F major"
+    },
+    "after": {
+      "standard_key": "G major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "also common key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx3ydjueioq9g",
+    "tune_name": "If I Were a Bell",
+    "before": {
+      "standard_key": "F major (concert)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx4h68gr9c17t",
+    "tune_name": "A Fine Romance",
+    "before": {
+      "standard_key": "Bb major (common instrumental call key);; vocal versions often in Ab or C"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "Ab major",
+          "context": "vocal versions"
+        },
+        {
+          "key": "C major",
+          "context": "vocal versions"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx4hywj91x014",
+    "tune_name": "Wave",
+    "before": {
+      "standard_key": "D major (instrumental call key); C major (common vocal key)"
+    },
+    "after": {
+      "standard_key": "D major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx54gpylry6sb",
+    "tune_name": "Pennies from Heaven",
+    "before": {
+      "standard_key": "C major (instrumental call); also Eb major (common vocal key)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx5bfqzxed2fe",
+    "tune_name": "Blue Skies",
+    "before": {
+      "standard_key": "C major (instrumental call key); also G major and F major common for vocalists"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "G major",
+          "context": "common for vocalists"
+        },
+        {
+          "key": "F major",
+          "context": "common for vocalists"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx5hu7tf81mp3",
+    "tune_name": "Blame It on My Youth",
+    "before": {
+      "standard_key": "F major (common instrumental call key); also Eb major and C major (frequent vocal keys)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "frequent vocal keys"
+        },
+        {
+          "key": "C major",
+          "context": "frequent vocal keys"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx5kw4tud9dwo",
+    "tune_name": "On the Sunny Side of the Street",
+    "before": {
+      "standard_key": "C major (instrumental call); also F major and Bb major common for vocalists"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "common for vocalists"
+        },
+        {
+          "key": "Bb major",
+          "context": "common for vocalists"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx5odcbzs6fhe",
+    "tune_name": "On the Street Where You Live",
+    "before": {
+      "standard_key": "F major; also Eb major (instrumental). Vocal versions commonly in Bb major."
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "instrumental"
+        },
+        {
+          "key": "Bb major",
+          "context": "vocal versions"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx5uzjkk6ldw7",
+    "tune_name": "Desafinado",
+    "before": {
+      "standard_key": "F major (most common instrumental call); also E major (original João Gilberto recording); Eb major (frequent alternate for bands/vocalists)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "E major",
+          "context": "original João Gilberto recording"
+        },
+        {
+          "key": "Eb major",
+          "context": "frequent alternate for bands/vocalists"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx658i0px8whr",
+    "tune_name": "Hullo Bolinas",
+    "before": {
+      "standard_key": "E"
+    },
+    "after": {
+      "standard_key": "E major",
+      "alternate_keys": [],
+      "curator_notes_append": "Key inferred from a bare root with no quality or context given; confidence is low, verify against a lead sheet or recording."
+    }
+  },
+  {
+    "id": "mewjccgx66w73k8cc5s",
+    "tune_name": "Moonglow",
+    "before": {
+      "standard_key": "G major (instrumental call key); also F major and Ab major (common vocal keys)"
+    },
+    "after": {
+      "standard_key": "G major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "common vocal key"
+        },
+        {
+          "key": "Ab major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx6hyxz0wf8pp",
+    "tune_name": "Don't Blame Me",
+    "before": {
+      "standard_key": "Bb major (most common instrumental call key); also C major; Eb major (vocal)"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "also commonly used"
+        },
+        {
+          "key": "Eb major",
+          "context": "vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx6lc8b9qfjpj",
+    "tune_name": "Just One of Those Things",
+    "before": {
+      "standard_key": "C major (instrumental call key); F major (alternate instrumental); D major (common vocal key)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "alternate instrumental key"
+        },
+        {
+          "key": "D major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx6v4bquzmxbe",
+    "tune_name": "Sophisticated Lady",
+    "before": {
+      "standard_key": "Db major; also C major"
+    },
+    "after": {
+      "standard_key": "Db major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "also commonly used"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx776dflfnejq",
+    "tune_name": "Milestones",
+    "before": {
+      "standard_key": "G Dorian (concert)"
+    },
+    "after": {
+      "standard_key": "G dorian",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx7aa0me30t0h",
+    "tune_name": "Perdido",
+    "before": {
+      "standard_key": "Bb major (most common instrumental call); Ab major (often in Ellington big-band charts)"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "Ab major",
+          "context": "Ellington big-band charts"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx7bxue9gdwb5",
+    "tune_name": "Tenderly",
+    "before": {
+      "standard_key": "Eb major (concert); also C major and F major are common vocal keys"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "common vocal key"
+        },
+        {
+          "key": "F major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx7g05dxxybs",
+    "tune_name": "Stormy Weather",
+    "before": {
+      "standard_key": "G minor (common instrumental call); F minor or Ab minor (frequent vocal keys)"
+    },
+    "after": {
+      "standard_key": "G minor",
+      "alternate_keys": [
+        {
+          "key": "F minor",
+          "context": "frequent vocal key"
+        },
+        {
+          "key": "Ab minor",
+          "context": "frequent vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx7g1031u7187",
+    "tune_name": "A Child Is Born",
+    "before": {
+      "standard_key": "Bb major (concert); also Db major (common vocal/piano key)"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "Db major",
+          "context": "common vocal/piano key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx7ivphqp5njf",
+    "tune_name": "I Remember Clifford",
+    "before": {
+      "standard_key": "E-flat major (concert)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx8017mapmp3j",
+    "tune_name": "I've Never Been in Love Before",
+    "before": {
+      "standard_key": "Bb major; also F major (vocal)"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx8b8zxhdljwk",
+    "tune_name": "Black Orpheus (Manhã de Carnaval)",
+    "before": {
+      "standard_key": "A minor (instrumental); D minor and C minor also common (vocal)"
+    },
+    "after": {
+      "standard_key": "A minor",
+      "alternate_keys": [
+        {
+          "key": "D minor",
+          "context": "common vocal key"
+        },
+        {
+          "key": "C minor",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx8bppbwub81j",
+    "tune_name": "It's the Talk of the Town",
+    "before": {
+      "standard_key": "F major; also E-flat major (commonly used by vocalists)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "commonly used by vocalists"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx8dwyqyx47si",
+    "tune_name": "Lady Be Good",
+    "before": {
+      "standard_key": "G major (instrumental); also F major; Ab major (vocal)"
+    },
+    "after": {
+      "standard_key": "G major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "also commonly used"
+        },
+        {
+          "key": "Ab major",
+          "context": "vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx8tp8jhe25o2",
+    "tune_name": "Invitation",
+    "before": {
+      "standard_key": "D minor; C minor"
+    },
+    "after": {
+      "standard_key": "D minor",
+      "alternate_keys": [
+        {
+          "key": "C minor",
+          "context": "also used"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx8wf85x1qr77",
+    "tune_name": "Sweet Georgia Brown",
+    "before": {
+      "standard_key": "F major (most common instrumental); Also heard in A♭ major (original/published key; common in gypsy/manouche circles) and G major (manouche/guitar circles)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Ab major",
+          "context": "original/published key, common in gypsy/manouche circles"
+        },
+        {
+          "key": "G major",
+          "context": "manouche/guitar circles"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx8whjh67253t",
+    "tune_name": "At Last",
+    "before": {
+      "standard_key": "F major (most common call for instrumental/vocal); C major (common male vocal alternate)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "common male vocal alternate"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx8zm9cd5axtp",
+    "tune_name": "Lazy Bird",
+    "before": {
+      "standard_key": "G major (also commonly called in F major)"
+    },
+    "after": {
+      "standard_key": "G major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "also commonly called"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx98uyt91t3qw",
+    "tune_name": "Things Ain't What They Used to Be",
+    "before": {
+      "standard_key": "F major (concert)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx9ezltvlrhbt",
+    "tune_name": "Corner Pocket (Until I Met You)",
+    "before": {
+      "standard_key": "C major (instrumental); also F major (some lead sheets/vocal charts)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "some lead sheets/vocal charts"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgx9watv67n50r",
+    "tune_name": "I've Got You Under My Skin",
+    "before": {
+      "standard_key": "E-flat major; D-flat major (common vocal/Frank Sinatra)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "Db major",
+          "context": "common vocal, Frank Sinatra"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxa10w51t45i",
+    "tune_name": "Misty",
+    "before": {
+      "standard_key": "Eb major (instrumental call key); also commonly C major (vocal)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxa6jexzmjq44",
+    "tune_name": "So In Love",
+    "before": {
+      "standard_key": "D minor (most common concert); also C minor in some bandstand/fake-book versions; vocal keys vary by range."
+    },
+    "after": {
+      "standard_key": "D minor",
+      "alternate_keys": [
+        {
+          "key": "C minor",
+          "context": "some bandstand/fake-book versions"
+        }
+      ],
+      "curator_notes_append": "Vocal keys vary by range."
+    }
+  },
+  {
+    "id": "mewjccgxa6lt560liy",
+    "tune_name": "Basin Street Blues",
+    "before": {
+      "standard_key": "F (concert); also common: Eb"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "also common"
+        }
+      ],
+      "curator_notes_append": "Low confidence: bare root key given as \"F\"; despite the title, the tune's form is not a strict 12-bar blues, so major was assumed rather than blues."
+    }
+  },
+  {
+    "id": "mewjccgxabjj5peilr4",
+    "tune_name": "A Foggy Day",
+    "before": {
+      "standard_key": "F major (common instrumental call key); E-flat major (frequent vocal key); G major also encountered"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "frequent vocal key"
+        },
+        {
+          "key": "G major",
+          "context": "also encountered"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxahoho1xz5s7",
+    "tune_name": "I'll Remember April",
+    "before": {
+      "standard_key": "G major (most common instrumental call); F major also common; Eb major often for vocalists"
+    },
+    "after": {
+      "standard_key": "G major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "also common"
+        },
+        {
+          "key": "Eb major",
+          "context": "often for vocalists"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxaip0w52toi4",
+    "tune_name": "The Nearness of You",
+    "before": {
+      "standard_key": "F major (instrumental call key); C major, Bb major (common vocal keys)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "common vocal key"
+        },
+        {
+          "key": "Bb major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxarkujb7sgy",
+    "tune_name": "Speak No Evil",
+    "before": {
+      "standard_key": "C minor; E-flat minor"
+    },
+    "after": {
+      "standard_key": "C minor",
+      "alternate_keys": [
+        {
+          "key": "Eb minor",
+          "context": "alternate key"
+        }
+      ],
+      "curator_notes_append": "Low confidence: narrative lists both keys with no marker for primary and no stated reason for the E-flat minor alternate; order as given was used to infer C minor as primary."
+    }
+  },
+  {
+    "id": "mewjccgxawsfsmhuc0g",
+    "tune_name": "Cool Struttin'",
+    "before": {
+      "standard_key": "F"
+    },
+    "after": {
+      "standard_key": "F blues",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxb72y77njddl",
+    "tune_name": "As Time Goes By",
+    "before": {
+      "standard_key": "Eb major (common instrumental call key); also Db major and C major (frequent vocal keys)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "Db major",
+          "context": "frequent vocal key"
+        },
+        {
+          "key": "C major",
+          "context": "frequent vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxb9m2tx5fybt",
+    "tune_name": "I Fall in Love Too Easily",
+    "before": {
+      "standard_key": "E♭ major (most common instrumental call key)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxbcuk1nxhkkl",
+    "tune_name": "Manteca",
+    "before": {
+      "standard_key": "Bb"
+    },
+    "after": {
+      "standard_key": "Bb minor",
+      "alternate_keys": [],
+      "curator_notes_append": "Source gave only a bare root 'Bb' with no major/minor indication; inferred minor based on the tune's Afro-Cuban vamp character, but confidence is low."
+    }
+  },
+  {
+    "id": "mewjccgxbdvn38zv2g",
+    "tune_name": "Bésame Mucho",
+    "before": {
+      "standard_key": "D minor (instrumental call); also E minor and G minor"
+    },
+    "after": {
+      "standard_key": "D minor",
+      "alternate_keys": [
+        {
+          "key": "E minor",
+          "context": "also common"
+        },
+        {
+          "key": "G minor",
+          "context": "also common"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxbel8f3ao9db",
+    "tune_name": "Day by Day",
+    "before": {
+      "standard_key": "F major; also common in Eb major (vocal)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxbfhs2xpiul",
+    "tune_name": "Don't Explain",
+    "before": {
+      "standard_key": "D minor; also commonly in C minor (vocal)"
+    },
+    "after": {
+      "standard_key": "D minor",
+      "alternate_keys": [
+        {
+          "key": "C minor",
+          "context": "vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxbfu7tt7qx2l",
+    "tune_name": "Don't Fence Me In",
+    "before": {
+      "standard_key": "F Major"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxbm0hnoslbhg",
+    "tune_name": "I Should Care",
+    "before": {
+      "standard_key": "C (common instrumental call key); Eb (common vocal key)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxboz53aq5lxu",
+    "tune_name": "Blue Seven",
+    "before": {
+      "standard_key": "C"
+    },
+    "after": {
+      "standard_key": "C blues",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxbozsww2u88e",
+    "tune_name": "You Took Advantage of Me",
+    "before": {
+      "standard_key": "F major (common instrumental call); also Eb major"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "also common"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxbw2ctzlfl5",
+    "tune_name": "A Night in Tunisia",
+    "before": {
+      "standard_key": "D minor (concert); also common: C minor (instrumental/voice), Eb minor (vocal)"
+    },
+    "after": {
+      "standard_key": "D minor",
+      "alternate_keys": [
+        {
+          "key": "C minor",
+          "context": "instrumental/voice"
+        },
+        {
+          "key": "Eb minor",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxc5bvd1ubm38",
+    "tune_name": "Love Walked In",
+    "before": {
+      "standard_key": "Eb major (common instrumental call key); also C major and Db major (frequent vocal keys)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "frequent vocal key"
+        },
+        {
+          "key": "Db major",
+          "context": "frequent vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxcnff8ysr9vp",
+    "tune_name": "Killer Joe",
+    "before": {
+      "standard_key": "C major (concert)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxcsattds3nl6",
+    "tune_name": "Let's Fall in Love",
+    "before": {
+      "standard_key": "C major; also Bb major and Ab major are common (instrumental call key most often C)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "also common"
+        },
+        {
+          "key": "Ab major",
+          "context": "also common"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxctr1p24uaui",
+    "tune_name": "Sonnymoon for Two",
+    "before": {
+      "standard_key": "B-flat"
+    },
+    "after": {
+      "standard_key": "Bb blues",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxdfyqznv0rbc",
+    "tune_name": "You Stepped Out of a Dream",
+    "before": {
+      "standard_key": "C major (instrumental call key); also Bb major (common vocal key)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxdihojueyjki",
+    "tune_name": "I'll Close My Eyes",
+    "before": {
+      "standard_key": "Eb major; C major (vocal)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxdlvcc3ff3wt",
+    "tune_name": "My Romance",
+    "before": {
+      "standard_key": "C major; Bb major; Eb major (common for vocalists)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "commonly used key"
+        },
+        {
+          "key": "Eb major",
+          "context": "common for vocalists"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxdmm6i9gwli",
+    "tune_name": "Night and Day",
+    "before": {
+      "standard_key": "C major (instrumental call key); also Eb major or F major (common vocal keys)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "common vocal key"
+        },
+        {
+          "key": "F major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxdmywhjjbg4h",
+    "tune_name": "My Funny Valentine",
+    "before": {
+      "standard_key": "C minor; B-flat minor (common vocal key)"
+    },
+    "after": {
+      "standard_key": "C minor",
+      "alternate_keys": [
+        {
+          "key": "Bb minor",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxdnpbhqfxe1w",
+    "tune_name": "Li'l Darlin'",
+    "before": {
+      "standard_key": "F major (concert) most common for instrumental/bandstand calls; C major also seen in small-group fake books; Eb major often used for vocal/lyric versions"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "seen in small-group fake books"
+        },
+        {
+          "key": "Eb major",
+          "context": "used for vocal/lyric versions"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxdo002f8yrwj",
+    "tune_name": "It's Only a Paper Moon",
+    "before": {
+      "standard_key": "G major; also C major (common vocal key)"
+    },
+    "after": {
+      "standard_key": "G major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxdscqpdvdqn",
+    "tune_name": "Cheek to Cheek",
+    "before": {
+      "standard_key": "F major; also common in Eb major (vocal) and Bb major"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "vocal key"
+        },
+        {
+          "key": "Bb major",
+          "context": "also common"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxdyqthju92s6",
+    "tune_name": "I Got It Bad (and That Ain't Good)",
+    "before": {
+      "standard_key": "G major (instrumental call key); also Eb major and F major (common vocal keys)"
+    },
+    "after": {
+      "standard_key": "G major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "common vocal key"
+        },
+        {
+          "key": "F major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxe49v7qiv03w",
+    "tune_name": "Stardust",
+    "before": {
+      "standard_key": "C major (common instrumental call key); also: Db major (vocal), Bb major (vocal)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Db major",
+          "context": "vocal key"
+        },
+        {
+          "key": "Bb major",
+          "context": "vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxehtj1mezqo5",
+    "tune_name": "Nice Work If You Can Get It",
+    "before": {
+      "standard_key": "F major (instrumental call), Eb major (also common; vocal settings vary by singer)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "vocal settings vary by singer"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxelx745n06va",
+    "tune_name": "All Blues",
+    "before": {
+      "standard_key": "G"
+    },
+    "after": {
+      "standard_key": "G blues",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxexywhjdnkd",
+    "tune_name": "Afternoon in Paris",
+    "before": {
+      "standard_key": "C major; also E-flat major"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "also commonly used"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxeyc95p0a1u",
+    "tune_name": "Blues Walk",
+    "before": {
+      "standard_key": "F"
+    },
+    "after": {
+      "standard_key": "F blues",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxfjsvbvlilca",
+    "tune_name": "Nostalgia in Times Square",
+    "before": {
+      "standard_key": "C"
+    },
+    "after": {
+      "standard_key": "C blues",
+      "alternate_keys": [],
+      "curator_notes_append": "Classified as a blues based on the tune's known 12-bar blues form; low confidence since the source narrative gave no explicit form indication."
+    }
+  },
+  {
+    "id": "mewjccgxfma1rhdv4gc",
+    "tune_name": "Body and Soul",
+    "before": {
+      "standard_key": "Db major; also commonly called in C major (vocal)"
+    },
+    "after": {
+      "standard_key": "Db major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxfuds8zmtn99",
+    "tune_name": "The Very Thought of You",
+    "before": {
+      "standard_key": "Bb major (instrumental); C major; Eb major (vocal)"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "alternate key"
+        },
+        {
+          "key": "Eb major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxfujz08uts5v",
+    "tune_name": "My Foolish Heart",
+    "before": {
+      "standard_key": "Bb major (instrumental call key); also C major; vocalists often in Eb major"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "alternate key"
+        },
+        {
+          "key": "Eb major",
+          "context": "vocalists often"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxg0r2f4pjfoj",
+    "tune_name": "It Had to Be You",
+    "before": {
+      "standard_key": "F major (instrumental), Bb major (vocal)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxge5hr2df0t",
+    "tune_name": "Guess I'll Hang My Tears Out to Dry",
+    "before": {
+      "standard_key": "E-flat major (common instrumental call key); also heard in F major and C major (vocal)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "vocal"
+        },
+        {
+          "key": "C major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxgr2svzdh9gt",
+    "tune_name": "Chega de Saudade (No More Blues)",
+    "before": {
+      "standard_key": "A minor (concert); also B minor commonly used"
+    },
+    "after": {
+      "standard_key": "A minor",
+      "alternate_keys": [
+        {
+          "key": "B minor",
+          "context": "commonly used"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxgt8zsf0xn8a",
+    "tune_name": "Bye Bye Pork Pie Hat",
+    "before": {
+      "standard_key": "F minor (concert); also heard in Eb minor and E minor on some arrangements/covers"
+    },
+    "after": {
+      "standard_key": "F minor",
+      "alternate_keys": [
+        {
+          "key": "Eb minor",
+          "context": "some arrangements/covers"
+        },
+        {
+          "key": "E minor",
+          "context": "some arrangements/covers"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxgu6dnadn4ds",
+    "tune_name": "My Favorite Things",
+    "before": {
+      "standard_key": "E minor (instrumental call); also D minor (vocal)"
+    },
+    "after": {
+      "standard_key": "E minor",
+      "alternate_keys": [
+        {
+          "key": "D minor",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxgwvxnxkuwpq",
+    "tune_name": "Days of Wine and Roses",
+    "before": {
+      "standard_key": "F major (instrumental call key); also Eb major and C major (common vocal keys)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "common vocal key"
+        },
+        {
+          "key": "C major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxgzpwxnt9xyu",
+    "tune_name": "El Gaucho",
+    "before": {
+      "standard_key": "C"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [],
+      "curator_notes_append": "Bare root key with no quality specified in source; not a blues head, so major was assumed by convention. Low confidence — verify against a lead sheet."
+    }
+  },
+  {
+    "id": "mewjccgxh20vz2evu0p",
+    "tune_name": "Polka Dots and Moonbeams",
+    "before": {
+      "standard_key": "Eb major; also commonly called in F major"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "commonly called"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxh33dtasaog",
+    "tune_name": "Blue Room",
+    "before": {
+      "standard_key": "C major (common instrumental call key); Ab major (common vocal key)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Ab major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxhc0erkh1wxm",
+    "tune_name": "Gingerbread Boy",
+    "before": {
+      "standard_key": "F"
+    },
+    "after": {
+      "standard_key": "F blues",
+      "alternate_keys": [],
+      "curator_notes_append": "Bare root key with no quality specified in source; treated as a blues head per convention, but the tune's form deviates from a strict 12-bar blues. Low confidence — verify against a lead sheet."
+    }
+  },
+  {
+    "id": "mewjccgxhcez3cxk16t",
+    "tune_name": "I'll Be Seeing You",
+    "before": {
+      "standard_key": "Eb major; C major (vocal)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxhks5k6oblia",
+    "tune_name": "Out of Nowhere",
+    "before": {
+      "standard_key": "G major (most common instrumental call key); F major (common alternate); Eb major (frequent vocal key)"
+    },
+    "after": {
+      "standard_key": "G major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "common alternate"
+        },
+        {
+          "key": "Eb major",
+          "context": "frequent vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxhlkrqyx10l9",
+    "tune_name": "All of You",
+    "before": {
+      "standard_key": "Eb major; C major (vocal); Bb major (vocal)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "vocal"
+        },
+        {
+          "key": "Bb major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxi05cbp9w68k",
+    "tune_name": "Whisper Not",
+    "before": {
+      "standard_key": "G minor; C minor also common (vocal keys vary by singer)"
+    },
+    "after": {
+      "standard_key": "G minor",
+      "alternate_keys": [
+        {
+          "key": "C minor",
+          "context": "vocal keys vary by singer"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxio9z1r8dc9n",
+    "tune_name": "Do You Know What It Means to Miss New Orleans",
+    "before": {
+      "standard_key": "F major (common instrumental call key); Eb major (common vocal key)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxj1uhh4c5jo",
+    "tune_name": "The Shadow of Your Smile",
+    "before": {
+      "standard_key": "C major; also Bb major, Eb major (vocal)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "vocal"
+        },
+        {
+          "key": "Eb major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxj7pq3g4bavc",
+    "tune_name": "Deed I Do",
+    "before": {
+      "standard_key": "F major (common instrumental call key); Eb major (vocal); Bb major (vocal)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "vocal"
+        },
+        {
+          "key": "Bb major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxjd8slqynik",
+    "tune_name": "Chelsea Bridge",
+    "before": {
+      "standard_key": "Db major (most common); C major (also used)"
+    },
+    "after": {
+      "standard_key": "Db major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "also used"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxjjen0mw4mv",
+    "tune_name": "The Song Is You",
+    "before": {
+      "standard_key": "C major; Eb major (vocal)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxjkazjjariij",
+    "tune_name": "It Never Entered My Mind",
+    "before": {
+      "standard_key": "Eb major; also common: F major (vocal), Ab major"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "vocal"
+        },
+        {
+          "key": "Ab major",
+          "context": "also common"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxjn21rgc8xto",
+    "tune_name": "Over the Rainbow",
+    "before": {
+      "standard_key": "C major (instrumental call key); Ab major (common vocal/original film key)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Ab major",
+          "context": "common vocal/original film key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxjs7n68xmzgq",
+    "tune_name": "You Go to My Head",
+    "before": {
+      "standard_key": "F major; also Eb major (vocal)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxk3d2ntrcgnl",
+    "tune_name": "Watermelon Man",
+    "before": {
+      "standard_key": "F"
+    },
+    "after": {
+      "standard_key": "F blues",
+      "alternate_keys": [],
+      "curator_notes_append": "Low confidence: input gave only a bare root 'F' with no narrative; classified as F blues per common jazz practice since the tune is built on a blues-derived dominant-chord progression, though its 16-bar form differs from a standard 12-bar blues."
+    }
+  },
+  {
+    "id": "mewjccgxk8lyeqymkfq",
+    "tune_name": "What's New?",
+    "before": {
+      "standard_key": "C"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxkcse65u1yn",
+    "tune_name": "Comes Love",
+    "before": {
+      "standard_key": "F major; also common: E-flat major (vocal)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxkcxaav4erjp",
+    "tune_name": "In Walked Bud",
+    "before": {
+      "standard_key": "F major (concert); also common: E-flat major"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "also common"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxkgw5s69x9lr",
+    "tune_name": "St. James Infirmary",
+    "before": {
+      "standard_key": "D minor; E minor"
+    },
+    "after": {
+      "standard_key": "D minor",
+      "alternate_keys": [
+        {
+          "key": "E minor",
+          "context": "also common"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxkhx2pup6by9",
+    "tune_name": "Isn't It Romantic?",
+    "before": {
+      "standard_key": "Bb major; Eb major; C major (vocal)"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "also common"
+        },
+        {
+          "key": "C major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxkji9uhp2f6r",
+    "tune_name": "Chelsea Bells",
+    "before": {
+      "standard_key": "F Major"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxkp04hyxljg",
+    "tune_name": "Chippie",
+    "before": {
+      "standard_key": "F"
+    },
+    "after": {
+      "standard_key": "F blues",
+      "alternate_keys": [],
+      "curator_notes_append": "Standard key given only as a bare root ('F') with no qualifier, matching the same unqualified format used for Bag's Groove (a confirmed 12-bar blues) in this batch, so it was interpreted as an F blues head rather than F major. Low confidence: could not independently verify this tune's form or composer."
+    }
+  },
+  {
+    "id": "mewjccgxl57lzsl7aop",
+    "tune_name": "Indiana (Back Home Again in Indiana)",
+    "before": {
+      "standard_key": "Ab major (most common instrumental call key); F major (also encountered, especially with trad bands and some vocalists)"
+    },
+    "after": {
+      "standard_key": "Ab major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "trad bands and some vocalists"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxl6i7grwiwu",
+    "tune_name": "Star Eyes",
+    "before": {
+      "standard_key": "G major (most common); also F major"
+    },
+    "after": {
+      "standard_key": "G major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "also common key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxladiqabr67j",
+    "tune_name": "This I Dig of You",
+    "before": {
+      "standard_key": "B♭ major"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxldul59o6f5",
+    "tune_name": "Bag's Groove",
+    "before": {
+      "standard_key": "F"
+    },
+    "after": {
+      "standard_key": "F blues",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxlkvmfiuph19",
+    "tune_name": "Don't Let me Be Lonely Tonight",
+    "before": {
+      "standard_key": "D Major"
+    },
+    "after": {
+      "standard_key": "D major",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxlpq8pjcvf4",
+    "tune_name": "Come Sunday",
+    "before": {
+      "standard_key": "Db major; also C major (instrumental); common vocal key: F major"
+    },
+    "after": {
+      "standard_key": "Db major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "instrumental"
+        },
+        {
+          "key": "F major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxlujmgxf5mf",
+    "tune_name": "I Let a Song Go Out of My Heart",
+    "before": {
+      "standard_key": "Eb major (instrumental call key); also F major (vocal)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxlx9p6aiymu",
+    "tune_name": "Willow Weep for Me",
+    "before": {
+      "standard_key": "G minor (instrumental call key); also common: F minor, E-flat minor (vocal)"
+    },
+    "after": {
+      "standard_key": "G minor",
+      "alternate_keys": [
+        {
+          "key": "F minor",
+          "context": "vocal"
+        },
+        {
+          "key": "Eb minor",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxm2xm16suxu",
+    "tune_name": "You and the Night and the Music",
+    "before": {
+      "standard_key": "E minor (most common); F minor; D minor"
+    },
+    "after": {
+      "standard_key": "E minor",
+      "alternate_keys": [
+        {
+          "key": "F minor",
+          "context": "also used"
+        },
+        {
+          "key": "D minor",
+          "context": "also used"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxm4qoixs7uuf",
+    "tune_name": "Comin' Home Baby",
+    "before": {
+      "standard_key": "F minor (common instrumental call); E minor also widely used (e.g., Herbie Mann)"
+    },
+    "after": {
+      "standard_key": "F minor",
+      "alternate_keys": [
+        {
+          "key": "E minor",
+          "context": "Herbie Mann recording"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxmhfbg4sq02d",
+    "tune_name": "My Ideal",
+    "before": {
+      "standard_key": "E-flat major (common instrumental call key); also C major or F major for vocal settings"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "vocal settings"
+        },
+        {
+          "key": "F major",
+          "context": "vocal settings"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxmt4o4u5ls1e",
+    "tune_name": "United",
+    "before": {
+      "standard_key": "F"
+    },
+    "after": {
+      "standard_key": "F blues",
+      "alternate_keys": [],
+      "curator_notes_append": "Standard key given only as a bare root ('F') with no qualifier, matching the same unqualified format used for Bag's Groove (a confirmed 12-bar blues) in this batch, so it was interpreted as an F blues head rather than F major. Low confidence: could not independently verify this tune's form or composer."
+    }
+  },
+  {
+    "id": "mewjccgxnbds94ulwh",
+    "tune_name": "Moon River",
+    "before": {
+      "standard_key": "C major (instrumental call key); Bb major (common vocal key)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxnlusj88sz6c",
+    "tune_name": "Bemsha Swing",
+    "before": {
+      "standard_key": "D (concert)"
+    },
+    "after": {
+      "standard_key": "D major",
+      "alternate_keys": [],
+      "curator_notes_append": "Low confidence: bare root 'D' interpreted as D major by convention; the tune's harmony is built on shifting dominant chords without a strongly established major tonality."
+    }
+  },
+  {
+    "id": "mewjccgxntdwwd732m",
+    "tune_name": "Ugetsu (Fantasy in D)",
+    "before": {
+      "standard_key": "D minor (concert)"
+    },
+    "after": {
+      "standard_key": "D minor",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxo0bod99ogv",
+    "tune_name": "But Not for Me",
+    "before": {
+      "standard_key": "Eb major (instrumental call key); C major (common vocal/male); Ab major (common vocal/female)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "common vocal/male"
+        },
+        {
+          "key": "Ab major",
+          "context": "common vocal/female"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxo1rdxj053jq",
+    "tune_name": "Cry Me a River",
+    "before": {
+      "standard_key": "E minor (most common call key); also D minor; B minor (frequent vocal key)"
+    },
+    "after": {
+      "standard_key": "E minor",
+      "alternate_keys": [
+        {
+          "key": "D minor",
+          "context": "alternate key"
+        },
+        {
+          "key": "B minor",
+          "context": "frequent vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxo7m5f6p8qah",
+    "tune_name": "Ruby, My Dear",
+    "before": {
+      "standard_key": "E-flat minor (concert)"
+    },
+    "after": {
+      "standard_key": "Eb minor",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxo8alqxbyvtb",
+    "tune_name": "The Lady Is a Tramp",
+    "before": {
+      "standard_key": "C major (instrumental call key); also common: Bb major and Db major for vocalists"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "common vocal key"
+        },
+        {
+          "key": "Db major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxohodoebgsz",
+    "tune_name": "Day Dream",
+    "before": {
+      "standard_key": "C major; also common in Bb major (vocal)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxom1kaat5h2o",
+    "tune_name": "I Loves You, Porgy",
+    "before": {
+      "standard_key": "Eb major (instrumental call key); Db major (common vocal key)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "Db major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxormako32mb8",
+    "tune_name": "You Don't Know What Love Is",
+    "before": {
+      "standard_key": "D minor; F minor; C minor (vocal)"
+    },
+    "after": {
+      "standard_key": "D minor",
+      "alternate_keys": [
+        {
+          "key": "F minor",
+          "context": "alternate key"
+        },
+        {
+          "key": "C minor",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxox51oso985c",
+    "tune_name": "Like Someone in Love",
+    "before": {
+      "standard_key": "Eb major (most common); also C major"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "alternate key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxp3p9ezmtci",
+    "tune_name": "All of Me",
+    "before": {
+      "standard_key": "C major (most common instrumental call key); also Bb and F major (frequent vocal keys)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "frequent vocal key"
+        },
+        {
+          "key": "F major",
+          "context": "frequent vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxp93m8n8ivk",
+    "tune_name": "Dat Dere",
+    "before": {
+      "standard_key": "F minor (instrumental); also E-flat minor (vocal)"
+    },
+    "after": {
+      "standard_key": "F minor",
+      "alternate_keys": [
+        {
+          "key": "Eb minor",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxpf9n0uz4qm",
+    "tune_name": "Just in Time",
+    "before": {
+      "standard_key": "F major (instrumental call); Bb major, C major (vocal)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "vocal"
+        },
+        {
+          "key": "C major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxpzefgwxa3m8",
+    "tune_name": "I've Grown Accustomed to Her Face",
+    "before": {
+      "standard_key": "F major (common call key); also C major"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "alternate key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxqcdt5u72m8c",
+    "tune_name": "Caravan",
+    "before": {
+      "standard_key": "F minor (concert); also D minor"
+    },
+    "after": {
+      "standard_key": "F minor",
+      "alternate_keys": [
+        {
+          "key": "D minor",
+          "context": "alternate key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxqok1t5mresa",
+    "tune_name": "Equinox",
+    "before": {
+      "standard_key": "C# minor (Db minor); also commonly called in C minor"
+    },
+    "after": {
+      "standard_key": "C# minor",
+      "alternate_keys": [
+        {
+          "key": "C minor",
+          "context": "commonly called"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxqovtp7bm12",
+    "tune_name": "April in Paris",
+    "before": {
+      "standard_key": "F major (instrumental); Bb major (vocal)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxqyvys67adgi",
+    "tune_name": "Where or When",
+    "before": {
+      "standard_key": "C major; Eb major (vocal); F major (vocal)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "vocal"
+        },
+        {
+          "key": "F major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxr7lcjdg34if",
+    "tune_name": "When I Fall in Love",
+    "before": {
+      "standard_key": "Eb major; also commonly C major"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "commonly called"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxrchpa592u8",
+    "tune_name": "The More I See You",
+    "before": {
+      "standard_key": "E-flat major (common instrumental call key); also F major (vocal); C major (pop cover key, e.g., 1960s arrangements)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "vocal"
+        },
+        {
+          "key": "C major",
+          "context": "pop cover key, e.g., 1960s arrangements"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxrdautbi6dml",
+    "tune_name": "Sandu",
+    "before": {
+      "standard_key": "E-flat major (concert)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxrwdb1lkcgm9",
+    "tune_name": "My Heart Stood Still",
+    "before": {
+      "standard_key": "F major; E-flat major (common vocal); G major (less common)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "common vocal"
+        },
+        {
+          "key": "G major",
+          "context": "less common"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxrz2y6jqurw",
+    "tune_name": "Bessie's Blues",
+    "before": {
+      "standard_key": "F (concert); also common: Bb"
+    },
+    "after": {
+      "standard_key": "F blues",
+      "alternate_keys": [
+        {
+          "key": "Bb blues",
+          "context": "also common"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxs1pnopx3sbb",
+    "tune_name": "I'm Beginning to See the Light",
+    "before": {
+      "standard_key": "Bb major (instrumental call); C major and F major also common for vocal arrangements"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "common for vocal arrangements"
+        },
+        {
+          "key": "F major",
+          "context": "common for vocal arrangements"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxs43l4v5sjf9",
+    "tune_name": "Dancing in the Dark",
+    "before": {
+      "standard_key": "Eb major; also commonly called in F major (vocalists often in Bb major)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "commonly called"
+        },
+        {
+          "key": "Bb major",
+          "context": "vocalists often"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxse36kesjw8s",
+    "tune_name": "Mood Indigo",
+    "before": {
+      "standard_key": "Db major (concert); also seen in C major and Ab major"
+    },
+    "after": {
+      "standard_key": "Db major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "also seen"
+        },
+        {
+          "key": "Ab major",
+          "context": "also seen"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxskseyexm40r",
+    "tune_name": "Minority",
+    "before": {
+      "standard_key": "F minor (also called in G minor)"
+    },
+    "after": {
+      "standard_key": "F minor",
+      "alternate_keys": [
+        {
+          "key": "G minor",
+          "context": "also called"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxstjvlcjy1sn",
+    "tune_name": "I Surrender, Dear",
+    "before": {
+      "standard_key": "Bb major (common instrumental call key); also Eb major; vocal versions often in Db or C"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "also"
+        },
+        {
+          "key": "Db major",
+          "context": "vocal versions often"
+        },
+        {
+          "key": "C major",
+          "context": "vocal versions often"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxt2skrg0ynum",
+    "tune_name": "Triste",
+    "before": {
+      "standard_key": "Bb major; also A major (vocal)"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "A major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxt88fwg3fjf",
+    "tune_name": "Lullaby of Birdland",
+    "before": {
+      "standard_key": "F minor (instrumental call key); C minor, Eb minor (common vocal keys)"
+    },
+    "after": {
+      "standard_key": "F minor",
+      "alternate_keys": [
+        {
+          "key": "C minor",
+          "context": "common vocal key"
+        },
+        {
+          "key": "Eb minor",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxtbx9eayguh",
+    "tune_name": "Skylark",
+    "before": {
+      "standard_key": "C major (instrumental); Eb major, Bb major (vocal)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "vocal key"
+        },
+        {
+          "key": "Bb major",
+          "context": "vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxtrupj11m2y",
+    "tune_name": "Someday My Prince Will Come",
+    "before": {
+      "standard_key": "Bb major (concert); also G major (common vocal/original film key)"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "G major",
+          "context": "common vocal/original film key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxu403mroixyo",
+    "tune_name": "My Ship",
+    "before": {
+      "standard_key": "F major (common instrumental call); also Eb major and C major (frequent vocal keys)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "frequent vocal key"
+        },
+        {
+          "key": "C major",
+          "context": "frequent vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxu5q2k1td948",
+    "tune_name": "Round Midnight",
+    "before": {
+      "standard_key": "Eb minor (instrumental call key); also D minor and C minor are common vocalist keys"
+    },
+    "after": {
+      "standard_key": "Eb minor",
+      "alternate_keys": [
+        {
+          "key": "D minor",
+          "context": "common vocalist key"
+        },
+        {
+          "key": "C minor",
+          "context": "common vocalist key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxu9jaew4rrqa",
+    "tune_name": "I've Got the World on a String",
+    "before": {
+      "standard_key": "C major (instrumental call key); also common for vocals: B major (Frank Sinatra) and Bb major"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "B major",
+          "context": "Frank Sinatra vocal key"
+        },
+        {
+          "key": "Bb major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxufwkvvpqv9o",
+    "tune_name": "I'm Old Fashioned",
+    "before": {
+      "standard_key": "Eb major (instrumental call); F major (common vocal)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxugqnyt22h4c",
+    "tune_name": "East of the Sun (and West of the Moon)",
+    "before": {
+      "standard_key": "G major (common instrumental call); also F major; E-flat major is frequent for vocal charts"
+    },
+    "after": {
+      "standard_key": "G major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "alternate key"
+        },
+        {
+          "key": "Eb major",
+          "context": "frequent for vocal charts"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxuzu0c66gam",
+    "tune_name": "My Little Suede Shoes",
+    "before": {
+      "standard_key": "G major (common instrumental call key); also seen in Eb major"
+    },
+    "after": {
+      "standard_key": "G major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "also seen in this key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxv24e1s6z1rf",
+    "tune_name": "Chameleon",
+    "before": {
+      "standard_key": "Bb minor (Dorian), bridge to Eb minor (Dorian)"
+    },
+    "after": {
+      "standard_key": "Bb dorian",
+      "alternate_keys": [
+        {
+          "key": "Eb dorian",
+          "context": "bridge section"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxv40udbu1abq",
+    "tune_name": "Nature Boy",
+    "before": {
+      "standard_key": "D minor (most common); E minor (also common); C minor (vocal)"
+    },
+    "after": {
+      "standard_key": "D minor",
+      "alternate_keys": [
+        {
+          "key": "E minor",
+          "context": "also common"
+        },
+        {
+          "key": "C minor",
+          "context": "vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxv5qfdlkttu",
+    "tune_name": "Maiden Voyage",
+    "before": {
+      "standard_key": "D (concert)"
+    },
+    "after": {
+      "standard_key": "D minor",
+      "alternate_keys": [],
+      "curator_notes_append": "Standard key inferred from bandstand convention (tune is called 'in D'); the tune's quartal, modal harmony makes a strict major/minor classification low-confidence, and it is sometimes analyzed as D Dorian rather than a clear D minor tonality."
+    }
+  },
+  {
+    "id": "mewjccgxvm44ylagux",
+    "tune_name": "Ain't Misbehavin'",
+    "before": {
+      "standard_key": "F major (instrumental); Eb major (common vocal key)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxvn1inx6lhy",
+    "tune_name": "They Can't Take That Away from Me",
+    "before": {
+      "standard_key": "Eb major (instrumental); F major; C major (vocal)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "alternate key"
+        },
+        {
+          "key": "C major",
+          "context": "vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxwmf8ic2rmd",
+    "tune_name": "Born to Be Blue",
+    "before": {
+      "standard_key": "C (instrumental); also Bb/Eb (vocal)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "vocal key"
+        },
+        {
+          "key": "Eb major",
+          "context": "vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxwmiyb1qhr9r",
+    "tune_name": "My Shining Hour",
+    "before": {
+      "standard_key": "F major (instrumental); also E-flat major (common vocal key)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxwphvtfjnlr",
+    "tune_name": "Lover, Come Back to Me",
+    "before": {
+      "standard_key": "C, Eb"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "also commonly played"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxxcdxolau4c7",
+    "tune_name": "Long Ago (and Far Away)",
+    "before": {
+      "standard_key": "F major (common instrumental call key); also Eb major (frequent vocal key)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "frequent vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxxi4jhu3shm",
+    "tune_name": "Confessin' the Blues",
+    "before": {
+      "standard_key": "F"
+    },
+    "after": {
+      "standard_key": "F blues",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxxih16o20oh",
+    "tune_name": "Someone to Watch Over Me",
+    "before": {
+      "standard_key": "E-flat major (most common instrumental call); also C major (frequent, especially for some vocal/instrumental settings)"
+    },
+    "after": {
+      "standard_key": "Eb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "frequent vocal/instrumental key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxxm4smhvvlkn",
+    "tune_name": "All or Nothing at All",
+    "before": {
+      "standard_key": "F minor (also called in G minor)"
+    },
+    "after": {
+      "standard_key": "F minor",
+      "alternate_keys": [
+        {
+          "key": "G minor",
+          "context": "also commonly called"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxxos082nrds",
+    "tune_name": "Our Love is Here to Stay",
+    "before": {
+      "standard_key": "F major; also Eb major; vocal arrangements often in Bb major"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "also commonly played"
+        },
+        {
+          "key": "Bb major",
+          "context": "vocal arrangements"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxxpovbf6ik2e",
+    "tune_name": "I Remember You",
+    "before": {
+      "standard_key": "F major; also G major"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "G major",
+          "context": "also commonly played"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxxwmd1flw3f",
+    "tune_name": "Don't Get Around Much Anymore",
+    "before": {
+      "standard_key": "Bb major (most common instrumental call); also C major and F major (frequent vocal keys)"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "frequent vocal key"
+        },
+        {
+          "key": "F major",
+          "context": "frequent vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxxx1ezezc9kk",
+    "tune_name": "On a Slow Boat to China",
+    "before": {
+      "standard_key": "F major; C major"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "also commonly played"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxxx2vggmgjs",
+    "tune_name": "Broadway",
+    "before": {
+      "standard_key": "F major; also commonly called in Eb major"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "commonly called"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxyce893we85",
+    "tune_name": "One Note Samba (Samba de Uma Nota Só)",
+    "before": {
+      "standard_key": "Bb major (concert) - most common instrumental call key; also played in C major; vocal renditions often in D or F"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "also played"
+        },
+        {
+          "key": "D major",
+          "context": "vocal rendition"
+        },
+        {
+          "key": "F major",
+          "context": "vocal rendition"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxydw431i9k4",
+    "tune_name": "You Are Too Beautiful",
+    "before": {
+      "standard_key": "Db major (common instrumental call key); C major also encountered"
+    },
+    "after": {
+      "standard_key": "Db major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "also encountered"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxyky2af4crd",
+    "tune_name": "Prelude to a Kiss",
+    "before": {
+      "standard_key": "Db major; C major; Bb major (vocal)"
+    },
+    "after": {
+      "standard_key": "Db major",
+      "alternate_keys": [
+        {
+          "key": "C major",
+          "context": "also commonly played"
+        },
+        {
+          "key": "Bb major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxypxid9vfxx8",
+    "tune_name": "Inner Urge",
+    "before": {
+      "standard_key": "E minor (concert)"
+    },
+    "after": {
+      "standard_key": "E minor",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxysrf07t8yu",
+    "tune_name": "Almost Like Being in Love",
+    "before": {
+      "standard_key": "Bb major (instrumental call); also common in F major and G major for vocalists"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "common vocal key"
+        },
+        {
+          "key": "G major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxyvapam1xw",
+    "tune_name": "Meditation (Meditação)",
+    "before": {
+      "standard_key": "C (instrumental call key); D (common vocal key)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "D major",
+          "context": "common vocal key"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxywvsywo7qr",
+    "tune_name": "Alice in Wonderland",
+    "before": {
+      "standard_key": "C major; also F major (vocal)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxz18oi55vw8f",
+    "tune_name": "Recorda me",
+    "before": {
+      "standard_key": "A Minor"
+    },
+    "after": {
+      "standard_key": "A minor",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxzaj50c7cmd",
+    "tune_name": "Soft Winds",
+    "before": {
+      "standard_key": "G, F, Bb"
+    },
+    "after": {
+      "standard_key": "",
+      "alternate_keys": [
+        {
+          "key": "G major",
+          "context": "no distinguishing context given"
+        },
+        {
+          "key": "F major",
+          "context": "no distinguishing context given"
+        },
+        {
+          "key": "Bb major",
+          "context": "no distinguishing context given"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxziknanggr1q",
+    "tune_name": "This Can't Be Love",
+    "before": {
+      "standard_key": "Bb major (instrumental call); also common: F major (vocal), C major (vocal)"
+    },
+    "after": {
+      "standard_key": "Bb major",
+      "alternate_keys": [
+        {
+          "key": "F major",
+          "context": "vocal"
+        },
+        {
+          "key": "C major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxzt4xxs5f0nh",
+    "tune_name": "Dream a Little Dream of Me",
+    "before": {
+      "standard_key": "C major (most common); also Bb major, F major (vocal)"
+    },
+    "after": {
+      "standard_key": "C major",
+      "alternate_keys": [
+        {
+          "key": "Bb major",
+          "context": "vocal"
+        },
+        {
+          "key": "F major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "mewjccgxzwr576z4yb",
+    "tune_name": "Dindi",
+    "before": {
+      "standard_key": "F major; also common: E-flat major (vocal)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [
+        {
+          "key": "Eb major",
+          "context": "vocal"
+        }
+      ],
+      "curator_notes_append": null
+    }
+  },
+  {
+    "id": "straightnochaser2024",
+    "tune_name": "Straight No Chaser",
+    "before": {
+      "standard_key": "F major (standard key)"
+    },
+    "after": {
+      "standard_key": "F major",
+      "alternate_keys": [],
+      "curator_notes_append": null
+    }
+  }
+]

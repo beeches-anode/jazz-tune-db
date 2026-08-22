@@ -1,0 +1,125 @@
+[
+  {
+    "id": "mewjccgx66w73k8cc5s",
+    "standard_key": "G major",
+    "alternate_keys": [
+      {"key": "F major", "context": "common vocal key"},
+      {"key": "Ab major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx6hyxz0wf8pp",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      {"key": "C major", "context": "also commonly used"},
+      {"key": "Eb major", "context": "vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx6lc8b9qfjpj",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "F major", "context": "alternate instrumental key"},
+      {"key": "D major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx6v4bquzmxbe",
+    "standard_key": "Db major",
+    "alternate_keys": [
+      {"key": "C major", "context": "also commonly used"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx776dflfnejq",
+    "standard_key": "G dorian",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx7aa0me30t0h",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      {"key": "Ab major", "context": "Ellington big-band charts"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx7bxue9gdwb5",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "C major", "context": "common vocal key"},
+      {"key": "F major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx7g05dxxybs",
+    "standard_key": "G minor",
+    "alternate_keys": [
+      {"key": "F minor", "context": "frequent vocal key"},
+      {"key": "Ab minor", "context": "frequent vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx7g1031u7187",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      {"key": "Db major", "context": "common vocal/piano key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx7ivphqp5njf",
+    "standard_key": "Eb major",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx8017mapmp3j",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      {"key": "F major", "context": "vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx8b8zxhdljwk",
+    "standard_key": "A minor",
+    "alternate_keys": [
+      {"key": "D minor", "context": "common vocal key"},
+      {"key": "C minor", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx8bppbwub81j",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "commonly used by vocalists"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx8dwyqyx47si",
+    "standard_key": "G major",
+    "alternate_keys": [
+      {"key": "F major", "context": "also commonly used"},
+      {"key": "Ab major", "context": "vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx8tp8jhe25o2",
+    "standard_key": "D minor",
+    "alternate_keys": [
+      {"key": "C minor", "context": "also used"}
+    ],
+    "curator_notes_append": null
+  }
+]

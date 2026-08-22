@@ -1,0 +1,122 @@
+[
+  {
+    "id": "mewjccgxi05cbp9w68k",
+    "standard_key": "G minor",
+    "alternate_keys": [
+      { "key": "C minor", "context": "vocal keys vary by singer" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxio9z1r8dc9n",
+    "standard_key": "F major",
+    "alternate_keys": [
+      { "key": "Eb major", "context": "common vocal key" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxj1uhh4c5jo",
+    "standard_key": "C major",
+    "alternate_keys": [
+      { "key": "Bb major", "context": "vocal" },
+      { "key": "Eb major", "context": "vocal" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxj7pq3g4bavc",
+    "standard_key": "F major",
+    "alternate_keys": [
+      { "key": "Eb major", "context": "vocal" },
+      { "key": "Bb major", "context": "vocal" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxjd8slqynik",
+    "standard_key": "Db major",
+    "alternate_keys": [
+      { "key": "C major", "context": "also used" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxjjen0mw4mv",
+    "standard_key": "C major",
+    "alternate_keys": [
+      { "key": "Eb major", "context": "vocal" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxjkazjjariij",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      { "key": "F major", "context": "vocal" },
+      { "key": "Ab major", "context": "also common" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxjn21rgc8xto",
+    "standard_key": "C major",
+    "alternate_keys": [
+      { "key": "Ab major", "context": "common vocal/original film key" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxjs7n68xmzgq",
+    "standard_key": "F major",
+    "alternate_keys": [
+      { "key": "Eb major", "context": "vocal" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxk3d2ntrcgnl",
+    "standard_key": "F blues",
+    "alternate_keys": [],
+    "curator_notes_append": "Low confidence: input gave only a bare root 'F' with no narrative; classified as F blues per common jazz practice since the tune is built on a blues-derived dominant-chord progression, though its 16-bar form differs from a standard 12-bar blues."
+  },
+  {
+    "id": "mewjccgxk8lyeqymkfq",
+    "standard_key": "C major",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxkcse65u1yn",
+    "standard_key": "F major",
+    "alternate_keys": [
+      { "key": "Eb major", "context": "vocal" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxkcxaav4erjp",
+    "standard_key": "F major",
+    "alternate_keys": [
+      { "key": "Eb major", "context": "also common" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxkgw5s69x9lr",
+    "standard_key": "D minor",
+    "alternate_keys": [
+      { "key": "E minor", "context": "also common" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxkhx2pup6by9",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      { "key": "Eb major", "context": "also common" },
+      { "key": "C major", "context": "vocal" }
+    ],
+    "curator_notes_append": null
+  }
+]

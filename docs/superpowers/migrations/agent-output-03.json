@@ -1,0 +1,124 @@
+[
+  {
+    "id": "mewjccgx26v9y98kl9y",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "C major", "context": "for vocalists"},
+      {"key": "Db major", "context": "for vocalists"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx27oc6id89xki",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Bb major", "context": "vocal key"},
+      {"key": "Eb major", "context": "alternate key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx2b0ygs8wqjw",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "C major", "context": "common vocal key"},
+      {"key": "Eb major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx2cyikca0ebu",
+    "standard_key": "D minor",
+    "alternate_keys": [
+      {"key": "C minor", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx2kabgx0neip",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx2m3w9iaex21",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Ab major", "context": "less common"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx2msdopy90kw",
+    "standard_key": "Db major",
+    "alternate_keys": [
+      {"key": "C major", "context": "common vocal key"},
+      {"key": "Eb major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx2peoyxqcmwv",
+    "standard_key": "G minor",
+    "alternate_keys": [
+      {"key": "A minor", "context": "common"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx2pnkwzuj08w",
+    "standard_key": "F blues",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx2wuhzebj4sf",
+    "standard_key": "Ab major",
+    "alternate_keys": [
+      {"key": "C major", "context": "common in Gypsy-jazz settings"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx2ydtprbnjau",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx2yyameicep",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx32m2752g4ya",
+    "standard_key": "Ab major",
+    "alternate_keys": [
+      {"key": "A major", "context": "Pat Martino's Live! (1972)"}
+    ],
+    "curator_notes_append": "The A major variant was famously used by guitarist Pat Martino on his 1972 album Live!, and this key is sometimes preferred by guitarists."
+  },
+  {
+    "id": "mewjccgx33qma45q8y",
+    "standard_key": "D minor",
+    "alternate_keys": [
+      {"key": "C minor", "context": "common"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgx37p561g2qgu",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  }
+]

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "mewjccgxtbx9eayguh",
+    "tune_name": "Skylark",
+    "standard_key": "C major (instrumental); Eb major, Bb major (vocal)"
+  },
+  {
+    "id": "mewjccgxtrupj11m2y",
+    "tune_name": "Someday My Prince Will Come",
+    "standard_key": "Bb major (concert); also G major (common vocal/original film key)"
+  },
+  {
+    "id": "mewjccgxu403mroixyo",
+    "tune_name": "My Ship",
+    "standard_key": "F major (common instrumental call); also Eb major and C major (frequent vocal keys)"
+  },
+  {
+    "id": "mewjccgxu5q2k1td948",
+    "tune_name": "Round Midnight",
+    "standard_key": "Eb minor (instrumental call key); also D minor and C minor are common vocalist keys"
+  },
+  {
+    "id": "mewjccgxu9jaew4rrqa",
+    "tune_name": "I've Got the World on a String",
+    "standard_key": "C major (instrumental call key); also common for vocals: B major (Frank Sinatra) and Bb major"
+  },
+  {
+    "id": "mewjccgxufwkvvpqv9o",
+    "tune_name": "I'm Old Fashioned",
+    "standard_key": "Eb major (instrumental call); F major (common vocal)"
+  },
+  {
+    "id": "mewjccgxugqnyt22h4c",
+    "tune_name": "East of the Sun (and West of the Moon)",
+    "standard_key": "G major (common instrumental call); also F major; E-flat major is frequent for vocal charts"
+  },
+  {
+    "id": "mewjccgxuzu0c66gam",
+    "tune_name": "My Little Suede Shoes",
+    "standard_key": "G major (common instrumental call key); also seen in Eb major"
+  },
+  {
+    "id": "mewjccgxv24e1s6z1rf",
+    "tune_name": "Chameleon",
+    "standard_key": "Bb minor (Dorian), bridge to Eb minor (Dorian)"
+  },
+  {
+    "id": "mewjccgxv40udbu1abq",
+    "tune_name": "Nature Boy",
+    "standard_key": "D minor (most common); E minor (also common); C minor (vocal)"
+  },
+  {
+    "id": "mewjccgxv5qfdlkttu",
+    "tune_name": "Maiden Voyage",
+    "standard_key": "D (concert)"
+  },
+  {
+    "id": "mewjccgxvm44ylagux",
+    "tune_name": "Ain't Misbehavin'",
+    "standard_key": "F major (instrumental); Eb major (common vocal key)"
+  },
+  {
+    "id": "mewjccgxvn1inx6lhy",
+    "tune_name": "They Can't Take That Away from Me",
+    "standard_key": "Eb major (instrumental); F major; C major (vocal)"
+  },
+  {
+    "id": "mewjccgxwmf8ic2rmd",
+    "tune_name": "Born to Be Blue",
+    "standard_key": "C (instrumental); also Bb/Eb (vocal)"
+  },
+  {
+    "id": "mewjccgxwmiyb1qhr9r",
+    "tune_name": "My Shining Hour",
+    "standard_key": "F major (instrumental); also E-flat major (common vocal key)"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "mewjccgxnlusj88sz6c",
+    "standard_key": "D major",
+    "alternate_keys": [],
+    "curator_notes_append": "Low confidence: bare root 'D' interpreted as D major by convention; the tune's harmony is built on shifting dominant chords without a strongly established major tonality."
+  },
+  {
+    "id": "mewjccgxntdwwd732m",
+    "standard_key": "D minor",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxo0bod99ogv",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      { "key": "C major", "context": "common vocal/male" },
+      { "key": "Ab major", "context": "common vocal/female" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxo1rdxj053jq",
+    "standard_key": "E minor",
+    "alternate_keys": [
+      { "key": "D minor", "context": "alternate key" },
+      { "key": "B minor", "context": "frequent vocal key" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxo7m5f6p8qah",
+    "standard_key": "Eb minor",
+    "alternate_keys": [],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxo8alqxbyvtb",
+    "standard_key": "C major",
+    "alternate_keys": [
+      { "key": "Bb major", "context": "common vocal key" },
+      { "key": "Db major", "context": "common vocal key" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxohodoebgsz",
+    "standard_key": "C major",
+    "alternate_keys": [
+      { "key": "Bb major", "context": "vocal" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxom1kaat5h2o",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      { "key": "Db major", "context": "common vocal key" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxormako32mb8",
+    "standard_key": "D minor",
+    "alternate_keys": [
+      { "key": "F minor", "context": "alternate key" },
+      { "key": "C minor", "context": "vocal" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxox51oso985c",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      { "key": "C major", "context": "alternate key" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxp3p9ezmtci",
+    "standard_key": "C major",
+    "alternate_keys": [
+      { "key": "Bb major", "context": "frequent vocal key" },
+      { "key": "F major", "context": "frequent vocal key" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxp93m8n8ivk",
+    "standard_key": "F minor",
+    "alternate_keys": [
+      { "key": "Eb minor", "context": "vocal" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxpf9n0uz4qm",
+    "standard_key": "F major",
+    "alternate_keys": [
+      { "key": "Bb major", "context": "vocal" },
+      { "key": "C major", "context": "vocal" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxpzefgwxa3m8",
+    "standard_key": "F major",
+    "alternate_keys": [
+      { "key": "C major", "context": "alternate key" }
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxqcdt5u72m8c",
+    "standard_key": "F minor",
+    "alternate_keys": [
+      { "key": "D minor", "context": "alternate key" }
+    ],
+    "curator_notes_append": null
+  }
+]

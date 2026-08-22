@@ -1,0 +1,125 @@
+[
+  {
+    "id": "mewjccgxfuds8zmtn99",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      {"key": "C major", "context": "alternate key"},
+      {"key": "Eb major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxfujz08uts5v",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      {"key": "C major", "context": "alternate key"},
+      {"key": "Eb major", "context": "vocalists often"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxg0r2f4pjfoj",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Bb major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxge5hr2df0t",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "F major", "context": "vocal"},
+      {"key": "C major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxgr2svzdh9gt",
+    "standard_key": "A minor",
+    "alternate_keys": [
+      {"key": "B minor", "context": "commonly used"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxgt8zsf0xn8a",
+    "standard_key": "F minor",
+    "alternate_keys": [
+      {"key": "Eb minor", "context": "some arrangements/covers"},
+      {"key": "E minor", "context": "some arrangements/covers"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxgu6dnadn4ds",
+    "standard_key": "E minor",
+    "alternate_keys": [
+      {"key": "D minor", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxgwvxnxkuwpq",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "common vocal key"},
+      {"key": "C major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxgzpwxnt9xyu",
+    "standard_key": "C major",
+    "alternate_keys": [],
+    "curator_notes_append": "Bare root key with no quality specified in source; not a blues head, so major was assumed by convention. Low confidence — verify against a lead sheet."
+  },
+  {
+    "id": "mewjccgxh20vz2evu0p",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "F major", "context": "commonly called"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxh33dtasaog",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Ab major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxhc0erkh1wxm",
+    "standard_key": "F blues",
+    "alternate_keys": [],
+    "curator_notes_append": "Bare root key with no quality specified in source; treated as a blues head per convention, but the tune's form deviates from a strict 12-bar blues. Low confidence — verify against a lead sheet."
+  },
+  {
+    "id": "mewjccgxhcez3cxk16t",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "C major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxhks5k6oblia",
+    "standard_key": "G major",
+    "alternate_keys": [
+      {"key": "F major", "context": "common alternate"},
+      {"key": "Eb major", "context": "frequent vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxhlkrqyx10l9",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "C major", "context": "vocal"},
+      {"key": "Bb major", "context": "vocal"}
+    ],
+    "curator_notes_append": null
+  }
+]

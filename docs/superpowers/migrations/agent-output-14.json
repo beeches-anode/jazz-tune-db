@@ -1,0 +1,128 @@
+[
+  {
+    "id": "mewjccgxtbx9eayguh",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "vocal key"},
+      {"key": "Bb major", "context": "vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxtrupj11m2y",
+    "standard_key": "Bb major",
+    "alternate_keys": [
+      {"key": "G major", "context": "common vocal/original film key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxu403mroixyo",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "frequent vocal key"},
+      {"key": "C major", "context": "frequent vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxu5q2k1td948",
+    "standard_key": "Eb minor",
+    "alternate_keys": [
+      {"key": "D minor", "context": "common vocalist key"},
+      {"key": "C minor", "context": "common vocalist key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxu9jaew4rrqa",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "B major", "context": "Frank Sinatra vocal key"},
+      {"key": "Bb major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxufwkvvpqv9o",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "F major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxugqnyt22h4c",
+    "standard_key": "G major",
+    "alternate_keys": [
+      {"key": "F major", "context": "alternate key"},
+      {"key": "Eb major", "context": "frequent for vocal charts"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxuzu0c66gam",
+    "standard_key": "G major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "also seen in this key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxv24e1s6z1rf",
+    "standard_key": "Bb dorian",
+    "alternate_keys": [
+      {"key": "Eb dorian", "context": "bridge section"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxv40udbu1abq",
+    "standard_key": "D minor",
+    "alternate_keys": [
+      {"key": "E minor", "context": "also common"},
+      {"key": "C minor", "context": "vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxv5qfdlkttu",
+    "standard_key": "D minor",
+    "alternate_keys": [],
+    "curator_notes_append": "Standard key inferred from bandstand convention (tune is called 'in D'); the tune's quartal, modal harmony makes a strict major/minor classification low-confidence, and it is sometimes analyzed as D Dorian rather than a clear D minor tonality."
+  },
+  {
+    "id": "mewjccgxvm44ylagux",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxvn1inx6lhy",
+    "standard_key": "Eb major",
+    "alternate_keys": [
+      {"key": "F major", "context": "alternate key"},
+      {"key": "C major", "context": "vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxwmf8ic2rmd",
+    "standard_key": "C major",
+    "alternate_keys": [
+      {"key": "Bb major", "context": "vocal key"},
+      {"key": "Eb major", "context": "vocal key"}
+    ],
+    "curator_notes_append": null
+  },
+  {
+    "id": "mewjccgxwmiyb1qhr9r",
+    "standard_key": "F major",
+    "alternate_keys": [
+      {"key": "Eb major", "context": "common vocal key"}
+    ],
+    "curator_notes_append": null
+  }
+]
