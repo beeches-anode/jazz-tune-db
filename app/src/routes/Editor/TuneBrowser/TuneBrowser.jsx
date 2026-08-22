@@ -23,6 +23,7 @@ export const TuneBrowser = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [filterStyle, setFilterStyle] = useState('all');
   const [filterKey, setFilterKey] = useState('all');
+  const [includeAltKeys, setIncludeAltKeys] = useState(true);
   const [sortBy, setSortBy] = useState('rank');
   const [showOnlyIncomplete, setShowOnlyIncomplete] = useState(false);
   const [showOnlyNoYouTube, setShowOnlyNoYouTube] = useState(false);
@@ -46,8 +47,12 @@ export const TuneBrowser = () => {
 
   const keys = useMemo(() => {
     if (!tunes) return [];
-    const uniqueKeys = [...new Set(tunes.map(t => t.standard_key).filter(Boolean))];
-    return uniqueKeys.sort();
+    const all = new Set();
+    tunes.forEach((t) => {
+      if (t.standard_key) all.add(t.standard_key);
+      (t.alternate_keys || []).forEach((a) => { if (a.key) all.add(a.key); });
+    });
+    return [...all].sort();
   }, [tunes]);
 
   // Filter and sort tunes
@@ -73,7 +78,10 @@ export const TuneBrowser = () => {
 
     // Key filter
     if (filterKey !== 'all') {
-      filtered = filtered.filter(tune => tune.standard_key === filterKey);
+      filtered = filtered.filter((tune) =>
+        tune.standard_key === filterKey ||
+        (includeAltKeys && (tune.alternate_keys || []).some((a) => a.key === filterKey))
+      );
     }
 
     // Incomplete filter
@@ -110,7 +118,7 @@ export const TuneBrowser = () => {
     });
 
     return filtered;
-  }, [tunes, searchTerm, filterStyle, filterKey, sortBy, showOnlyIncomplete, showOnlyNoYouTube]);
+  }, [tunes, searchTerm, filterStyle, filterKey, includeAltKeys, sortBy, showOnlyIncomplete, showOnlyNoYouTube]);
 
   // Save column widths to localStorage
   useEffect(() => {
@@ -236,6 +244,15 @@ export const TuneBrowser = () => {
                 <option key={key} value={key}>{key}</option>
               ))}
             </select>
+
+            <label className="flex items-center gap-1 text-sm text-gray-600">
+              <input
+                type="checkbox"
+                checked={includeAltKeys}
+                onChange={(e) => setIncludeAltKeys(e.target.checked)}
+              />
+              incl. alternate keys
+            </label>
 
             <select
               value={sortBy}
