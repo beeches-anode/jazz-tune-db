@@ -1,3 +1,5 @@
+import { KEY_REGEX, validateAlternateKeys } from '../../../../netlify/functions/_shared/validation.js';
+
 // Calculate completion status for a tune
 export const getTuneCompletionStatus = (tune) => {
   let score = 0;
@@ -154,7 +156,12 @@ export const validateTune = (tune) => {
   // Warnings for missing optional fields
   if (!tune.standard_key?.trim()) {
     warnings.push('Standard key is not set');
+  } else if (!KEY_REGEX.test(tune.standard_key)) {
+    errors.push('Standard key must be canonical, e.g. "C major", "F blues", "D dorian" — the server will reject this save');
   }
+
+  const altErrors = validateAlternateKeys(tune.alternate_keys ?? [], tune.standard_key).errors;
+  errors.push(...altErrors);
 
   if (!tune.section_markers || tune.section_markers.length === 0) {
     warnings.push('Section markers are not defined');
