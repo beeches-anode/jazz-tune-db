@@ -82,11 +82,12 @@ export function buildPatch(tunes, worklist, agentEntries) {
     }
     const skErrors = validateStandardKey(entry.standard_key ?? '').errors;
     const akErrors = validateAlternateKeys(entry.alternate_keys, entry.standard_key).errors;
+    const cnErrors = [];
     if (entry.curator_notes_append != null && typeof entry.curator_notes_append !== 'string') {
-      errors.push(`${w.id}: curator_notes_append must be a string or null`);
+      cnErrors.push('curator_notes_append must be a string or null');
     }
-    if (skErrors.length > 0 || akErrors.length > 0) {
-      errors.push(`${w.id} (${w.tune_name}): ${[...skErrors, ...akErrors].join(' | ')}`);
+    if (skErrors.length > 0 || akErrors.length > 0 || cnErrors.length > 0) {
+      errors.push(`${w.id} (${w.tune_name}): ${[...skErrors, ...akErrors, ...cnErrors].join(' | ')}`);
       continue;
     }
     patch.push({

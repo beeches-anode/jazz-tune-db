@@ -109,3 +109,10 @@ test('applyPatch skips and reports drifted records without mutating them', () =>
   assert.deepEqual(r.drifted, ['w1']);
   assert.equal(r.tunes[0].standard_key, 'edited meanwhile');
 });
+
+test('buildPatch excludes entries with invalid curator_notes_append from patch', () => {
+  const badCurator = { ...agentEntry, curator_notes_append: 42 };
+  const { patch, errors } = buildPatch(tunes, worklist, [badCurator]);
+  assert.equal(errors.length > 0, true);
+  assert.equal(patch.length, 0);
+});
