@@ -10,7 +10,16 @@ export function TuneCard({ tune, selected, onClick }) {
       <div className="text-sm text-zinc-500">{tune.composer}</div>
       <div className="flex gap-2 mt-1">
         {tune.rank && <span className="text-xs bg-amber-100 text-amber-800 px-2 py-0.5 rounded">#{tune.rank}</span>}
-        {tune.standard_key && <span className="text-xs bg-zinc-100 text-zinc-700 px-2 py-0.5 rounded">{tune.standard_key}</span>}
+        {tune.standard_key && (
+          <>
+            <span className="text-xs bg-zinc-100 text-zinc-700 px-2 py-0.5 rounded">{tune.standard_key}</span>
+            {tune.alternate_keys?.length > 0 && (
+              <span className="text-xs text-zinc-400" title={tune.alternate_keys.map((a) => a.key).join(', ')}>
+                +{tune.alternate_keys.length}
+              </span>
+            )}
+          </>
+        )}
         {tune.style && <span className="text-xs bg-zinc-100 text-zinc-700 px-2 py-0.5 rounded">{tune.style}</span>}
       </div>
     </button>

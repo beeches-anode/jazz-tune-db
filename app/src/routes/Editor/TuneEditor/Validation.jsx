@@ -21,6 +21,7 @@ const generateValidationPrompt = (tune) => {
 - Style: ${tune.style || '(not provided)'}
 - Form: ${tune.form || '(not provided)'}
 - Standard Key: ${tune.standard_key || '(not provided)'}
+- Alternate Keys: ${(tune.alternate_keys || []).map((a) => `${a.key} (${a.context})`).join('; ') || '(none)'}
 - Time Signature: ${tune.time_signature || '(not provided)'}
 
 **Musical Content:**
