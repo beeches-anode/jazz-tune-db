@@ -114,6 +114,14 @@ describe('alternate_keys validation', () => {
     expect(r.errors.length).toBeGreaterThan(0);
   });
 
+  it('allows entries sharing a key with different contexts', () => {
+    const r = validateAlternateKeys([
+      { key: 'C major', context: 'common vocal call key' },
+      { key: 'C major', context: 'concert pitch' },
+    ], 'F major');
+    expect(r.errors).toEqual([]);
+  });
+
   it('warns (not errors) when an alternate equals standard_key', () => {
     const r = validateAlternateKeys([{ key: 'F major', context: 'same but noted' }], 'F major');
     expect(r.errors).toEqual([]);

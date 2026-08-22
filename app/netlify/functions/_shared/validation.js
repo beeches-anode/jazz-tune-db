@@ -21,12 +21,14 @@ const TYPES = {
 };
 
 export const KEY_QUALITIES = ['major', 'minor', 'blues', 'dorian', 'mixolydian', 'lydian', 'phrygian', 'locrian'];
-export const KEY_REGEX = /^[A-G][b#]? (major|minor|blues|dorian|mixolydian|lydian|phrygian|locrian)$/;
+const QUALITY_ALT = KEY_QUALITIES.join('|');
+export const KEY_REGEX = new RegExp(`^[A-G][b#]? (${QUALITY_ALT})$`);
+const KEY_PARSE_REGEX = new RegExp(`^([A-G][b#]?) (${QUALITY_ALT})$`);
 export const UNCONVENTIONAL_ROOTS = new Set(['A#', 'D#', 'B#', 'E#', 'Cb', 'Fb']);
 
 export function parseKey(value) {
   if (typeof value !== 'string') return null;
-  const m = value.match(/^([A-G][b#]?) (major|minor|blues|dorian|mixolydian|lydian|phrygian|locrian)$/);
+  const m = value.match(KEY_PARSE_REGEX);
   return m ? { root: m[1], quality: m[2] } : null;
 }
 
@@ -75,7 +77,7 @@ export function validateAlternateKeys(value, standardKey) {
     if (typeof entry.context !== 'string' || entry.context.trim() === '') {
       errors.push(`alternate_keys[${i}].context must be a non-empty string`);
     }
-    const sig = `${entry.key}`;
+    const sig = `${entry.key} ${entry.context}`;
     if (seen.has(sig)) {
       errors.push(`alternate_keys[${i}] duplicates an earlier entry ("${entry.key}")`);
     }
