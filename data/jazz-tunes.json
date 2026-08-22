@@ -224,10 +224,12 @@
     "style": "bebop blues",
     "form": "12-bar blues; chorus form (no bridge). Most commonly performed in F. Typical bebop-blues harmonies; common lead sheets show quick IV in bar 2, ii-V to IV around bars 4-5, and a turnaround chain in bars 9-12. A widely used version is: | F7 | Bb7 | F7 | Cm7 F7 | Bb7 | Bdim7 | F7 D7 | G7 C7 | F7 | D7 G7 | C7 | C7 (or turnaround) |. Variants simplify to basic I-IV-V blues.",
     "standard_key": "F blues",
-    "history_and_facts": "Thelonious Monk's riff-driven 12-bar blues was first recorded in 1951 for Blue Note during his early Genius of Modern Music period. Its pithy, repetitive line and sly rhythmic displacements make it one of Monk's most immediately recognizable heads.\nMiles Davis's 1958 Milestones version, with John Coltrane and Cannonball Adderley, helped cement the tune as a jam-session staple and a core item in the modern jazz repertoire. Monk continued to revisit it throughout his career, notably titling his 1967 Columbia album Straight, No Chaser.\nThe title borrows a bartending phrase-“straight, no chaser” meaning spirits served neat-typical of Monk's wry naming. The tune's form invites either basic I-IV-V blues changes or the more common bebop-blues substitutions heard on many lead sheets and recordings.",
+    "history_and_facts": "Thelonious Monk's riff-driven 12-bar blues was first recorded in 1951 for Blue Note during his early Genius of Modern Music period. Its pithy, repetitive line and sly rhythmic displacements make it one of Monk's most immediately recognizable heads.\nMiles Davis's 1958 Milestones version, with John Coltrane and Cannonball Adderley, helped cement the tune as a jam-session staple and a core item in the modern jazz repertoire. Monk continued to revisit it throughout his career, notably titling his 1967 Columbia album Straight, No Chaser.\nThe title borrows a bartending phrase-“straight, no chaser” meaning spirits served neat-typical of Monk's wry naming. The tune's form invites either basic I-IV-V blues changes or the more common bebop-blues substitutions heard on many lead sheets and recordings.\nA 1988 documentary about Monk's life, directed by Charlotte Zwerin and executive produced by Clint Eastwood, also took its name from the tune; it was selected for preservation in the National Film Registry in 2017.",
     "famous_recordings": [
       "Thelonious Monk - 1951",
       "Miles Davis Sextet - 1958",
+      "Wes Montgomery - 1960",
+      "Joe Henderson with Wynton Kelly Trio - 1966",
       "Thelonious Monk - 1967"
     ],
     "rank": 20,
@@ -274,6 +276,22 @@
         "channelTitle": "Thelonious Monk - Topic",
         "verified": true,
         "added_date": "2025-12-14"
+      },
+      {
+        "id": "0q9WU7uiX9k",
+        "title": "Straight No Chaser",
+        "artist": "Joe Henderson",
+        "channelTitle": "Joe Henderson - Topic",
+        "verified": true,
+        "added_date": "2025-12-06"
+      },
+      {
+        "id": "sYHWbA_9jzw",
+        "title": "Joe Henderson with Wynton Kelly Trio - Straight, No Chaser",
+        "artist": "Joe Henderson",
+        "channelTitle": "Xavi Castillo",
+        "verified": true,
+        "added_date": "2025-12-06"
       }
     ],
     "youtube_backing_track_ids": [
@@ -15256,6 +15274,7 @@
     ],
     "youtube_backing_track_ids": [],
     "last_updated": "2025-12-06T00:00:00.000Z",
-    "alternate_keys": []
+    "alternate_keys": [],
+    "is_archived": true
   }
 ]
