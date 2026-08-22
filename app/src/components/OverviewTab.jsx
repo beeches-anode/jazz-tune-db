@@ -11,7 +11,7 @@ export function OverviewTab({ tune }) {
 
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {tune.style && <StatCard label="Style" value={tune.style} />}
-        {(tune.standard_key || tune.alternate_keys?.length) && (
+        {(tune.standard_key || tune.alternate_keys?.length > 0) && (
           <StatCard
             label="Key"
             value={`${tune.standard_key || '—'}${tune.alternate_keys?.length ? ` (+${tune.alternate_keys.length})` : ''}`}
