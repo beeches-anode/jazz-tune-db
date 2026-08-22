@@ -69,6 +69,66 @@ export function verifyAll(tunes) {
   return { ok: problems.length === 0, problems };
 }
 
+export function buildPatch(tunes, worklist, agentEntries) {
+  const errors = [];
+  const byId = new Map(agentEntries.map((e) => [e.id, e]));
+  const tuneById = new Map(tunes.map((t) => [t.id, t]));
+  const patch = [];
+  for (const w of worklist) {
+    const entry = byId.get(w.id);
+    if (!entry) {
+      errors.push(`no agent output for ${w.id} (${w.tune_name})`);
+      continue;
+    }
+    const skErrors = validateStandardKey(entry.standard_key ?? '').errors;
+    const akErrors = validateAlternateKeys(entry.alternate_keys, entry.standard_key).errors;
+    if (entry.curator_notes_append != null && typeof entry.curator_notes_append !== 'string') {
+      errors.push(`${w.id}: curator_notes_append must be a string or null`);
+    }
+    if (skErrors.length > 0 || akErrors.length > 0) {
+      errors.push(`${w.id} (${w.tune_name}): ${[...skErrors, ...akErrors].join(' | ')}`);
+      continue;
+    }
+    patch.push({
+      id: w.id,
+      tune_name: w.tune_name,
+      before: { standard_key: tuneById.get(w.id)?.standard_key ?? w.standard_key },
+      after: {
+        standard_key: entry.standard_key,
+        alternate_keys: entry.alternate_keys,
+        curator_notes_append: entry.curator_notes_append ?? null,
+      },
+    });
+  }
+  for (const e of agentEntries) {
+    if (!worklist.some((w) => w.id === e.id)) errors.push(`agent output for unknown id ${e.id}`);
+  }
+  return { patch, errors };
+}
+
+export function applyPatch(tunes, patch) {
+  const byId = new Map(patch.map((p) => [p.id, p]));
+  const drifted = [];
+  let applied = 0;
+  const out = tunes.map((t) => {
+    const p = byId.get(t.id);
+    if (!p) return t;
+    if (t.standard_key !== p.before.standard_key) {
+      drifted.push(t.id);
+      return t;
+    }
+    applied += 1;
+    const next = { ...t, standard_key: p.after.standard_key, alternate_keys: p.after.alternate_keys };
+    if (p.after.curator_notes_append) {
+      next.curator_notes = t.curator_notes
+        ? `${t.curator_notes}\n\n${p.after.curator_notes_append}`
+        : p.after.curator_notes_append;
+    }
+    return next;
+  });
+  return { tunes: out, applied, drifted };
+}
+
 function loadData() {
   const raw = fs.readFileSync(DATA_PATH, 'utf8');
   return { tunes: JSON.parse(raw), trailing: raw.endsWith('\n') ? '\n' : '' };
@@ -116,8 +176,31 @@ function main() {
   }
 }
 
-function runPatchMode() {
-  throw new Error('implemented in Task 5');
+function runPatchMode(mode, tunes, trailing) {
+  if (mode === '--build-patch') {
+    const worklist = JSON.parse(fs.readFileSync(WORKLIST_PATH, 'utf8'));
+    const agentEntries = fs.readdirSync(MIGRATIONS_DIR)
+      .filter((f) => /^agent-output-.*\.json$/.test(f))
+      .flatMap((f) => JSON.parse(fs.readFileSync(path.join(MIGRATIONS_DIR, f), 'utf8')));
+    const { patch, errors } = buildPatch(tunes, worklist, agentEntries);
+    if (errors.length > 0) {
+      console.error(`build-patch: ${errors.length} problems:`);
+      for (const e of errors) console.error(`  ${e}`);
+      process.exitCode = 1;
+      return;
+    }
+    fs.writeFileSync(PATCH_PATH, JSON.stringify(patch, null, 2) + '\n');
+    console.log(`Patch: ${patch.length} entries -> ${PATCH_PATH}`);
+  } else {
+    const patch = JSON.parse(fs.readFileSync(PATCH_PATH, 'utf8'));
+    const r = applyPatch(tunes, patch);
+    saveData(r.tunes, trailing);
+    console.log(`Applied ${r.applied}/${patch.length} patch entries.`);
+    if (r.drifted.length > 0) {
+      console.error(`DRIFTED (skipped, re-run Phase B for these): ${r.drifted.join(', ')}`);
+      process.exitCode = 1;
+    }
+  }
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === path.resolve(process.argv[1])) {

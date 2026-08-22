@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import {
-  normalizeSpelledOut, phaseATransform, buildWorklist, verifyAll,
+  normalizeSpelledOut, phaseATransform, buildWorklist, verifyAll, buildPatch, applyPatch,
 } from './migrate-standard-key.mjs';
 
 test('normalizeSpelledOut rewrites spelled-out accidentals', () => {
@@ -61,4 +61,51 @@ test('verifyAll flags bad keys, bad alternates, and leftover unknown fields', ()
   const r = verifyAll([good, badKey, leftover, noAlt]);
   assert.equal(r.ok, false);
   assert.deepEqual(r.problems.map((p) => p.id).sort(), ['2', '3', '4']);
+});
+
+const worklist = [{ id: 'w1', tune_name: 'Tune One', standard_key: 'C major; also D major (vocal)' }];
+const tunes = [{ id: 'w1', tune_name: 'Tune One', standard_key: 'C major; also D major (vocal)', alternate_keys: [], curator_notes: 'existing.' }];
+const agentEntry = {
+  id: 'w1', standard_key: 'C major',
+  alternate_keys: [{ key: 'D major', context: 'vocal' }],
+  curator_notes_append: null,
+};
+
+test('buildPatch produces validated entries with before/after', () => {
+  const { patch, errors } = buildPatch(tunes, worklist, [agentEntry]);
+  assert.deepEqual(errors, []);
+  assert.equal(patch.length, 1);
+  assert.equal(patch[0].before.standard_key, 'C major; also D major (vocal)');
+  assert.equal(patch[0].after.standard_key, 'C major');
+});
+
+test('buildPatch rejects non-conforming agent output', () => {
+  const bad = { ...agentEntry, standard_key: 'C major (concert)' };
+  const { errors } = buildPatch(tunes, worklist, [bad]);
+  assert.equal(errors.length > 0, true);
+});
+
+test('buildPatch reports worklist ids with no agent entry', () => {
+  const { errors } = buildPatch(tunes, worklist, []);
+  assert.equal(errors.length > 0, true);
+});
+
+test('applyPatch applies after-state and appends curator notes', () => {
+  const { patch } = buildPatch(tunes, worklist, [{ ...agentEntry, curator_notes_append: 'Key note.' }]);
+  const r = applyPatch(tunes, patch);
+  assert.equal(r.applied, 1);
+  assert.deepEqual(r.drifted, []);
+  const t = r.tunes.find((x) => x.id === 'w1');
+  assert.equal(t.standard_key, 'C major');
+  assert.deepEqual(t.alternate_keys, [{ key: 'D major', context: 'vocal' }]);
+  assert.equal(t.curator_notes, 'existing.\n\nKey note.');
+});
+
+test('applyPatch skips and reports drifted records without mutating them', () => {
+  const { patch } = buildPatch(tunes, worklist, [agentEntry]);
+  const driftedTunes = [{ ...tunes[0], standard_key: 'edited meanwhile' }];
+  const r = applyPatch(driftedTunes, patch);
+  assert.equal(r.applied, 0);
+  assert.deepEqual(r.drifted, ['w1']);
+  assert.equal(r.tunes[0].standard_key, 'edited meanwhile');
 });
