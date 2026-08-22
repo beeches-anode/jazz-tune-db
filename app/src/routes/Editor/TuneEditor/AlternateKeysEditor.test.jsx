@@ -33,4 +33,31 @@ describe('AlternateKeysEditor', () => {
     fireEvent.click(screen.getByLabelText('Remove alternate key 1'));
     expect(onChange).toHaveBeenLastCalledWith([]);
   });
+
+  it('preserves a half-typed row across a save-echo re-render (same tuneId)', () => {
+    const onChange = vi.fn();
+    const { rerender } = render(<AlternateKeysEditor tuneId="t1" value={[]} onChange={onChange} />);
+    fireEvent.click(screen.getByText('+ Add alternate key'));
+    fireEvent.change(screen.getByPlaceholderText('C major'), { target: { value: 'C' } });
+    expect(screen.getByDisplayValue('C')).toBeTruthy();
+
+    // Simulate the debounced autosave echo: parent re-renders with a new
+    // `value` array reference but the same tuneId. The half-typed row must
+    // survive — it was never emitted (incomplete) so `value` doesn't contain it.
+    rerender(<AlternateKeysEditor tuneId="t1" value={[]} onChange={onChange} />);
+
+    expect(screen.getByDisplayValue('C')).toBeTruthy();
+  });
+
+  it('resets local state when tuneId changes (tune switch)', () => {
+    const onChange = vi.fn();
+    const { rerender } = render(
+      <AlternateKeysEditor tuneId="t1" value={[{ key: 'C major', context: 'vocal' }]} onChange={onChange} />
+    );
+    expect(screen.getByDisplayValue('C major')).toBeTruthy();
+
+    rerender(<AlternateKeysEditor tuneId="t2" value={[]} onChange={onChange} />);
+
+    expect(screen.queryByDisplayValue('C major')).not.toBeInTheDocument();
+  });
 });
