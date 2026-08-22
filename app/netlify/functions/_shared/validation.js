@@ -129,11 +129,14 @@ export function validateTuneUpdate(updates) {
 }
 
 export function validateNewTune(tune) {
-  if (!tune.tune_name || typeof tune.tune_name !== 'string') {
-    return { valid: false, errors: ['tune_name is required'] };
+  if (!tune || typeof tune !== 'object') {
+    return { valid: false, errors: ['tune object is required'], warnings: [], sanitized: null };
   }
-  if (!tune.composer || typeof tune.composer !== 'string') {
-    return { valid: false, errors: ['composer is required'] };
+  const required = [];
+  if (!tune.tune_name || typeof tune.tune_name !== 'string') required.push('tune_name is required');
+  if (!tune.composer || typeof tune.composer !== 'string') required.push('composer is required');
+  if (required.length > 0) {
+    return { valid: false, errors: required, warnings: [], sanitized: null };
   }
-  return { valid: true, errors: [] };
+  return validateTuneUpdate(tune);
 }

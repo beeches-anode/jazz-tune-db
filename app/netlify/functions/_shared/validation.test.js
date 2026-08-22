@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 import {
-  validateTuneUpdate, ALLOWED_FIELDS,
+  validateTuneUpdate, validateNewTune, ALLOWED_FIELDS,
   KEY_REGEX, parseKey, validateStandardKey, validateAlternateKeys,
 } from './validation';
 
@@ -163,5 +163,32 @@ describe('schema lock changes', () => {
     const r = validateTuneUpdate({ standard_key: 'D# minor' });
     expect(r.valid).toBe(true);
     expect(r.warnings.length).toBeGreaterThan(0);
+  });
+});
+
+describe('validateNewTune', () => {
+  it('still requires tune_name and composer', () => {
+    expect(validateNewTune({ composer: 'X' }).valid).toBe(false);
+    expect(validateNewTune({ tune_name: 'X' }).valid).toBe(false);
+  });
+
+  it('rejects a new tune with a narrative standard_key', () => {
+    const r = validateNewTune({ tune_name: 'T', composer: 'C', standard_key: 'F major (vocal)' });
+    expect(r.valid).toBe(false);
+  });
+
+  it('sanitizes: strips unknown fields and returns typed fields', () => {
+    const r = validateNewTune({ tune_name: 'T', composer: 'C', standard_key: 'F blues', bogus: 1 });
+    expect(r.valid).toBe(true);
+    expect(r.sanitized).toEqual({ tune_name: 'T', composer: 'C', standard_key: 'F blues' });
+    expect(r.warnings).toContain("unknown field 'bogus' stripped");
+  });
+
+  it('validates alternate_keys on create', () => {
+    const r = validateNewTune({
+      tune_name: 'T', composer: 'C',
+      alternate_keys: [{ key: 'garbage', context: '' }],
+    });
+    expect(r.valid).toBe(false);
   });
 });

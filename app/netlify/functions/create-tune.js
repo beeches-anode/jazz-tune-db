@@ -34,7 +34,8 @@ export default async (req) => {
 
   const newTune = {
     id: generateId(),
-    ...tune,
+    alternate_keys: [],
+    ...validation.sanitized,
     is_approved: false,
     is_archived: false,
     last_updated: new Date().toISOString(),
