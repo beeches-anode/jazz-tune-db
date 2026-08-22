@@ -1,3 +1,6 @@
+import { KEY_REGEX } from '../../../../netlify/functions/_shared/validation.js';
+import { AlternateKeysEditor } from './AlternateKeysEditor';
+
 const STYLES = [
   'swing', 'bebop', 'ballad', 'bossa nova', 'calypso', 'blues', 'latin', 'modal', 'fusion', 'waltz', 'other'
 ];
@@ -105,10 +108,26 @@ export const BasicInfoForm = ({ tune, onChange }) => {
           type="text"
           value={tune.standard_key || ''}
           onChange={(e) => onChange('standard_key', e.target.value)}
-          className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-jazz-blue"
-          placeholder="Eb major"
+          className={`w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-jazz-blue ${
+            tune.standard_key && !KEY_REGEX.test(tune.standard_key)
+              ? 'border-red-400'
+              : 'border-gray-300'
+          }`}
+          placeholder="C major / F blues / D dorian"
         />
+        {tune.standard_key && !KEY_REGEX.test(tune.standard_key) && (
+          <p className="mt-1 text-xs text-red-500">
+            Format: root + quality, e.g. "C major", "F blues", "D dorian" — saves will be rejected otherwise
+          </p>
+        )}
       </div>
+
+      {/* Alternate Keys */}
+      <AlternateKeysEditor
+        tuneId={tune.id}
+        value={tune.alternate_keys}
+        onChange={(rows) => onChange('alternate_keys', rows)}
+      />
 
       {/* Time Signature */}
       <div>

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { DatabaseProvider, useDatabase } from './Editor/DatabaseContext';
 import { TuneList } from '../components/TuneList';
 import { PasteYouTubeModal } from '../components/PasteYouTubeModal';
+import { AlternateKeysEditor } from './Editor/TuneEditor/AlternateKeysEditor';
 
 function MobileEditorInner() {
   const { tunes, updateTune } = useDatabase();
@@ -30,6 +31,11 @@ function MobileEditorInner() {
           <FormField label="Year" type="number" value={tune.year ?? ''} onChange={v => updateTune(tune.id, { year: parseInt(v, 10) || null })} />
           <FormField label="Style" value={tune.style ?? ''} onChange={v => updateTune(tune.id, { style: v })} />
           <FormField label="Standard Key" value={tune.standard_key ?? ''} onChange={v => updateTune(tune.id, { standard_key: v })} />
+          <AlternateKeysEditor
+            tuneId={tune.id}
+            value={tune.alternate_keys}
+            onChange={(rows) => updateTune(tune.id, { alternate_keys: rows })}
+          />
           <FormField label="Rank" type="number" value={tune.rank ?? ''} onChange={v => updateTune(tune.id, { rank: parseInt(v, 10) || null })} />
           <FormToggle label="Approved" value={tune.is_approved} onChange={v => updateTune(tune.id, { is_approved: v })} />
         </Section>
