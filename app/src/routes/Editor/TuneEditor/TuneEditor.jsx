@@ -10,6 +10,7 @@ import { YouTubeBackingCurator } from '../YouTubeBackingCurator/YouTubeBackingCu
 import { SpotifyCurator } from '../SpotifyCurator/SpotifyCurator';
 import { Validation } from './Validation';
 import { PreviewPanel } from './PreviewPanel';
+import { validateTune } from '../utils/validation';
 
 export const TuneEditor = () => {
   const { tuneId } = useParams();
@@ -36,6 +37,12 @@ export const TuneEditor = () => {
   };
 
   const handleSave = async () => {
+    const validation = validateTune(tune);
+    if (!validation.valid) {
+      alert('Cannot save:\n' + validation.errors.join('\n'));
+      return;
+    }
+
     // Strip id from the payload — DatabaseContext also strips it, but
     // pass only editable fields to be explicit and reduce log noise.
     const { id: _id, ...editable } = tune;
