@@ -9,7 +9,7 @@ describe('useTunes', () => {
   });
 
   it('fetches tunes from GitHub raw URL on mount', async () => {
-    global.fetch = vi.fn().mockResolvedValue({
+    globalThis.fetch = vi.fn().mockResolvedValue({
       ok: true,
       status: 200,
       json: () => Promise.resolve([
@@ -27,7 +27,7 @@ describe('useTunes', () => {
   });
 
   it('filters out archived tunes', async () => {
-    global.fetch = vi.fn().mockResolvedValue({
+    globalThis.fetch = vi.fn().mockResolvedValue({
       ok: true,
       status: 200,
       json: () => Promise.resolve([
@@ -49,7 +49,7 @@ describe('useTunes', () => {
       tunes: [{ id: 't1', tune_name: 'Cached', is_archived: false }],
     }));
 
-    global.fetch = vi.fn().mockResolvedValue({
+    globalThis.fetch = vi.fn().mockResolvedValue({
       ok: true,
       status: 200,
       json: () => Promise.resolve([

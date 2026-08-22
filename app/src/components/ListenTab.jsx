@@ -3,8 +3,6 @@ import { YouTubePlaylistButton } from './YouTubePlaylistButton';
 export function ListenTab({ tune }) {
   const hasRecordings = tune.famous_recordings?.length > 0;
   const hasSpotify = tune.spotify_playlist_id;
-  const hasVideos = tune.youtube_video_ids?.length > 0;
-  const hasBacking = tune.youtube_backing_track_ids?.length > 0;
 
   return (
     <div className="px-3 sm:px-5 py-4 space-y-5">

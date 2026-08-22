@@ -46,6 +46,9 @@ export function useTunes() {
   }, []);
 
   useEffect(() => {
+    // refetch awaits the network before its first setState, so nothing is set
+    // synchronously here — the rule can't see past the useCallback indirection.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     refetch();
   }, [refetch]);
 

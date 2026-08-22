@@ -122,14 +122,12 @@ export const getSemitoneDistance = (fromKey, toKey) => {
   if (toKey === 'Bb instrument') {
     // Bb instruments always read a whole step (2 semitones) higher than concert
     // So we always ADD 2 semitones regardless of the concert key
-    const from = keyMap[fromKey] ?? 0;
     return 2; // Always +2 semitones
   }
 
   if (toKey === 'Eb instrument') {
     // Eb instruments always read a minor third (3 semitones) lower than concert
     // So we always SUBTRACT 3 semitones (or add 9, same thing) regardless of the concert key
-    const from = keyMap[fromKey] ?? 0;
     return -3; // Always -3 semitones
   }
 
