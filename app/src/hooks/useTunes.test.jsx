@@ -66,4 +66,31 @@ describe('useTunes', () => {
     // Then revalidate
     await waitFor(() => expect(result.current.tunes[0].tune_name).toBe('Fresh'));
   });
+
+  it('reads the cache once per mount, not on every render', async () => {
+    localStorage.setItem('jazz-tunes-cache', JSON.stringify({
+      sha: 'old-sha',
+      tunes: [{ id: 't1', tune_name: 'Cached', is_archived: false }],
+    }));
+
+    globalThis.fetch = vi.fn().mockResolvedValue({
+      ok: true,
+      status: 200,
+      json: () => Promise.resolve([
+        { id: 't1', tune_name: 'Fresh', is_archived: false },
+      ]),
+      headers: new Headers({ ETag: 'new-sha' }),
+    });
+
+    const getItem = vi.spyOn(Storage.prototype, 'getItem');
+    const cacheReads = () => getItem.mock.calls.filter(c => c[0] === 'jazz-tunes-cache').length;
+
+    const { result, rerender } = renderHook(() => useTunes());
+    await waitFor(() => expect(result.current.loading).toBe(false));
+    expect(cacheReads()).toBe(1);
+
+    rerender();
+    rerender();
+    expect(cacheReads()).toBe(1);
+  });
 });

@@ -22,7 +22,9 @@ function saveCache(sha, tunes) {
 }
 
 export function useTunes() {
-  const cached = loadCache();
+  // Lazy initializer so the cache is read once per mount: it only seeds initial
+  // state, and parsing the whole tune list on every render is expensive.
+  const [cached] = useState(loadCache);
   const [tunes, setTunes] = useState(cached?.tunes ?? []);
   const [sha, setSha] = useState(cached?.sha ?? null);
   const [loading, setLoading] = useState(!cached);
