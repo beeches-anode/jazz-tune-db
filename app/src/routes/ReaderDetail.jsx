@@ -19,7 +19,7 @@ export function ReaderDetail({ tune }) {
   const [active, setActive] = useState('overview');
 
   return (
-    <div className="flex flex-col h-full bg-white">
+    <div className="flex flex-col h-full bg-paper">
       <TabStrip tabs={tabs} activeId={active} onSelect={setActive} />
       <div className="flex-1 overflow-y-auto">
         {active === 'overview' && <OverviewTab tune={tune} />}
