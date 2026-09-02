@@ -35,6 +35,18 @@ describe('TabStrip', () => {
     fireEvent.click(screen.getByText('Chords'));
     expect(onSelect).toHaveBeenCalledWith('chords');
   });
+
+  it('marks the active tab with aria-current and leaves the others unmarked', () => {
+    render(
+      <TabStrip
+        tabs={[{ id: 'overview', label: 'Overview' }, { id: 'chords', label: 'Chords' }]}
+        activeId="chords"
+        onSelect={() => {}}
+      />
+    );
+    expect(screen.getByText('Chords')).toHaveAttribute('aria-current', 'page');
+    expect(screen.getByText('Overview')).not.toHaveAttribute('aria-current');
+  });
 });
 
 describe('OverviewTab', () => {
