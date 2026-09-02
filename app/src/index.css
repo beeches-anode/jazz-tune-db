@@ -2,19 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Direction A — Blue Note / Reid Miles. Cream paper, ink black, one red accent.
+   Tailwind exposes the same values as paper / ink / rule / accent / muted. */
 :root {
-  --brand: #0ea5e9;
-  --brand-dark: #0284c7;
-  --bg: #fafafa;
-  --surface: #ffffff;
-  --text: #18181b;
-  --text-muted: #71717a;
-  --border: #e4e4e7;
+  --paper: #f4ede1;
+  --ink: #141210;
+  --rule: #141210;
+  --accent: #d8321f;
+  --muted: #6b6459;
+  --muted-soft: #a39a8c;
 }
 
 body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
 }
