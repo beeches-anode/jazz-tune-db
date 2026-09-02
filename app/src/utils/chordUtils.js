@@ -60,3 +60,66 @@ export function transposeProgression(input, targetKey) {
     })
     .join('\n');
 }
+
+// --- Chord symbol formatting (Real Book shorthand) ---------------------------
+// Data stores chords as plain text ("Bbm7", "F#m7b5", "Db^7"), with a few iReal
+// leftovers: ^ = maj7, h = half-diminished, o = diminished, - = minor.
+// formatChord splits a token into the pieces ChordSymbol renders:
+//   root + accidental glyph, quality glyph (– Δ ø °), superscript extension, bass.
+
+const ACCIDENTAL_GLYPH = { b: '♭', '#': '♯', '': '' };
+
+function glyphAccidentals(ext) {
+  // Only b/# directly before a digit are accidentals (keeps "sus", "add" intact)
+  return ext.replace(/[b#](?=\d)/g, (m) => ACCIDENTAL_GLYPH[m]);
+}
+
+function parseNote(text) {
+  const m = text.match(/^([A-G])([b#]?)(.*)$/);
+  if (!m) return null;
+  return { root: m[1], accidental: ACCIDENTAL_GLYPH[m[2]], rest: m[3] };
+}
+
+// Returns [qualityGlyph, remainingExtension] for a suffix, or null if plain.
+function splitQuality(suffix) {
+  const dropSeventh = (s) => s.replace(/^7/, '');
+  if (/^(m7b5|-7b5|h)/.test(suffix)) return ['ø', dropSeventh(suffix.replace(/^(m7b5|-7b5|h)/, ''))];
+  if (/^dim/.test(suffix)) return ['°', dropSeventh(suffix.slice(3))];
+  if (/^o(7|$)/.test(suffix)) return ['°', dropSeventh(suffix.slice(1))];
+  if (/^maj/.test(suffix)) return ['Δ', dropSeventh(suffix.slice(3))];
+  if (/^\^/.test(suffix)) return ['Δ', dropSeventh(suffix.slice(1))];
+  if (/^[m-]/.test(suffix)) return ['–', suffix.slice(1)];
+  return ['', suffix];
+}
+
+export function formatChord(token) {
+  const empty = { raw: token, root: null, accidental: '', quality: '', ext: '', bass: null };
+  const [main, bassText] = token.split('/');
+  const note = parseNote(main);
+  if (!note) return empty;
+  const [quality, ext] = splitQuality(note.rest);
+  const bassNote = bassText ? parseNote(bassText) : null;
+  return {
+    raw: token,
+    root: note.root,
+    accidental: note.accidental,
+    quality,
+    ext: glyphAccidentals(ext),
+    bass: bassNote ? { root: bassNote.root, accidental: bassNote.accidental } : null,
+  };
+}
+
+// A measure may hold several chords; a slash chord is stored as "Bb7/ D"
+// (trailing slash, then the bass note as its own token — see transposeMeasure).
+export function splitMeasure(measure) {
+  const parts = (measure ?? '').trim().split(/\s+/).filter(Boolean);
+  const tokens = [];
+  for (let i = 0; i < parts.length; i++) {
+    if (parts[i].endsWith('/') && i + 1 < parts.length) {
+      tokens.push(parts[i] + parts[++i]);
+    } else {
+      tokens.push(parts[i]);
+    }
+  }
+  return tokens;
+}

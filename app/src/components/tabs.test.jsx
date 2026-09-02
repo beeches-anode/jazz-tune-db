@@ -61,9 +61,9 @@ describe('ListenTab', () => {
 
 describe('ChordsTab', () => {
   it('renders chord grid', () => {
-    render(<ChordsTab tune={tune} />);
-    expect(screen.getByText('Em7b5')).toBeInTheDocument();
-    expect(screen.getByText('A7')).toBeInTheDocument();
+    const { container } = render(<ChordsTab tune={tune} />);
+    const cells = Array.from(container.querySelectorAll('[data-measure]')).map((c) => c.textContent);
+    expect(cells).toEqual(['Eø', 'A7', 'C–7', 'F7']);
   });
   it('renders transpose buttons', () => {
     render(<ChordsTab tune={tune} />);
@@ -72,8 +72,8 @@ describe('ChordsTab', () => {
     expect(screen.getByText('Eb')).toBeInTheDocument();
   });
   it('transposes when Bb button clicked', () => {
-    render(<ChordsTab tune={tune} />);
+    const { container } = render(<ChordsTab tune={tune} />);
     fireEvent.click(screen.getByText('Bb'));
-    expect(screen.getByText('F#m7b5')).toBeInTheDocument();
+    expect(container.querySelector('[data-measure]').textContent).toBe('F♯ø');
   });
 });

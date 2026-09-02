@@ -1,13 +1,32 @@
 import { describe, it, expect } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { ChordChart } from './ChordChart';
 
 describe('ChordChart', () => {
-  it('renders each measure as a cell', () => {
-    render(<ChordChart chords="| Cmaj7 | Dm7 | G7 | Cmaj7 |" transposeKey="Concert" sectionMarkers={[]} />);
-    expect(screen.getAllByText('Cmaj7')).toHaveLength(2);
-    expect(screen.getByText('Dm7')).toBeInTheDocument();
-    expect(screen.getAllByText(/maj7/)).toHaveLength(2);
+  it('renders each measure as a cell in Real Book shorthand', () => {
+    const { container } = render(
+      <ChordChart chords="| Cmaj7 | Dm7 | G7 | Cmaj7 |" transposeKey="Concert" sectionMarkers={[]} />
+    );
+    const cells = container.querySelectorAll('[data-measure]');
+    expect(Array.from(cells).map((c) => c.textContent)).toEqual(['CΔ', 'D–7', 'G7', 'CΔ']);
+  });
+
+  it('renders both chords of a compound measure in one cell', () => {
+    const { container } = render(
+      <ChordChart chords="| Am7 D7 | Gmaj7 |" transposeKey="Concert" sectionMarkers={[]} />
+    );
+    const cells = container.querySelectorAll('[data-measure]');
+    expect(cells).toHaveLength(2);
+    expect(cells[0].textContent).toBe('A–7D7');
+  });
+
+  it('renders a slash chord with its bass note in the same cell', () => {
+    const { container } = render(
+      <ChordChart chords="| Bb7/ D | Ebmaj7 |" transposeKey="Concert" sectionMarkers={[]} />
+    );
+    const cells = container.querySelectorAll('[data-measure]');
+    expect(cells).toHaveLength(2);
+    expect(cells[0].textContent).toBe('B♭7/D');
   });
 
   it('renders section labels above start measures', () => {
@@ -21,17 +40,17 @@ describe('ChordChart', () => {
         ]}
       />
     );
-    expect(screen.getByText('A')).toBeInTheDocument();
-    expect(screen.getByText('B')).toBeInTheDocument();
+    const labels = Array.from(document.querySelectorAll('[data-section]')).map((el) => el.textContent);
+    expect(labels).toEqual(['A', 'B']);
   });
 
   it('transposes when transposeKey changes', () => {
-    const { rerender } = render(
+    const { container, rerender } = render(
       <ChordChart chords="| Cmaj7 | F7 |" transposeKey="Concert" sectionMarkers={[]} />
     );
-    expect(screen.getByText('Cmaj7')).toBeInTheDocument();
+    expect(container.querySelector('[data-measure]').textContent).toBe('CΔ');
 
     rerender(<ChordChart chords="| Cmaj7 | F7 |" transposeKey="Bb" sectionMarkers={[]} />);
-    expect(screen.getByText('Dmaj7')).toBeInTheDocument();
+    expect(container.querySelector('[data-measure]').textContent).toBe('DΔ');
   });
 });

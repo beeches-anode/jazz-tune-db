@@ -1,4 +1,5 @@
-import { parseChords, transposeProgression } from '../utils/chordUtils';
+import { parseChords, transposeProgression, splitMeasure } from '../utils/chordUtils';
+import { ChordSymbol } from './ChordSymbol';
 
 export function ChordChart({ chords, transposeKey = 'Concert', sectionMarkers = [] }) {
   const transposed = transposeProgression(chords ?? '', transposeKey);
@@ -27,7 +28,7 @@ export function ChordChart({ chords, transposeKey = 'Concert', sectionMarkers = 
                 {Array.from({ length: 4 }).map((_, col) => {
                   const marker = lineMarkers.find(m => m.col === col);
                   return (
-                    <div key={col} className="text-xs font-bold text-sky-700">
+                    <div key={col} data-section={marker ? '' : undefined} className="text-xs font-bold text-sky-700">
                       {marker?.label ?? ''}
                     </div>
                   );
@@ -38,9 +39,12 @@ export function ChordChart({ chords, transposeKey = 'Concert', sectionMarkers = 
               {line.map((cell, colIdx) => (
                 <div
                   key={colIdx}
-                  className="border border-zinc-300 rounded px-2 py-2 min-h-[2.5rem] sm:min-h-[3rem] font-mono text-sm flex items-center justify-center bg-white"
+                  data-measure
+                  className="border border-zinc-300 rounded px-2 py-2 min-h-[2.5rem] sm:min-h-[3rem] text-base font-semibold flex items-center justify-center gap-3 bg-white"
                 >
-                  {cell}
+                  {splitMeasure(cell).map((token, i) => (
+                    <ChordSymbol key={i} token={token} />
+                  ))}
                 </div>
               ))}
             </div>
