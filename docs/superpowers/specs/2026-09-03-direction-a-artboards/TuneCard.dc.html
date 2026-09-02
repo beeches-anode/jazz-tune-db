@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;800;900&amp;display=swap">
+  <style>
+    body { margin: 0; background: #f4ede1; color: #141210; font-family: 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #141210; } a:hover { color: #d8321f; }
+  </style>
+</helmet>
+<div style="width: 448px; height: 360px; background: #f4ede1; display: flex; flex-direction: column; gap: 22px; padding: 20px 0 20px 0; overflow: hidden; box-sizing: border-box;">
+
+  <!-- Default -->
+  <div style="display: flex; flex-direction: column; gap: 8px;">
+    <div style="padding: 0 16px; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #6b6459;">Default · 56px row</div>
+    <div style="display: flex; align-items: center; height: 56px; border-top: 1px solid #141210; border-bottom: 1px solid #141210; padding-right: 16px;">
+      <div style="width: 96px; flex: none; text-align: right; padding-right: 14px; font-size: 48px; font-weight: 900; letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; box-sizing: border-box;">5</div>
+      <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px;">
+        <div style="font-size: 16px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">There Will Never Be Another You</div>
+        <div style="font-size: 12px; color: #6b6459; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Harry Warren · Eb major · swing</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Selected -->
+  <div style="display: flex; flex-direction: column; gap: 8px;">
+    <div style="padding: 0 16px; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #6b6459;">Selected · inverted, red numeral</div>
+    <div style="display: flex; align-items: center; height: 56px; border-top: 1px solid #141210; border-bottom: 1px solid #141210; padding-right: 16px; background: #141210; color: #f4ede1;">
+      <div style="width: 96px; flex: none; text-align: right; padding-right: 14px; font-size: 48px; font-weight: 900; letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; box-sizing: border-box; color: #d8321f;">8</div>
+      <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px;">
+        <div style="font-size: 16px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">All the Things You Are</div>
+        <div style="font-size: 12px; color: #b8ae9f; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Jerome Kern · Ab major <span style="color: #8a8276;">+2</span> · ballad</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Keyless -->
+  <div style="display: flex; flex-direction: column; gap: 8px;">
+    <div style="padding: 0 16px; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #6b6459;">No key on record · 161 tunes</div>
+    <div style="display: flex; align-items: center; height: 56px; border-top: 1px solid #141210; border-bottom: 1px solid #141210; padding-right: 16px;">
+      <div style="width: 96px; flex: none; text-align: right; padding-right: 14px; font-size: 48px; font-weight: 900; letter-spacing: -0.05em; line-height: 1; font-variant-numeric: tabular-nums; box-sizing: border-box;">109</div>
+      <div style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px;">
+        <div style="font-size: 16px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Nardis</div>
+        <div style="font-size: 12px; color: #6b6459; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Miles Davis · <span style="color: #a39a8c;">—</span> · modal</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</x-dc>
+</body>
+</html>
