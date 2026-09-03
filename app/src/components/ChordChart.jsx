@@ -1,7 +1,8 @@
 import { parseChords, transposeProgression, splitMeasure } from '../utils/chordUtils';
 import { ChordSymbol } from './ChordSymbol';
 
-// Lead-sheet grid: 4 measures per row, measure numbers in a left gutter,
+// Lead-sheet grid: 4 measures per row (short rows keep the same bar width,
+// left-aligned, trailing space empty), measure numbers in a left gutter,
 // section letters in red, double bars where a section starts.
 export function ChordChart({ chords, transposeKey = 'Concert', sectionMarkers = [] }) {
   const grid = parseChords(transposeProgression(chords ?? '', transposeKey));
@@ -41,7 +42,7 @@ export function ChordChart({ chords, transposeKey = 'Concert', sectionMarkers = 
                 {firstMeasure}
               </span>
             </div>
-            <div className="flex-1 grid" style={{ gridTemplateColumns: `repeat(${line.length}, minmax(0, 1fr))` }}>
+            <div className="flex-1 grid" style={{ gridTemplateColumns: `repeat(${Math.max(4, line.length)}, minmax(0, 1fr))` }}>
               {line.map((cell, colIdx) => {
                 const inline = inlineMarkers.find((m) => m.col === colIdx);
                 return (

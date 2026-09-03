@@ -90,12 +90,20 @@ describe('ChordChart', () => {
     expect(cells[2].querySelector('[data-section]').textContent).toBe('B');
   });
 
-  it('gives a short row exactly as many columns as it has measures', () => {
+  it('keeps a short row on the same four-column grid, bars left-aligned', () => {
     const { container } = render(
-      <ChordChart chords={"| Cmaj7 | Dm7 | G7 | Cmaj7 |\n| Bb7 A7b9 | Dm6 | Em7b5 A7b9 |"} transposeKey="Concert" sectionMarkers={[]} />
+      <ChordChart chords={"| Cmaj7 | Dm7 | G7 | Cmaj7 |\n| Dmaj7 | Dmaj7 |"} transposeKey="Concert" sectionMarkers={[]} />
     );
-    const grids = container.querySelectorAll('[data-measure]:first-child');
-    expect(grids[0].parentElement.style.gridTemplateColumns).toBe('repeat(4, minmax(0, 1fr))');
-    expect(grids[1].parentElement.style.gridTemplateColumns).toBe('repeat(3, minmax(0, 1fr))');
+    const rows = container.querySelectorAll('[data-measure]:first-child');
+    expect(rows[0].parentElement.style.gridTemplateColumns).toBe('repeat(4, minmax(0, 1fr))');
+    expect(rows[1].parentElement.style.gridTemplateColumns).toBe('repeat(4, minmax(0, 1fr))');
+    expect(rows[1].parentElement.querySelectorAll('[data-measure]')).toHaveLength(2);
+  });
+
+  it('widens the grid only when a row has more than four measures', () => {
+    const { container } = render(
+      <ChordChart chords="| C7 | F7 | C7 | G7 | C7 |" transposeKey="Concert" sectionMarkers={[]} />
+    );
+    expect(container.querySelector('[data-measure]').parentElement.style.gridTemplateColumns).toBe('repeat(5, minmax(0, 1fr))');
   });
 });
