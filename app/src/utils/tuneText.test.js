@@ -21,4 +21,10 @@ describe('splitComposer', () => {
     expect(splitComposer(null)).toEqual({ name: '', lyricist: null });
     expect(splitComposer(undefined)).toEqual({ name: '', lyricist: null });
   });
+  it('leaves a non-lyrics parenthetical in the name', () => {
+    expect(splitComposer('Charlie Parker (attributed to Miles Davis)')).toEqual({
+      name: 'Charlie Parker (attributed to Miles Davis)',
+      lyricist: null,
+    });
+  });
 });
