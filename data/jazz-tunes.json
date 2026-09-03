@@ -1655,7 +1655,7 @@
   {
     "tune_name": "Beautiful Love",
     "composer": "Victor Young, Wayne King, Egbert Van Alstyne (lyrics: Haven Gillespie)",
-    "year": "1931",
+    "year": 1931,
     "style": "swing",
     "form": "AABA, 32 bars (8-bar sections). Typically in D minor for the A sections, with a bridge that moves to the relative major (F major) before cadencing back to D minor. Common variants include different turnarounds at the end of the last A (e.g., iiø-V7 or tritone-sub V back to i) and occasional treatment as a 3/4 waltz.",
     "standard_key": "D minor",
@@ -1697,18 +1697,28 @@
     "chord_progression_notes": "D minor blues-influenced standard with sophisticated minor ii-V-i progressions. Each A section opens with Em7b5-A7b9 (ii-V in Dm), moves through Gm7-C7 to Fmaj7 (ii-V-I in relative major F), then returns to D minor. Middle portion features Dm-Gm7-Bb7-A7b9 (i-iv-bVI7-V7), where Bb7 functions as a tritone substitution for E7 (V/V). Final A section contains chromatic turnaround: Dm-B7-Bb7#11-A7b9, creating stepwise descending bass motion (D-B-Bb-A) back to tonic. Can be performed in 3/4 waltz or 4/4 swing.",
     "youtube_video_ids": [
       {
-        "id": "bD3zPOYCOws",
-        "title": "Beautiful Love - Bill Evans Piano Solo Transcription",
-        "channelTitle": "Jazz Transcriptions",
+        "id": "kq8bDlCJjwE",
+        "title": "Beautiful Love",
+        "artist": "",
         "verified": true,
-        "added_date": "2025-12-06"
+        "added_date": "2026-09-03",
+        "channelTitle": "Benny Golson - Topic"
       },
       {
-        "id": "N5FqsRHsRmo",
-        "title": "Beautiful Love - Adam Rogers, John Patitucci, Clarence Penn",
-        "channelTitle": "Jazz Performance",
+        "id": "kT-8SYu6gXU",
+        "title": "Beautiful Love",
+        "artist": "",
         "verified": true,
-        "added_date": "2025-12-06"
+        "added_date": "2026-09-03",
+        "channelTitle": "McCoy Tyner Trio - Topic"
+      },
+      {
+        "id": "vOk9o61lsu0",
+        "title": "BEAUTIFUL LOVE - Lauren Henderson Quintet - VOCAL JAZZ",
+        "artist": "",
+        "verified": true,
+        "added_date": "2026-09-03",
+        "channelTitle": "Lauren Henderson"
       },
       {
         "id": "xN0DBl4QgTI",
@@ -1718,30 +1728,32 @@
         "added_date": "2025-12-06"
       },
       {
-        "id": "BXkP1Ks-UCk",
-        "title": "Beautiful Love - Lage Lund (Guitar Challenge)",
-        "channelTitle": "Jazz Guitar",
+        "id": "kCM3XLCr2zU",
+        "title": "Beautiful Love",
+        "artist": "",
+        "verified": true,
+        "added_date": "2026-09-03",
+        "channelTitle": "Kenny Barron - Topic"
+      },
+      {
+        "id": "bD3zPOYCOws",
+        "title": "Beautiful Love - Bill Evans Piano Solo Transcription",
+        "channelTitle": "Jazz Transcriptions",
         "verified": true,
         "added_date": "2025-12-06"
       },
       {
-        "id": "BXqK66nSntM",
-        "title": "Beautiful Love - Mike Moreno (Guitar Challenge)",
-        "channelTitle": "Jazz Guitar",
+        "id": "8gcuEdDzg-g",
+        "title": "2023 Beautiful Love   JOAN CHAMORRO PRESENTA KOLDO MUNNÉ feat SCOTT HAMILTON",
+        "artist": "",
         "verified": true,
-        "added_date": "2025-12-06"
-      },
-      {
-        "id": "IEMDKNo98ro",
-        "title": "Beautiful Love - Solo Transcription Study",
-        "channelTitle": "Jazz Video Lessons",
-        "verified": true,
-        "added_date": "2025-12-06"
+        "added_date": "2026-09-03",
+        "channelTitle": "Joan Chamorro"
       }
     ],
     "id": "mewjccgwj2z71mmkuz",
     "is_approved": false,
-    "last_updated": "2025-12-14",
+    "last_updated": "2026-09-03T21:54:45.142Z",
     "validated": true,
     "youtube_backing_track_ids": [
       {
