@@ -11,7 +11,7 @@ const TRANSPOSE_OPTIONS = [
 ];
 
 export function ChordsTab({ tune }) {
-  const [transposeKey, setTransposeKey] = useState('Concert');
+  const [transposeKey, setTransposeKey] = useState('Bb'); // Trent plays tenor (B♭)
 
   return (
     <div className="px-4 sm:px-10 py-7 flex flex-col gap-5">

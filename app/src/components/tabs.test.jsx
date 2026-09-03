@@ -79,18 +79,18 @@ describe('ChordsTab', () => {
   it('renders chord grid', () => {
     const { container } = render(<ChordsTab tune={tune} />);
     const cells = Array.from(container.querySelectorAll('[data-measure]')).map((c) => c.textContent);
-    expect(cells).toEqual(['Eø', 'A7', 'C–7', 'F7']);
+    expect(cells).toEqual(['F♯ø', 'B7', 'D–7', 'G7']);
   });
-  it('renders transpose buttons with flat glyphs', () => {
+  it('defaults to B♭ (tenor sax) and renders flat glyphs', () => {
     render(<ChordsTab tune={tune} />);
-    expect(screen.getByRole('button', { name: 'Concert' })).toHaveAttribute('aria-pressed', 'true');
-    expect(screen.getByRole('button', { name: 'B♭' })).toHaveAttribute('aria-pressed', 'false');
+    expect(screen.getByRole('button', { name: 'B♭' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('button', { name: 'Concert' })).toHaveAttribute('aria-pressed', 'false');
     expect(screen.getByRole('button', { name: 'E♭' })).toBeInTheDocument();
   });
-  it('transposes when B♭ is clicked', () => {
+  it('shows concert pitch when Concert is clicked', () => {
     const { container } = render(<ChordsTab tune={tune} />);
-    fireEvent.click(screen.getByRole('button', { name: 'B♭' }));
-    expect(container.querySelector('[data-measure]').textContent).toBe('F♯ø');
-    expect(screen.getByRole('button', { name: 'B♭' })).toHaveAttribute('aria-pressed', 'true');
+    fireEvent.click(screen.getByRole('button', { name: 'Concert' }));
+    expect(container.querySelector('[data-measure]').textContent).toBe('Eø');
+    expect(screen.getByRole('button', { name: 'Concert' })).toHaveAttribute('aria-pressed', 'true');
   });
 });
