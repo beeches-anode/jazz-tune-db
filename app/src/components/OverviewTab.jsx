@@ -1,6 +1,6 @@
 import { splitComposer } from '../utils/tuneText';
+import { LABEL } from './styles';
 
-const LABEL = 'text-[10.5px] font-semibold uppercase tracking-[0.12em] text-muted';
 const VALUE = 'text-[26px] font-extrabold leading-none tracking-[-0.03em]';
 
 export function OverviewTab({ tune }) {

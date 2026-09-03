@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { ChordChart } from './ChordChart';
 import { SectionMarkerBadges } from './SectionMarkerBadges';
+import { LABEL, SMALL_CAPS } from './styles';
 
 // `key` feeds transposeProgression; `label` is what the player reads.
 const TRANSPOSE_OPTIONS = [
@@ -8,8 +9,6 @@ const TRANSPOSE_OPTIONS = [
   { key: 'Bb', label: 'B♭' },
   { key: 'Eb', label: 'E♭' },
 ];
-
-const LABEL = 'text-[10.5px] font-semibold uppercase tracking-[0.12em] text-muted';
 
 export function ChordsTab({ tune }) {
   const [transposeKey, setTransposeKey] = useState('Concert');
@@ -24,7 +23,7 @@ export function ChordsTab({ tune }) {
         </div>
       )}
 
-      <div className="flex items-center gap-4 text-[11px] font-semibold uppercase tracking-[0.1em]">
+      <div className={`flex items-center gap-4 ${SMALL_CAPS}`}>
         <span className="text-muted">Transpose</span>
         {TRANSPOSE_OPTIONS.map(({ key, label }) => (
           <button

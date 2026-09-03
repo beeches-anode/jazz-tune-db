@@ -1,6 +1,5 @@
 import { YouTubePlaylistButton } from './YouTubePlaylistButton';
-
-const LABEL = 'text-[10.5px] font-semibold uppercase tracking-[0.12em] text-muted';
+import { LABEL, SMALL_CAPS, SERVICE_ROW } from './styles';
 
 export function ListenTab({ tune }) {
   const hasRecordings = tune.famous_recordings?.length > 0;
@@ -24,9 +23,9 @@ export function ListenTab({ tune }) {
             href={`https://open.spotify.com/playlist/${tune.spotify_playlist_id}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-baseline justify-between gap-4 border border-rule px-4 py-3 hover:bg-ink/5 transition-colors"
+            className={SERVICE_ROW}
           >
-            <span className="text-[11px] font-semibold uppercase tracking-[0.1em]">Spotify Playlist</span>
+            <span className={SMALL_CAPS}>Spotify Playlist</span>
             <span className="text-xs text-muted whitespace-nowrap">opens in new tab</span>
           </a>
         )}

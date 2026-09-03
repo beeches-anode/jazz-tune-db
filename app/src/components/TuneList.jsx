@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import { TuneCard } from './TuneCard';
+import { SMALL_CAPS, CHIP } from './styles';
 
 const SORTS = [
   { id: 'rank', label: 'Rank', cmp: (a, b) => (a.rank ?? 9999) - (b.rank ?? 9999) },
@@ -11,9 +12,6 @@ const SORTS = [
 // Top five styles by count. Matched case-insensitively — the data has
 // "Ballad" and "ballad" side by side and we are not normalising it here.
 const STYLE_CHIPS = ['ballad', 'swing', 'bebop', 'hard bop', 'bossa nova'];
-
-const SMALL_CAPS = 'text-[11px] font-semibold uppercase tracking-[0.1em]';
-const CHIP = 'border border-rule px-2 py-0.5 text-[10.5px] font-semibold uppercase tracking-[0.08em] leading-tight transition-colors';
 
 export function TuneList({ tunes, selectedId, onSelect }) {
   const [query, setQuery] = useState('');
