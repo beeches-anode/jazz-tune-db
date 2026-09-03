@@ -494,7 +494,7 @@
     "lyricist": "Howard Dietz",
     "year": 1932,
     "style": "ballad",
-    "form": "AABC, 44 bars (14-14-8-8). Extended form with unusual 14-bar A sections instead of the typical 8. A sections feature minor key harmony; B section (bridge) modulates through sequential ii-V movement; C section returns to tonic. Tag ending commonly used. Many recordings resolve with a Picardy-third (major) cadence.",
+    "form": "AABA, 44 bars (14-14-8-8). Extended form with unusual 14-bar A sections instead of the typical 8. A sections feature minor-key harmony and close on a 2-bar Dmaj7 (Picardy-third) tag; the bridge modulates through sequential ii-V movement; the final A is a contracted 8-bar return to the tonic. Tag ending commonly used.",
     "standard_key": "D minor",
     "section_markers": [
       {
@@ -513,35 +513,27 @@
         "end": 36
       },
       {
-        "label": "C",
+        "label": "A",
         "start": 37,
         "end": 44
       }
     ],
-    "chord_progression_notes": "Extended AABC form with 14-bar A sections (44 bars total). A sections feature the characteristic Em7b5-A7b9 turnaround in D minor and Am7b5-D7b9 (ii-V to iv). Bridge modulates through sequential ii-V movement (Bm7-E7, Gm7-C7) leading to Fmaj7. Common substitutions: tritone subs on dominant chords (Eb7 for A7b9), Dm(maj7) for Dm6. Many versions end with a Picardy third resolution to Dmaj7. Tag endings are common in performance.",
+    "chord_progression_notes": "AABA, 44 bars (14-14-8-8). A1 and A2 are identical: a 12-bar minor-key strain built on the Em7b5-A7b9 turnaround in D minor and Am7b5-D7b9 (ii-V to iv), with a Bm7-E7 / Gm7-C7 sequential descent to Fmaj7, closing on a 2-bar Dmaj7 tag. The bridge moves Am7b5-D7b9 into Gm6, then Gm7b5-C7b9 to Fmaj7 before Em7b5-A7b9 returns to Dm. The final A is a contracted 8 bars ending Dm6-Bm7b5 | Bb7-A7b9 | Dm6 | Em7b5-A7b9. Common substitutions: tritone subs on dominants (Eb7 for A7b9), Dm(maj7) for Dm6; Bm7-E7 is usually played unaltered. Many versions end with a Picardy-third resolution to Dmaj7; tag endings are common in performance.",
     "history_and_facts": "Written by Arthur Schwartz with lyrics by Howard Dietz for the 1932 Broadway revue Flying Colors, Alone Together quickly attracted bandleaders; Leo Reisman had an early hit that same year. Its dark, minor-key character and elegant lyric made it a natural for both dance bands and jazz improvisers.\nArtie Shaw's 1939 recording is widely cited for cementing the tune's standard status, and modern jazz players embraced it for its rich harmonic motion, especially the sequential ii-V movement in the bridge. In the hard‑bop era, influential versions by Chet Baker (on the 1959 album Chet) and Kenny Dorham (Quiet Kenny, 1959) helped fix the tune in the small‑group repertoire.\nInstrumentalists most often call it in D minor, and many arrangements end with a Picardy‑third resolution to the parallel major-an expressive touch that highlights the tune's bittersweet mood.",
     "famous_recordings": [
-      "Clifford Brown & Max Roach - 1954 (Clifford Brown & Max Roach)",
       "Chet Baker & Bill Evans - 1958 (Chet)",
-      "Art Pepper - 1957 (Art Pepper Meets the Rhythm Section)",
-      "Bill Evans & Jim Hall - 1963 (Alone Together)",
-      "Sonny Rollins - 1957 (Way Out West)",
+      "Sonny Rollins - 1958 (Sonny Rollins and the Contemporary Leaders)",
+      "Kenny Dorham - 1959 (Quiet Kenny)",
+      "Jim Hall & Ron Carter - 1972 (Alone Together)",
       "Ella Fitzgerald - 1961 (Ella Swings Brightly with Nelson)",
-      "Artie Shaw and His Orchestra - 1939 (Symphony of Swing)"
+      "Paul Desmond - 1963 (Take Ten)",
+      "Artie Shaw and His Orchestra - 1939 (Bluebird 78, B-10148)"
     ],
     "rank": 24,
-    "chords": "| Dm6 | Em7b5 A7b9 | Dm6 | Em7b5 A7b9 |\n| Dm6 | Am7b5 D7b9 | Gm7 | Gm7 |\n| Bm7 E7 | Gm7 C7 | Fmaj7 | Em7b5 A7b9 |\n| Dmaj7 | Dmaj7 | Dmaj7 | Am7b5 |\n| D7b9 | Gm6 | Gm6 | Gm7b5 |\n| C7b9 | Fmaj7 | Em7b5 A7b9 | Dm6 |\n| Em7b5 A7b9 | Dm6 | Em7b5 A7b9 | Dm6 Bm7b5 |\n| Bb7 A7b9 | Dm6 | Em7b5 A7b9 |",
+    "chords": "| Dm6 | Em7b5 A7b9 | Dm6 | Em7b5 A7b9 |\n| Dm6 | Am7b5 D7b9 | Gm7 | Gm7 |\n| Bm7 E7 | Gm7 C7 | Fmaj7 | Em7b5 A7b9 |\n| Dmaj7 | Dmaj7 |\n| Dm6 | Em7b5 A7b9 | Dm6 | Em7b5 A7b9 |\n| Dm6 | Am7b5 D7b9 | Gm7 | Gm7 |\n| Bm7 E7 | Gm7 C7 | Fmaj7 | Em7b5 A7b9 |\n| Dmaj7 | Dmaj7 |\n| Am7b5 | D7b9 | Gm6 | Gm6 |\n| Gm7b5 | C7b9 | Fmaj7 | Em7b5 A7b9 |\n| Dm6 | Em7b5 A7b9 | Dm6 | Em7b5 A7b9 |\n| Dm6 Bm7b5 | Bb7 A7b9 | Dm6 | Em7b5 A7b9 |",
     "id": "mewjccgw9imw6m6c9l",
     "is_approved": true,
     "youtube_video_ids": [
-      {
-        "id": "3GHDan9lGBQ",
-        "title": "Clifford Brown Rare Footage with Max Roach 1955 - Alone Together - Jazz Legends",
-        "artist": "",
-        "channelTitle": "Arnojazz",
-        "verified": true,
-        "added_date": "2025-12-16"
-      },
       {
         "id": "DMRvf6Mh710",
         "title": "Sonny Rollins - Alone Together (Official Visualizer)",
@@ -589,6 +581,22 @@
         "channelTitle": "Ahmad Jamal - Topic",
         "verified": true,
         "added_date": "2025-12-16"
+      },
+      {
+        "id": "kCgs2pxrmWY",
+        "title": "Kenny Dorham - 1959 - Quiet Kenny - 04 Alone Together",
+        "artist": "",
+        "channelTitle": "JazzTube",
+        "verified": true,
+        "added_date": "2026-09-04"
+      },
+      {
+        "id": "ia9nuwiljGg",
+        "title": "Jim Hall/Ron Carter - Alone Together (1972 Album)",
+        "artist": "",
+        "channelTitle": "JimHallArchive",
+        "verified": true,
+        "added_date": "2026-09-04"
       }
     ],
     "youtube_backing_track_ids": [
@@ -673,7 +681,7 @@
         "added_date": "2025-12-16"
       }
     ],
-    "last_updated": "2025-12-16T00:00:00.000Z",
+    "last_updated": "2026-09-04T00:00:00.000Z",
     "validated": true,
     "alternate_keys": [
       {
