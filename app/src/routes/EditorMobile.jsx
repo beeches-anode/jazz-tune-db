@@ -13,7 +13,7 @@ function MobileEditorInner() {
   const tune = tunes.find(t => t.id === selectedId);
 
   if (!tune) {
-    return <TuneList tunes={tunes} onSelect={setSelectedId} />;
+    return <TuneList tunes={tunes} onSelect={setSelectedId} showMasthead={false} />;
   }
 
   return (

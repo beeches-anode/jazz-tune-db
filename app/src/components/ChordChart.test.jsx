@@ -53,4 +53,49 @@ describe('ChordChart', () => {
     rerender(<ChordChart chords="| Cmaj7 | F7 |" transposeKey="Bb" sectionMarkers={[]} />);
     expect(container.querySelector('[data-measure]').textContent).toBe('DΔ');
   });
+
+  it('shows the first measure number of every row in the gutter', () => {
+    const { container } = render(
+      <ChordChart
+        chords={"| Cmaj7 | Dm7 | G7 | Cmaj7 |\n| Em7 | A7 | Dm7 | G7 |\n| Fmaj7 | Bb7 | Cmaj7 | Cmaj7 |"}
+        transposeKey="Concert"
+        sectionMarkers={[]}
+      />
+    );
+    const numbers = Array.from(container.querySelectorAll('[data-measure-number]')).map((el) => el.textContent);
+    expect(numbers).toEqual(['1', '5', '9']);
+  });
+
+  it('marks rows that begin a section', () => {
+    const { container } = render(
+      <ChordChart
+        chords={"| Cmaj7 | Dm7 | G7 | Cmaj7 |\n| Em7 | A7 | Dm7 | G7 |"}
+        transposeKey="Concert"
+        sectionMarkers={[{ label: 'A', start: 1, end: 4 }, { label: 'B', start: 5, end: 8 }]}
+      />
+    );
+    expect(container.querySelectorAll('[data-section-start]')).toHaveLength(2);
+  });
+
+  it('renders a marker that starts mid-row inside that cell', () => {
+    const { container } = render(
+      <ChordChart
+        chords="| Cmaj7 | Dm7 | G7 | Cmaj7 |"
+        transposeKey="Concert"
+        sectionMarkers={[{ label: 'B', start: 3, end: 4 }]}
+      />
+    );
+    expect(container.querySelectorAll('[data-section-start]')).toHaveLength(0);
+    const cells = container.querySelectorAll('[data-measure]');
+    expect(cells[2].querySelector('[data-section]').textContent).toBe('B');
+  });
+
+  it('gives a short row exactly as many columns as it has measures', () => {
+    const { container } = render(
+      <ChordChart chords={"| Cmaj7 | Dm7 | G7 | Cmaj7 |\n| Bb7 A7b9 | Dm6 | Em7b5 A7b9 |"} transposeKey="Concert" sectionMarkers={[]} />
+    );
+    const grids = container.querySelectorAll('[data-measure]:first-child');
+    expect(grids[0].parentElement.style.gridTemplateColumns).toBe('repeat(4, minmax(0, 1fr))');
+    expect(grids[1].parentElement.style.gridTemplateColumns).toBe('repeat(3, minmax(0, 1fr))');
+  });
 });

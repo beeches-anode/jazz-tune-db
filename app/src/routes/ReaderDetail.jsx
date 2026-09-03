@@ -12,14 +12,14 @@ export function ReaderDetail({ tune }) {
       || tune.youtube_video_ids?.length > 0
       || tune.youtube_backing_track_ids?.length > 0;
     if (hasListen) t.push({ id: 'listen', label: 'Listen' });
-    if (tune.chords) t.push({ id: 'chords', label: 'Chords' });
+    if (tune.chords?.includes('|')) t.push({ id: 'chords', label: 'Chords' });
     return t;
   }, [tune]);
 
   const [active, setActive] = useState('overview');
 
   return (
-    <div className="flex flex-col h-full bg-white">
+    <div className="flex flex-col h-full bg-paper">
       <TabStrip tabs={tabs} activeId={active} onSelect={setActive} />
       <div className="flex-1 overflow-y-auto">
         {active === 'overview' && <OverviewTab tune={tune} />}

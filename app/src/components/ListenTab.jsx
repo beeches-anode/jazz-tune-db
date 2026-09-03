@@ -1,38 +1,37 @@
 import { YouTubePlaylistButton } from './YouTubePlaylistButton';
+import { LABEL, SMALL_CAPS, SERVICE_ROW } from './styles';
 
 export function ListenTab({ tune }) {
   const hasRecordings = tune.famous_recordings?.length > 0;
-  const hasSpotify = tune.spotify_playlist_id;
 
   return (
-    <div className="px-3 sm:px-5 py-4 space-y-5">
+    <div className="px-4 sm:px-10 py-7 flex flex-col gap-6">
       {hasRecordings && (
-        <div>
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 mb-2">Famous Recordings</h3>
-          <ul className="space-y-1">
+        <div className="flex flex-col gap-2.5 max-w-[720px]">
+          <h3 className={LABEL}>Famous Recordings</h3>
+          <ul className="divide-y divide-rule border-y border-rule">
             {tune.famous_recordings.map((r, i) => (
-              <li key={i} className="flex gap-2 text-zinc-700">
-                <span className="text-sky-500">•</span>
-                <span>{r}</span>
-              </li>
+              <li key={i} className="py-1.5 text-sm leading-snug">{r}</li>
             ))}
           </ul>
         </div>
       )}
 
-      {hasSpotify && (
-        <a
-          href={`https://open.spotify.com/playlist/${tune.spotify_playlist_id}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block w-full px-4 py-3 rounded font-medium text-center bg-gradient-to-r from-green-500 to-green-700 text-white hover:opacity-90"
-        >
-          ▶ Spotify Playlist
-        </a>
-      )}
-
-      <YouTubePlaylistButton videoIds={tune.youtube_video_ids} label="YouTube Performances" variant="performances" />
-      <YouTubePlaylistButton videoIds={tune.youtube_backing_track_ids} label="YouTube Backing Tracks" variant="backing" />
+      <div className="flex flex-col gap-2 max-w-[720px]">
+        {tune.spotify_playlist_id && (
+          <a
+            href={`https://open.spotify.com/playlist/${tune.spotify_playlist_id}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={SERVICE_ROW}
+          >
+            <span className={SMALL_CAPS}>Spotify Playlist</span>
+            <span className="text-xs text-muted whitespace-nowrap">opens in new tab</span>
+          </a>
+        )}
+        <YouTubePlaylistButton videoIds={tune.youtube_video_ids} label="YouTube Performances" />
+        <YouTubePlaylistButton videoIds={tune.youtube_backing_track_ids} label="YouTube Backing Tracks" />
+      </div>
     </div>
   );
 }

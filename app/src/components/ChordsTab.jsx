@@ -1,46 +1,48 @@
 import { useState } from 'react';
 import { ChordChart } from './ChordChart';
 import { SectionMarkerBadges } from './SectionMarkerBadges';
+import { LABEL, SMALL_CAPS } from './styles';
 
-const TRANSPOSE_OPTIONS = ['Concert', 'Bb', 'Eb'];
+// `key` feeds transposeProgression; `label` is what the player reads.
+const TRANSPOSE_OPTIONS = [
+  { key: 'Concert', label: 'Concert' },
+  { key: 'Bb', label: 'B♭' },
+  { key: 'Eb', label: 'E♭' },
+];
 
 export function ChordsTab({ tune }) {
   const [transposeKey, setTransposeKey] = useState('Concert');
 
   return (
-    <div className="px-3 sm:px-5 py-4 space-y-4">
+    <div className="px-4 sm:px-10 py-7 flex flex-col gap-5">
       {tune.form && (
-        <div>
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500 mb-2">Form &amp; Structure</h3>
-          <p className="text-zinc-700 text-sm">{tune.form}</p>
-          <div className="mt-2">
-            <SectionMarkerBadges markers={tune.section_markers} />
-          </div>
+        <div className="flex flex-col gap-2.5 max-w-[800px]">
+          <h3 className={LABEL}>Form &amp; Structure</h3>
+          <p className="text-sm leading-relaxed text-pretty">{tune.form}</p>
+          <SectionMarkerBadges markers={tune.section_markers} />
         </div>
       )}
 
-      <div>
-        <div className="flex flex-wrap items-center gap-2 mb-3">
-          <span className="text-xs font-semibold uppercase tracking-wide text-zinc-500">Transpose:</span>
-          {TRANSPOSE_OPTIONS.map(key => (
-            <button
-              key={key}
-              onClick={() => setTransposeKey(key)}
-              className={`px-3 py-1 text-xs rounded font-medium ${
-                transposeKey === key
-                  ? 'bg-sky-500 text-white'
-                  : 'bg-zinc-100 text-zinc-700 hover:bg-zinc-200'
-              }`}
-            >
-              {key}
-            </button>
-          ))}
-        </div>
-        <ChordChart chords={tune.chords} transposeKey={transposeKey} sectionMarkers={tune.section_markers ?? []} />
+      <div className={`flex items-center gap-4 ${SMALL_CAPS}`}>
+        <span className="text-muted">Transpose</span>
+        {TRANSPOSE_OPTIONS.map(({ key, label }) => (
+          <button
+            key={key}
+            onClick={() => setTransposeKey(key)}
+            aria-pressed={transposeKey === key}
+            className={`pb-0.5 border-b-2 transition-colors ${
+              transposeKey === key ? 'border-accent text-ink' : 'border-transparent text-muted hover:text-ink'
+            }`}
+          >
+            {label}
+          </button>
+        ))}
       </div>
 
+      <ChordChart chords={tune.chords} transposeKey={transposeKey} sectionMarkers={tune.section_markers ?? []} />
+
       {tune.chord_progression_notes && (
-        <p className="text-xs text-zinc-500 italic">{tune.chord_progression_notes}</p>
+        <p className="text-xs leading-relaxed text-muted max-w-[800px] text-pretty">{tune.chord_progression_notes}</p>
       )}
     </div>
   );

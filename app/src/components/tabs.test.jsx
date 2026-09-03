@@ -35,6 +35,18 @@ describe('TabStrip', () => {
     fireEvent.click(screen.getByText('Chords'));
     expect(onSelect).toHaveBeenCalledWith('chords');
   });
+
+  it('marks the active tab with aria-current and leaves the others unmarked', () => {
+    render(
+      <TabStrip
+        tabs={[{ id: 'overview', label: 'Overview' }, { id: 'chords', label: 'Chords' }]}
+        activeId="chords"
+        onSelect={() => {}}
+      />
+    );
+    expect(screen.getByText('Chords')).toHaveAttribute('aria-current', 'page');
+    expect(screen.getByText('Overview')).not.toHaveAttribute('aria-current');
+  });
 });
 
 describe('OverviewTab', () => {
@@ -57,6 +69,10 @@ describe('ListenTab', () => {
     const btn = screen.getByText(/YouTube Performances/i);
     expect(btn.closest('a').href).toContain('watch_videos?video_ids=abc123');
   });
+  it('shows the track count caption on the playlist row', () => {
+    render(<ListenTab tune={tune} />);
+    expect(screen.getByText('1 track · opens in new tab')).toBeInTheDocument();
+  });
 });
 
 describe('ChordsTab', () => {
@@ -65,15 +81,16 @@ describe('ChordsTab', () => {
     const cells = Array.from(container.querySelectorAll('[data-measure]')).map((c) => c.textContent);
     expect(cells).toEqual(['Eø', 'A7', 'C–7', 'F7']);
   });
-  it('renders transpose buttons', () => {
+  it('renders transpose buttons with flat glyphs', () => {
     render(<ChordsTab tune={tune} />);
-    expect(screen.getByText('Concert')).toBeInTheDocument();
-    expect(screen.getByText('Bb')).toBeInTheDocument();
-    expect(screen.getByText('Eb')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Concert' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('button', { name: 'B♭' })).toHaveAttribute('aria-pressed', 'false');
+    expect(screen.getByRole('button', { name: 'E♭' })).toBeInTheDocument();
   });
-  it('transposes when Bb button clicked', () => {
+  it('transposes when B♭ is clicked', () => {
     const { container } = render(<ChordsTab tune={tune} />);
-    fireEvent.click(screen.getByText('Bb'));
+    fireEvent.click(screen.getByRole('button', { name: 'B♭' }));
     expect(container.querySelector('[data-measure]').textContent).toBe('F♯ø');
+    expect(screen.getByRole('button', { name: 'B♭' })).toHaveAttribute('aria-pressed', 'true');
   });
 });

@@ -29,6 +29,8 @@ Font: Inter Tight (Google Fonts), the default `font-sans`. Weights loaded: 400 5
 - Small-caps label style, used for every eyebrow/label/tab: `text-[10.5px] font-semibold uppercase tracking-[0.12em] text-muted` (tabs and sort/transpose use `text-xs`/`text-[11px]` and `tracking-[0.1em]`–`[0.12em]`).
 - Display numerals (rank): 48px = `text-5xl font-black leading-none tracking-[-0.05em] tabular-nums`.
 - Mobile (`max-width: 767px`, see `useViewport`) must keep working; artboards are desktop (1400×900) so mobile reductions are stated per component below.
+- `muted-soft` (#a39a8c, 2.39:1 on paper) is a documented AA exception used only for decorative 11–12px secondary text that duplicates information available elsewhere (chart measure numbers; the `+N` alternate-key count whose keys are in `title`). Never use it for body text, placeholders, or the only copy of a fact.
+- Error and empty-state text is ink/muted, never red — red is reserved for "current".
 
 ## Components
 

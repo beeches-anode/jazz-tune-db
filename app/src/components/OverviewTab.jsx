@@ -1,31 +1,62 @@
+import { splitComposer } from '../utils/tuneText';
+import { LABEL } from './styles';
+
+const VALUE = 'text-[26px] font-extrabold leading-none tracking-[-0.03em]';
+
 export function OverviewTab({ tune }) {
+  const composer = splitComposer(tune.composer);
+  const lyricist = tune.lyricist || composer.lyricist;
+  const alternates = tune.alternate_keys ?? [];
+  const showKey = Boolean(tune.standard_key) || alternates.length > 0;
+
   return (
-    <div className="px-3 sm:px-5 py-4 space-y-5">
-      <div>
-        <h1 className="text-2xl sm:text-3xl font-bold text-zinc-900">{tune.tune_name}</h1>
-        <p className="text-zinc-600 mt-1">
-          {tune.composer}
-          {tune.lyricist && <span className="text-zinc-500"> · lyrics by {tune.lyricist}</span>}
+    <div className="px-4 sm:px-10 py-8 flex flex-col gap-7">
+      <div className="flex flex-col gap-2.5">
+        <h1 className="text-4xl sm:text-[56px] font-black leading-[0.98] tracking-[-0.04em] max-w-[760px] text-balance">
+          {tune.tune_name}
+        </h1>
+        <p className="text-[17px] leading-snug">
+          {composer.name}
+          {lyricist && <span className="text-muted"> · lyrics by {lyricist}</span>}
         </p>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-        {tune.style && <StatCard label="Style" value={tune.style} />}
-        {(tune.standard_key || tune.alternate_keys?.length > 0) && (
-          <StatCard
-            label="Key"
-            value={`${tune.standard_key || '—'}${tune.alternate_keys?.length ? ` (+${tune.alternate_keys.length})` : ''}`}
-          />
+      <dl className="grid grid-cols-2 sm:grid-cols-4 border-y border-rule">
+        {tune.rank && (
+          <Fact label="Rank">
+            <span className="text-5xl font-black leading-none tracking-[-0.05em] tabular-nums">{tune.rank}</span>
+          </Fact>
         )}
-        {tune.year && <StatCard label="Year" value={tune.year} />}
-        {tune.rank && <StatCard label="Rank" value={`#${tune.rank}`} />}
-      </div>
+        {showKey && (
+          <Fact label="Key">
+            <span className={VALUE}>{tune.standard_key || '—'}</span>
+            {alternates.length > 0 && (
+              <span
+                className="text-xs text-muted leading-snug"
+                title={alternates.map((a) => `${a.key}: ${a.context}`).join('\n')}
+              >
+                also {alternates.map((a) => a.key).join(', ')}
+              </span>
+            )}
+          </Fact>
+        )}
+        {tune.style && (
+          <Fact label="Style">
+            <span className={`${VALUE} capitalize`}>{tune.style}</span>
+          </Fact>
+        )}
+        {tune.year && (
+          <Fact label="Year">
+            <span className={`${VALUE} tabular-nums`}>{tune.year}</span>
+          </Fact>
+        )}
+      </dl>
 
       {tune.history_and_facts && (
-        <div className="prose prose-zinc max-w-none">
-          <h3 className="text-sm font-semibold uppercase tracking-wide text-zinc-500">History &amp; Facts</h3>
+        <div className="flex flex-col gap-3.5 max-w-[720px]">
+          <h3 className={LABEL}>History &amp; Facts</h3>
           {tune.history_and_facts.split('\n').filter(Boolean).map((para, i) => (
-            <p key={i} className="text-zinc-700">{para}</p>
+            <p key={i} className="text-[15.5px] leading-relaxed text-pretty">{para}</p>
           ))}
         </div>
       )}
@@ -33,11 +64,11 @@ export function OverviewTab({ tune }) {
   );
 }
 
-function StatCard({ label, value }) {
+function Fact({ label, children }) {
   return (
-    <div className="bg-white rounded border border-zinc-200 px-3 py-2">
-      <div className="text-xs text-zinc-500 uppercase tracking-wide">{label}</div>
-      <div className="text-base font-semibold text-zinc-900 mt-0.5">{value}</div>
+    <div className="flex flex-col gap-2 py-3.5 pr-4 sm:[&:not(:first-child)]:pl-4 sm:[&:not(:last-child)]:border-r sm:border-rule">
+      <dt className={LABEL}>{label}</dt>
+      <dd className="m-0 flex flex-col gap-1">{children}</dd>
     </div>
   );
 }

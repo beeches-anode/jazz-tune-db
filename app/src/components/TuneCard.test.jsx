@@ -34,4 +34,24 @@ describe('TuneCard', () => {
     screen.getByText('Blue Bossa').click();
     expect(onClick).toHaveBeenCalled();
   });
+
+  it('renders the rank as the gutter numeral', () => {
+    const tune = { id: 't1', tune_name: 'Stella by Starlight', composer: 'Victor Young', rank: 22 };
+    const { container } = render(<TuneCard tune={tune} onClick={() => {}} />);
+    expect(container.querySelector('[data-rank]').textContent).toBe('22');
+  });
+
+  it('shows the composer without the lyrics parenthetical', () => {
+    const tune = { id: 't1', tune_name: 'All the Things You Are', composer: 'Jerome Kern (lyrics: Oscar Hammerstein II)' };
+    render(<TuneCard tune={tune} onClick={() => {}} />);
+    expect(screen.getByText('Jerome Kern')).toBeInTheDocument();
+    expect(screen.queryByText(/lyrics/)).not.toBeInTheDocument();
+  });
+
+  it('marks the selected row with aria-current and its id', () => {
+    const tune = { id: 't9', tune_name: 'So What', composer: 'Miles Davis' };
+    const { container } = render(<TuneCard tune={tune} selected onClick={() => {}} />);
+    const row = container.querySelector('[data-tune-card="t9"]');
+    expect(row).toHaveAttribute('aria-current', 'true');
+  });
 });
