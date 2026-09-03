@@ -12,7 +12,7 @@ export function ReaderDetail({ tune }) {
       || tune.youtube_video_ids?.length > 0
       || tune.youtube_backing_track_ids?.length > 0;
     if (hasListen) t.push({ id: 'listen', label: 'Listen' });
-    if (tune.chords) t.push({ id: 'chords', label: 'Chords' });
+    if (tune.chords?.includes('|')) t.push({ id: 'chords', label: 'Chords' });
     return t;
   }, [tune]);
 
