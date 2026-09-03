@@ -89,4 +89,13 @@ describe('ChordChart', () => {
     const cells = container.querySelectorAll('[data-measure]');
     expect(cells[2].querySelector('[data-section]').textContent).toBe('B');
   });
+
+  it('gives a short row exactly as many columns as it has measures', () => {
+    const { container } = render(
+      <ChordChart chords={"| Cmaj7 | Dm7 | G7 | Cmaj7 |\n| Bb7 A7b9 | Dm6 | Em7b5 A7b9 |"} transposeKey="Concert" sectionMarkers={[]} />
+    );
+    const grids = container.querySelectorAll('[data-measure]:first-child');
+    expect(grids[0].parentElement.style.gridTemplateColumns).toBe('repeat(4, minmax(0, 1fr))');
+    expect(grids[1].parentElement.style.gridTemplateColumns).toBe('repeat(3, minmax(0, 1fr))');
+  });
 });

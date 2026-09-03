@@ -41,7 +41,7 @@ export function ChordChart({ chords, transposeKey = 'Concert', sectionMarkers = 
                 {firstMeasure}
               </span>
             </div>
-            <div className="flex-1 grid grid-cols-4">
+            <div className="flex-1 grid" style={{ gridTemplateColumns: `repeat(${line.length}, minmax(0, 1fr))` }}>
               {line.map((cell, colIdx) => {
                 const inline = inlineMarkers.find((m) => m.col === colIdx);
                 return (
