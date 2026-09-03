@@ -76,6 +76,11 @@ describe('TuneList', () => {
     expect(screen.getByRole('link', { name: /edit/i })).toHaveAttribute('href', '/edit');
   });
 
+  it('labels the search input for assistive tech', () => {
+    render(<TuneList tunes={tunes} onSelect={() => {}} />);
+    expect(screen.getByRole('searchbox', { name: 'Search tunes' })).toBeInTheDocument();
+  });
+
   it('hides the masthead when showMasthead is false', () => {
     render(<TuneList tunes={tunes} onSelect={() => {}} showMasthead={false} />);
     expect(screen.queryByText('Jazz Tunes')).not.toBeInTheDocument();

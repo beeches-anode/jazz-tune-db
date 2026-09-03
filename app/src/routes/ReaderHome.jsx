@@ -12,7 +12,7 @@ export function ReaderHome() {
   const selected = tunes.find(t => t.id === selectedId);
 
   if (loading) return <div className="p-8 text-center text-muted">Loading tunes…</div>;
-  if (error) return <div className="p-8 text-center text-accent">Failed to load: {error.message}</div>;
+  if (error) return <div className="p-8 text-center text-ink font-semibold">Failed to load: {error.message}</div>;
 
   // Mobile: list → full-screen detail
   if (isMobile) {

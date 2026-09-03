@@ -48,7 +48,7 @@ export function TuneList({ tunes, selectedId, onSelect, showMasthead = true }) {
         )}
 
         {/* Search */}
-        <div className="flex items-center gap-2.5 px-4 h-[46px] border-b border-rule">
+        <div className="flex items-center gap-2.5 px-4 h-[46px] border-b border-rule focus-within:border-b-2 focus-within:border-accent">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
             <circle cx="11" cy="11" r="7" />
             <path d="m20 20-3.5-3.5" />
@@ -56,9 +56,10 @@ export function TuneList({ tunes, selectedId, onSelect, showMasthead = true }) {
           <input
             type="search"
             placeholder="Search tunes…"
+            aria-label="Search tunes"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="flex-1 min-w-0 bg-transparent text-base text-ink placeholder:text-muted-soft focus:outline-none"
+            className="flex-1 min-w-0 bg-transparent text-base text-ink placeholder:text-muted focus:outline-none"
           />
           <span className={`${SMALL_CAPS} text-muted whitespace-nowrap`}>{filtered.length} of {tunes.length}</span>
         </div>
