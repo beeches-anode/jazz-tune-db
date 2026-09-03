@@ -13,7 +13,7 @@ const SORTS = [
 // "Ballad" and "ballad" side by side and we are not normalising it here.
 const STYLE_CHIPS = ['ballad', 'swing', 'bebop', 'hard bop', 'bossa nova'];
 
-export function TuneList({ tunes, selectedId, onSelect }) {
+export function TuneList({ tunes, selectedId, onSelect, showMasthead = true }) {
   const [query, setQuery] = useState('');
   const [sortId, setSortId] = useState('rank');
   const [style, setStyle] = useState(null);
@@ -32,18 +32,20 @@ export function TuneList({ tunes, selectedId, onSelect }) {
     <div className="flex flex-col h-full bg-paper">
       <div className="sticky top-0 bg-paper">
         {/* Masthead */}
-        <div className="flex items-end justify-between px-4 pt-5 pb-3 border-b border-rule">
-          <div className="text-3xl font-black uppercase leading-none tracking-[-0.035em]">Jazz Tunes</div>
-          <div className="flex items-center gap-3.5">
-            <span className={`${SMALL_CAPS} text-muted`}>{tunes.length} tunes</span>
-            <a href="/edit" aria-label="Edit tunes" className="text-ink hover:text-ink/70">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <path d="M12 20h9" />
-                <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" />
-              </svg>
-            </a>
+        {showMasthead && (
+          <div className="flex items-end justify-between px-4 pt-5 pb-3 border-b border-rule">
+            <div className="text-3xl font-black uppercase leading-none tracking-[-0.035em]">Jazz Tunes</div>
+            <div className="flex items-center gap-3.5">
+              <span className={`${SMALL_CAPS} text-muted`}>{tunes.length} tunes</span>
+              <a href="/edit" aria-label="Edit tunes" className="text-ink hover:text-ink/70">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M12 20h9" />
+                  <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" />
+                </svg>
+              </a>
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Search */}
         <div className="flex items-center gap-2.5 px-4 h-[46px] border-b border-rule">

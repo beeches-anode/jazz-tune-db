@@ -75,4 +75,11 @@ describe('TuneList', () => {
     expect(screen.getByText('4 tunes')).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /edit/i })).toHaveAttribute('href', '/edit');
   });
+
+  it('hides the masthead when showMasthead is false', () => {
+    render(<TuneList tunes={tunes} onSelect={() => {}} showMasthead={false} />);
+    expect(screen.queryByText('Jazz Tunes')).not.toBeInTheDocument();
+    expect(screen.queryByRole('link', { name: /edit/i })).not.toBeInTheDocument();
+    expect(screen.getByPlaceholderText(/search/i)).toBeInTheDocument();
+  });
 });
