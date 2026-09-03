@@ -77,15 +77,16 @@ describe('ChordsTab', () => {
     const cells = Array.from(container.querySelectorAll('[data-measure]')).map((c) => c.textContent);
     expect(cells).toEqual(['Eø', 'A7', 'C–7', 'F7']);
   });
-  it('renders transpose buttons', () => {
+  it('renders transpose buttons with flat glyphs', () => {
     render(<ChordsTab tune={tune} />);
-    expect(screen.getByText('Concert')).toBeInTheDocument();
-    expect(screen.getByText('Bb')).toBeInTheDocument();
-    expect(screen.getByText('Eb')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Concert' })).toHaveAttribute('aria-pressed', 'true');
+    expect(screen.getByRole('button', { name: 'B♭' })).toHaveAttribute('aria-pressed', 'false');
+    expect(screen.getByRole('button', { name: 'E♭' })).toBeInTheDocument();
   });
-  it('transposes when Bb button clicked', () => {
+  it('transposes when B♭ is clicked', () => {
     const { container } = render(<ChordsTab tune={tune} />);
-    fireEvent.click(screen.getByText('Bb'));
+    fireEvent.click(screen.getByRole('button', { name: 'B♭' }));
     expect(container.querySelector('[data-measure]').textContent).toBe('F♯ø');
+    expect(screen.getByRole('button', { name: 'B♭' })).toHaveAttribute('aria-pressed', 'true');
   });
 });
