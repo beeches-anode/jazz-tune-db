@@ -69,6 +69,10 @@ describe('ListenTab', () => {
     const btn = screen.getByText(/YouTube Performances/i);
     expect(btn.closest('a').href).toContain('watch_videos?video_ids=abc123');
   });
+  it('shows the track count caption on the playlist row', () => {
+    render(<ListenTab tune={tune} />);
+    expect(screen.getByText('1 track · opens in new tab')).toBeInTheDocument();
+  });
 });
 
 describe('ChordsTab', () => {

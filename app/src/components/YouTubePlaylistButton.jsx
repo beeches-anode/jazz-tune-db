@@ -1,20 +1,20 @@
 import { buildPlaylistUrl } from '../utils/youtubeUrl';
 
-export function YouTubePlaylistButton({ videoIds, label, variant = 'performances' }) {
+export function YouTubePlaylistButton({ videoIds, label }) {
   if (!videoIds || videoIds.length === 0) return null;
-  const ids = videoIds.map(v => v.id);
-  const url = buildPlaylistUrl(ids);
-  const bg = variant === 'backing'
-    ? 'bg-gradient-to-r from-zinc-700 to-zinc-900 text-white'
-    : 'bg-gradient-to-r from-red-500 to-red-700 text-white';
+  const url = buildPlaylistUrl(videoIds.map((v) => v.id));
+  const n = videoIds.length;
   return (
     <a
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className={`block w-full px-4 py-3 rounded font-medium text-center ${bg} hover:opacity-90 transition`}
+      className="flex items-baseline justify-between gap-4 border border-rule px-4 py-3 hover:bg-ink/5 transition-colors"
     >
-      {label} ({videoIds.length})
+      <span className="text-[11px] font-semibold uppercase tracking-[0.1em]">{label}</span>
+      <span className="text-xs text-muted tabular-nums whitespace-nowrap">
+        {n} {n === 1 ? 'track' : 'tracks'} · opens in new tab
+      </span>
     </a>
   );
 }
